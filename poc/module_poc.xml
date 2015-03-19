@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_poc" default="compile.module.poc">
+  <dirname property="module.poc.basedir" file="${ant.file.module_poc}"/>
+  
+  <property name="module.jdk.home.poc" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.poc" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.poc" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.poc" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="poc.output.dir" value="${module.poc.basedir}/out/production/poc"/>
+  <property name="poc.testoutput.dir" value="${module.poc.basedir}/out/test/poc"/>
+  
+  <path id="poc.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="poc.module.production.classpath">
+    <path refid="${module.jdk.classpath.poc}"/>
+  </path>
+  
+  <path id="poc.runtime.production.module.classpath">
+    <pathelement location="${poc.output.dir}"/>
+  </path>
+  
+  <path id="poc.module.classpath">
+    <path refid="${module.jdk.classpath.poc}"/>
+    <pathelement location="${poc.output.dir}"/>
+  </path>
+  
+  <path id="poc.runtime.module.classpath">
+    <pathelement location="${poc.testoutput.dir}"/>
+    <pathelement location="${poc.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.poc">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.poc">
+    <patternset refid="excluded.from.module.poc"/>
+  </patternset>
+  
+  <path id="poc.module.sourcepath">
+    <dirset dir="${module.poc.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.poc" depends="compile.module.poc.production,compile.module.poc.tests" description="Compile module poc"/>
+  
+  <target name="compile.module.poc.production" depends="register.custom.compilers" description="Compile module poc; production classes">
+    <mkdir dir="${poc.output.dir}"/>
+    <javac2 destdir="${poc.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.poc}/javac">
+      <compilerarg line="${compiler.args.poc}"/>
+      <bootclasspath refid="poc.module.bootclasspath"/>
+      <classpath refid="poc.module.production.classpath"/>
+      <src refid="poc.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.poc"/>
+    </javac2>
+    
+    <copy todir="${poc.output.dir}">
+      <fileset dir="${module.poc.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.poc.tests" depends="register.custom.compilers,compile.module.poc.production" description="compile module poc; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.poc" description="cleanup module">
+    <delete dir="${poc.output.dir}"/>
+    <delete dir="${poc.testoutput.dir}"/>
+  </target>
+</project>

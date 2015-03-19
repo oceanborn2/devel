@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="poc" default="all">
+  
+  
+  <property file="bak/poc.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.pyc/**"/>
+    <exclude name="**/.pyo/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/*.lib/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/.bundle/**"/>
+    <exclude name="**/*.rbc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.ear"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.swc"/>
+    <include name="*.ane"/>
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
+  <path id="jdk.classpath.1.8">
+    <fileset dir="${jdk.home.1.8}">
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/jfxswt.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/rt.jar"/>
+      <include name="jre/lib/ext/access-bridge-64.jar"/>
+      <include name="jre/lib/ext/cldrdata.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+      <include name="jre/lib/ext/jaccess.jar"/>
+      <include name="jre/lib/ext/jfxrt.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/nashorn.jar"/>
+      <include name="jre/lib/ext/sunec.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/sunmscapi.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+      <include name="jre/lib/ext/zipfs.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.8}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.jax-ws-glassfish_/_jax-ws_2.2_ri_/_metro_1.x_/_jwsdp_2.2.classpath">
+    <pathelement location="${basedir}/wsmock/lib/FastInoset.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/gmbal-api-only.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/ha-api.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/javax.annotation.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/jaxb-api.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/jaxb-impl.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/jaxb-xjc.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/jaxws-api.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/jaxws-rt.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/jaxws-tools.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/jsr181-api.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/mail.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/management-api.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/mimepull.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/policy.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/saaj-api.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/saaj-impl.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/stax-ex.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/stax2-api.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/streambuffer.jar"/>
+    <pathelement location="${basedir}/wsmock/lib/woodstox-core-asl.jar"/>
+  </path>
+  
+  
+  <!-- Global Libraries -->
+  
+  <path id="library.groovy-2.3.9.classpath">
+    <pathelement location="D:/software/groovy/lib/ant-1.9.3.jar"/>
+    <pathelement location="D:/software/groovy/lib/ant-antlr-1.9.3.jar"/>
+    <pathelement location="D:/software/groovy/lib/ant-junit-1.9.3.jar"/>
+    <pathelement location="D:/software/groovy/lib/ant-launcher-1.9.3.jar"/>
+    <pathelement location="D:/software/groovy/lib/bsf-2.4.0.jar"/>
+    <pathelement location="D:/software/groovy/lib/commons-cli-1.2.jar"/>
+    <pathelement location="D:/software/groovy/lib/commons-logging-1.1.1.jar"/>
+    <pathelement location="D:/software/groovy/lib/gpars-1.2.1.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-ant-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-bsf-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-console-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-docgenerator-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-groovydoc-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-groovysh-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-jmx-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-json-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-jsr223-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-nio-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-servlet-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-sql-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-swing-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-templates-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-test-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-testng-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/groovy-xml-2.3.9.jar"/>
+    <pathelement location="D:/software/groovy/lib/hamcrest-core-1.3.jar"/>
+    <pathelement location="D:/software/groovy/lib/ivy-2.3.0.jar"/>
+    <pathelement location="D:/software/groovy/lib/jansi-1.11.jar"/>
+    <pathelement location="D:/software/groovy/lib/jcommander-1.35.jar"/>
+    <pathelement location="D:/software/groovy/lib/jline-2.11.jar"/>
+    <pathelement location="D:/software/groovy/lib/jsp-api-2.0.jar"/>
+    <pathelement location="D:/software/groovy/lib/jsr166y-1.7.0.jar"/>
+    <pathelement location="D:/software/groovy/lib/junit-4.11.jar"/>
+    <pathelement location="D:/software/groovy/lib/multiverse-core-0.7.0.jar"/>
+    <pathelement location="D:/software/groovy/lib/qdox-1.12.1.jar"/>
+    <pathelement location="D:/software/groovy/lib/servlet-api-2.4.jar"/>
+    <pathelement location="D:/software/groovy/lib/testng-6.8.8.jar"/>
+    <pathelement location="D:/software/groovy/lib/xmlpull-1.1.3.1.jar"/>
+    <pathelement location="D:/software/groovy/lib/xstream-1.4.7.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/module_poc.xml"/>
+  
+  <import file="${basedir}/wsmock/module_wsmock.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.poc, clean.module.wsmock, clean.artifact.wsmock:war_exploded" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.poc, compile.module.wsmock" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.wsmock:war_exploded" value="${basedir}/out/artifacts/wsmock_war_exploded"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="clean.artifact.wsmock:war_exploded" description="clean wsmock:war exploded artifact output">
+    <delete dir="${artifact.output.wsmock:war_exploded}"/>
+  </target>
+  
+  <target name="artifact.wsmock:war_exploded" depends="init.artifacts, compile.module.wsmock" description="Build &#39;wsmock:war exploded&#39; artifact">
+    <mkdir dir="${artifact.output.wsmock:war_exploded}"/>
+    <copy todir="${artifact.output.wsmock:war_exploded}">
+      <fileset dir="${basedir}/wsmock/web"/>
+    </copy>
+    <mkdir dir="${artifact.output.wsmock:war_exploded}/WEB-INF"/>
+    <copy file="${basedir}/wsmock/web/WEB-INF/web.xml" tofile="${artifact.output.wsmock:war_exploded}/WEB-INF/web.xml"/>
+    <mkdir dir="${artifact.output.wsmock:war_exploded}/WEB-INF"/>
+    <mkdir dir="${artifact.output.wsmock:war_exploded}/WEB-INF/classes"/>
+    <copy todir="${artifact.output.wsmock:war_exploded}/WEB-INF/classes">
+      <fileset dir="${wsmock.output.dir}"/>
+    </copy>
+  </target>
+  
+  <target name="build.all.artifacts" depends="artifact.wsmock:war_exploded" description="Build all artifacts">
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_wsproxy" default="compile.module.wsproxy"
+  <dirname property="module.wsproxy.basedir" file="/module_wsproxy.xml"/>
+  
+  <property name="module.jdk.home.wsproxy" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.wsproxy" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.wsproxy" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.wsproxy" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="wsproxy.output.dir" value="${module.wsproxy.basedir}/../out/production/wsproxy"/>
+  <property name="wsproxy.testoutput.dir" value="${module.wsproxy.basedir}/../out/test/wsproxy"/>
+  
+  <path id="wsproxy.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="wsproxy.module.production.classpath">
+    <path refid="${module.jdk.classpath.wsproxy}"/>
+    <path refid="library.groovy-2.3.9.classpath"/>
+    <path refid="library.jax-ws-glassfish_/_jax-ws_2.2_ri_/_metro_1.x_/_jwsdp_2.2.classpath"/>
+  </path>
+  
+  <path id="wsproxy.runtime.production.module.classpath">
+    <pathelement location="${wsproxy.output.dir}"/>
+    <path refid="library.groovy-2.3.9.classpath"/>
+    <path refid="library.jax-ws-glassfish_/_jax-ws_2.2_ri_/_metro_1.x_/_jwsdp_2.2.classpath"/>
+  </path>
+  
+  <path id="wsproxy.module.classpath">
+    <path refid="${module.jdk.classpath.wsproxy}"/>
+    <pathelement location="${wsproxy.output.dir}"/>
+    <path refid="library.groovy-2.3.9.classpath"/>
+    <path refid="library.jax-ws-glassfish_/_jax-ws_2.2_ri_/_metro_1.x_/_jwsdp_2.2.classpath"/>
+  </path>
+  
+  <path id="wsproxy.runtime.module.classpath">
+    <pathelement location="${wsproxy.testoutput.dir}"/>
+    <pathelement location="${wsproxy.output.dir}"/>
+    <path refid="library.groovy-2.3.9.classpath"/>
+    <path refid="library.jax-ws-glassfish_/_jax-ws_2.2_ri_/_metro_1.x_/_jwsdp_2.2.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.wsproxy">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.wsproxy">
+    <patternset refid="excluded.from.module.wsproxy"/>
+  </patternset>
+  
+  <path id="wsproxy.module.sourcepath">
+    <dirset dir="${module.wsproxy.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.wsproxy" depends="compile.module.wsproxy.production,compile.module.wsproxy.tests" description="Compile module wsproxy"/>
+  
+  <target name="compile.module.wsproxy.production" depends="register.custom.compilers" description="Compile module wsproxy; production classes">
+    <mkdir dir="${wsproxy.output.dir}"/>
+    <javac2 destdir="${wsproxy.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.wsproxy}/javac">
+      <compilerarg line="${compiler.args.wsproxy}"/>
+      <bootclasspath refid="wsproxy.module.bootclasspath"/>
+      <classpath refid="wsproxy.module.production.classpath"/>
+      <src refid="wsproxy.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.wsproxy"/>
+    </javac2>
+    
+    <copy todir="${wsproxy.output.dir}">
+      <fileset dir="${module.wsproxy.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.wsproxy.tests" depends="register.custom.compilers,compile.module.wsproxy.production" description="compile module wsproxy; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.wsproxy" description="cleanup module">
+    <delete dir="${wsproxy.output.dir}"/>
+    <delete dir="${wsproxy.testoutput.dir}"/>
+  </target>
+</project>
