@@ -1,0 +1,6 @@
+package poc
+
+class InteractiveClient {
+	
+
+}

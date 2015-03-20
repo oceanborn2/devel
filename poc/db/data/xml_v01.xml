@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+	<Common>
+		<Person>
+			<Titles>
+				<Title>Title 1</Title>
+				<Title>Title 2</Title>
+				<Title>Title 3</Title>
+				<Title>Title 4</Title>
+				<Title>Title 5</Title>
+				<Title>Title 6</Title>
+			</Titles>
+			<MaritalStatusList>
+				<MaritalStatus>Marital status 1</MaritalStatus>
+				<MaritalStatus>Marital status 2</MaritalStatus>
+				<MaritalStatus>Marital status 3</MaritalStatus>
+				<MaritalStatus>Marital status 4</MaritalStatus>
+			</MaritalStatusList>
+		</Person>
+		<WealthDistribution>
+			<Breakdown>WD Breakdown 1</Breakdown>
+			<Breakdown>WD Breakdown 2</Breakdown>
+		</WealthDistribution>
+	</Common>
+	<Contract>
+		<Objectifs>
+			<Objectif>
+				<Enum>Banking</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Finance a property purchase or other project</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Execution and dealing services</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Maximise income on investments</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Build up funds for longer term objectives</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Provide for retirement</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Provide for cost of education</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Financial protection in the event of death, illness or disability</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Reduce taxation</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Estate &amp; succession planning</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Move abroad</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Philanthropy</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Make a will</Enum>
+				<Value>F</Value>
+			</Objectif>
+			<Objectif>
+				<Enum>Art advisory services</Enum>
+				<Value>F</Value>
+			</Objectif>
+		</Objectifs>
+	</Contract>
+	<Client id="JointAccountHolder">
+		<Name>Name</Name>
+		<PrivateBanker>Private Banker</PrivateBanker>
+		<Surname>Surname</Surname>
+		<Forename>Forename</Forename>
+		<FormerName>Former name</FormerName>
+		<Title>Title 1</Title>
+		<DateBirth>01/01/1970</DateBirth>
+		<TownBirth>Town birth</TownBirth>
+		<CountryBirth>Country birth</CountryBirth>
+		<MaritalStatus>Marital Status 1</MaritalStatus>
+		<Nationality>Nationality</Nationality>
+		<Country>Country</Country>
+		<Domicile>Domicile</Domicile>
+		<NIN>NIN</NIN>
+		<TaxOffice>Tax office</TaxOffice>
+		<RefNumber>Tax Office ref number</RefNumber>
+
+		<Contact>
+			<THome>THome</THome> 
+			<TBusiness>Tbusiness</TBusiness> 
+			<TMobile>Tmobile</TMobile> 
+			<Fax>Fax</Fax> 
+			<Email>email</Email> 
+		</Contact>
+
+		<Address>
+			<Residential>address residential</Residential>
+			<Correspondence>address correspondance</Correspondence>
+			<SeparateMailing>reason for separate mailing</SeparateMailing>
+			<USA>USA</USA>
+		</Address>
+
+		<Dependant>
+			<Name>Dependant name</Name>
+			<BirthDate>Dependant birthdate</BirthDate>
+			<Relationship>Dependant relationship</Relationship>
+		</Dependant>
+
+		<Bank>
+			<AccountHolder>Bank Acc Holder</AccountHolder>
+			<Name>Bank name</Name>
+			<Address>Bank address</Address>
+		</Bank>
+		<Employment>
+			<Detail>Employment detail</Detail>
+			<Occupation>Employment occupation</Occupation>
+			<Employer>Employment employer</Employer>
+			<Sector>Employment sector</Sector>
+			<Directorship>Employment directorship</Directorship>
+		</Employment>
+		<Income>
+			<AnnualIncome>
+				<Value>Annual income value</Value>
+				<Ccy>Annual income Ccy</Ccy>
+			</AnnualIncome>
+			<BasicSalary>Basic Salary</BasicSalary>
+			<SourceIncome>Source income</SourceIncome>
+			<Expenditure>Expenditure</Expenditure>
+		</Income>
+		<EstimatedNetWorthCcy>Estimated net worth CCY</EstimatedNetWorthCcy>
+
+		<WealthDistribution>
+			<Asset>
+				<Breakdown>WD Asset Breakdown</Breakdown>
+				<Value>WD Asset Value</Value>
+			</Asset>
+			<Liabilities>
+				<Breakdown>WD Liabilities breakdown</Breakdown>
+				<Value>WD Liabilities value</Value>
+			</Liabilities>
+			<TotalNetWorth>WD Total net worth</TotalNetWorth>
+			<MainProperty>WD Main property</MainProperty>
+			<NetInvWealth>WD Net inv wealth</NetInvWealth>
+			<SourceWealth>WD Source wealth</SourceWealth>
+			<Changes>WD Changes</Changes>
+			<Products>WD Products</Products>
+		</WealthDistribution>
+
+		<Account>
+			<Type>Account type</Type>
+			<Entity>  
+				<Enum>Account entity enum</Enum>
+				<Value>Account entity value</Value>
+			</Entity>
+			<Title>Account title</Title>
+			<Ccy>Account CCY</Ccy>
+			<Ccy_Other>Account CCY Other</Ccy_Other>
+			<Purpose>Account purpose</Purpose>
+			<TransactionValue>Account transaction value</TransactionValue>
+			<OpeningSource>Account opening source</OpeningSource>
+		</Account>
+
+		<Payments>
+			<Payment id="In">
+				<Country>Payments in country</Country>
+				<Month>Payments in month</Month>
+				<Ccy>Payments in CCY</Ccy>
+				<Amount>Payments in amount</Amount>
+				<Counterpart>Payments in counterpart</Counterpart>
+				<Nature>Payments in nature</Nature>
+			</Payment>
+			<Payment id="Out">
+				<Country>Payments out country</Country>
+				<Month>Payments out month</Month>
+				<Ccy>Payments out CCY</Ccy>
+				<Amount>Payments out amount</Amount>
+				<Counterpart>Payments out counterpart</Counterpart>
+				<Nature>Payments out nature</Nature>
+			</Payment>
+		</Payments>
+	</Client>
+	<Client id="Principal">
+		<Name>Name</Name>
+		<PrivateBanker>Private Banker</PrivateBanker>
+		<Surname>Surname</Surname>
+		<Forename>Forename</Forename>
+		<FormerName>Former name</FormerName>
+		<Title>Title 1</Title>
+		<DateBirth>01/01/1970</DateBirth>
+		<TownBirth>Town birth</TownBirth>
+		<CountryBirth>Country birth</CountryBirth>
+		<MaritalStatus>Marital Status 1</MaritalStatus>
+		<Nationality>Nationality</Nationality>
+		<Country>Country</Country>
+		<Domicile>Domicile</Domicile>
+		<NIN>NIN</NIN>
+		<TaxOffice>Tax office</TaxOffice>
+		<RefNumber>Tax Office ref number</RefNumber>
+
+		<Contact>
+			<THome>THome</THome> 
+			<TBusiness>Tbusiness</TBusiness> 
+			<TMobile>Tmobile</TMobile> 
+			<Fax>Fax</Fax> 
+			<Email>email</Email> 
+		</Contact>
+
+		<Address>
+			<Residential>address residential</Residential>
+			<Correspondence>address correspondance</Correspondence>
+			<SeparateMailing>reason for separate mailing</SeparateMailing>
+			<USA>USA</USA>
+		</Address>
+
+		<Dependant>
+			<Name>Dependant name</Name>
+			<BirthDate>Dependant birthdate</BirthDate>
+			<Relationship>Dependant relationship</Relationship>
+		</Dependant>
+
+		<Bank>
+			<AccountHolder>Bank Acc Holder</AccountHolder>
+			<Name>Bank name</Name>
+			<Address>Bank address</Address>
+		</Bank>
+		<Employment>
+			<Detail>Employment detail</Detail>
+			<Occupation>Employment occupation</Occupation>
+			<Employer>Employment employer</Employer>
+			<Sector>Employment sector</Sector>
+			<Directorship>Employment directorship</Directorship>
+		</Employment>
+		<Income>
+			<AnnualIncome>
+				<Value>Annual income value</Value>
+				<Ccy>Annual income Ccy</Ccy>
+			</AnnualIncome>
+			<BasicSalary>Basic Salary</BasicSalary>
+			<SourceIncome>Source income</SourceIncome>
+			<Expenditure>Expenditure</Expenditure>
+		</Income>
+		<EstimatedNetWorthCcy>Estimated net worth CCY</EstimatedNetWorthCcy>
+
+		<WealthDistribution>
+			<Asset>
+				<Breakdown>WD Asset Breakdown</Breakdown>
+				<Value>WD Asset Value</Value>
+			</Asset>
+			<Liabilities>
+				<Breakdown>WD Liabilities breakdown</Breakdown>
+				<Value>WD Liabilities value</Value>
+			</Liabilities>
+			<TotalNetWorth>WD Total net worth</TotalNetWorth>
+			<MainProperty>WD Main property</MainProperty>
+			<NetInvWealth>WD Net inv wealth</NetInvWealth>
+			<SourceWealth>WD Source wealth</SourceWealth>
+			<Changes>WD Changes</Changes>
+			<Products>WD Products</Products>
+		</WealthDistribution>
+
+		<Account>
+			<Type>Account type</Type>
+			<Entity>  
+				<Enum>Account entity enum</Enum>
+				<Value>Account entity value</Value>
+			</Entity>
+			<Title>Account title</Title>
+			<Ccy>Account CCY</Ccy>
+			<Ccy_Other>Account CCY Other</Ccy_Other>
+			<Purpose>Account purpose</Purpose>
+			<TransactionValue>Account transaction value</TransactionValue>
+			<OpeningSource>Account opening source</OpeningSource>
+		</Account>
+
+		<Payments>
+			<Payment id="In">
+				<Country>Payments in country</Country>
+				<Month>Payments in month</Month>
+				<Ccy>Payments in CCY</Ccy>
+				<Amount>Payments in amount</Amount>
+				<Counterpart>Payments in counterpart</Counterpart>
+				<Nature>Payments in nature</Nature>
+			</Payment>
+			<Payment id="Out">
+				<Country>Payments out country</Country>
+				<Month>Payments out month</Month>
+				<Ccy>Payments out CCY</Ccy>
+				<Amount>Payments out amount</Amount>
+				<Counterpart>Payments out counterpart</Counterpart>
+				<Nature>Payments out nature</Nature>
+			</Payment>
+		</Payments>
+	</Client>
+</Document>
+

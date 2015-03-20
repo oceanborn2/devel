@@ -3,7 +3,7 @@
 <endpoints xmlns='http://java.sun.com/xml/ns/jax-ws/ri/runtime' version='2.0'>
 
     <endpoint
-            name='WsMock'
+            name='WsProxy'
             implementation='wsproxy.WsProxy'
-            url-pattern='/services/WsProxy'/>
+            url-pattern='/wsproxy'/>
 </endpoints>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<persons>
+		<person typeid="owner">		
+			<coordinates>
+				<coord typeid="home">0101010101</coord>
+				<coord typeid="mobile">0601010101</coord>
+				<coord typeid="mail">durand@truc.com</coord>
+				<coord typeid="business">0101010101</coord>
+			</coordinates>
+			<addresses>
+				<address typeid="residential">
+					<!-- à préciser : un champ, un champ par ligne d'adresse, autre ?-->
+					<line1>52 rue des pâquerettes</line1>
+					<postcode>69001</postcode>
+				</address>
+				<address typeid="previous">
+					<line1>51 rue des pâquerettes</line1>
+					<postcode>69001</postcode>
+				</address>
+				<address typeid="correspondence">
+					<line1>49 rue des pâquerettes</line1>
+					<postcode>69001</postcode>
+				</address>
+				<address typeid="bank">
+					<!-- Modèle PDF : le nom de la banque et l'adresse sont dans le même champ -->
+					<line1>Société Générale, 48 rue des pâquerettes</line1>
+					<postcode>69001</postcode>
+				</address>
+			</addresses>
+			<name>Jean Durand</name>
+			<private_banker>private banker</private_banker>
+			<surname>Durand</surname>
+			<forename>Jean</forename>
+			<former_name>Former Name</former_name>
+			<title>Mr</title>
+			<date_birth>07/01/1950</date_birth>
+			<town_birth>Paris</town_birth>
+			<country_birth>France</country_birth>
+			<marital_status>marital status 1</marital_status>
+			<nationality>FR</nationality>
+			<id_card_number>0000000000001</id_card_number>
+			<id_card_authority>authority</id_card_authority>
+			<country_residence>FR</country_residence>
+			<domicile_country>FR</domicile_country>
+			<national_insurance_nr>000000001</national_insurance_nr>
+			<tax_office>tax office</tax_office>
+			<tax_office_ref>00001</tax_office_ref>
+			<different_address_mail_reason>reason for different mail address</different_address_mail_reason>
+			<address_residential_us>F</address_residential_us>
+			<address_residential_owned_rented>owned</address_residential_owned_rented>
+			<address_residential_time>five years</address_residential_time>
+			<bank_holder_name>account holder name</bank_holder_name>
+		</person>
+		<person typeid="joint">
+			<name>Durand</name>
+		</person>
+	</persons>
+	<objectives>
+		<objective>
+			<label>Banking</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Finance a property purchase or other project</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Execution and dealing services</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Maximise income on investments</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Build up funds for longer term objectives</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Provide for retirement</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Provide for cost of education</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Financial protection in the event of death, illness or disability</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Reduce taxation</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Estate &amp; succession planning</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Move abroad</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Philanthropy</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Make a will</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Art advisory services</label>
+			<value>F</value>
+		</objective>
+		<objective>
+			<label>Other (please specify)</label>
+			<value>F</value>
+		</objective>
+	</objectives>
+</document>

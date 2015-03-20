@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf8"?>
+	<!-- à confirmer : 
+		encodage 
+		noms des tags
+	-->
+	<flux>
+		
+		<COMMON>
+			<!-- to be defined, contains all information that are common to all the documents, if needed. -->
+		</COMMON>
+
+		<DOCUMENT>
+
+		<!-- disponibilité de ces infos documents ... -->
+		<TRAITEMENT>
+			<DOCUMENT_NAME>DOCUMENT_NAME</DOCUMENT_NAME>
+			<DOCUMENT_CODE>DOCUMENT_CODE</DOCUMENT_CODE>
+			<DOCUMENT_VERSION>DOCUMENT_VERSION</DOCUMENT_VERSION>
+			<DOCUMENT_LANGUAGE>DOCUMENT_CODE</DOCUMENT_LANGUAGE>
+		</TRAITEMENT>
+
+	<!-- Page3	-->
+	<PERSON>
+	<CSQ_PC_1>CSQ_PC_1</CSQ_PC_1>
+	<CSQ_PC_2>CSQ_PC_2</CSQ_PC_2>
+	</PERSON>
+
+	<!-- Page4 -->
+	<Client_Objectives>
+		<CSQ_PC_3_1>CSQ_PC_3_1</CSQ_PC_3_1>
+		<CSQ_PC_3_2>CSQ_PC_3_2</CSQ_PC_3_2>
+		<CSQ_PC_3_1>CSQ_PC_3_1</CSQ_PC_3_1>
+		<CSQ_PC_3_2>CSQ_PC_3_2</CSQ_PC_3_2>
+		<CSQ_PC_3_1>CSQ_PC_3_1</CSQ_PC_3_1>
+		<CSQ_PC_3_2>CSQ_PC_3_2</CSQ_PC_3_2>
+	</Client_Objectives>
+
+	<!-- page 6 : Gestion du compte joint ? -->
+
+	<CSQ_PC_4>CSQ_PC_4</CSQ_PC_4>
+	<CSQ_PC_5>CSQ_PC_5</CSQ_PC_5>
+	<CSQ_PC_6>CSQ_PC_6</CSQ_PC_6>
+	<CSQ_PC_7>CSQ_PC_7</CSQ_PC_7>
+	<CSQ_PC_8>CSQ_PC_8</CSQ_PC_8>
+	<CSQ_PC_9>CSQ_PC_9</CSQ_PC_9>
+	<CSQ_PC_10>CSQ_PC_10</CSQ_PC_10>
+	<CSQ_PC_11>CSQ_PC_11</CSQ_PC_11>
+	<CSQ_PC_12>CSQ_PC_12</CSQ_PC_12>
+	<CSQ_PC_13>CSQ_PC_13</CSQ_PC_13>
+	<CSQ_PC_14>CSQ_PC_14</CSQ_PC_14>
+	<CSQ_PC_15>CSQ_PC_15</CSQ_PC_15>
+	<CSQ_PC_16>CSQ_PC_16</CSQ_PC_16>
+	<CSQ_PC_17>CSQ_PC_17</CSQ_PC_17>
+	<CSQ_PC_18>CSQ_PC_18</CSQ_PC_18>
+	<CSQ_PC_19_1>CSQ_PC_19_1</CSQ_PC_19_1>
+	<CSQ_PC_19_2>CSQ_PC_19_1</CSQ_PC_19_2>
+	<CSQ_PC_19_3>CSQ_PC_19_1</CSQ_PC_19_3>
+	<CSQ_PC_19_4>CSQ_PC_19_1</CSQ_PC_19_4>
+	<CSQ_PC_19_5>CSQ_PC_19_1</CSQ_PC_19_5>
+	<CSQ_PC_24>CSQ_PC_4</CSQ_PC_24>
+
+
+
+	<!-- 
+		page 7 : NPA_1035 ?
+       Correspondance address = CSQ_PC_25 ?
+       env ?
+	-->
+	
+	<CSQ_PC_24>CSQ_PC_24</CSQ_PC_24>
+	<CSQ_PC_28>CSQ_PC_26</CSQ_PC_28>
+	<CSQ_PC_29>CSQ_PC_26</CSQ_PC_29>
+	<CSQ_PC_31>CSQ_PC_31</CSQ_PC_31>
+	<CSQ_PC_32>CSQ_PC_32</CSQ_PC_32>
+	<CSQ_PC_34>CSQ_PC_34</CSQ_PC_34>
+	<CSQ_PC_35>CSQ_PC_34</CSQ_PC_35>
+	<CSQ_PC_36>CSQ_PC_34</CSQ_PC_36>
+
+
+	
+
+	<!-- 
+		doubler les variables pour la gestion du/des comptes joints
+	-->
+
+	</DOCUMENT>
+
+</flux>

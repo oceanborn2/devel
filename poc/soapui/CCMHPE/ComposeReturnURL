@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <eng:Compose>
+         <!--Optional:-->
+         <EWSComposeRequest>
+            <!--Optional:-->
+            <driver>
+                <!--Optional:-->
+               <driver>PEN1c3RvbWVyPg0KPERvYz5IZWxsb1dvcmxkPC9Eb2M+DQo8L0N1c3RvbWVyPg==</driver>
+               <!--Optional:-->
+               <fileName>INPUT</fileName>
+            </driver>
+            <!--Zero or more repetitions:-->
+            <engineOptions>
+               <!--Optional:-->
+               <name>TRACKIN</name>
+               <!--Optional:-->
+               <value>DISABLE</value>
+            </engineOptions>
+            <!--Optional:-->
+            <includeHeader>true</includeHeader>
+            <includeMessageFile>true</includeMessageFile>
+            <!--Optional:-->
+            <pubFile>HelloWorld.pub</pubFile>
+         </EWSComposeRequest>
+      </eng:Compose>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -29,6 +29,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="poc" target="1.8" />
+      <module name="wsbase" target="1.8" />
       <module name="wsmock" target="1.8" />
       <module name="wsproxy" target="1.8" />
     </bytecodeTargetLevel>

@@ -5,5 +5,5 @@
     <endpoint
             name='WsMock'
             implementation='wsmock.WsMock'
-            url-pattern='/services/WsMock'/>
+            url-pattern='/wsmock'/>
 </endpoints>

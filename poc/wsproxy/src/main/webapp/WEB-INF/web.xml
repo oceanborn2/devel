@@ -3,19 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <!--listener>
+    <listener>
         <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
-    </listener-->
+    </listener>
 
     <servlet>
-        <description>Mock document composition web service to simulate HP ExStream</description>
+        <description>WS Proxy endpoint</description>
         <display-name>WsProxy</display-name>
-        <servlet-name>WsProxy</servlet-name>
-        <!--))servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class-->
+        <servlet-name>wsproxy</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>WsProxy</servlet-name>
-        <url-pattern>/services/*</url-pattern>
+        <servlet-name>wsproxy</servlet-name>
+        <url-pattern>/wsproxy</url-pattern>
     </servlet-mapping>
 </web-app>

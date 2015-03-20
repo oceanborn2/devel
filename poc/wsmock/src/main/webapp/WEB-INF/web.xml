@@ -6,15 +6,16 @@
     <listener>
         <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
     </listener>
+
     <servlet>
-        <description>WS proxy endpoint</description>
-        <display-name>WSProxy</display-name>
-        <servlet-name>WsProxy</servlet-name>
+        <description>WS Mock endpoint</description>
+        <display-name>WsMock</display-name>
+        <servlet-name>wsmock</servlet-name>
         <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>WsProxy</servlet-name>
-        <url-pattern>/wsproxy/*</url-pattern>
+        <servlet-name>wsmock</servlet-name>
+        <url-pattern>/wsmock</url-pattern>
     </servlet-mapping>
 </web-app>
