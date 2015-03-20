@@ -8,67 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91060a78-e7f2-47d2-b43d-b34be43b10ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/Compose.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/ComposeResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/DriverFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/EngineOption.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/EngineOutput.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/EngineService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/EngineServiceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/EngineServiceException_Exception.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/EngineWebService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/EwsComposeRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/EwsComposeResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/Header.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_org_apache_xml_internal_resolver_20050927.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_stream_buffer_streambuffer_0_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_stream_sjsxp_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_ws_jaxws_rt_2_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_ws_jaxws_api_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_mimepull_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/ObjectFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/Output.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/PubFiles.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/META-INF/application.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deploy.cmd.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deploy.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/ews.wsdl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/ews.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/src/main/java/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsbase/wsbase.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/wsbase_ear_exploded.xml" />
-      <change type="DELETED" beforePath="D:\GitHub\devel\poc\module_poc.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\devel\poc\poc.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\devel\poc\wsmock\src\main\java\wsmock\WsMock.wsdl" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\devel\poc\wsmock\src\main\java\wsmock\WsMockPortType.wsdl" afterPath="" />
-      <change type="DELETED" beforePath="D:\GitHub\devel\poc\wsproxy\src\main\java\wsproxy\WsProxy.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsmock/src/main/java/wsmock/WsMock.java" afterPath="$PROJECT_DIR$/wsmock/src/main/java/wsmock/WsMock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsmock/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/wsmock/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsmock/module_wsmock.xml" afterPath="$PROJECT_DIR$/wsmock/module_wsmock.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsproxy/module_wsproxy.xml" afterPath="$PROJECT_DIR$/wsproxy/module_wsproxy.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poc.iml" afterPath="$PROJECT_DIR$/poc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsmock/pom.xml" afterPath="$PROJECT_DIR$/wsmock/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsproxy/pom.xml" afterPath="$PROJECT_DIR$/wsproxy/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsmock/src/main/webapp/WEB-INF/sun-jaxws.xml" afterPath="$PROJECT_DIR$/wsmock/src/main/webapp/WEB-INF/sun-jaxws.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsproxy/src/main/webapp/WEB-INF/sun-jaxws.xml" afterPath="$PROJECT_DIR$/wsproxy/src/main/webapp/WEB-INF/sun-jaxws.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsmock/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/wsmock/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsproxy/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/wsproxy/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsmock/wsmock.iml" afterPath="$PROJECT_DIR$/wsmock/wsmock.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wsmock_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wsmock_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsproxy/wsproxy.iml" afterPath="$PROJECT_DIR$/wsproxy/wsproxy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wsproxy_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wsproxy_war_exploded.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\devel\poc\.idea\libraries\Maven__com_sun_xml_bind_jaxb_impl_2_1_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_1_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.gitignore" />
     </list>
     <ignored path="poc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1750,12 +1691,12 @@
       <workItem from="1426760588245" duration="5390000" />
       <workItem from="1426766120904" duration="13652000" />
       <workItem from="1426852402372" duration="10223000" />
-      <workItem from="1426886483103" duration="2272000" />
+      <workItem from="1426886483103" duration="2320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41953000" />
+    <option name="totallyTimeSpent" value="42001000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1778,7 +1719,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
