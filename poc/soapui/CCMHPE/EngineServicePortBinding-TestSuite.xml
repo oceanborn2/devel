@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite name="EngineServicePortBinding TestSuite" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ComposeReturnStream" searchProperties="true" id="bde84daa-c848-40cb-a745-ec8d54cbe308"><con:description>This testcase configures the composition request so that a stream is returned directly within the HTTP response.</con:description><con:settings/><con:testStep type="request" name="ComposeStream"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>Compose</con:operation><con:request name="ComposeStream"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@follow-redirects">true</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/EngineService/EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
-   <soapenv:Header/>
+<con:testSuite name="EngineServicePortBinding TestSuite" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ComposeReturnStream" searchProperties="true" id="bde84daa-c848-40cb-a745-ec8d54cbe308"><con:description>This testcase configures the composition request so that a stream is returned directly within the HTTP response.</con:description><con:settings/><con:testStep type="request" name="ComposeStream"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>ews.client.Compose</con:operation><con:request name="ComposeStream"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@follow-redirects">true</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ews.client.EngineService/ews.client.EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
+   <soapenv:ews.client.Header/>
    <soapenv:Body>
-      <eng:Compose>
+      <eng:ews.client.Compose>
          <!--Optional:-->
          <EWSComposeRequest>
             <!--Optional:-->
@@ -26,10 +26,10 @@
             <!--pubFile>HelloWorld.pub</pubFile-->
             <pubFile>HelloWorld_DLF_Full_Encryption.pub</pubFile>
          </EWSComposeRequest>
-      </eng:Compose>
+      </eng:ews.client.Compose>
    </soapenv:Body>
 </soapenv:Envelope>
-]]></con:request><con:credentials><con:username/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:hpexstream-services/Engine:EngineWebService:ComposeRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="decodeMockedStream"><con:settings/><con:config><script>// mock the PDF stream as a base64 string 
+]]></con:request><con:credentials><con:username/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:hpexstream-services/Engine:ews.client.EngineWebService:ComposeRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="decodeMockedStream"><con:settings/><con:config><script>// mock the PDF stream as a base64 string
 def pdfStream = 'JVBERi0xLjUKMSAwIG9iago8PCAvQ3JlYXRvciAoSFAgRXhzdHJlYW0gVmVyc2lvbiA5LjAuMTA0IDY0LWJpdCAoREJDUykpCi9DcmVhdGlvbkRhdGUgKDIvNC8yMDE1IDE0OjUwOjQ4KQovQXV0aG9yIChSZWdpc3RlcmVkIHRvOiBTR1BSQkFOSykKL1RpdGxlIChIZWxsb1dvcmxkX0FwcCkKPj4KZW5kb2JqCiVQREYgRm9udCAoRjQwKQo2ICAgICAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHlwZTEKL0Jhc2VGb250IC9UaW1lcy1Cb2xkCj4+CmVuZG9iagolUERGIEZvbnQgKEY5MCkKNyAgICAgMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9CYXNlRm9udCAvVGltZXMtUm9tYW4KPj4KZW5kb2JqCjEwIDAgb2JqCjw8L0xlbmd0aCA0NDgvRmlsdGVyWy9BU0NJSTg1RGVjb2RlL0ZsYXRlRGVjb2RlXT4+c3RyZWFtCkdhdCR1YkErbWomSC5rc1dcaGlRN3BdRSNYaWokdV01YVQ/PXRKJ08oIyZZOFBNRV5jXE9gQSpgUF1ANjNBWDhJQ0otZSZyME9sO29xKj8pcWlQUHA7PVtPPSdkYmo7NmUrN0ljODNsdS8jXUleW1Y9SShIZ1QqcTRmQFMvQk8oZVxRNzpwX3FlJT4mL0soXDg9O20vNi5kclErXC86cGIiQTYkODguSSwjV3RDZSJALGwiMF51R14mTFJqQSI1cG1aRWpaNDFaMD9FRjtTVGleWVAhK2VXSypMTTkzJmFbcFVKRUxHQCcoMT1tSVkiaGYtIVk7OyYzN1lCMHFjLkFHKDoqZyJYNVwxXmAvVyhtQCxHMj1CWjVTYyJpQSVEJmYzXXM7T2kvV2F1Lik/aEg/PV8iYFpBOSE1Llh0NDgqYUBdbUEnTzBDZT0yP1coMzlyLTw9KG1UcS1hMmolLFA2OkRBOUY+J0woXzFXT108TVg3ZENgcSR1RUQ6R0VrblYqb1gqYm5gZ1RUais/aChKX00oOT4yX2IjKlZAJjVuVWREJy1iPmpZWUAqK3RfP0VQalkoKWRmMW05Y01+PgoKZW5kc3RyZWFtCmVuZG9iagoxMSAwIG9iago8PC9UeXBlL1BhZ2UvUGFyZW50IDEyIDAgUi9Db250ZW50cyAxMCAwIFIvUmVzb3VyY2VzIDUgMCBSPj4KZW5kb2JqCjEyIDAgb2JqCjw8L1R5cGUvUGFnZXMvQ291bnQgMS9LaWRzWzExIDAgUl0vTWVkaWFCb3hbMCAwIDYxMiA3OTJdL1Jlc291cmNlcyA1IDAgUj4+CmVuZG9iago1IDAgb2JqCjw8L1Byb2NTZXRbL1BERi9JbWFnZUIvSW1hZ2VDL1RleHRdL0ZvbnQ8PC9GNDAgNiAwIFIgCi9GOTAgNyAwIFIgPj4KPj4KZW5kb2JqCjggMCBvYmoKPDwvVGl0bGUgKP7/ADEAOgAgKS9EZXN0WzExIDAgUi9YWVogOTk5IDk5OSAwXS9QYXJlbnQgMyAwIFIvRmlyc3QgOSAwIFIvTGFzdCA5IDAgUi9Db3VudCAtMT4+CgplbmRvYmoKOSAwIG9iago8PC9UaXRsZSAo/v8ASABlAGwAbABvAFcAbwByAGwAZABfAEQAbwBjKS9EZXN0WzExIDAgUi9YWVogOTk5IDk5OSAwXS9QYXJlbnQgOCAwIFI+PgoKZW5kb2JqCjMgMCBvYmoKPDwgL0NvdW50IDEgL0ZpcnN0IDggMCBSIC9MYXN0IDggMCBSID4+CmVuZG9iagoyIDAgb2JqCjw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAxMiAwIFIvT3V0bGluZXMgMyAwIFIvUGFnZU1vZGUvVXNlT3V0bGluZXM+PgplbmRvYmoKeHJlZgowIDEzCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDAwOSAwMDAwMCBuIAowMDAwMDAxNDA5IDAwMDAwIG4gCjAwMDAwMDEzNTQgMDAwMDAgbiAKMDAwMDAwMDAwMCAwMDAwMCBmIAowMDAwMDAxMDU4IDAwMDAwIG4gCjAwMDAwMDAxOTEgMDAwMDAgbiAKMDAwMDAwMDI4MiAwMDAwMCBuIAowMDAwMDAxMTQ0IDAwMDAwIG4gCjAwMDAwMDEyNTQgMDAwMDAgbiAKMDAwMDAwMDM1OCAwMDAwMCBuIAowMDAwMDAwODkwIDAwMDAwIG4gCjAwMDAwMDA5NjcgMDAwMDAgbiAKdHJhaWxlcjw8L1NpemUgMTMvSW5mbyAxIDAgUi9Sb290IDIgMCBSCj4+CnN0YXJ0eHJlZgoxNDkxCiUlRU9GCg=='
 
 // mock the engine message
@@ -91,10 +91,10 @@ commandLines.each { commandLine ->
 	log.info(getStringAsArray(base64toString(commandLine)))
 }
 
-'COMPLETED OK'</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ComposeReturnURL" searchProperties="true" id="aa7b9e53-3441-4be5-9a73-c3a85c805108"><con:description>This testcase configures the composition request so that an URL is returned to the caller which must then do a GET operation in order to retrieve the document. </con:description><con:settings/><con:testStep type="request" name="ComposeURL"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>Compose</con:operation><con:request name="ComposeURL"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@follow-redirects">true</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/EngineService/EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
-   <soapenv:Header/>
+'COMPLETED OK'</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ComposeReturnURL" searchProperties="true" id="aa7b9e53-3441-4be5-9a73-c3a85c805108"><con:description>This testcase configures the composition request so that an URL is returned to the caller which must then do a GET operation in order to retrieve the document. </con:description><con:settings/><con:testStep type="request" name="ComposeURL"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>ews.client.Compose</con:operation><con:request name="ComposeURL"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@follow-redirects">true</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ews.client.EngineService/ews.client.EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
+   <soapenv:ews.client.Header/>
    <soapenv:Body>
-      <eng:Compose>
+      <eng:ews.client.Compose>
          <!--Optional:-->
          <EWSComposeRequest>
             <!--Optional:-->
@@ -126,10 +126,10 @@ commandLines.each { commandLine ->
             <!--Optional:-->
             <pubFile>HelloWorld.pub</pubFile>
          </EWSComposeRequest>
-      </eng:Compose>
+      </eng:ews.client.Compose>
    </soapenv:Body>
 </soapenv:Envelope>
-]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:hpexstream-services/Engine:EngineWebService:ComposeRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="decodeRealURL"><con:settings/><con:config><script><![CDATA[def base64toString (String s) {
+]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:hpexstream-services/Engine:ews.client.EngineWebService:ComposeRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="decodeRealURL"><con:settings/><con:config><script><![CDATA[def base64toString (String s) {
 	if (s.size()==0 || s.trim().size() == 0) { '' } 
 	byte[] decBytes = s.decodeBase64()
 	new String(decBytes)
@@ -168,10 +168,10 @@ responseLines.each { resp ->
 }
 log.info("> ____________ RESPONSE END __________________")
 
-'COMPLETED OK']]></script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InteractiveScenarioDirectStream" searchProperties="true"><con:settings/><con:testStep type="request" name="Requete_DLF_DS"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>Compose</con:operation><con:request name="Requete_DLF_DS"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081/EngineService/EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
-   <soapenv:Header/>
+'COMPLETED OK']]></script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InteractiveScenarioDirectStream" searchProperties="true"><con:settings/><con:testStep type="request" name="Requete_DLF_DS"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>ews.client.Compose</con:operation><con:request name="Requete_DLF_DS"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081/ews.client.EngineService/ews.client.EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
+   <soapenv:ews.client.Header/>
    <soapenv:Body>
-      <eng:Compose>
+      <eng:ews.client.Compose>
          <!--Optional:-->
          <EWSComposeRequest>
             <!--Optional:-->
@@ -194,7 +194,7 @@ log.info("> ____________ RESPONSE END __________________")
             <!--Optional:-->
             <pubFile>HelloWorld_DLF_Full_Encryption.pub</pubFile>
          </EWSComposeRequest>
-      </eng:Compose>
+      </eng:ews.client.Compose>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="DirectStreamScenario"><con:settings/><con:config><script>// 1st step: Run the SOAP request against the EWS web service and retrieve the base64 encoded response
 // Either continue or stop based on error status
@@ -293,10 +293,10 @@ def runLiveEditor(cmdLine) {
 	def command = "${LEPath} ${cmdLine}"      // Create the String
 	def proc = command.execute()    // Call *execute* on the string
 	proc.waitFor()                  // Wait for the command to finish
-}</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InteractiveScenarioURL" searchProperties="true"><con:settings/><con:testStep type="request" name="Requete_DLF_URL"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>Compose</con:operation><con:request name="Requete_DLF_URL"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081/EngineService/EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
-   <soapenv:Header/>
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InteractiveScenarioURL" searchProperties="true"><con:settings/><con:testStep type="request" name="Requete_DLF_URL"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>ews.client.Compose</con:operation><con:request name="Requete_DLF_URL"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081/ews.client.EngineService/ews.client.EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
+   <soapenv:ews.client.Header/>
    <soapenv:Body>
-      <eng:Compose>
+      <eng:ews.client.Compose>
          <!--Optional:-->
          <EWSComposeRequest>
             <!--Optional:-->
@@ -327,7 +327,7 @@ def runLiveEditor(cmdLine) {
             <!--Optional:-->
             <pubFile>HelloWorld_DLF_Full_Encryption.pub</pubFile>
          </EWSComposeRequest>
-      </eng:Compose>
+      </eng:ews.client.Compose>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="URLScenario"><con:settings/><con:config><script>// 1st step: Run the SOAP request against the EWS web service and retrieve the base64 encoded response
 // Either continue or stop based on error status
@@ -436,10 +436,10 @@ def runLiveEditorWithinIE(cmdLine) {
 }
 
 String HOMEDIR = "D:/X118372/CCM/poc/CCMHPE"
-runLiveEditorWithinIE("${HOMEDIR}/prefilled.dlf")</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SOAPInject" searchProperties="true" disabled="true"><con:settings/><con:testStep type="request" name="Requete_PDF" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>Compose</con:operation><con:request name="Requete_PDF"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/EngineService/EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
-   <soapenv:Header/>
+runLiveEditorWithinIE("${HOMEDIR}/prefilled.dlf")</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SOAPInject" searchProperties="true" disabled="true"><con:settings/><con:testStep type="request" name="Requete_PDF" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>ews.client.Compose</con:operation><con:request name="Requete_PDF"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/ews.client.EngineService/ews.client.EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
+   <soapenv:ews.client.Header/>
    <soapenv:Body>
-      <eng:Compose>
+      <eng:ews.client.Compose>
          <!--Optional:-->
          <EWSComposeRequest>
             <!--Optional:-->
@@ -462,7 +462,7 @@ runLiveEditorWithinIE("${HOMEDIR}/prefilled.dlf")</script></con:config></con:tes
             <!--Optional:-->
             <pubFile>HelloWorld_PDF.pub</pubFile>
          </EWSComposeRequest>
-      </eng:Compose>
+      </eng:ews.client.Compose>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="RunDLF" disabled="true"><con:settings/><con:config><script><![CDATA[// 1st step: Run the SOAP request against the EWS web service and retrieve the base64 encoded response
 // Either continue or stop based on error status
@@ -480,9 +480,9 @@ def step1ReadDLFAsSOAP() {
 	}
 	
 """<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
-   <soapenv:Header/>
+   <soapenv:ews.client.Header/>
    <soapenv:Body>
-      <eng:Compose>
+      <eng:ews.client.Compose>
          <!--Optional:-->
          <EWSComposeRequest>
             <!--Optional:-->
@@ -505,7 +505,7 @@ def step1ReadDLFAsSOAP() {
             <!--Optional:-->
             <pubFile>HelloWorld_Full_Encryption_DLF.pub</pubFile>
          </EWSComposeRequest>
-      </eng:Compose>
+      </eng:ews.client.Compose>
    </soapenv:Body>
 </soapenv:Envelope>"""
 }
@@ -616,13 +616,13 @@ def runLiveEditor(cmdLine) {
 	def command = "${LEPath} ${cmdLine}"      // Create the String
 	def proc = command.execute()    // Call *execute* on the string
 	proc.waitFor()                  // Wait for the command to finish
-}]]></script></con:config></con:testStep><con:testStep type="request" name="Requete_DLF" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>Compose</con:operation><con:request name="Requete_DLF"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://FR05168618D:8088/mockEngineServicePortBinding</con:endpoint><con:request/><con:assertion type="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SecureProxy" searchProperties="true"><con:settings/><con:testStep type="groovy" name="ProxyService"><con:settings/><con:config><script>import groovy.net.soap.SoapServer
+}]]></script></con:config></con:testStep><con:testStep type="request" name="Requete_DLF" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>ews.client.Compose</con:operation><con:request name="Requete_DLF"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://FR05168618D:8088/mockEngineServicePortBinding</con:endpoint><con:request/><con:assertion type="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SecureProxy" searchProperties="true"><con:settings/><con:testStep type="groovy" name="ProxyService"><con:settings/><con:config><script>import groovy.net.soap.SoapServer
 import groovy.net.soap.SoapClient
 import java.security.SecureRandom
  
 class EWSProxyService {
 
-	final PROXY_URL = 'http://localhost:8080/EngineService/EngineService?wsdl'
+	final PROXY_URL = 'http://localhost:8080/ews.client.EngineService/ews.client.EngineService?wsdl'
 	final SecureRandom secRand = new SecureRandom()
 	
 	def EWSProxyService() {

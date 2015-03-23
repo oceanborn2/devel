@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1 (UNKNOWN_BRANCH-false; 2015-01-15T16:53:43+0100) JAXWS-RI/2.2.10 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown.--><xs:schema version="1.0" targetNamespace="urn:hpexstream-services/Engine" xmlns:tns="urn:hpexstream-services/Engine" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="Compose" type="tns:Compose"/>
-  <xs:element name="ComposeResponse" type="tns:ComposeResponse"/>
-  <xs:element name="EngineServiceException" type="tns:EngineServiceException"/>
-  <xs:complexType name="Compose">
+  <xs:element name="ews.client.Compose" type="tns:ews.client.Compose"/>
+  <xs:element name="ews.client.ComposeResponse" type="tns:ews.client.ComposeResponse"/>
+  <xs:element name="ews.client.EngineServiceException" type="tns:ews.client.EngineServiceException"/>
+  <xs:complexType name="ews.client.Compose">
     <xs:sequence>
       <xs:element name="EWSComposeRequest" type="tns:ewsComposeRequest" minOccurs="0"/>
     </xs:sequence>
@@ -44,7 +44,7 @@
       <xs:element name="pubFile" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="ComposeResponse">
+  <xs:complexType name="ews.client.ComposeResponse">
     <xs:sequence>
       <xs:element name="return" type="tns:ewsComposeResponse" minOccurs="0"/>
     </xs:sequence>
@@ -78,7 +78,7 @@
       <xs:element name="version" type="xs:int"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="EngineServiceException">
+  <xs:complexType name="ews.client.EngineServiceException">
     <xs:sequence>
       <xs:element name="faultInfo" type="xs:string" minOccurs="0"/>
       <xs:element name="message" type="xs:string" minOccurs="0"/>

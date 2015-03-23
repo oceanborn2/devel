@@ -1,3 +1,4 @@
+package ews.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -5,12 +6,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour EngineServiceException complex type.
+ * <p>Classe Java pour ews.client.EngineServiceException complex type.
  * 
  * <p>Le fragment de sch�ma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="EngineServiceException">
+ * &lt;complexType name="ews.client.EngineServiceException">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>

@@ -1,4 +1,4 @@
-
+package ews.client;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,7 +77,7 @@ public class EwsComposeRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link DriverFile }
+     *     {@link ews.client.DriverFile }
      *     
      */
     public void setDriver(DriverFile value) {

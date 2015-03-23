@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
-   <soapenv:Header/>
+   <soapenv:ews.client.Header/>
    <soapenv:Body>
-      <eng:Compose>
+      <eng:ews.client.Compose>
          <!--Optional:-->
          <EWSComposeRequest>
             <!--Optional:-->
@@ -25,6 +25,6 @@
             <!--Optional:-->
             <pubFile>HelloWorld.pub</pubFile>
          </EWSComposeRequest>
-      </eng:Compose>
+      </eng:ews.client.Compose>
    </soapenv:Body>
 </soapenv:Envelope>

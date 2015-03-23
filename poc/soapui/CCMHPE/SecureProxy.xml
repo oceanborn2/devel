@@ -5,7 +5,7 @@ import java.security.SecureRandom
  
 class EWSProxyService {
 
-	final PROXY_URL = 'http://localhost:8080/EngineService/EngineService?wsdl'
+	final PROXY_URL = 'http://localhost:8080/ews.client.EngineService/ews.client.EngineService?wsdl'
 	final SecureRandom secRand = new SecureRandom()
 	
 	def EWSProxyService() {

@@ -1,3 +1,5 @@
+package ews.client;
+
 import javax.xml.ws.WebFault;
 
 
@@ -7,7 +9,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "EngineServiceException", targetNamespace = "urn:hpexstream-services/Engine")
+@WebFault(name = "ews.client.EngineServiceException", targetNamespace = "urn:hpexstream-services/Engine")
 public class EngineServiceException_Exception
     extends Exception
 {
@@ -42,7 +44,7 @@ public class EngineServiceException_Exception
     /**
      * 
      * @return
-     *     returns fault bean: wsproxy.EngineServiceException
+     *     returns fault bean: wsproxy.ews.client.EngineServiceException
      */
     public EngineServiceException getFaultInfo() {
         return faultInfo;

@@ -1,3 +1,6 @@
+package ews.client;
+
+import ews.client.EngineOutput;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,7 +84,7 @@ public class EwsComposeResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link EngineOutput }
+     * {@link ews.client.EngineOutput }
      * 
      * 
      */

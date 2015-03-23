@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Header>
+<ews.client.Header>
    <Version>101</Version>
    <PDL>19</PDL>
    <OutputLength>20988</OutputLength>
@@ -9,4 +9,4 @@
    <PageCount>1</PageCount>
    <ReturnCode>4</ReturnCode>
    <DDAOutputFile>0</DDAOutputFile>
-</Header>
+</ews.client.Header>

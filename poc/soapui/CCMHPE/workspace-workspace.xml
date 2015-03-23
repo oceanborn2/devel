@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="workspace" soapui-version="5.0.0" projectRoot="${workspaceDir}" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="HPExStream EngineService">HPExStream-EngineService-soapui-project.xml</con:project>
+  <con:project name="HPExStream ews.client.EngineService">HPExStream-ews.client.EngineService-soapui-project.xml</con:project>
 </con:soapui-workspace>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InteractiveScenarioURL" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testStep type="request" name="Requete_DLF_URL"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>Compose</con:operation><con:request name="Requete_DLF_URL"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081/EngineService/EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
-   <soapenv:Header/>
+<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InteractiveScenarioURL" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testStep type="request" name="Requete_DLF_URL"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EngineServicePortBinding</con:interface><con:operation>ews.client.Compose</con:operation><con:request name="Requete_DLF_URL"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081/ews.client.EngineService/ews.client.EngineService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="urn:hpexstream-services/Engine">
+   <soapenv:ews.client.Header/>
    <soapenv:Body>
-      <eng:Compose>
+      <eng:ews.client.Compose>
          <!--Optional:-->
          <EWSComposeRequest>
             <!--Optional:-->
@@ -33,7 +33,7 @@
             <!--Optional:-->
             <pubFile>HelloWorld_DLF_Full_Encryption.pub</pubFile>
          </EWSComposeRequest>
-      </eng:Compose>
+      </eng:ews.client.Compose>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="URLScenario"><con:settings/><con:config><script>// 1st step: Run the SOAP request against the EWS web service and retrieve the base64 encoded response
 // Either continue or stop based on error status

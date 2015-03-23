@@ -1,3 +1,5 @@
+package ews.client;
+
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
@@ -8,7 +10,7 @@ import javax.xml.namespace.QName;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the wsproxy package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ews.client.ObjectFactory allows you to programatically
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -21,12 +23,12 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Compose_QNAME = new QName("urn:hpexstream-services/Engine", "Compose");
-    private final static QName _ComposeResponse_QNAME = new QName("urn:hpexstream-services/Engine", "ComposeResponse");
-    private final static QName _EngineServiceException_QNAME = new QName("urn:hpexstream-services/Engine", "EngineServiceException");
+    private final static QName _Compose_QNAME = new QName("urn:hpexstream-services/Engine", "ews.client.Compose");
+    private final static QName _ComposeResponse_QNAME = new QName("urn:hpexstream-services/Engine", "ews.client.ComposeResponse");
+    private final static QName _EngineServiceException_QNAME = new QName("urn:hpexstream-services/Engine", "ews.client.EngineServiceException");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: wsproxy
+     * Create a new ews.client.ObjectFactory that can be used to create new instances of schema derived classes for package: wsproxy
      * 
      */
     public ObjectFactory() {
@@ -65,7 +67,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DriverFile }
+     * Create an instance of {@link ews.client.DriverFile }
      * 
      */
     public DriverFile createDriverFile() {
@@ -124,7 +126,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link Compose }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "urn:hpexstream-services/Engine", name = "Compose")
+    @XmlElementDecl(namespace = "urn:hpexstream-services/Engine", name = "ews.client.Compose")
     public JAXBElement<Compose> createCompose(Compose value) {
         return new JAXBElement<Compose>(_Compose_QNAME, Compose.class, null, value);
     }
@@ -133,7 +135,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ComposeResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "urn:hpexstream-services/Engine", name = "ComposeResponse")
+    @XmlElementDecl(namespace = "urn:hpexstream-services/Engine", name = "ews.client.ComposeResponse")
     public JAXBElement<ComposeResponse> createComposeResponse(ComposeResponse value) {
         return new JAXBElement<ComposeResponse>(_ComposeResponse_QNAME, ComposeResponse.class, null, value);
     }
@@ -142,7 +144,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link EngineServiceException }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "urn:hpexstream-services/Engine", name = "EngineServiceException")
+    @XmlElementDecl(namespace = "urn:hpexstream-services/Engine", name = "ews.client.EngineServiceException")
     public JAXBElement<EngineServiceException> createEngineServiceException(EngineServiceException value) {
         return new JAXBElement<EngineServiceException>(_EngineServiceException_QNAME, EngineServiceException.class, null, value);
     }

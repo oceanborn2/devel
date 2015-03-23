@@ -1,3 +1,4 @@
+package ews.client;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -15,14 +16,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "EngineService", targetNamespace = "urn:hpexstream-services/Engine", wsdlLocation = "file:/D:/GitHub/devel/poc/wsproxy/src/main/java/wsproxy/ews.wsdl")
+@WebServiceClient(name = "ews.client.EngineService", targetNamespace = "urn:hpexstream-services/Engine", wsdlLocation = "file:/D:/GitHub/devel/poc/wsproxy/src/main/java/wsproxy/ews.wsdl")
 public class EngineService
     extends Service
 {
 
     private final static URL ENGINESERVICE_WSDL_LOCATION;
     private final static WebServiceException ENGINESERVICE_EXCEPTION;
-    private final static QName ENGINESERVICE_QNAME = new QName("urn:hpexstream-services/Engine", "EngineService");
+    private final static QName ENGINESERVICE_QNAME = new QName("urn:hpexstream-services/Engine", "ews.client.EngineService");
 
     static {
         URL url = null;
@@ -63,7 +64,7 @@ public class EngineService
     /**
      * 
      * @return
-     *     returns EngineWebService
+     *     returns ews.client.EngineWebService
      */
     @WebEndpoint(name = "EngineServicePort")
     public EngineWebService getEngineServicePort() {
@@ -75,7 +76,7 @@ public class EngineService
      * @param features
      *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
      * @return
-     *     returns EngineWebService
+     *     returns ews.client.EngineWebService
      */
     @WebEndpoint(name = "EngineServicePort")
     public EngineWebService getEngineServicePort(WebServiceFeature... features) {
