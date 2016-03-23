@@ -1,0 +1,106 @@
+<!doctype article public "-//OASIS//DTD DocBook V3.1//EN">
+
+<!-- DocBook file was created by LyX 1.1
+  See http://www.lyx.org/ for more information -->
+<article>
+ <artheader>
+  <title>
+  Actions
+ </title>
+ <date>
+  Date
+ </date>
+ <abstract>
+ <para>
+  This document is a list of the Project Architect's engine defined actions
+ </para>
+ </abstract>
+ </artheader>
+ <sect1>
+  <title>
+  Introduction
+ </title>
+ <para>
+  The Project Architect's engine is implemented as a set of actions and entities. Entities are the object the engine manipulate. Actions are what the engine does with these entities. The following c++ classes implement the basic interface:
+
+ </para>
+ <programlisting>
+#include "framework.h" 
+
+class Parameters : public CoreObject
+{
+};
+
+class EngineEntity : public CoreObject
+{
+   private:
+    integervalue kind;     // kind of entity (parameter table, raw_data ...)
+    integervalue datatype; // type of entity (Project, Task, ...)
+    CoreObject * data;     // data for the entity
+};
+
+class EngineAction
+{
+  private:
+    integervalue actioncode; // action code (for routing and identification)
+    Service *    service;    // service to which the action code is targetted
+    Parameters * params;     // parameter(s) to pass to the service for execution
+                             // of the action
+        
+};
+
+ </programlisting>
+ </sect1>
+ <sect1>
+  <title>
+  The action concept
+ </title>
+  <sect2>
+   <title>
+   Standard actions
+  </title>
+  <para>
+   Standard actions are basic actions. These actions can be applied to almost any entity the engine may comprehend. Such actions are :
+  </para>
+  <itemizedlist>
+   <listitem>
+   <para>
+   Database oriented actions :
+   </para>
+  </listitem>
+  </itemizedlist>
+  <para>
+   <INFORMALTABLE>    <TGROUP COLS='2' COLSEP='1' ROWSEP='1'>     <COLSPEC ALIGN='left' COLNAME='col1' COLNUM='1' COLSEP='1'>     <COLSPEC ALIGN='left' COLNAME='col2' COLNUM='2' COLSEP='1'>     <TBODY>      <ROW>       <ENTRY ALIGN='left'>        Action code       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        Action description       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        DBMS_READ       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        reads one or more row(s) from a table       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        DBMS_APPEND       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        appends one or more row(s) to a table       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        DBMS_DELETE       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        delete one or more row(s) from a table       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        DBMS_UPDATE       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        updates one or more row(s) in the table       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        DBMS_SORT       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        sorts rows from a table or resultset       </ENTRY>      </ROW>     </TBODY>    </TGROUP>   </INFORMALTABLE>
+  </para>
+  <itemizedlist>
+   <listitem>
+   <para>
+   algorithmic oriented actions:
+   </para>
+   <itemizedlist>
+    <listitem>
+    <para>
+    data_sort : In memory data sorting 
+    </para>
+   </listitem>
+   </itemizedlist>
+  </listitem>
+   <listitem>
+   <para>
+   gui oriented action (these actions are coming from the gui application and are routed to the engine for execution) :
+   </para>
+  </listitem>
+  </itemizedlist>
+  <para>
+   <INFORMALTABLE>    <TGROUP COLS='2' COLSEP='1' ROWSEP='1'>     <COLSPEC ALIGN='left' COLNAME='col1' COLNUM='1' COLSEP='1'>     <COLSPEC ALIGN='left' COLNAME='col2' COLNUM='2' COLSEP='1'>     <TBODY>      <ROW>       <ENTRY ALIGN='left'>        Action code       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        Action description       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        GUI_VIEW       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        Loads and displays a record. The user cannot modify the displayed data.       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        GUI_FULLEDIT       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        Edits an existing record. Only a single dialogue can edit a record at a time since this dialogue is responsible for the whole entity       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        GUI_PARTIALEDIT       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle'>        Edits an existing record. Multiple dialogs can edit this entity provided dialogs do not overlap (not enforced) in terms of attributes responsibility. In particular, only a single instance of the entity will be mapped onto those dialogs.       </ENTRY>      </ROW>      <ROW>       <ENTRY ALIGN='left' VALIGN='middle'>        GUI_COMMIT       </ENTRY>       <ENTRY ALIGN='left' VALIGN='middle' NAMEST='col2' NAMEEND='col2'>        Commits an action (ie. sends the update to the database).       </ENTRY>      </ROW>     </TBODY>    </TGROUP>   </INFORMALTABLE>
+  </para>
+  </sect2>
+  <sect2>
+   <title>
+   Domain and concept specific actions
+  </title>
+  </sect2>
+ </sect1>
+
+
+</article>

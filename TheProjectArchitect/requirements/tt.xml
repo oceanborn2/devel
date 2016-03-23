@@ -1,0 +1,23 @@
+<!--
+
+   $Id: tt.xml,v 1.1 2002/05/09 16:06:58 pascal Exp $
+   $Log: tt.xml,v $
+   Revision 1.1  2002/05/09 16:06:58  pascal
+   requirements list in XML format. The build script contains a target for generating PDF and PS documentation
+
+   $Author: pascal $
+
+   This file belongs to the 'Project Architect' and is released under the GNU General Public License (GPL)
+
+   Copyright (C) Pascal Munerot
+
+-->
+
+<requirement name="Template Toolkit">
+  <license-type>GPL</license-type>
+  <description>Perl modules for automating code generation</description>
+  <download>http://www.template-toolkit.org</download>
+  <min-version>2.0.6</min-version>
+  <build-depend>Used by the Project Architect code generation subsystem</build-depend>
+  <application-depend>None</application-depend>
+</requirement>

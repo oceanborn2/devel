@@ -1,0 +1,27 @@
+<!--
+
+   $Id: perl.xml,v 1.2 2002/05/12 19:51:09 pascal Exp $
+   $Log: perl.xml,v $
+   Revision 1.2  2002/05/12 19:51:09  pascal
+   requirements list automated documentation (fop): stable version
+
+   Revision 1.1  2002/05/09 16:06:58  pascal
+   requirements list in XML format. The build script contains a target for generating PDF and PS documentation
+
+   $Author: pascal $
+
+   This file belongs to the 'Project Architect' and is released under the GNU General Public License (GPL)
+
+   Copyright (C) Pascal Munerot
+
+-->
+
+<requirement name="Perl">
+  <license-type>GPL</license-type>
+  <description>Perl scripting language</description>
+  <download>http://www.perl.org</download>
+  <min-version>5.6.1</min-version>
+  <build-depend>Used by the Project Architect code generation subsystem</build-depend>
+  <application-depend>None</application-depend>
+  <configure-command/>
+</requirement>

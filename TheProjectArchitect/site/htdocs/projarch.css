@@ -1,0 +1,44 @@
+H1 {
+	font-family: Arial;
+	font-weight: bold;
+        color: yellow;
+}
+
+BODY,NORMAL, H1, H2, H3, H4, H5, H6, CODE {
+	background:#103080;
+}
+
+H2 {
+        color:pink;
+}
+
+
+BODY, NORMAL { color : white; }
+
+
+CODE {
+	color:yellow;
+	font:courier;
+}
+
+.custom {
+	color:black;
+	font:arial;
+}
+
+a:link
+{
+	color: rgb(51,153,255); 
+}
+a:visited
+{
+	color: rgb(51,102,204); 
+} 
+a:active 
+{
+	color: rgb(255,153,0);
+}
+
+
+
+

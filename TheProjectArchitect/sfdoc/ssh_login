@@ -1,0 +1,53 @@
+                         pascal@amanda:~/TheProjectArchitect/site > ssh -l munerot projectarchit.sourcefo
+rge.net
+The authenticity of host 'projectarchit.sourceforge.net (216.136.171.201)' can't
+ be established.
+DSA key fingerprint is 4c:68:03:d4:5c:58:a6:1d:9d:17:13:24:14:48:ba:99.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'projectarchit.sourceforge.net,216.136.171.201' (DSA)
+ to the list of known hosts.
+munerot@projectarchit.sourceforge.net's password:
+Creating home directory '/home/users/m/mu/munerot'.
+Linux usw-pr-shell2 2.2.19-shell1 #1 SMP Sat Apr 28 20:42:44 PDT 2001 i686 unkno
+wn
+
+*****************************************************************************
+
+Mon Jun 11 11:33:03 PDT 2001
+
+        As part of the new usage restrictions which have been placed on the
+        SourceForge project shell servers, compilers and other development
+        tools are no longer provided.  Cron services have been restored; their
+        usage should be restricted to cron jobs which are used to manipulate
+        and generate web content for your project.  As it is necessary to
+        enforce the usage restrictions on the project shell servers, posting
+        of development tools for use on the project shell servers will be
+        considered grounds for account removal; those requiring development
+        tools should make use of the SourceForge compile farm.  Processes left
+        running on the project shell servers will be subject to monitoring and
+        termination; operation of IRC bots and other daemon processes is no
+        longer permitted.
+
+
+Mon Aug 20 12:59:27 PDT 2001
+
+        The SourceForge.net team has completed the transition of user and group
+        data to a new set of high-performance file servers.  This should ease
+        the performance and capacity burden previously placed on the project
+        shell servers and ensure that the project shell servers meet the
+        needs of the growing SourceForge.net user base.  In the event that
+        you should have questions or concerns regarding this matter, please
+        login to the SourceForge.net site and submit a support request.
+
+
+*****************************************************************************
+
+
+Disk quotas for user munerot (uid 59144):
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+pr-fs-users-m:/home/users/m
+                     24   10240   12888               6   10000   15000
+
+munerot@usw-pr-shell2:~$
+munerot@usw-pr-shell2:~$
+munerot@usw-pr-shell2:~$

@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.56)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Retargettable client applications</TITLE>
+<META NAME="description" CONTENT="Retargettable client applications">
+<META NAME="keywords" CONTENT="initial_study">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="initial_study.css">
+
+<LINK REL="next" HREF="node28.html">
+<LINK REL="previous" HREF="node26.html">
+<LINK REL="up" HREF="node26.html">
+<LINK REL="next" HREF="node28.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html473"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html467"
+  HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html461"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html469"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A> 
+<A NAME="tex2html471"
+  HREF="node33.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/local/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html474"
+  HREF="node28.html">Repository structure</A>
+<B> Up:</B> <A NAME="tex2html468"
+  HREF="node26.html">Architecture issues - Living</A>
+<B> Previous:</B> <A NAME="tex2html462"
+  HREF="node26.html">Architecture issues - Living</A>
+ &nbsp <B>  <A NAME="tex2html470"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html472"
+  HREF="node33.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION04011000000000000000">
+Retargettable client applications</A>
+</H2>
+
+<P>
+The Project Architect is a client-server (n-tier) application. Access
+to a project repository shall be allowed from different places and
+different setups. Basically, an ideal situation would be the following
+:
+
+<P>
+
+<UL>
+<LI>Client applications : 
+
+<P>
+
+<UL>
+<LI>A client middleware module will serve the purpose of converting and
+transporting the data from the client to the server. This middleware
+is included in the client but is also highly tied to the server. The
+reason for which this module is in between the client is that its
+role is mainly to convert data in the client space to data in a serialized
+form. The serialized data is then sent to the server, which executes
+the query and returns the result in a serialized form. The middleware
+will then deserialize the data back to something usable in the client
+address space. Something important to understand is that this middleware
+is not a process separate to the client. It is part of the client
+itself (and in particular lies in the same address space). 
+</LI>
+<LI>User interfaces : 
+
+<P>
+
+<UL>
+<LI>A native GUI application, in the standalone style but naturally distributed 
+</LI>
+<LI>A web interface (to allow use from a browser), with a Java front -
+end
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI>Server applications : 
+
+<P>
+
+<UL>
+<LI>Engine : In charge of routing everything to the sub-processes, these
+sub-processes being in charge of some specific details. Scalability,
+load-balancing and fail-over issues should also be considered. Server
+processes typically handle the hard work of organizing, storing, retrieving
+and processing the information system. It comprises an engine organized
+as a single process. 
+<BR>
+<BR>
+This process may be cloned in order to achieve load-balancing. The
+engine implements a full server side middleware (very similar to the
+client side middleware but the other way round). This module will
+(de)serialize data and convert it to fit the server process's address
+space. Therefore, the middleware is fully part of the server process.
+
+<BR>
+<BR>
+A server middleware module serving the purpose of deserializing the
+data. Like the client middleware, it is not a separate process. In
+the case of the server side, this means that it is part of the engine
+process. 
+</LI>
+</UL>
+</LI>
+</UL>
+<DIV ALIGN="CENTER"><!-- MATH
+ $\resizebox*{0.3\textwidth}{0.3\textheight}{\includegraphics{architecture_overview.eps}}$
+ -->
+ </DIV>
+<P>
+<DIV ALIGN="CENTER"></DIV>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html473"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html467"
+  HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html461"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html469"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A> 
+<A NAME="tex2html471"
+  HREF="node33.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/local/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html474"
+  HREF="node28.html">Repository structure</A>
+<B> Up:</B> <A NAME="tex2html468"
+  HREF="node26.html">Architecture issues - Living</A>
+<B> Previous:</B> <A NAME="tex2html462"
+  HREF="node26.html">Architecture issues - Living</A>
+ &nbsp <B>  <A NAME="tex2html470"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html472"
+  HREF="node33.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+pascal munerot
+2001-08-07
+</ADDRESS>
+</BODY>
+</HTML>

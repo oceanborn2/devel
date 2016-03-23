@@ -1,0 +1,297 @@
+#LyX 1.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 2.16
+\textclass book
+\language english
+\inputencoding latin1
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize a4paper
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+
+\layout Title
+
+The Project Architect 
+\layout Title
+
+Source code management
+\layout Standard
+
+This document tries to introduce the reader with the tools used to generate
+ source code (out of higher level specifications files).
+ It also covers source code version control management.
+ 
+\newline 
+
+\layout Standard
+\pagebreak_bottom 
+
+\begin_inset LatexCommand \tableofcontents{}
+
+\end_inset 
+
+
+\layout Chapter
+
+Introduction
+\layout Standard
+
+In order to keep track of changes to documents registered within the Project
+ Architect, strict version control is necessary.
+ 
+\layout Section
+
+Source code generation and code reuse
+\layout Subsection
+
+Use of C++ macros
+\layout Standard
+
+The use of C++ macros is one way to automate code generation.
+ It has the following advantages :
+\layout Itemize
+
+It can be parameterized in some ways, although this is very limited.
+\layout Itemize
+
+The C++ preprocessor is integrated with the compiler chain
+\layout Itemize
+
+Macros can be updated, updating the code using the macro in the process
+\layout Standard
+
+They also have drawbacks :
+\layout Itemize
+
+The code may get a bit obscure because macros are behaving like black boxes
+\layout Itemize
+
+There may be side effects that are not easy to spot
+\layout Itemize
+
+It is not easy to debug macros since the actual source code cannot be seen
+ during execution
+\layout Subsection
+
+Use of C++ templates
+\layout Standard
+
+C++ templates are notoriously unportable and can be difficult to use in
+ some situations.
+ They also increase the object code size.
+ On the other hand, when properly used, they can help simplify some code
+ (when the need is highly generic).
+\newline 
+
+\layout Standard
+\align left 
+The Project Architect is not likely to use templates very much.
+ Still, this is not a definitive opinion.
+ Obviously the portability issues will be determinant in deciding whether
+ or not to use template in this project.
+\layout Subsection
+
+Automatic code generation
+\layout Subsubsection
+
+Scripting
+\layout Standard
+
+In order to simplify development
+\begin_inset LatexCommand \index{development}
+
+\end_inset 
+
+, generate code using perl script
+\begin_inset LatexCommand \index{script}
+
+\end_inset 
+
+ or any other mean.
+ Make rules in the makefile for processing inputs to perl scripts.
+\newline 
+
+\layout Standard
+\align left 
+Scripts should be used to automate screen and gui coding.
+ Implement a lex/yacc syntax allowing to enter C++ code in the script input
+ files.
+ This way, by editing the input files only, it will be possible to iterate
+ several times over the same unit of code without overwriting the code over
+ and over again.
+\layout Standard
+
+\begin_float fig 
+\layout Standard
+
+GUI sample script (draft)
+\layout Standard
+
+@screen screen_name
+\layout Standard
+
+@menu menu_name
+\layout Standard
+
+@entry entry_name 'label'
+\layout Standard
+
+@separator
+\layout Standard
+
+@choice choiceid choicevalue choicevalue name 'label' 
+\layout Standard
+
+@choice choiceid choicevalue choicevalue name 'label' 
+\layout Standard
+
+@choice choiceid choicevalue choicevalue name 'label' 
+\layout Standard
+
+@event oninit
+\layout Standard
+
+// some code here
+\layout Standard
+
+@ // terminates the method
+\end_float 
+\begin_float fig 
+\layout Standard
+
+Server side sample script
+\layout Standard
+
+@class X
+\layout Standard
+
+@property A 
+\layout Standard
+
+@read 
+\layout Standard
+
+// some code
+\layout Standard
+
+@write
+\layout Standard
+
+// some other code 
+\layout Standard
+
+@
+\layout Standard
+
+@constructor (parameters as usual C++)
+\layout Standard
+
+@method B
+\layout Standard
+
+@assert // some assertion code
+\layout Standard
+
+// some code
+\layout Standard
+
+@ // terminates the method
+\end_float 
+\layout Standard
+
+Another way to ease development is to create basic components and data types
+ within the framework layer so as to avoid using anything external from
+ the framework layer.
+ Only the framework layer should depend on third party tools and libraries.
+\layout Subsubsection
+
+A component for automating data structures coding and dialog generation
+ 
+\layout Standard
+
+This component will be provided as a set of classes capable of the following
+ : 
+\layout Itemize
+
+They should be able to easily describe dialog type data structures (list
+ of attributes).
+ The developer will only give the name, data type of the property, (dis)allow
+ read and write, fetch additional code (pointer of method, scripts ???).
+\layout Itemize
+
+The business objects described within this system should be easy to display,
+ modify, save and restore.
+\layout Itemize
+
+The display should be as flexible as possible in order for example to map
+ the same data to differents views (listviews, treeviews, arrays, grids
+ ...).
+ (similar to the way forté agents are displayed in econsole)
+\layout Itemize
+
+They should automatically allocate the storage space as needed.
+ 
+\layout Itemize
+
+They should handle default values 
+\layout Itemize
+
+They should handle arrays of attributes
+\layout Itemize
+
+It should be possible to easily write validation code.
+\newline 
+
+\layout Standard
+
+This component will save a lot of time since it will adapt automatically
+ and with a lot of flexibility.
+ Only a few lines of code should be necessary to design a screen and again
+ this can be scripted as needed.\SpecialChar ~
+ 
+\layout Subsubsection
+
+Make large use of multi-values associations to perform powerful links 
+\layout Standard
+
+Use 1-n and n-n associations with an extra table to map concepts against
+ others.
+ 
+\layout Standard
+
+Example : To map security information against documents ...
+\layout Section
+
+Version control specifics under the Project Architect 
+\layout Standard
+
+Versioning is an important subject to the Project Architect because it will
+ be responsible for controling information in various areas:
+\layout Itemize
+
+Source code
+\layout Itemize
+
+Documentation
+\layout Standard
+
+
+\begin_inset LatexCommand \listoffigures{}
+
+\end_inset 
+
+
+\the_end

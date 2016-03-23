@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+	$Id: codegen.dtd,v 1.1 2001/12/05 19:57:52 pascal Exp $
+	$Log: codegen.dtd,v $
+	Revision 1.1  2001/12/05 19:57:52  pascal
+	*** empty log message ***
+
+
+-->
+
+<!ENTITY % boolean "(true|false)">
+
+<!ELEMENT entry>
+<!ATTLIST entry name (#PCDATA) #REQUIRED>
+<!ATTLIST entry type (#PCDATA) #REQUIRED>
+
+<!ELEMENT spec (entry)+>
+<!ATTLIST spec name (#PCDATA) #REQUIRED>
+<!ATTLIST spec type (#PCDATA) #REQUIRED>
+
+<!ELEMENT specfile (spec)+>
+

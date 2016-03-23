@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.56)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Repository structure </TITLE>
+<META NAME="description" CONTENT="Repository structure ">
+<META NAME="keywords" CONTENT="initial_study">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="initial_study.css">
+
+<LINK REL="previous" HREF="node27.html">
+<LINK REL="up" HREF="node26.html">
+<LINK REL="next" HREF="node29.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html485"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html479"
+  HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html475"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html481"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A> 
+<A NAME="tex2html483"
+  HREF="node33.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/local/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html486"
+  HREF="node29.html">Implementation model</A>
+<B> Up:</B> <A NAME="tex2html480"
+  HREF="node26.html">Architecture issues - Living</A>
+<B> Previous:</B> <A NAME="tex2html476"
+  HREF="node27.html">Retargettable client applications</A>
+ &nbsp <B>  <A NAME="tex2html482"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html484"
+  HREF="node33.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION04012000000000000000">
+Repository structure </A>
+</H2>
+
+<P>
+The repository shall be organized in order to be able to deal with
+requests from many places. This shall lead to the following structure:
+
+<P>
+
+<UL>
+<LI>The organisation repository : This is a repository shared by all the
+organisation and therefore all the users, wherever they are. This
+approach will not be implemented at first because of development priority.
+</LI>
+<LI>The project repository : This will store all information relevant
+to a project (we mean everything).
+</LI>
+</UL>
+It is not yet decided whether the repository shall be organised as
+a main directory or as a binary b-tree style binary file. They are
+big issues since both approaches have drawbacks and advantages :
+
+<P>
+
+<UL>
+<LI>Binary b-tree files
+
+<P>
+
+<UL>
+<LI>The information is stored in one place, so backups are facilitated.
+</LI>
+<LI>You can easily store any kind of information, ranging from small information
+items to big documents
+</LI>
+<LI>users cannot easily tinker with the content and may not break it
+</LI>
+<LI>Unfortunately, b-trees must be reorganized often to keep them away
+from corruption
+</LI>
+</UL>
+</LI>
+<LI>Directories
+
+<P>
+
+<UL>
+<LI>Information is stored in many places
+</LI>
+<LI>Unfortunately, directories cannot easily store small information items.
+This can be dealt with by using files for storing smaller items.
+</LI>
+</UL>
+</LI>
+<LI>Full database systems : 
+
+<P>
+
+<UL>
+<LI>A lot of power in terms of storage and queries. 
+</LI>
+<LI>Data visibility is good
+</LI>
+<LI>Still, DBMS are limited in their flexibility. New concepts cannot
+be easily added without sacrifing their power. Constantly changing
+data structures or data structures implemented by the user are not
+easily fitted in a database system. 
+</LI>
+<LI>It adds more administration constraints to the whole system (Installation
+as a server process, another dependency for the project using it).
+</LI>
+</UL>
+</LI>
+<LI>Necessary technical modules
+</LI>
+</UL>
+This part is an attempt to list out the modules necessary for the
+implementation of the project This tables contains several entries.
+One for the module description, another for the modules that may use
+it as a supplier of service. 
+
+<P>
+Those modules adopt an organisation based upon layers
+in order to achieve modularity, portability and reusability of code.
+<P>
+
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html485"
+  HREF="node29.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html479"
+  HREF="node26.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html475"
+  HREF="node27.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html481"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A> 
+<A NAME="tex2html483"
+  HREF="node33.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/local/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html486"
+  HREF="node29.html">Implementation model</A>
+<B> Up:</B> <A NAME="tex2html480"
+  HREF="node26.html">Architecture issues - Living</A>
+<B> Previous:</B> <A NAME="tex2html476"
+  HREF="node27.html">Retargettable client applications</A>
+ &nbsp <B>  <A NAME="tex2html482"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html484"
+  HREF="node33.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+pascal munerot
+2001-08-07
+</ADDRESS>
+</BODY>
+</HTML>

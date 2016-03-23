@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="wsmock:war">
-    <output-path>$PROJECT_DIR$/wsmock/target</output-path>
-    <root id="archive" name="wsmock.war">
-      <element id="artifact" artifact-name="wsmock:war exploded" />
-    </root>
-  </artifact>
-</component>

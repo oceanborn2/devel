@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="wsproxy:war">
-    <output-path>$PROJECT_DIR$/wsproxy/target</output-path>
-    <root id="archive" name="wsproxy.war">
-      <element id="artifact" artifact-name="wsproxy:war exploded" />
-    </root>
-  </artifact>
-</component>

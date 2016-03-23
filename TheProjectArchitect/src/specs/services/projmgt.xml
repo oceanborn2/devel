@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!--
+
+   $Id: projmgt.xml,v 1.2 2002/05/18 19:26:30 pascal Exp $
+ 
+   $Log: projmgt.xml,v $
+   Revision 1.2  2002/05/18 19:26:30  pascal
+   Naming convention change
+
+   Revision 1.1  2002/04/14 21:11:01  pascal
+   First attempt at generating a services layer (EJBs)
+
+ 
+   $Author: pascal $
+ 
+   This file belongs to the 'Project Architect' and is released under the GNU General Public License (GPL)
+  
+   Copyright (C) Pascal Munerot
+
+-->
+
+<specfile>
+ <spec name="ProjMgt" servicetype="facade" state="none">
+
+  <entry name="getProjectDefinition" comment="retrieves the project definition information">
+    <return-arg>Project</return-arg>
+    <arg name="projectid" type="string" nullable="no"/>
+  </entry>
+
+ </spec>
+</specfile>
+

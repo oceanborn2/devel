@@ -1,0 +1,41 @@
+        pascal@amanda:~/TheProjectArchitect/site > ls
+coolmetal_logo  glossy_blueback.png  index.html   maintitle.png  projarch.css   weblint.out
+glossy_64.png   glossy_small.png     index.html~  nohup.out      projarch.css~  weblint.out~
+pascal@amanda:~/TheProjectArchitect/site > scp --help
+usage: scp [-pqrvBC46] [-S ssh] [-P port] [-c cipher] [-i identity] [-o option] f1 f2
+   or: scp [options] f1 ... fn directory
+pascal@amanda:~/TheProjectArchitect/site > man scp
+Remise en forme de scp(1), attendez SVP...
+pascal@amanda:~/TheProjectArchitect/site > scp * munerot@projectarchit.sourceforge.net:/home/groups/ p/pr/projectarchit/htdocs
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+cp: Ne peut créer un fichier de type régulier `p/pr/projectarchit/htdocs'.: Aucun fichier ou répertoire de ce type
+p/pr/projectarchit/htdocs: Aucun fichier ou répertoire de ce type
+pascal@amanda:~/TheProjectArchitect/site > munerot@projectarchit.sourceforge.net's password: Permission denied, please try again.
+munerot@projectarchit.sourceforge.net's password: Permission denied, please try again.
+munerot@projectarchit.sourceforge.net's password: Password: Received disconnect from 216.136.171.201: 2: too many failed userauth_requests
+
+pascal@amanda:~/TheProjectArchitect/site > scp * munerot@projectarchit.sourceforge.net:/home/groups/p/pr/projectarchit/htdocs
+munerot@projectarchit.sourceforge.net's password:
+coolmetal_logo       100% |*******************************************************************************************| 38598       00:01
+glossy_64.png        100% |*******************************************************************************************| 29663       00:00
+glossy_blueback.png  100% |*******************************************************************************************| 31813       00:00
+glossy_small.png     100% |*******************************************************************************************|  9815       00:00
+index.html           100% |*******************************************************************************************|  1248       00:00
+index.html~          100% |*******************************************************************************************|  1019       00:00
+maintitle.png        100% |*******************************************************************************************| 22080       00:00
+nohup.out            100% |*******************************************************************************************|     0       00:00
+projarch.css         100% |*******************************************************************************************|   250       00:00
+projarch.css~        100% |*******************************************************************************************|   250       00:00
+weblint.out          100% |*******************************************************************************************|     0       00:00
+weblint.out~         100% |*******************************************************************************************|     0       00:00
+pascal@amanda:~/TheProjectArchitect/site >

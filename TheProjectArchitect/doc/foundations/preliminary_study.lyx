@@ -1,0 +1,534 @@
+#LyX 1.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 218
+\textclass book
+\language english
+\inputencoding latin1
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize a4paper
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 4
+\tocdepth 4
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+
+\layout Title
+
+The Project Architect : A software Project Management suite
+\layout Author
+
+Pascal Munerot
+\layout Standard
+\pagebreak_bottom 
+
+\begin_inset LatexCommand \tableofcontents{}
+
+\end_inset 
+
+
+\layout Section
+
+Introduction
+\layout Standard
+
+This document is designed to fulfill several goals :
+\layout Itemize
+
+Study the feasability of a software project management suite
+\layout Itemize
+
+Try to provide a first draft of the needs of a 
+\emph on 
+project
+\layout Itemize
+
+Describe the underlying software architecture
+\layout Standard
+
+Later on, this document will be split into others when the common discussion
+ threads become more obvious.
+ 
+\newline 
+
+\layout Standard
+\noindent 
+In this first part, we will shortly describe the 
+\emph on 
+desired features
+\emph default 
+ for this project and the differents ways they could be implemented.
+ 
+\layout Standard
+\align left 
+Eventually, this document should be a set of guidelines for participating
+ to the project.
+\layout Section
+
+Related documents
+\layout Standard
+
+As of today, this document is considered as both an introduction and a set
+ of 
+\emph on 
+entry point 
+\emph default 
+for other documents.
+ This is the first document to read if one wants to know more about this
+ project.
+\newline 
+
+\layout Standard
+\align left 
+Here is a list of other documents, each trying to describe a particular
+ domain for the project, or a particular issue.
+\layout Section
+
+Definition of concepts
+\layout Standard
+
+The goal for this project is to provide the tools necessary for project
+ managers, programmers, developpers, and to the people in charge of defining
+ features they want for their own project.\SpecialChar ~
+ In general, anyone involved in
+ a computer project is targeted by this project.
+\layout Subsection
+
+Past and present experience
+\layout Standard
+
+Leading a software/computer project is a very difficult task indeed.
+ It needs several differents skills.
+ That is because of the number of distinct but still tightly coupled properties
+ usually found in computer projects.
+\layout Itemize
+
+The needs and objectives for the project : To be an integrated set of tools,
+ an information system for the company (aka vendor) or to be sold to other
+ companies (aka users).
+ In all of theses points of view, a project has an economical function.
+\layout Itemize
+
+Staff personal objectives are not always well fitted with the company's
+ ones.
+ As a consequence, there is also a social dimension in a project.
+ The staff in charge of the project follows its own ambitions and interests.
+ This is a fact a project manager must take into account very seriously
+ if he does not want to lose control of the project and its achievements
+ :
+\begin_deeper 
+\layout Itemize
+
+Careers and personal ambitions, the job definition often raises fierce competiti
+on among the project group.
+\layout Itemize
+
+Communication and sharing of information associated with the project must
+ be achieved and often organised so that it does not go anarchic.
+\layout Itemize
+
+Technical difficulties and constraints are not always compatibles with economica
+l and social constraints.
+\end_deeper 
+\layout Subsection
+
+Topics covered by this project
+\layout Standard
+
+There are many needs in a project like this.
+ So let us start with a very brief overview of what they might be :
+\layout Itemize
+
+Organisation and planning : organizing development in batches, planning,
+ searching and allocating resources 
+\layout Itemize
+
+Development, progress evaluation, unitary testing, pre-release tests
+\layout Itemize
+
+Documentation, knowledge management (organisation, storage, search ...).
+\layout Itemize
+
+Management of new development requests from users and the way these requests
+ are dealt with.
+ 
+\layout Itemize
+
+Final release, post production management
+\layout Section
+
+A detailed view of needed features and ideas classified in domains
+\layout Subsection
+
+List of desirable features
+\layout Itemize
+
+To implement a project management cinematic: 
+\begin_deeper 
+\layout Itemize
+
+Preliminary study, 
+\layout Itemize
+
+Detailed study, 
+\layout Itemize
+
+planification, 
+\layout Itemize
+
+development,
+\layout Itemize
+
+pre-release testing,
+\layout Itemize
+
+delivery to the users,
+\layout Itemize
+
+maintenance
+\layout Itemize
+
+Keep track of providers, companies, people involved in the project (including
+ external persons and companies), monitoring them and to allow for all of
+ this steps of the project management to be referenced from each other.
+\end_deeper 
+\layout Itemize
+
+An editor designed to be both a generic text editor (for use in any place
+ it might be needed) and to allow the users to actually describe the underlying
+ information system that the project should represent.
+ Majors concepts should be described here.
+ Another tool should allow the user to extract the actual concepts from
+ the text he or she has just typed in.
+ This steps corresponds to a first step in defining a glossary of concepts
+ for the project before a more thorough and formal study is conducted.
+\layout Itemize
+
+Referencing, evaluation and monitoring of specifications and requests for
+ development and evolution.
+ Theses requests should be made atomic (ie.
+ All requests must be expressed in an hierarchical way, and leaves of this
+ tree should be self-explanatory and define one and only one aspect of the
+ request or specification).
+\begin_deeper 
+\layout Standard
+
+It is very important to be able to do that since this is the right way to
+ make monitoring of these specifications efficient and painless.
+ All of these micro-specifications will be automatically referenced and
+ linked to their parent/sibling specification.
+ This will allow the managers to easily point to requests and sub-requests
+ so that they can decide to fulfill them, or to delay or abandon them.
+ This should be a point and click feature, linked to a workflow system for
+ answering those who asked for the development/maintenance.
+\end_deeper 
+\layout Itemize
+
+To provide tools for management of skills among the project.
+ The manager should be able to link these skills to tasks in need of resources.
+ Let us say that a skill is close to be a resource.
+ The main difference between a skill and a resource is that a skill can
+ be considered a resource when it is available and not at all times.
+ Added to that, resources have other important properties such as execution
+ delays, know-how, value (financial, human) 
+\layout Subsection
+
+Organisation and planning
+\layout Itemize
+
+Definition of the project landmarks, tools for monitoring and measuring
+ progress and achievements.
+\layout Itemize
+
+Management of tasks lists and development batches.
+ One should be able to classify the tasks depending on their level of detail,
+ in order to make several views of the tasks available.
+ This is in fact hierarchisation.
+ 
+\begin_deeper 
+\layout Itemize
+
+Organize and visualize tasks in differents levels : Most project management
+ programs organize tasks as a graph of tasks depending on one another.
+ This is a good thing but it is also important to provide a way to assign
+ level information to a task.
+ Some tasks contains others but these lower level tasks need not be seen
+ all the time (It depends at which level we are working at a given time).
+ 
+\end_deeper 
+\layout Description
+
+Ressource : A ressource is an entity (a person, or something material) involved
+ in performing a task.
+ 
+\layout Description
+
+Task\SpecialChar ~
+definition : A task is an activity to be performed.
+ A task is allocated a ressource (immediately available or available at
+ a later time).
+ A task depends on other tasks to be completed before it can be started.
+ A task may also be assigned a level, that is to say that some supplier
+ tasks may be listed only at this given level.
+ This helps to discriminate 
+\layout Description
+
+Allocation : The act of assigning ressources to a set of tasks or activities.
+ Allocation is an important matter because this will become the planning
+ of development, a tool against which the project progress can be evaluated
+ and compared.
+ 
+\layout Description
+
+Planning : To prepare for a delayed execution of a set of tasks.
+ 
+\layout Subsection
+
+Project documentation 
+\layout Itemize
+
+A data format capable of sheltering any type of document (internal or external
+ tool created documents) as a serialized binary stream or as raw text.
+ 
+\begin_deeper 
+\layout Itemize
+
+Allow for keywords and themes to be linked to a document.
+\layout Itemize
+
+Implementation of document templates, macros and document linking.
+ This system should be easy to maintain and update.
+ 
+\layout Itemize
+
+Core document text
+\layout Itemize
+
+Importation of figures, tables and any kind of document structure that can
+ be visualized in an usual document.
+\layout Itemize
+
+Heavily monitored document version management.
+ 
+\begin_deeper 
+\layout Itemize
+
+The first requirement is that a document containing specifications or whatever
+ kind of information should always be referenced under the same filenames.
+ Implementation of an identification could help a lot here.
+ 
+\layout Itemize
+
+Second, each version of a document shall retain one or several states :
+ 
+\begin_deeper 
+\layout Itemize
+
+in terms of lifetime : Initial document, intermediate document, final document
+\layout Itemize
+
+in terms of acceptance : requests for comments, draft, unvalidated document,
+ validated document, pre-release, contractual release
+\layout Itemize
+
+A version number (compulsory and automatically generated)
+\layout Itemize
+
+A tag/codeword (optional) for marking important moments in the project/document
+ life.
+\layout Itemize
+
+A list of people which should be allowed access to the document, and/or
+ to be sent this document.
+ A flexible security system for defining who is allowed to see a document
+ existence, who is allowed to see it, who is allowed to modify it.
+ (It is not really relevant to version management in the first place, but
+ to be able to link these information to an actual version is nice enough
+ to put it here).
+\layout Itemize
+
+A list of keywords
+\layout Itemize
+
+A system for keeping consistency between versions of a document distributed
+ on several client machines.\SpecialChar ~
+
+\layout Itemize
+
+To be able to check in/out a document for revision or fusion to the central
+ version of the document.
+ If possible, allow for partial check/in check/out ( feature to be implemented
+ at a later time)
+\layout Itemize
+
+A regular user should be able to check out a copy local to his or her computer
+ and to ignore the central revision for some time, and then commit the changes
+ when they are considered consistent.
+\end_deeper 
+\end_deeper 
+\end_deeper 
+\layout Itemize
+
+To have an highly flexible, extensible, and powerful language for automating
+ document generation.
+ 
+\begin_deeper 
+\layout Itemize
+
+Inherited documents should automatically embrace a new design implemented
+ in the template document.
+ In this respect, document templates are much like style sheets, but actually
+ more refined that what is currently available on text processing systems
+ (in terms of project management).
+\layout Itemize
+
+Scripting enabled tools to automate manipulation of the documents
+\layout Itemize
+
+Batch processing
+\layout Itemize
+
+Automatic indexation, powerful search and replace engine and tools with
+ regular expression support, multiple search threads at once.
+\end_deeper 
+\layout Itemize
+
+Import and export of document in the major data format available today (html,
+ xml, latex ...).
+ In order to achieve that, provide a common API in the form of an higher
+ level abstract class with an inherited class for each type of data format.
+ This API should be well documented and open to anyone.
+\layout Itemize
+
+Organize collaboration between the persons involved in the project by providing
+ lots of tools (task assignment and monitoring, data and document sharing,
+ create distinct views of a document.
+ A good workflow system for making brand new information available at the
+ speed of light or at least within a reasonable amount of time.
+\layout Itemize
+
+To provide built-in document templates for each step of a project and the
+ monitoring of day to day operations :
+\begin_deeper 
+\layout Itemize
+
+Document definition language, inheritance between document types
+\layout Itemize
+
+Fast data entry tools (forms, wizards).
+ Each tool in this category should be specialized in one main thing : Tables,
+ graphs, text.
+\layout Itemize
+
+Reporting tools, automated documentation generation.
+\end_deeper 
+\layout Section
+
+Ergonomics and usability
+\layout Standard
+
+In order for this project to be usable, one must retain from adding far
+ fetched and too many redundant features.
+ The ideas behind this project should be easy to grab.
+ This is the primary goal since people involved in a project are heavy duty
+ workers and will not accept to be bothered by a difficult to use user interface.
+ 
+\layout Standard
+\align left 
+The time to record an idea, change a document, add or modify a specification
+ or request, to inform co-workers of some piece of information should be
+ as minimal as possible and still delivered with a high level quality.
+ 
+\layout Standard
+\align left 
+The user interface should have the following properties :
+\layout Itemize
+
+To be configurable and have a central "workbench" as a place to start.
+\layout Itemize
+
+The number of levels of nested dialogs should be kept to a reasonable number.
+ Not more than three or four at most.
+ Better one or two anyway.
+\layout Itemize
+
+It must be fully network enabled, and in a transparent to the user fashion.
+ (Use sockets, IPC and client-server here)
+\layout Itemize
+
+Must work in a client/server and multi-tier way, with asynchronous processing
+ where necessary.
+\layout Itemize
+
+A centralised database as known as the project repository.
+ This database should be located on a computer known as the server.
+ Still, it must be possible to work offline for some period of time when
+ necessary.
+ In order to solve potentially arising conflicts between online and offline
+ modes, the project should provide the following tools : 
+\begin_deeper 
+\layout Itemize
+
+A system for creating unique references in a machine independent and distributed
+ fashion.
+ Items belonging to the project, whatever they are must always be referenced
+ correctly.
+ Checking-out or branching an item should be performed before disconnecting
+ from the server.
+\layout Itemize
+
+Tools for diffing, merging, joining, cvs-alike
+\end_deeper 
+\layout Itemize
+
+Property editors and wizards to facilitate everyday use of the software.
+\layout Itemize
+
+Perfect stability and reliability : The importance of the data (knowledge
+ and know-how) managed by this project imposes strict data safety systems.
+ Transactional modifications ? Automatic backups ? The user must trust the
+ software and rely on it fully.
+ Text files seem to fit that goal well since they are safer than binary
+ files.
+ On the other hand, binary files are usually faster to access and easier
+ to organize (since there is neither parsing needed nor indexing to be done).
+ A compromise is to have a paging system implemented as a text file organised
+ in pages delimited by a special set of characters (signatures) and a key
+ for each page.
+ Inside, a page information can be stored in any way that may be useful.
+ Binary data will be serialized.
+ A cache may be able to accelerate processing (as binary or memory ?)
+\layout Itemize
+
+In terms of development for this project, one will avoid to depend on a
+ particular library, even if it is portable since it may not be maintained
+ for ever.
+ Instead, a framework should be designed and use a lower level library to
+ implement the concrete layers of the framework.
+ This way, if one wants to change the underlying library, it is easier to
+ re-implement the buckets without changing the implementation of higher
+ level code.
+\layout Itemize
+
+For example, the concept of a window is present in any GUI system.
+ In order to avoid dependency toward a particular GUI library, it is possible
+ to define one's framework and to actually implement its API via another
+ library in an object oriented fashion.
+\layout Standard
+
+Also, making the application independent of the underlying GUI library makes
+ it easier to retarget the product against other APIs.
+ One major drawback is that one must add yet another layer of code.
+\layout Bibliography
+\pagebreak_top \bibitem {1}
+
+\the_end

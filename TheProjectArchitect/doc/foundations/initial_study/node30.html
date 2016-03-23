@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.56)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Layers list and description</TITLE>
+<META NAME="description" CONTENT="Layers list and description">
+<META NAME="keywords" CONTENT="initial_study">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="initial_study.css">
+
+<LINK REL="next" HREF="node31.html">
+<LINK REL="previous" HREF="node29.html">
+<LINK REL="up" HREF="node29.html">
+<LINK REL="next" HREF="node31.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html514"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html508"
+  HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html502"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html510"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A> 
+<A NAME="tex2html512"
+  HREF="node33.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/local/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html515"
+  HREF="node31.html">Modules list</A>
+<B> Up:</B> <A NAME="tex2html509"
+  HREF="node29.html">Implementation model</A>
+<B> Previous:</B> <A NAME="tex2html503"
+  HREF="node29.html">Implementation model</A>
+ &nbsp <B>  <A NAME="tex2html511"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html513"
+  HREF="node33.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION04021000000000000000">
+Layers list and description</A>
+</H2>
+
+<P>
+
+<UL>
+<LI>The <I>&#34;external layer&#34;</I> : It the C++ library
+used to implement the framework. It must be a portable library (wxWindows?).
+It does not explicitly belong to the project but is a supplier for
+the project. <I>WxWindows</I> has a lot of nice features. A graph
+module and a great concern for portability are among them. A related
+project, <I>wxStudio</I> (an IDE for developping <I>wxWindows</I>
+applications) is under development and is not yet usable (unfortunately).
+</LI>
+<LI>The <I>&#34;framework layer&#34;</I> implements a low-level
+behavior. This could be a common framework for several projects. It
+has low level and very generic services. It is supposed to be a supplier
+for concrete implementation of the project. Portability problems should
+be solved in this layer. Therefore, this layer shall give a fully
+portable interface (ie. It must provide a consistent set of API for
+higher level layers.
+</LI>
+<LI>The <I>&#34;services layer&#34;</I> is a medium level one.
+Less generic and more to the point services. Here we implement the
+core of the project. This layer may be split in several parent and
+sibling layers in a client/provider fashion. Services must be well
+isolated and fulfill a small set of services. Plugs-in can be hooked
+here using the API provided by these layers.
+</LI>
+<LI>The <I>&#34;application layer&#34;</I> is the actual presentation
+layer (GUI) for the project. It may be split across different applications
+linked together by a common interface. It allows data entry, processing,
+reporting, everything the project provides to the user ...
+</LI>
+</UL>
+<BR>
+<DIV ALIGN="CENTER"><!-- MATH
+ $\resizebox*{0.3\textwidth}{0.3\textheight}{\includegraphics{layers.eps}}$
+ -->
+ </DIV>
+<P>
+<DIV ALIGN="CENTER"></DIV>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html514"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html508"
+  HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html502"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html510"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A> 
+<A NAME="tex2html512"
+  HREF="node33.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/local/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html515"
+  HREF="node31.html">Modules list</A>
+<B> Up:</B> <A NAME="tex2html509"
+  HREF="node29.html">Implementation model</A>
+<B> Previous:</B> <A NAME="tex2html503"
+  HREF="node29.html">Implementation model</A>
+ &nbsp <B>  <A NAME="tex2html511"
+  HREF="node1.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html513"
+  HREF="node33.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+pascal munerot
+2001-08-07
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,3 @@
+set repository as http://www.activestate.com/PPMPackages/5.6plus/
+set save
+install XML::DOM

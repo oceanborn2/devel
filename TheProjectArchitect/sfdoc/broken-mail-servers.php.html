@@ -1,0 +1,412 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+	"http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<!-- Server: sf-web1 -->
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <TITLE>SourceForge: Broken mail servers that refuse empty envelope froms</TITLE>
+	<SCRIPT language="JavaScript">
+	<!--
+	function help_window(helpurl) {
+		HelpWin = window.open( 'https://sourceforge.net' + helpurl,'HelpWindow','scrollbars=yes,resizable=yes,toolbar=no,height=400,width=400');
+	}
+	// -->
+	</SCRIPT>
+
+		<link rel="SHORTCUT ICON" href="/images/favicon.ico">
+		<style type="text/css">
+			<!--
+	OL,UL,P,BODY,TD,TR,TH,FORM { font-family: verdana,arial,helvetica,sans-serif; font-size:small; color: #333333; }
+
+	H1 { font-size: x-large; font-family: verdana,arial,helvetica,sans-serif; }
+	H2 { font-size: large; font-family: verdana,arial,helvetica,sans-serif; }
+	H3 { font-size: medium; font-family: verdana,arial,helvetica,sans-serif; }
+	H4 { font-size: small; font-family: verdana,arial,helvetica,sans-serif; }
+	H5 { font-size: x-small; font-family: verdana,arial,helvetica,sans-serif; }
+	H6 { font-size: xx-small; font-family: verdana,arial,helvetica,sans-serif; }
+
+	PRE,TT { font-family: courier,sans-serif }
+
+	SPAN.center { text-align: center }
+	SPAN.boxspace { font-size: 2pt; }
+	SPAN.osdn {font-size: x-small; font-family: verdana,arial,helvetica,sans-serif;}
+	SPAN.search {font-size: x-small; font-family:  verdana,arial,helvetica,sans-serif;}
+	SPAN.slogan {font-size: large; font-weight: bold; font-family: verdana,arial,helvetica,sans-serif;}
+	SPAN.footer {font-size: x-small; font-family: verdana,arial,helvetica,sans-serif;}
+
+	A.maintitlebar { color: #FFFFFF }
+	A.maintitlebar:visited { color: #FFFFFF }
+
+	A.sortbutton { color: #FFFFFF; text-decoration: underline; }
+	A.sortbutton:visited { color: #FFFFFF; text-decoration: underline; }
+
+	.menus { color: #6666aa; text-decoration: none; }
+	.menus:visited { color: #6666aa; text-decoration: none; }
+
+	A:link { text-decoration:none }
+	A:visited { text-decoration:none }
+	A:active { text-decoration:none }
+	A:hover { text-decoration:underline; color:#FF0000 }
+
+	.tabs { color: #000000; }
+	.tabs:visited { color: #000000; }
+	.tabs:hover { color:#FF0000; }
+	.tabselect { color: #000000; font-weight: bold; }
+	.tabselect:visited { font-weight: bold;}
+	.tabselect:hover { color:#FF0000; font-weight: bold; }
+
+	.titlebar { text-decoration:none; color:#000000; font-family: Helvetica,verdana,arial,helvetica,sans-serif; font-size: small; font-weight: bold; }
+	.develtitle { color:#000000; font-weight: bold; }
+	.legallink { color:#000000; font-weight: bold; }
+
+	.osdn-search {
+		background-color:#fff;
+		border:1px #666666 solid;
+		font-size: 10px;
+		color: #666666;
+		//margin: 0px;
+		font-family: arial,sans-serif;
+	}
+
+	input[type="text"].osdn-search {
+		padding-top: 0.1em;
+		padding-left: 0.2em;
+		padding-right: 0.2em;
+	}
+
+	.osdn-button {
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+
+	select.osdn-search {
+		text-align: center;
+	}
+
+	.osdn-navtext {color: #666666; font-family: verdana, arial, sans-serif; font-size: 10px; text-decoration: none;}
+			-->
+		</style>
+
+ 	   </HEAD>
+<body text="#333333" link="#6666aa" alink="#aa6666" vlink="#6666aa" bgcolor="#6C7198" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<!-- 
+
+OSDN navbar 
+
+-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <form action="http://www.osdn.com/osdnsearch.pl" method="POST">
+
+      <tr bgcolor="#999999">
+	<td colspan="5"><img src="/images/blank.gif" width="1" height="1" alt=""></td>
+	</tr>
+
+      <tr bgcolor="#eeeeee">
+	<td nowrap class="osdn-navtext">&nbsp;&nbsp;<a href="http://www.osdn.com" class="osdn-navtext" title="click to visit OSDN.com!"><B>OSDN:</B>&nbsp;Open&nbsp;Source&nbsp;Development&nbsp;Network</a>:&nbsp;<a href="http://www.osdn.com/newsletters/">Newsletters</a> - <a href="http://jobs.osdn.com">Jobs</a> - <a href="http://www.osdn.com/911.shtml"><font color="#CC0000">US Disaster Support</font></a>&nbsp;</td>
+	<td align="right" valign="middle" width="100%" class="osdn-navtext"><B>SEARCH:</B>&nbsp; </td>
+
+	<td align="right" valign="middle" nowrap class="osdn-navtext">
+	  <select name="site" class="osdn-search">
+	    <option value="all" SELECTED>All OSDN Sites</option>
+	    <option value="">-----------</option>
+	    <option value="Freshmeat">freshmeat</option>
+	    <option value="Jobs.OSDN.com">Jobs.OSDN.com</option>
+	    <option value="Kuro5hin">Kuro5hin</option>
+	    <option value="LinuxGram">LinuxGram</option>
+	    <option value="NewsForge">NewsForge</option>
+	    <option value="OSDN">OSDN.com</option>
+	    <option value="Slashcode">Slashcode</option>
+	    <option value="Slashdot">Slashdot</option>
+	    <option value="SourceForge">SourceForge</option>
+	    </select>
+	  <input type="text" name="query" size="12" class="osdn-search">&nbsp;
+	    </td>
+	<td nowrap width="40"><input type="image" border="0" name="Submit" value="GO" src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net/images/osdn_nav_go.gif" alt="Go" width="30" height="20" align="middle" class="osdn-button"></td>
+	</tr>
+
+      <tr bgcolor="#999999">
+	<td colspan="5"><img src="/images/blank.gif" width="1" height="1" alt=""></td>
+	</tr>
+
+      </form>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr> 
+		<td bgcolor="#d5d7d9" background="/images/steel3.jpg" WIDTH="20%"><img src="/images/blank.gif" width="100" height="1" alt=""></TD><TD bgcolor="#d5d7d9" background="/images/steel3.jpg" WIDTH="60%"><a href="https://www2.valinux.com/adbouncer.phtml?f_s=468x60&f_p=1&f_RzXx=37496"><img src="https://www2.valinux.com/adserver.phtml?f_s=468x60&f_p=1&f_RzXx=37496" width="468" height="60" border="0" alt=" Advertisement "></a></td>
+		<td valign="center" align="left" bgcolor="#d5d7d9" background="/images/steel3.jpg" WIDTH="20%"><a href="http://www.osdn.com"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net/images/OSDN-lc.gif" hspace="10" border="0" alt=" OSDN - Open Source Development Network " border=0 width=100 height=40></a>
+	</td>
+	</tr>
+</table>
+<!-- 
+
+
+End OSDN NavBar 
+
+
+--><img src="/images/blank.gif" width="100" height="5" alt=""><br>
+<!-- start page body -->
+<div align="center">
+<table cellpadding="0" cellspacing="0" border="0" width="99%">
+	<tr>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tbar1.png" width="1%" height="17"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tleft1.png" border=0 width=17 height=17></td>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tbar1.png" align="center" colspan="3" width="99%"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tbar1.png" border=0 width=1 height=17></td>
+		<td><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tright1.png" border=0 width=17 height=17></td>
+	</tr>
+	<tr>
+		<td width="17" background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/leftbar1.png" align="left" valign="bottom"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/leftbar1.png" border=0 width=17 height=25></td>
+		<td colspan="3" bgcolor="#ffffff">
+<!-- start main body cell -->
+
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="141" background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/steel3.jpg" bgcolor="#cfd1d4" align="left" valign="top">
+
+	<!-- VA Linux Stats Counter -->
+	<IMG src="https://www2.valinux.com/clear.gif?id=105" width=140 height=1 alt="Counter"><BR>
+	<CENTER>
+	<a href="/"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/sflogo-hammer1.jpg" border=0 width=136 height=79></A>
+	</CENTER>
+	<P>
+	<!-- menus -->
+	<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>Logged In: munerot</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/account/logout.php">Logout</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/register/">Register New Project</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/account/">Account Maintenance</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/themes/">Change My Theme</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/my/">My Personal Page</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/my/bookmark_add.php?bookmark_url=%2Fdocman%2Fdisplay_doc.php%3Fdocid%3D6747%26group_id%3D1&bookmark_title=Broken+mail+servers+that+refuse+empty+envelope+froms">Bookmark Page</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>Search</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+<CENTER>
+		<FONT SIZE="1">
+		<FORM action="/search/" method="POST" target="_blank">
+
+		<SELECT name="type_of_search">
+		<OPTION value="soft">Software/Group</OPTION>
+		<OPTION value="people">People</OPTION>
+		<OPTION value="freshmeat">Freshmeat.net</OPTION>
+		</SELECT><BR>
+		<INPUT TYPE="CHECKBOX" NAME="exact" VALUE="1" CHECKED> Require All Words<BR>
+		<INPUT TYPE="HIDDEN" VALUE="1" NAME="group_id">
+		<INPUT TYPE="text" SIZE="12" NAME="words" VALUE=""><BR><INPUT TYPE="submit" NAME="Search" VALUE="Search"></FORM></FONT>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>Project: SourceForge</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/projects/alexandria/">Project Summary</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/project/admin/?group_id=1">Project Admin</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>Software</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/softwaremap/">Software Map</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/new/">New Releases</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/docman/display_doc.php?docid=6041&group_id=1">Other Site Mirrors</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/snippet/">Code Snippet Library</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>SourceForge.net</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/docman/?group_id=1"><b>Site Docs</b></A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/docman/display_doc.php?docid=7438&group_id=1">Work for Sourceforge!</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/forum/?group_id=1">Discussion Forums</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/people/">Project Help Wanted</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/top/">Top Projects</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/docman/display_doc.php?docid=2352&group_id=1">Site Status</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="http://jobs.osdn.com">jobs.osdn.com</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/docman/display_doc.php?docid=762&group_id=1">Compile Farm</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/docman/display_doc.php?docid=6028&group_id=1">Contact SourceForge.net</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/docman/display_doc.php?docid=6025&group_id=1">About SourceForge.net</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>SourceForge.net Foundries</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/docman/display_doc.php?docid=6029&group_id=1">About Foundries</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="http://foundries.sourceforge.net/clusters/">Clustering</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="http://foundries.sourceforge.net/distributed/">Distributed Computing</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="http://foundries.sourceforge.net/large/">Linux on Large Systems</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/linuxkernel/">Linux Kernel</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/linuxdrivers/">Linux Drivers</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/3d/">3D</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/games/">Games</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/java/">Java</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/printing/">Printing</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/storage/">Storage</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+	<P>
+	</TD>
+
+	<td width="20" background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/fade1.png" nowrap>&nbsp;</td>
+	<td valign="top" bgcolor="#FFFFFF" width="99%">
+	<BR>
+
+	<b>Project: SourceForge</b>
+<h2>Document Manager: Display Document</h2>
+</H2>
+		<P>
+		<HR SIZE="1" NoShade>
+		<A class=tabs href="/projects/alexandria/">Summary</A>&nbsp;|&nbsp;
+		<A class=tabs href="/project/admin/?group_id=1">Admin</A>&nbsp;|&nbsp;
+		<A class=tabs href="http://sourceforge.net">Home Page</A>&nbsp;|&nbsp;
+		<A class=tabs href="/forum/?group_id=1">Forums</A>&nbsp;|&nbsp;
+		<A class=tabs href="/tracker/?group_id=1">Tracker</A>&nbsp;|&nbsp;
+		<A class=tabs href="/tracker/?group_id=1&atid=100001">Bugs</A>&nbsp;|&nbsp;
+		<A class=tabs href="/tracker/?group_id=1&atid=200001">Support</A>&nbsp;|&nbsp;
+		<A class=tabs href="/tracker/?group_id=1&atid=300001">Patches</A>&nbsp;|&nbsp;
+		<A class=tabs href="/mail/?group_id=1">Lists</A>&nbsp;|&nbsp;
+		<A class=tabs href="/pm/?group_id=1">Tasks</A>&nbsp;|&nbsp;
+		<A class=tabselect href="/docman/?group_id=1">Docs</A>&nbsp;|&nbsp;
+		<A class=tabs href="/survey/?group_id=1">Surveys</A>&nbsp;|&nbsp;
+		<A class=tabs href="/news/?group_id=1">News</A>&nbsp;|&nbsp;
+		<A class=tabs href="/project/showfiles.php?group_id=1">Files</A>&nbsp;|&nbsp;<HR SIZE="1" NoShade><BR><p><b><a href="/docman/new.php?group_id=1">Submit new documentation</a> | <a href="/docman/index.php?group_id=1">View Documentation</a> | <a href="/docman/admin/index.php?group_id=1">Admin</a></b><H2>Why does Sourceforge reject my mail?</H2>
+One common reason is that the mail server you send mail from is broken. If that
+is true, you should complain loudly to your ISP or mail provider.
+(if you were directed to this page by sourceforge staff, the mail server that
+tried to send your mail to us is configured in violation of rfc1123)
+
+<P>
+Your server probably does something like this:
+<BR>
+
+<XMP>
+220 X1 NT-ESMTP Server mailhost.directlink.net (IMail 6.05 1039005-4)
+mail from: <>
+501 bogus mail from
+quit   
+221 Goodbye
+</XMP>
+
+or this
+
+<XMP>
+220-rocmail.com ESMTP MDaemon 3.5.6 ready
+220-RocSoft does not allow you to relay mail. No FakeMail
+220-No SPAM, No USBE, No Telnet, Tchuessie! 
+220 
+helo foo
+250 rocmail.com Hello foo, pleased to meet you
+mail from: <>
+550 Sorry, this server is configured to refuse this sort of mail (to combat the SPAM problem)
+quit
+221 See ya in cyberspace
+</XMP>
+
+or this
+
+<XMP>
+220 mail.softagency.co.jp ESMTP
+helo domain
+250 mail.softagency.co.jp
+mail from: <>
+250 ok
+rcpt to: <postmaster@softagency.co.jp>
+553 sorry, your envelope sender is in my badmailfrom list (#5.7.1)
+</XMP>
+
+<a href="ftp://ftp.isi.edu/in-notes/rfc1123.txt">ftp://ftp.isi.edu/in-notes/rfc1123.txt section 5.2.9</a> states:
+
+<XMP>
+The syntax shown in RFC-821 for the MAIL FROM: command omits the case of an
+empty path:  "MAIL FROM: <>" (see RFC-821 Page 15).  An empty reverse path MUST
+be supported.
+</XMP>
+
+<P>
+Refusing mail  from an  NULL envelope sender:
+<UL>
+<LI> breaks the above RFC
+<LI>accomplishes very little with regards to spam prevention
+<LI>prevents you  from getting any bounce  messages back if one  of your users
+    Emails other people with a bad address. Your server then clogs up the mail
+    spool of  the servers  that are trying  to send you  a bounce  by refusing
+    those bounces
+<LI>Last but  not least,  you are  now going  to have  your Email  rejected by
+    servers  like  sourceforge.net because  they  require  validation of  your
+    envelope and header sender.<BR>
+    Those mail servers connect back to you and check the address like this:
+</UL>
+
+<XMP>
+220 server ESMTP Sendmail 8.9.3/8.9.3/Marc v3.1 (09/04/98); Tue, 27 Mar 2001 16:08:39 -0800
+helo foo
+250 server Hello root@connectingserver [X.X.X.X], pleased to meet you
+mail from: <>
+250 <>... Sender ok
+rcpt to: <user@domain.tld>
+250 <user@domain.tld>... Recipient ok
+quit
+221 server closing connection
+</XMP>
+
+Because you refuse the <tt>mail from: &lt;&gt;</tt>, the sourceforge mail server
+refuses your mail.
+
+<P>
+BTW, this  seems to  be a  frequent problem  for Red  Hat 6.2  users because
+apparently linuxconf 1.17 is known for generating bad sendmail.cf files.
+It typically looks like this:
+<XMP>
+220 hostname.dyn.dhs.org ESMTP Sendmail 8.9.3/8.8.7; Tue, 1 May 2001
+23:14:37 -0400
+mail from: <>
+554 buildaddr: no mailer in parsed address: Error -7
+</XMP>
+
+The  fix (outside  of  not using  sendmail),  is  apparently to  upgrade
+linuxconf or generate the sendmail.cf some other way
+	<!-- end content -->
+	<p>&nbsp;</p>
+	</td>
+	<td width="9" bgcolor="#FFFFFF">&nbsp;
+	</td>
+
+	</tr>
+	</table>
+		</td>
+		<td width="17" background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/rightbar1.png" align="right" valign="bottom"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/rightbar1.png" border=0 width=17 height=17></td>
+	</tr>
+	<tr>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bbar1.png" height="17"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bleft1.png" border=0 width=17 height=17></td>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bbar1.png" align="center" colspan="3"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bbar1.png" border=0 width=1 height=17></td>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bbar1.png" bgcolor="#7c8188"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bright1.png" border=0 width=17 height=17></td>
+	</tr>
+</table>
+</div>
+
+<!-- themed page footer -->
+<P><A HREF="/source.php?page_url=/docman/display_doc.php"><B><FONT COLOR="WHITE">Show Source</FONT></B></A><P><P class="footer">
+<font face="arial, helvetica" size="1" color="#cccccc">
+VA Linux Systems and SourceForge are trademarks of VA Linux Systems, Inc.
+Linux is a registered trademark of Linus Torvalds.  All other trademarks and
+copyrights on this page are property of their respective owners.
+For information about other site Content ownership and sitewide
+terms of service, please see the
+<a href="/docman/display_doc.php?docid=6048&group_id=1" class="legallink">SourceForge.net Terms of Service</a>.
+For privacy
+policy information, please see the <a href="/docman/display_doc.php?docid=6049&group_id=1
+" class="legallink"
+>SourceForge.net Privacy Policy</a>.
+Content owned by VA Linux Systems is copyright 
+1999, 2000, 2001 VA Linux Systems, Inc.  All rights reserved.
+</font>
+<BR>&nbsp;
+
+
+</body>
+</html>
+	

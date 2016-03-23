@@ -1,0 +1,508 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+	"http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<!-- Server: sf-web1 -->
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <TITLE>SourceForge: SourceForge.net Data Backup and Restoration Policy</TITLE>
+	<SCRIPT language="JavaScript">
+	<!--
+	function help_window(helpurl) {
+		HelpWin = window.open( 'https://sourceforge.net' + helpurl,'HelpWindow','scrollbars=yes,resizable=yes,toolbar=no,height=400,width=400');
+	}
+	// -->
+	</SCRIPT>
+
+		<link rel="SHORTCUT ICON" href="/images/favicon.ico">
+		<style type="text/css">
+			<!--
+	OL,UL,P,BODY,TD,TR,TH,FORM { font-family: verdana,arial,helvetica,sans-serif; font-size:small; color: #333333; }
+
+	H1 { font-size: x-large; font-family: verdana,arial,helvetica,sans-serif; }
+	H2 { font-size: large; font-family: verdana,arial,helvetica,sans-serif; }
+	H3 { font-size: medium; font-family: verdana,arial,helvetica,sans-serif; }
+	H4 { font-size: small; font-family: verdana,arial,helvetica,sans-serif; }
+	H5 { font-size: x-small; font-family: verdana,arial,helvetica,sans-serif; }
+	H6 { font-size: xx-small; font-family: verdana,arial,helvetica,sans-serif; }
+
+	PRE,TT { font-family: courier,sans-serif }
+
+	SPAN.center { text-align: center }
+	SPAN.boxspace { font-size: 2pt; }
+	SPAN.osdn {font-size: x-small; font-family: verdana,arial,helvetica,sans-serif;}
+	SPAN.search {font-size: x-small; font-family:  verdana,arial,helvetica,sans-serif;}
+	SPAN.slogan {font-size: large; font-weight: bold; font-family: verdana,arial,helvetica,sans-serif;}
+	SPAN.footer {font-size: x-small; font-family: verdana,arial,helvetica,sans-serif;}
+
+	A.maintitlebar { color: #FFFFFF }
+	A.maintitlebar:visited { color: #FFFFFF }
+
+	A.sortbutton { color: #FFFFFF; text-decoration: underline; }
+	A.sortbutton:visited { color: #FFFFFF; text-decoration: underline; }
+
+	.menus { color: #6666aa; text-decoration: none; }
+	.menus:visited { color: #6666aa; text-decoration: none; }
+
+	A:link { text-decoration:none }
+	A:visited { text-decoration:none }
+	A:active { text-decoration:none }
+	A:hover { text-decoration:underline; color:#FF0000 }
+
+	.tabs { color: #000000; }
+	.tabs:visited { color: #000000; }
+	.tabs:hover { color:#FF0000; }
+	.tabselect { color: #000000; font-weight: bold; }
+	.tabselect:visited { font-weight: bold;}
+	.tabselect:hover { color:#FF0000; font-weight: bold; }
+
+	.titlebar { text-decoration:none; color:#000000; font-family: Helvetica,verdana,arial,helvetica,sans-serif; font-size: small; font-weight: bold; }
+	.develtitle { color:#000000; font-weight: bold; }
+	.legallink { color:#000000; font-weight: bold; }
+
+	.osdn-search {
+		background-color:#fff;
+		border:1px #666666 solid;
+		font-size: 10px;
+		color: #666666;
+		//margin: 0px;
+		font-family: arial,sans-serif;
+	}
+
+	input[type="text"].osdn-search {
+		padding-top: 0.1em;
+		padding-left: 0.2em;
+		padding-right: 0.2em;
+	}
+
+	.osdn-button {
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+
+	select.osdn-search {
+		text-align: center;
+	}
+
+	.osdn-navtext {color: #666666; font-family: verdana, arial, sans-serif; font-size: 10px; text-decoration: none;}
+			-->
+		</style>
+
+ 	   </HEAD>
+<body text="#333333" link="#6666aa" alink="#aa6666" vlink="#6666aa" bgcolor="#6C7198" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+<!-- 
+
+OSDN navbar 
+
+-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+    <form action="http://www.osdn.com/osdnsearch.pl" method="POST">
+
+      <tr bgcolor="#999999">
+	<td colspan="5"><img src="/images/blank.gif" width="1" height="1" alt=""></td>
+	</tr>
+
+      <tr bgcolor="#eeeeee">
+	<td nowrap class="osdn-navtext">&nbsp;&nbsp;<a href="http://www.osdn.com" class="osdn-navtext" title="click to visit OSDN.com!"><B>OSDN:</B>&nbsp;Open&nbsp;Source&nbsp;Development&nbsp;Network</a>:&nbsp;<a href="http://www.osdn.com/newsletters/">Newsletters</a> - <a href="http://jobs.osdn.com">Jobs</a> - <a href="http://www.osdn.com/911.shtml"><font color="#CC0000">US Disaster Support</font></a>&nbsp;</td>
+	<td align="right" valign="middle" width="100%" class="osdn-navtext"><B>SEARCH:</B>&nbsp; </td>
+
+	<td align="right" valign="middle" nowrap class="osdn-navtext">
+	  <select name="site" class="osdn-search">
+	    <option value="all" SELECTED>All OSDN Sites</option>
+	    <option value="">-----------</option>
+	    <option value="Freshmeat">freshmeat</option>
+	    <option value="Jobs.OSDN.com">Jobs.OSDN.com</option>
+	    <option value="Kuro5hin">Kuro5hin</option>
+	    <option value="LinuxGram">LinuxGram</option>
+	    <option value="NewsForge">NewsForge</option>
+	    <option value="OSDN">OSDN.com</option>
+	    <option value="Slashcode">Slashcode</option>
+	    <option value="Slashdot">Slashdot</option>
+	    <option value="SourceForge">SourceForge</option>
+	    </select>
+	  <input type="text" name="query" size="12" class="osdn-search">&nbsp;
+	    </td>
+	<td nowrap width="40"><input type="image" border="0" name="Submit" value="GO" src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net/images/osdn_nav_go.gif" alt="Go" width="30" height="20" align="middle" class="osdn-button"></td>
+	</tr>
+
+      <tr bgcolor="#999999">
+	<td colspan="5"><img src="/images/blank.gif" width="1" height="1" alt=""></td>
+	</tr>
+
+      </form>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr> 
+		<td bgcolor="#d5d7d9" background="/images/steel3.jpg" WIDTH="20%"><img src="/images/blank.gif" width="100" height="1" alt=""></TD><TD bgcolor="#d5d7d9" background="/images/steel3.jpg" WIDTH="60%"><a href="https://www2.valinux.com/adbouncer.phtml?f_s=468x60&f_p=1&f_RzXx=43241"><img src="https://www2.valinux.com/adserver.phtml?f_s=468x60&f_p=1&f_RzXx=43241" width="468" height="60" border="0" alt=" Advertisement "></a></td>
+		<td valign="center" align="left" bgcolor="#d5d7d9" background="/images/steel3.jpg" WIDTH="20%"><a href="http://www.osdn.com"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net/images/OSDN-lc.gif" hspace="10" border="0" alt=" OSDN - Open Source Development Network " border=0 width=100 height=40></a>
+	</td>
+	</tr>
+</table>
+<!-- 
+
+
+End OSDN NavBar 
+
+
+--><img src="/images/blank.gif" width="100" height="5" alt=""><br>
+<!-- start page body -->
+<div align="center">
+<table cellpadding="0" cellspacing="0" border="0" width="99%">
+	<tr>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tbar1.png" width="1%" height="17"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tleft1.png" border=0 width=17 height=17></td>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tbar1.png" align="center" colspan="3" width="99%"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tbar1.png" border=0 width=1 height=17></td>
+		<td><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/tright1.png" border=0 width=17 height=17></td>
+	</tr>
+	<tr>
+		<td width="17" background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/leftbar1.png" align="left" valign="bottom"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/leftbar1.png" border=0 width=17 height=25></td>
+		<td colspan="3" bgcolor="#ffffff">
+<!-- start main body cell -->
+
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="141" background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/steel3.jpg" bgcolor="#cfd1d4" align="left" valign="top">
+
+	<!-- VA Linux Stats Counter -->
+	<IMG src="https://www2.valinux.com/clear.gif?id=105" width=140 height=1 alt="Counter"><BR>
+	<CENTER>
+	<a href="/"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/sflogo-hammer1.jpg" border=0 width=136 height=79></A>
+	</CENTER>
+	<P>
+	<!-- menus -->
+	<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>Logged In: munerot</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/account/logout.php">Logout</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/register/">Register New Project</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/account/">Account Maintenance</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/themes/">Change My Theme</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/my/">My Personal Page</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/my/bookmark_add.php?bookmark_url=%2Fdocman%2Fdisplay_doc.php%3Fdocid%3D6840%26group_id%3D1&bookmark_title=SourceForge.net+Data+Backup+and+Restoration+Policy">Bookmark Page</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>Search</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+<CENTER>
+		<FONT SIZE="1">
+		<FORM action="/search/" method="POST" target="_blank">
+
+		<SELECT name="type_of_search">
+		<OPTION value="soft">Software/Group</OPTION>
+		<OPTION value="people">People</OPTION>
+		<OPTION value="freshmeat">Freshmeat.net</OPTION>
+		</SELECT><BR>
+		<INPUT TYPE="CHECKBOX" NAME="exact" VALUE="1" CHECKED> Require All Words<BR>
+		<INPUT TYPE="HIDDEN" VALUE="1" NAME="group_id">
+		<INPUT TYPE="text" SIZE="12" NAME="words" VALUE=""><BR><INPUT TYPE="submit" NAME="Search" VALUE="Search"></FORM></FONT>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>Project: SourceForge</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/projects/alexandria/">Project Summary</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/project/admin/?group_id=1">Project Admin</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>Software</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/softwaremap/">Software Map</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/new/">New Releases</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/docman/display_doc.php?docid=6041&group_id=1">Other Site Mirrors</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/snippet/">Code Snippet Library</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>SourceForge.net</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/docman/?group_id=1"><b>Site Docs</b></A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/docman/display_doc.php?docid=7438&group_id=1">Work for Sourceforge!</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/forum/?group_id=1">Discussion Forums</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/people/">Project Help Wanted</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/top/">Top Projects</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/docman/display_doc.php?docid=2352&group_id=1">Site Status</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="http://jobs.osdn.com">jobs.osdn.com</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/docman/display_doc.php?docid=762&group_id=1">Compile Farm</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="/docman/display_doc.php?docid=6028&group_id=1">Contact SourceForge.net</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/docman/display_doc.php?docid=6025&group_id=1">About SourceForge.net</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+<table cellpadding="0" cellspacing="0" border="0" width="140">
+	<tr>
+		<td align="left" valign="middle"><b>SourceForge.net Foundries</b><br></td>
+	</tr>
+	<tr>
+		<td align="right" valign="middle">
+	<A class="menus" href="/docman/display_doc.php?docid=6029&group_id=1">About Foundries</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br><P>	<A class="menus" href="http://foundries.sourceforge.net/clusters/">Clustering</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="http://foundries.sourceforge.net/distributed/">Distributed Computing</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="http://foundries.sourceforge.net/large/">Linux on Large Systems</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/linuxkernel/">Linux Kernel</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/linuxdrivers/">Linux Drivers</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/3d/">3D</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/games/">Games</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/java/">Java</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/printing/">Printing</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>	<A class="menus" href="/foundry/storage/">Storage</A> &nbsp;<IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/point1.png" border=0 width=7 height=7><br>
+			<BR>
+			</td>
+		</tr>
+	</table>
+	<P>
+	</TD>
+
+	<td width="20" background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/fade1.png" nowrap>&nbsp;</td>
+	<td valign="top" bgcolor="#FFFFFF" width="99%">
+	<BR>
+
+	<b>Project: SourceForge</b>
+<h2>Document Manager: Display Document</h2>
+</H2>
+		<P>
+		<HR SIZE="1" NoShade>
+		<A class=tabs href="/projects/alexandria/">Summary</A>&nbsp;|&nbsp;
+		<A class=tabs href="/project/admin/?group_id=1">Admin</A>&nbsp;|&nbsp;
+		<A class=tabs href="http://sourceforge.net">Home Page</A>&nbsp;|&nbsp;
+		<A class=tabs href="/forum/?group_id=1">Forums</A>&nbsp;|&nbsp;
+		<A class=tabs href="/tracker/?group_id=1">Tracker</A>&nbsp;|&nbsp;
+		<A class=tabs href="/tracker/?group_id=1&atid=100001">Bugs</A>&nbsp;|&nbsp;
+		<A class=tabs href="/tracker/?group_id=1&atid=200001">Support</A>&nbsp;|&nbsp;
+		<A class=tabs href="/tracker/?group_id=1&atid=300001">Patches</A>&nbsp;|&nbsp;
+		<A class=tabs href="/mail/?group_id=1">Lists</A>&nbsp;|&nbsp;
+		<A class=tabs href="/pm/?group_id=1">Tasks</A>&nbsp;|&nbsp;
+		<A class=tabselect href="/docman/?group_id=1">Docs</A>&nbsp;|&nbsp;
+		<A class=tabs href="/survey/?group_id=1">Surveys</A>&nbsp;|&nbsp;
+		<A class=tabs href="/news/?group_id=1">News</A>&nbsp;|&nbsp;
+		<A class=tabs href="/project/showfiles.php?group_id=1">Files</A>&nbsp;|&nbsp;<HR SIZE="1" NoShade><BR><p><b><a href="/docman/new.php?group_id=1">Submit new documentation</a> | <a href="/docman/index.php?group_id=1">View Documentation</a> | <a href="/docman/admin/index.php?group_id=1">Admin</a></b><!--
+-- backup_policy.html
+-- Policy regarding SourceForge.net data backup and restoration
+-- $Id: backup-policy.html,v 1.1.1.1 2001/11/18 14:54:14 pascal Exp $
+-- Copyright (C) 2001 VA Linux Systems
+-- Document written by Jacob Moorman <moorman@sourceforge.net>
+-- Last major review/update 2001-09-24 Jacob Moorman <moorman@sourceforge.net>
+-- Last spell check 2001-09-24
+--
+-- If you update this document, please ensure it is also updated in the
+-- documentation CVS repository.  If you have made a major change to this
+-- document, please update the date stamp above ("Last major review/update").
+-- If you have made any content changes to this document, please update
+-- the date stamp in the body of this document (bottom, "Last updated").
+-- Date stamps should be in YYYY-MM-DD format.
+-->
+
+<h3>SourceForge.net Data Backup and Restoration Policy</h3>
+
+<p>This document provides an overview of the backup and restore procedures followed by SourceForge.net staff, as well as instructions for both SourceForge.net users and projects hosted on SourceForge.net which may be used in backing up their project data.  It is important to recognize that all SourceForge.net users and projects are responsible for their own content.  This guide provides an <a href="#projectresp">easy-to-follow checklist of data that projects should backup themselves</a>.  Backups are only good if they are generated BEFORE a problem occurs; take this seriously now in case you need your backup later.
+
+<p><br><b><a name="datatypes">What data is stored on SourceForge.net?</a></b>
+<p><blockquote>
+SourceForge.net provides a number of services; these services depend on a large amount of disk capacity for end-user and site data storage.  SourceForge.net-hosted data falls in to five basic categories:
+<ul>
+  <li><i>SourceForge.net site data</i> consists of all data placed on the SourceForge.net site, including user and project records, forum postings, site configuration details, and Tracker (bug reports, support requests, etc.) postings.</li>
+  <li><i>SourceForge.net host data</i> consists of system files and core operating system data for all hosts serving data for SourceForge.net.  i.e. project web servers, project shell servers, project CVS servers, etc.</li>
+  <li><i>Project file release data</i> consists of all files released through the SourceForge.net file release system, which are then placed on the network of high-capacity download servers.</li>
+  <li><i>Project CVS data</i> consists of all materials which have been imported or added to project CVS repositories for projects hosted on SourceForge.net.</li>
+  <li><i>Project-specific and user-specific content</i> consists of materials placed on the compile farm hosts, in user home directories, and in the project web space for projects.</li>
+</ul>
+</blockquote>
+
+
+<p><br><b><a name="databackup">What data is backed up by SourceForge.net?</a></b>
+<p><blockquote>
+As <a href="#datatypes">stated</a>, SourceForge.net classifies data in to five categories.  All data hosted on SourceForge.net is backed up by SourceForge.net at regular intervals.  These backups are full backups (a type of backup), rather than incremental or differential backups.  Based on the amount of hosted data and the type of backup we use, backups take a fairly long amount of time to occur (many hours) each day.
+</blockquote>
+
+
+<p><br><b><a name="backupfrequency">How frequently do backups occur?</a></b>
+<p><blockquote>
+Backups which involve user, project and SourceForge.net site data occur daily, generally occurring during the morning hours (PST/PDT time zone) each day.  Exact backup times are not guaranteed; backups may be delayed as result of SourceForge.net site outages or planned maintenance windows.  System data backups occur generally occur at daily intervals, though this schedule may change depending on current maintenance events and planned upgrade events.
+</blockquote>
+
+
+<p><br><b><a name="backuppurpose">What is the purpose of SourceForge.net data backup?</a></b>
+<p><blockquote>
+SourceForge.net backups are used to provide restoration of hosts and data in the event of catastrophic, site wide issues.  These backups are also used to ensure suitable response time may be guaranteed in the event that disaster recovery (i.e. catastrophic loss of all hosts as result of earthquake, fire, etc.) should be required.  SourceForge.net backups are not used to provide user-requested file restoration; based on the resource limitations of SourceForge.net, this is not a service we provide.  SourceForge.net backups are used solely for resolution of significant, site wide issues, such as host hardware failure or catastrophic disaster.  <b>Each project is <a href="#projectresp">responsible for backing up their own data</a>.</b>
+</blockquote>
+
+
+<p><br><b><a name="projectresp">As a SourceForge.net project, what data should we back up?</a></b>
+<p><blockquote>
+Each project hosted on SourceForge.net is responsible for their own content and data backups.  Please ensure that your project has addressed the following backup concerns:
+<ul>
+<li><a href="#userresp">Remind your developers to backup their data.</a></li>
+<li><a href="#releasebackup">Backup your file release data.</a></li>
+<li><a href="#projectwebbackup">Backup your project web space.</a></li>
+<li><a href="#mysqlbackup">Backup the contents of your MySQL database.</a></li>
+<li><a href="#cvsbackup">Backup your CVS repository content regularly.</a></li>
+<li>Ensure that key members of your team are aware of your backup policy and procedures.</li>
+<li>Ensure that mailing list admin passwords and other project-specific security content has been retained in a secure location and is accessible to key members of your project team.</li>
+<li><b>Important</b>: If your project stores files within its project web space (which are flagged as world writable or are otherwise writable by the project web server) it is vital that you ensure proper backup of those files occurs on a regular basis.  <a href="#highriskstorage">Files of this nature</a> are prone to damage, by their very nature; please protect them appropriately, through the use of regular backups.</li>
+</ul>
+</blockquote>
+
+
+<p><br><b><a name="userresp">As a SourceForge.net user, what data should I back up?</a></b>
+<p><blockquote>
+As a SourceForge.net user, first and foremost, you should be aware of the backup policies and strategies used by your project.  In the event that there is loss of project data, it is important that all key members of that project group know how to proceed.
+
+<p>Second, it is important that you <a href="#shellbackup">backup the contents of your home directory on the project shell servers</a> and <a href="#cfbackup">backup any materials you have placed on the SourceForge.net compile farm</a>.  Finally, please ensure you have made an adequate backup of your SSH key data and any project-related password data you may have received.
+</blockquote>
+
+
+<p><br><b><a name="releasebackup">How may a SourceForge.net project backup their file releases?</a></b>
+<p><blockquote>
+File releases placed on the SourceForge.net download server network, through use of the SourceForge.net file release system, automatically enjoy an enhanced level of data redundancy and synchronization.  The SourceForge.net download server network periodically mirrors changes from a centralized host to a number of geographically diversified hosts, all with redundant storage hardware.  This helps to ensure stability, both short-term and long-term, within the download server network, helping to ensure accessibility of your file releases to your end-user base.
+
+<p>As with all other project-provided data, it is important that you retain a set of local backups of your file releases.  We recommend that you retain original file release archives at time of file release creation.  We also recommend that, for data security purposes, you sign each of your releases with <a href="http://www.gnupg.org">GNU Privacy Guard</a> or PGP.  Additional documentation regarding file release security may be found in our <a href="https://sourceforge.net/docman/display_doc.php?docid=6445&group_id=1">Guide to the File Release System</a>.
+</blockquote>
+
+
+<p><br><b><a name="projectwebbackup">How may a SourceForge.net project backup their project web space?</a></b>
+<p><blockquote>
+SourceForge.net recommends that all projects retain an off-site backup of all project group directory space content which has been placed on the project shell servers (and project web servers).  Project group data may be copied off of the project shell server in two ways.  It should be noted that all data you have uploaded to your project web space is accessible through the project shell server; you will use the project shell server, not the project web server, to backup this data.
+
+<p>The project group directory for your project is located in a directory hierarchy, split out by the first letter, and the first and second letter, of your project name.
+
+<p>Examples:<br>
+<blockquote>Project UNIX name: projectname<br>
+Directory structure: shell.sourceforge.net:/home/groups/p/pr/projectname
+<p>Project UNIX name: foobar<br>
+Directory structure: shell.sourceforge.net:/home/groups/f/fo/foobar
+</blockquote>
+
+<p>The first means to copy data off of the project shell server is to use scp, Secure CoPy, from your SSH suite.  Specific instructions for using your SCP client may be found in the documentation accompanying your SSH client.
+
+<p>The second means to copy data off of the project shell server is to use rsync in conjunction with your SSH client (only available on some platforms).  rsync permits you the means to reduce the bandwidth required to backup your project group data; this is particularly useful when you wish to make regular or frequent backups of this data.  More information regarding rsync may be found on <a href="http://rsync.samba.org">the Rsync project web site</a>.
+
+<p>The SourceForge.net support team is happy to assist with any issues related to the services we offer, including file backup and restoration. To contact the SourceForge.net support team, first login to the SourceForge.net web site, then <a href="https://sourceforge.net/tracker/?func=add&group_id=1&atid=200001">submit a support request</a>.
+</blockquote>
+
+
+<p><br><b><a name="mysqlbackup">How may a SourceForge.net project backup their MySQL data?</a></b>
+<p><blockquote>
+Each project hosted on SourceForge.net is eligible to use the project MySQL database services provided by SourceForge.net.  Each project is responsible for their own data.  As access to the project database servers is restricted, backups should be generated in one of two ways.
+
+<p>If your project is using its MySQL database resources for hosting an application and that application provides specific instructions for data backup, please follow those instructions and procedures.  Please ensure that any backups you create are treated in a secure manner and are offloaded from the project shell servers or project web servers.
+
+<p>A complete backup if your MySQL database may be created from the project shell servers by making use of the 'mysqldump' utility.  Instructions for performing <a href="http://www.mysql.com/documentation/mysql/bychapter/manual_MySQL_Database_Administration.html#Disaster_Prevention">MySQL database backup</a> are included in the MySQL documentation.
+
+<p>It should also be noted that a simple-to-use and simple-to-configure means of generating database content and schema backups exists in the <a href="http://phpmyadmin.sourceforge.net">phpMyAdmin</a> suite.  Please refer to the application documentation, MySQL documentation or phpMyAdmin documentation as appropriate.
+</blockquote>
+
+
+<p><br><b><a name="cvsbackup">How may a SourceForge.net project obtain a complete copy of their project CVS repository for backup purposes?</a></b>
+<p><blockquote>
+The most important data to most projects is the content they have placed in their project CVS repository; the most recent development materials for that project and the historical trail of project development.  SourceForge.net makes backing up the entirety of your project CVS repository easy; a new tarball of your project CVS repository is generated daily and is made available for you to download.  A link to your project's nightly CVS tarball may be found on the Project Admin page for your project.
+
+<p>It should be noted that these tarballs contain a complete copy of your project CVS repository, including control files and all historical file data, not just the latest versions of each file (this is how the nightly repository tarball differs from CVS snapshots provided by some projects).  To maintain an off-site backup of your CVS repository, simply download the nightly CVS repository tarball for your project.  
+
+<p>Nightly CVS repository tarballs are overwritten daily on the SourceForge.net servers; depending on your project needs, you may wish to retain (locally, not on SourceForge.net) tarballs generated from many dates, rather than just the most recent tarball.  SourceForge.net retains only the latest nightly CVS tarball; this permits us to generally restore project CVS repository contents to within 24 hours of issue.
+
+<p>In the event that significant damage to your project CVS repository has occurred, please obtain the latest nightly CVS tarball for your project immediately, if you have not already done so.  If you have a functional backup of your CVS repository, the SourceForge.net team will be able to recover your CVS repository; simply <a href="https://sourceforge.net/tracker/?func=add&group_id=1&atid=200001">submit a support request</a>.  Once again, at first sign of an issue, please make a local backup of the nightly CVS tarball for your project; this will increase the chances that we will be able to recover your repository content.
+</blockquote>
+
+
+<p><br><b><a name="shellbackup">How may a user backup their materials from the project shell servers?</a></b>
+<p><blockquote>
+User home directories on the project shell servers should be treated as temporary working space.  Please ensure that you create and retain backups of this data based on the importance of the data you place in your home directory.  Data may be copied from the project shell server to your remote workstation using rsync or scp, as discussed previously in this document.  Please refer to the instructions accompanying your rsync or scp client for further assistance, or <a href="#support">seek assistance from the SourceForge.net support team</a> as necessary.
+</blockquote>
+
+
+<p><br><b><a name="cfbackup">How may a user backup their materials from the compile farm?</a></b>
+<p><blockquote>
+All materials placed on the SourceForge.net compile farm should be backed up regularly.  In order to backup data from the compile farm, please use 'scp' (Secure CoPy) on the project shell servers (shell.sourceforge.net) to copy your data from the compile farm (cf.sourceforge.net) to a subdirectory off of your project group directory (/home/groups/p/pr/projectname).  Depending on the data you wish to backup, you may wish to generate a compressed tarball (.tar.gz) of that data before copying it to the project shell server, as to ease the complexity of your backup operation.  Once data has been copied to the project shell server, follow the instructions provided for <a href="#projectwebbackup">backup of group directory data</a> to offload that backup from the project shell server.
+</blockquote>
+
+
+<p><br><b><a name="restorepolicy">At what point will SourceForge.net restore data from backup?</a></b>
+<p><blockquote>
+SourceForge.net staff will perform data restoration in the event that data is damaged as result of host failure (i.e. all storage within both primary and backup hosts fails) or as result of complete, catastrophic loss of all site hardware.  SourceForge.net staff performs data backups on a regular basis, tests the functionality of the backup system, and is knowledgeable of our backup solution so as to ensure the shortest possible restore time in the event of a significant site wide data loss.
+</blockquote>
+
+
+<p><br><b><a name="restorerequest">Will SourceForge.net perform data restoration if I make a mistake?</a></b>
+<p><blockquote>
+Each SourceForge.net user and project is responsible for their own data.  SourceForge.net backups are used solely for resolution of catastrophic site wide issues.  SourceForge.net will not provide on-demand backups or restoration.  Please ensure that your project has suitable backups of all data hosted on SourceForge.net (user home directories, project web space, CVS content and file releases).
+</blockquote>
+
+
+<p><br><b><a name="highriskstorage">High risk file storage: world-writable files in project web space</a></b>
+<p><blockquote>
+Some web-based applications require files to be writable by the user used to run the web server.  As result, some projects elect to flag files as world writable or to have the user/group ownership of a file changed to match that of the web server.  This places file data at a high risk of compromise; it is important that projects recognize that and take precautions to back up data regularly, as appropriate for their particular application.  Files damaged or removed as result of exercise of these risks will not be restored by SourceForge.net staff.  Please ensure that your project data is backed up in an appropriate fashion.
+</blockquote>
+
+
+<p><br><b><a name="restorecriteria">Under what circumstances will SourceForge.net perform data restoration?</a></b>
+<p><blockquote>
+SourceForge.net staff will perform data restoration only in support of efforts to recover service after host failure or catastrophic site wide events.  SourceForge.net staff will not perform on-demand backup or restoration operations; due to resource limitations, this is not a service that SourceForge.net is able to perform.
+</blockquote>
+
+
+<p><br><b><a name="backuphardware">What type of hardware and software is used for data backup?</a></b>
+<p><blockquote>
+<p>SourceForge.net currently makes use of the <a href="http://amanda.sourceforge.net">AMANDA</a> backup software, hosted on a Linux-based machine, in conjunction with an <a href="http://www.overlanddata.com">Overland</a> AIT-2 tape array.  The AIT-2 tape technology is capable of holding 50GB of compressed data or 100GB of uncompressed data per tape, on average.
+
+<p>Additional live data backups are performed using rsync, cpio and database-specific replication.  This allows us to generate less durable, but more frequent backups for specific SourceForge.net site components.  Built in server replication and data redundancy functions are used, as available.
+</blockquote>
+
+
+<p><br><b><a name="backupstorage">Where is backup media stored?</a></b>
+<p><blockquote>
+Backup media used by the SourceForge.net backup hosts (tapes, CD-ROMs, etc.) are stored in no less than two locations.  The most recent backups are stored on-site with the backup servers.  When each backup pool is full, it is rotated off-site to a secure media storage facility.  Backup media is treated with the same level of security as live server data.
+</blockquote>
+
+
+<p><br><b><a name="backuptesting">How often does the SourceForge.net team test backup validity?</a></b>
+<p><blockquote>
+SourceForge.net makes use of the Open Source <a href="http://amanda.sourceforge.net">AMANDA</a> backup software.  This software includes built in backup testing functionality which is used by the SourceForge.net team to verify basic functionality of all backups performed.  In addition to these automated mechanisms, archived backups are tested every six months on a rotating basis, to ensure disaster recovery capability.
+</blockquote>
+
+
+<p><br><b><a name="support">Where can I obtain support related to file backup and restoration?</a></b>
+<p><blockquote>
+The SourceForge.net support team is happy to assist with any issues related to the services we offer, including file backup and restoration. To contact the SourceForge.net support team, first login to the SourceForge.net web site, then <a href="https://sourceforge.net/tracker/?func=add&group_id=1&atid=200001">submit a support request</a>.
+</blockquote>
+
+<p><br>Last updated: 2001-09-24
+
+	<!-- end content -->
+	<p>&nbsp;</p>
+	</td>
+	<td width="9" bgcolor="#FFFFFF">&nbsp;
+	</td>
+
+	</tr>
+	</table>
+		</td>
+		<td width="17" background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/rightbar1.png" align="right" valign="bottom"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/rightbar1.png" border=0 width=17 height=17></td>
+	</tr>
+	<tr>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bbar1.png" height="17"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bleft1.png" border=0 width=17 height=17></td>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bbar1.png" align="center" colspan="3"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bbar1.png" border=0 width=1 height=17></td>
+		<td background="//a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bbar1.png" bgcolor="#7c8188"><IMG src="https://a248.e.akamai.net/7/248/1710/949111342/sourceforge.net//themes/forged/images/bright1.png" border=0 width=17 height=17></td>
+	</tr>
+</table>
+</div>
+
+<!-- themed page footer -->
+<P><A HREF="/source.php?page_url=/docman/display_doc.php"><B><FONT COLOR="WHITE">Show Source</FONT></B></A><P><P class="footer">
+<font face="arial, helvetica" size="1" color="#cccccc">
+VA Linux Systems and SourceForge are trademarks of VA Linux Systems, Inc.
+Linux is a registered trademark of Linus Torvalds.  All other trademarks and
+copyrights on this page are property of their respective owners.
+For information about other site Content ownership and sitewide
+terms of service, please see the
+<a href="/docman/display_doc.php?docid=6048&group_id=1" class="legallink">SourceForge.net Terms of Service</a>.
+For privacy
+policy information, please see the <a href="/docman/display_doc.php?docid=6049&group_id=1
+" class="legallink"
+>SourceForge.net Privacy Policy</a>.
+Content owned by VA Linux Systems is copyright 
+1999, 2000, 2001 VA Linux Systems, Inc.  All rights reserved.
+</font>
+<BR>&nbsp;
+
+
+</body>
+</html>
+	

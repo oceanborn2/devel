@@ -1,0 +1,92 @@
+#LyX 1.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 218
+\textclass article
+\language english
+\inputencoding auto
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Title
+
+The Project Architect - Code generation issues
+\layout Date
+
+Date 
+\layout Abstract
+
+This document introduces the code generation process to be used in the Project
+ Architect development process.
+\layout Section
+
+Introduction : What is it and why ?
+\layout Standard
+
+Code generation is the process of defining templates and procedures in order
+ to automatically produce source code out of template files and automated
+ components.
+ Before talking about the advantages and drawbacks of code generation, let
+ us have a look at the traditionnal way of developping software programs
+\layout Subsection
+
+The traditional way
+\layout Subsubsection
+
+Following the requirements
+\layout Standard
+
+In the traditional way of doing things, developpers receive a set of requirement
+s (documents, interviews with users ...) and develop the code corresponding
+ to these requirements.
+ More and more project specifications tend to evolve rapidly over time.
+ As a consequence it gets more and more difficult to keep the code up to
+ date with the requirements.
+ 
+\layout Subsubsection
+
+Reusing patterns
+\layout Standard
+
+Often, a team of developpers implements the project using a set of patterns.
+ These patterns can be imposed by both coding guidelines and framework design
+ issues.
+ By using the same patterns over and over again, the code tends to be more
+ consistent.
+\newline 
+On the other hand, human being are not very at repeating the same patterns
+ over and over again.
+ It is therefore a good idea to help them with productivity tools.
+\layout Section
+
+Helping with code generation
+\layout Subsection
+
+Benefits taken from code generation
+\layout Itemize
+
+As we have seen, writing code often gets repetitive and therefore tedious.
+ Writing the same code over and over again is error prone and difficult
+ to maintain in a consistent fashion.
+ Code generation can help with these issues.
+\layout Itemize
+
+A change in the framework used by the developpers can be automatically reported
+ at the application level.
+ It is therefore easier to fix bugs, and to take framework evolutions into
+ account.
+\the_end

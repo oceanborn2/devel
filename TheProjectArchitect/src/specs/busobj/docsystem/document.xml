@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!--
+
+   $Id: document.xml,v 1.6 2002/05/18 19:25:56 pascal Exp $
+ 
+   $Log: document.xml,v $
+   Revision 1.6  2002/05/18 19:25:56  pascal
+   Naming convention change
+
+   Revision 1.5  2002/04/14 21:13:56  pascal
+   Changed  name of attribute type to datatype
+
+   Revision 1.4  2001/12/09 23:27:29  pascal
+   Added xml headers plus a coupe of fixes
+
+ 
+   $Author: pascal $
+ 
+   This file belongs to the 'Project Architect' and is released under the GNU General Public License (GPL)
+  
+   Copyright (C) Pascal Munerot
+
+-->
+
+<specfile>
+
+<spec name="Document" datamodel="busobj">
+	<entry name="ident"        datatype="string"       length="20"              nullable="no"/>
+	<entry name="name"         datatype="string"       length="40"              nullable="yes"/>
+	<entry name="created_date" datatype="date"                                  nullable="no"/>
+	<entry name="status"       datatype="value_domain" values="document_status" nullable="no"/>
+	<entry name="format"       datatype="value_domain" values="document_format" nullable="no" />
+	<entry name="type"         datatype="value_domain" values="document_type"   nullable="no" />
+</spec>
+
+</specfile>
+
+
+
