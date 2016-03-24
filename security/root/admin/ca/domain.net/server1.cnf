@@ -1,0 +1,29 @@
+dir=.
+hname=server1
+siteName = ${hname}.domain.net
+basicConstraints=critical,CA:FALSE,pathlen:0
+issuer=domain_server
+
+#nameConstraints=excluded;
+#nameConstraints=permitted;IP:192.168.3.0/255.255.255.0
+#subjectAltName=IP:192.168.3.2
+subjectAltName+=otherName:server1,otherName:www.domain.net, otherName:user1.domain.net,otherName:server1:443
+#subjectAltName+=URI:https://server1,URI:http://192.168.3.2
+#subjectAltName+=email:user1.domain@gmail.com
+#subjectAltName+=email:user1.domain@laposte.net
+
+[req]
+default_bits = 2048
+default_keyfile = ${hname}.key
+distinguished_name = server1_DN
+prompt = no
+#output_password = xxxxxxxxxxxxx 
+#input_password  = xxxxxxxxxxxxx 
+
+[server1_DN]
+C = FR
+ST = IDF
+L = Paris-75000
+O = domain
+OU = server
+CN = ${siteName}

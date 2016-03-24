@@ -1,0 +1,20 @@
+dir=.
+siteName = server.domain.net
+basicConstraints=critical,CA:TRUE,pathlen:0
+issuer=domain.net
+
+[req]
+default_bits = 2048
+default_keyfile = ${siteName}.key
+distinguished_name = domain_serv_DN
+prompt = no
+#output_password = xxxxxxxxxxxxx
+#input_password  = xxxxxxxxxxxxx
+
+[domain_serv_DN]
+C = FR
+ST = IDF
+L = Paris-75000
+O = domain
+OU = server
+CN = ${siteName}

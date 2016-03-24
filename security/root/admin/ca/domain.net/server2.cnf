@@ -1,0 +1,29 @@
+dir=.
+hname=server2
+siteName = www.domain.net
+#/user1.domain.net/mail.domain.net
+#, ${hname}.domain.net
+basicConstraints=critical,CA:FALSE,pathlen:0
+issuer=domain_server
+
+#nameConstraints=excluded;
+#nameConstraints=permitted;IP:192.168.4.0/255.255.255.0
+#subjectAltName=IP:192.168.4.2
+subjectAltName+=otherName:server2,otherName:server2.domain.net,www.domain.net,otherName:server2:8443
+subjectAltName+=URI:https://server2,URI:http://192.168.4.2
+
+[req]
+default_bits = 2048
+default_keyfile = ${hname}.key
+distinguished_name = server1_DN
+prompt = no
+#output_password = xxxxxxxxxxxxx 
+#input_password  = xxxxxxxxxxxxx
+
+[server1_DN]
+C = FR
+ST = IDF
+L = Paris-75000
+O = domain
+OU = server
+CN = ${siteName}
