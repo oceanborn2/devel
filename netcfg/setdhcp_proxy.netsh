@@ -1,0 +1,36 @@
+#========================
+# Configuration de l'interface
+#========================
+pushd interface
+
+reset all
+
+
+popd
+# Fin de la configuration de l'interface
+
+
+
+# ----------------------------------
+# Configuration IP de l'interface
+# ----------------------------------
+pushd interface ip
+
+
+# Configuration IP de l'interface pour "Connexion au réseau local"
+
+set address name = "Connexion au réseau local" source = dhcp
+set dns name = "Connexion au réseau local" source = dhcp
+set wins name = "Connexion au réseau local" source = dhcp
+
+# Configuration IP de l'interface pour "wifi"
+
+set address name = "wifi" source = dhcp
+set dns name = "wifi" source = dhcp
+set wins name = "wifi" source = dhcp
+
+
+popd
+# Fin de la configuration IP de l'interface
+
+
