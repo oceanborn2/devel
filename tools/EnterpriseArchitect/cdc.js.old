@@ -1,0 +1,75 @@
+// Génération du cahier des charges des échanges
+
+// Importer les fichiers sources externes
+!INC Generics
+!INC EAConstants
+!INC EAHelper
+!INC WordHelper
+!INC Predicates
+!INC Extract
+
+function documenterUtilisateur(utilisateur, pName) {
+	wh.titre(utilisateur.Name, 2);
+	wh.frametable(utilisateur.Notes);
+}
+
+function documenterService(service, pName) {
+	wh.titre(service.Name, 2);
+	wh.frametable(service.Notes);
+}
+
+function documenterTheme(theme, pName) {
+	wh.titre(theme.Name, 2);
+	wh.frametable(theme.Notes);
+}
+
+function documenterCasEtScenarios(cas, pName) {
+	wh.titre(cas.Name, 2);
+	wh.frametable(cas.Notes);
+}
+
+function MakeReport(data) {
+	services     = data.services;
+	utilisateurs = data.utilisateurs;
+	themes       = data.themes;
+	souspalier   = data.souspalier;
+	sousPalierName = souspalier.Name;
+	wh.begindocument(sousPalierName+".doc");	
+	
+	try {
+		try {
+		wh.titre('Liste des utilisateurs', 1);
+		map(utilisateurs, documenterUtilisateur, 'utilisateurs');		
+
+		wh.titre("Liste des services", 1);
+		map(services, documenterService, 'services');		
+
+		wh.titre("Liste des thèmes", 1);
+		map(themes, documenterTheme, 'themes');		
+			
+		wh.titre("Liste des cas d'utilisation et des scénarios", 1);
+		map(casEtScenarios, documenterCasEtScenarios, 'casEtScenarios');		
+			
+		} finally {
+			Session.Output("Sauvegarde du document");
+			wh.enddocument();
+		}
+	} catch(e) {
+		Session.Output("Erreur: " + e);
+		wh.enddocument();
+		wh.cleanup();
+		throw e;
+	} finally {
+		wh.cleanup();
+	}
+}
+var data = null;
+var wh = null;
+
+//var souspaliers = new Array("{65476ED1-56A5-4d94-9C82-D88817612DF6}", "{28DA3794-F9BF-4a5c-B201-9B1C7D567ABC}", "{7BCEE7E7-A358-4156-9149-0BEF2A60335D}", "{9D77537A-361D-482c-926C-417547C31E6E}", "{2183BB4A-1913-47aa-BA99-63520895C009}");
+var sousPalierData = TraiterSousPalier("{65476ED1-56A5-4d94-9C82-D88817612DF6}");
+/*for guid in (souspaliers) {
+	wh = new WordHelper();
+	var sousPalierData = TraiterSousPalier(guid); 
+	MakeReport(sousPalierData);
+}*/

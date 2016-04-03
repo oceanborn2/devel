@@ -1,0 +1,32 @@
+ROOTDIR=/home/pascal/encrypt
+CC=c++
+SRC=encrypt.cc options.cc utils.cc encryption_method.cc
+OBJ=encrypt.o options.o utils.o encryption_method.o
+LINKFLAGS=-g -O2 -o encrypt -fhandle-exceptions
+encrypt: ${OBJ}
+	cd ${ROOTDIR}
+	${CC} ${LINKFLAGS} ${OBJ}
+
+
+encrypt.o: encrypt.cc
+	${CC} -c encrypt.cc
+
+options.o: options.cc
+	${CC} -c options.cc
+
+utils.o: utils.cc
+	${CC} -c utils.cc
+
+encryption_method.o: encryption_method.cc
+	${CC} -c encryption_method.cc
+
+clean:
+	rm *.o
+
+build:  clean encrypt
+
+
+
+
+
+

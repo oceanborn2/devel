@@ -1,0 +1,46 @@
+# Inclusion des definitions de base
+include $(HOME)/devel/forte/Rules.Make
+
+OBJ = 	wexplore.o $(COM)filereader.o $(COM)display.o $(COM)options.o \
+	$(FRT)forte.o
+
+wexplore : $(OBJ)
+	$(CPLUSPLUSCOMPILE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

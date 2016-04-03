@@ -1,0 +1,335 @@
+#========================
+# Configuration de l'interface
+#========================
+pushd interface
+
+reset all
+
+
+popd
+# Fin de la configuration de l'interface
+
+
+                                            
+# ----------------------------------------- 
+# Configuration RAS                         
+# ----------------------------------------- 
+pushd ras
+
+set authmode mode = nodcc
+delete authtype type = PAP
+delete authtype type = SPAP
+delete authtype type = MD5CHAP
+delete authtype type = MSCHAP
+delete authtype type = MSCHAPv2
+delete authtype type = EAP
+add authtype type = MSCHAP
+delete link type = SWC
+delete link type = LCP
+add link type = SWC
+add link type = LCP
+delete multilink type = MULTI
+delete multilink type = BACP
+add multilink type = MULTI
+add multilink type = BACP
+
+set user name = Administrateur dialin = policy cbpolicy = none 
+set user name = ASPNET dialin = policy cbpolicy = none 
+set user name = InvitÇ dialin = policy cbpolicy = none 
+
+set tracing component = * state = disabled
+
+popd
+
+# Fin de la configuration RAS.                  
+                                             
+                                             
+
+                                            
+# ----------------------------------------- 
+# Configuration IP RAS                      
+# ----------------------------------------- 
+pushd ras ip
+
+delete pool
+
+set negotiation mode = allow
+set access mode = all
+set addrreq mode = deny
+set addrassign method = auto
+
+popd
+
+# Fin de la configuration IP RAS.            
+                                             
+
+                                            
+# ----------------------------------------- 
+# Configuration IPX RAS                      
+# ----------------------------------------- 
+pushd ras ipx
+
+set negotiation mode = allow
+set access mode = all
+set nodereq mode = allow
+set netassign method = autosame
+
+popd
+
+# Fin de la configuration IPX RAS.            
+                                             
+                                             
+
+                                            
+# ----------------------------------------- 
+# Configuration NBF RAS                      
+# ----------------------------------------- 
+pushd ras netbeui
+
+set negotiation mode = allow
+set access mode = all
+
+popd
+
+# Fin de la configuration NBF RAS.            
+                                             
+                                             
+
+                                            
+# ----------------------------------------- 
+# Configuration AppleTalk de l'accäs distant      
+# ----------------------------------------- 
+pushd ras appletalk
+
+set negotiation mode = allow
+set access mode = all
+
+popd
+
+# Fin de la configuration AppleTalk de l'accäs distant.
+
+
+                                            
+# ----------------------------------------- 
+# Configuration RAS AAAA                   
+# ----------------------------------------- 
+pushd ras aaaa
+
+set authentication provider = windows
+set accounting provider = windows
+
+delete authserver name = *
+delete acctserver name = *
+
+
+
+popd
+
+# Fin de la configuration RAS AAAA.          
+                                             
+                                             
+# Configuration du routage
+pushd routing
+reset
+popd
+#Configuration IP
+pushd routing ip
+reset
+set loglevel error
+add preferenceforprotocol proto=LOCAL preflevel=1
+add preferenceforprotocol proto=NetMgmt preflevel=10
+add preferenceforprotocol proto=STATIC preflevel=3
+add preferenceforprotocol proto=NONDOD preflevel=5
+add preferenceforprotocol proto=AUTOSTATIC preflevel=7
+add preferenceforprotocol proto=OSPF preflevel=110
+add preferenceforprotocol proto=RIP preflevel=120
+add interface name="{29163BC1-AE17-49EB-A8BF-04A05D81F346}" state=enable
+set filter name="{29163BC1-AE17-49EB-A8BF-04A05D81F346}" fragcheck=disable
+add interface name="Connexion au rÇseau local" state=enable
+set filter name="Connexion au rÇseau local" fragcheck=disable
+add interface name="wifi" state=enable
+set filter name="wifi" fragcheck=disable
+add interface name="{B6E63BA6-43F6-49D7-8367-46389EB0D200}" state=enable
+set filter name="{B6E63BA6-43F6-49D7-8367-46389EB0D200}" fragcheck=disable
+add interface name="Bouclage" state=enable
+set filter name="Bouclage" fragcheck=disable
+add interface name="Interne" state=enable
+set filter name="Interne" fragcheck=disable
+popd
+# Fin de la configuration IP
+
+
+
+# ---------------------------------- 
+# Configuration de l'allocateur DHCP 
+# ---------------------------------- 
+pushd routing ip autodhcp
+uninstall
+
+
+popd
+# Fin de la configuration de l'allocateur DHCP
+
+
+
+# ---------------------------------- 
+# Configuration du proxy DNS         
+# ---------------------------------- 
+pushd routing ip dnsproxy
+uninstall
+
+
+popd
+# Fin de la configuration du proxy DNS
+
+
+
+# ---------------------------------- 
+# Configuration IGMP                 
+# ---------------------------------- 
+pushd routing ip igmp
+uninstall
+
+
+popd
+# Fin de Configuration IGMP
+
+
+
+# ---------------------------------- 
+# Configuration DAT                
+# ---------------------------------- 
+pushd routing ip nat
+uninstall
+
+
+popd
+
+
+
+
+# ---------------------------------- 
+# Configuration OSPF                
+# ---------------------------------- 
+
+pushd routing ip ospf
+uninstall
+
+popd
+# Fin de la configuration OSPF
+
+
+
+
+# ---------------------------------- 
+# Configuration de l'agent relais DHCP     
+# ---------------------------------- 
+pushd routing ip relay
+uninstall
+
+
+popd
+# Fin de configuration du relais DHCP
+
+
+
+# ---------------------------------- 
+# Configuration RIP                  
+# ---------------------------------- 
+pushd routing ip rip
+uninstall
+
+
+popd
+# Fin de configuration RIP
+
+
+
+# ---------------------------------- 
+# Configuration de la recherche des routeurs     
+# ---------------------------------- 
+pushd routing ip routerdiscovery
+uninstall
+add interface name="{29163BC1-AE17-49EB-A8BF-04A05D81F346}" disc=disable minint=7 maxint=10 life=30 level=0
+add interface name="Connexion au rÇseau local" disc=disable minint=7 maxint=10 life=30 level=0
+add interface name="wifi" disc=disable minint=7 maxint=10 life=30 level=0
+add interface name="{B6E63BA6-43F6-49D7-8367-46389EB0D200}" disc=disable minint=7 maxint=10 life=30 level=0
+add interface name="Bouclage" disc=disable minint=7 maxint=10 life=30 level=0
+add interface name="Interne" disc=disable minint=7 maxint=10 life=30 level=0
+
+
+popd
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+#                                                         #
+#   AVANT d'exÇcuter ce script                            #
+#                                                         #
+# Pour restaurer la configuration de routeur IPX, vous devez d'abord     #
+# DêSINSTALLER IPX du dossier des connexions rÇseau et   #
+# ensuite le RêINSTALLER.                                      #
+#                                                         #
+#   Ceci supprime l'ancienne configuration de routeur IPX         #
+#   et restaure le configuration de routeur IPX Ö      #
+#   son Çtat par dÇfaut                                               #
+#                                                         #
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+
+#----------------------------------------------------------
+# Configuration IPX
+#----------------------------------------------------------
+
+pushd routing ipxLe routeur ne connaåt pas l'identificateur de protocole spÇcifiÇ.
+
+#----------------------------------------------------------
+# Configuration d'interface IPX
+#----------------------------------------------------------
+
+
+#----------------------------------------------------------
+# Configuration du filtre de trafic IPX
+#----------------------------------------------------------
+
+
+#----------------------------------------------------------
+# Configuration d'itinÇraire statique IPX
+#----------------------------------------------------------
+
+
+#----------------------------------------------------------
+# Configuration de service statique IPX
+#----------------------------------------------------------
+
+#----------------------------------------------------------
+# Configuration IPX RIP
+#----------------------------------------------------------
+
+pushd routing ipx rip
+popd
+
+
+# Fin de la configuration of IPX RIP
+
+#----------------------------------------------------------
+# Configuration IPX SAP
+#----------------------------------------------------------
+
+pushd routing ipx sap
+popd
+
+
+# Fin de la configuration IPX SAP
+
+#----------------------------------------------------------
+# Configuration IPX NETBIOS
+#----------------------------------------------------------
+
+pushd routing ipx netbios
+popd
+
+
+# Fin de la configuration IPX NB
+
+
+popd
+
+# Fin de la configuration IPX

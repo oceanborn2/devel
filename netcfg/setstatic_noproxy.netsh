@@ -1,0 +1,42 @@
+#========================
+# Configuration de l'interface
+#========================
+pushd interface
+
+reset all
+
+
+popd
+# Fin de la configuration de l'interface
+
+
+
+# ----------------------------------
+# Configuration IP de l'interface
+# ----------------------------------
+pushd interface ip
+
+
+# Configuration IP de l'interface pour "wifi"
+
+set address name = "wifi" source = static addr = 192.168.1.18 mask = 255.255.255.0
+set address name = "wifi" gateway = 192.168.1.254 gwmetric = 1
+add address name = "wifi" gateway = 192.168.1.1 gwmetric = 2
+set dns name = "wifi" source = static addr = 192.168.1.1
+#add dns name = "wifi" addr = 62.4.16.70
+add dns name = "wifi" addr = 80.10.246.1
+add dns name = "wifi" addr = 80.10.246.132
+#add dns name = "wifi" addr = 80.10.246.130
+#add dns name = "wifi" addr = 80.10.246.3
+set wins name = "wifi" source = static addr = none
+
+# Configuration IP de l'interface pour "Connexion au réseau local"
+
+set address name = "Connexion au réseau local" source = dhcp
+set dns name = "Connexion au réseau local" source = dhcp
+set wins name = "Connexion au réseau local" source = dhcp
+
+
+popd
+# Fin de la configuration IP de l'interface
+
