@@ -1,0 +1,48 @@
+# definition de la liste des fichiers sources
+SRC=wexplode.cc ftutilities.cc forte.cc options.cc utility.cc filereader.cc display.cc 
+OBJ=wexplode.o ftutilities.o forte.o options.o utility.o filereader.o display.o
+
+# Regles concernant la compilation
+
+CXX=c++
+
+CPLUSPLUSCOMPILE=$(CXX) -o $@ $(OBJ) -I. -I$(COM) -I$(FRT) -lg++ -O3 -B.
+
+
+PROG=wexplode
+
+$(PROG)	: $(OBJ)
+	$(CPLUSPLUSCOMPILE)
+
+%.o:%.cc
+	$(CXX) $(CXXFLAGS) -c $<  -O3 -B.
+
+# Dependances
+wexplode.o      : wexplode.cc display.o filereader.o ftutilities.o forte.o
+display.o     	: display.cc
+options.o     	: options.cc 
+utility.o	: utility.cc options.o
+ftutilities.o	: ftutilities.cc utility.o
+forte.o	        : forte.cc 
+filereader.o	: filereader.cc	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

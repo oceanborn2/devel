@@ -1,0 +1,3 @@
+include $(HOME)/devel/forte/Rules.Make
+
+
