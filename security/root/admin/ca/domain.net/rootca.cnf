@@ -10,8 +10,8 @@ default_bits = 2048
 default_keyfile = ${siteName}.key
 distinguished_name = domain_root_DN
 prompt = no
-#output_password = xxxxxxxxxxxx%
-#input_password = yyyyyyyyyyyyyy%
+
+default_md=sha256
 
 [domain_root_DN]
 C = FR

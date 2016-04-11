@@ -32,38 +32,38 @@ rm -f domain_user.srl
 
 function generate() 
 {
-rkey=$1
-rpass=$2
-rconfig=$3
-rca=$4
-rpassca=$5
-rsubj=$6
-csubj=''
+    rkey=$1
+    rpass=$2
+    rconfig=$3
+    rca=$4
+    rpassca=$5
+    rsubj=$6
+    csubj=''
 
-if [[ (${rsubj}'x' != 'x')]]
-then
-  #csubj="-extensions subjectAltName=$rsubj"
-  csubj="-subj \"$rsubj\""
-  echo "csubj: $csubj"
-  echo "rsubj: $rsubj"
-fi
+    if [[ (${rsubj}'x' != 'x')]];
+    then
+      #csubj="-extensions subjectAltName=$rsubj"
+      csubj="-subj \"$rsubj\""
+      echo "csubj: $csubj"
+      echo "rsubj: $rsubj"
+    fi
 
-echo "KEY:$rkey PASS:$rpass CONFIG:$rconfig CA:$rca CApass:$rpassca"
-openssl genrsa                   -out $rkey.key -passout pass:$rpass -des3 2048           -config $rconfig.cnf
-openssl rsa -in $rkey.key -pubout > $rkey.pub -passin pass:$rpass 
-openssl req -new -key $rkey.key  -out $rkey.csr -passout pass:$rpass -passin  pass:$rpass  -subj "${rsubj}" -config $rconfig.cnf  
+    echo "KEY:$rkey PASS:$rpass CONFIG:$rconfig CA:$rca CApass:$rpassca"
+    openssl genrsa                   -out $rkey.key -passout pass:$rpass -aes256 2048           -config $rconfig.cnf
+    openssl rsa -in $rkey.key -pubout > $rkey.pub -passin pass:$rpass
+    openssl req -new -key $rkey.key  -out $rkey.csr -passout pass:$rpass -passin  pass:$rpass  -subj "${rsubj}" -sha256 -config $rconfig.cnf
 
-if [[ $rkey == $rca ]]; then
-  echo "generating the root authority self signed certificate"
-  openssl x509 -trustout -req -days 365  -in $rkey.csr -passin pass:$rpass -signkey $rkey.key -passin pass:$rpass -out $rkey.cert 
-else
-  echo "signing with a parent authority"
-  openssl x509           -req -days 365 -in $rkey.csr -passin pass:$rpass -CA $rca.cert -CAkey $rca.key -CAcreateserial -CAserial $rca.srl -passin pass:$rpassca -out $rkey.cert
-  openssl rsa -in ${rkey}.key -passin pass:$rpass -out ${rkey}_un.key
-fi
-echo
-echo ---------------------------------------------------------------------------
-echo
+    if [[ $rkey == $rca ]]; then
+      echo "generating the root authority self signed certificate"
+      openssl x509 -trustout -req -days 365  -in $rkey.csr -passin pass:$rpass -signkey $rkey.key -passin pass:$rpass -out $rkey.cert
+    else
+      echo "signing with a parent authority"
+      openssl x509           -req -days 365 -in $rkey.csr -passin pass:$rpass -CA $rca.cert -CAkey $rca.key -CAcreateserial -CAserial $rca.srl -passin pass:$rpassca -out $rkey.cert
+      openssl rsa -in ${rkey}.key -passin pass:$rpass -out ${rkey}_un.key
+    fi
+    echo
+    echo ---------------------------------------------------------------------------
+    echo
 }
 
 generate domain_net    $ROOTPSW    rootca   domain_net $ROOTPSW
