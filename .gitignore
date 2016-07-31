@@ -220,3 +220,8 @@ apache-tomcat-6.0.32
 target
 target
 engine
+/graphs/Graph.exe
+/graphs/Graph
+/graphs/nimcache
+/graphs/experiments/nimcache
+/graphs/experiments/IntSetTests
