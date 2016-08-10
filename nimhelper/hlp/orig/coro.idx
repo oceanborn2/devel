@@ -1,0 +1,6 @@
+start	coro.html#start,proc),int	coro : start(c: proc (); stacksize: int = defaultStackSize)	
+yield	coro.html#yield_1	Module coro	
+suspend	coro.html#suspend,float	coro : suspend(sleepTime: float = 0)	
+run	coro.html#run,	coro : run()	
+alive	coro.html#alive,proc)	coro : alive(c: proc ()): bool	
+wait	coro.html#wait,proc),float	coro : wait(c: proc (); interval = 0.01&#x27;f64)	

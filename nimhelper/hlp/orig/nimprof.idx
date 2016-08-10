@@ -1,0 +1,5 @@
+Nanos	nimprof.html#Nanos	nimprof : Nanos	
+Time	nimprof.html#Time	nimprof : Time	
+setSamplingFrequency	nimprof.html#setSamplingFrequency,int	nimprof : setSamplingFrequency(intervalInUs: int)	
+disableProfiling	nimprof.html#disableProfiling,	nimprof : disableProfiling()	
+enableProfiling	nimprof.html#enableProfiling,	nimprof : enableProfiling()	

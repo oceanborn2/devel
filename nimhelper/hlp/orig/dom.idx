@@ -1,0 +1,152 @@
+EventTarget	dom.html#EventTarget	dom : EventTarget	
+Window	dom.html#Window	dom : Window	
+Frame	dom.html#Frame	dom : Frame	
+ClassList	dom.html#ClassList	dom : ClassList	
+NodeType	dom.html#NodeType	dom : NodeType	
+Node	dom.html#Node	dom : Node	
+Document	dom.html#Document	dom : Document	
+Element	dom.html#Element	dom : Element	
+LinkElement	dom.html#LinkElement	dom : LinkElement	
+EmbedElement	dom.html#EmbedElement	dom : EmbedElement	
+AnchorElement	dom.html#AnchorElement	dom : AnchorElement	
+OptionElement	dom.html#OptionElement	dom : OptionElement	
+FormElement	dom.html#FormElement	dom : FormElement	
+ImageElement	dom.html#ImageElement	dom : ImageElement	
+Event	dom.html#Event	dom : Event	
+Location	dom.html#Location	dom : Location	
+History	dom.html#History	dom : History	
+Navigator	dom.html#Navigator	dom : Navigator	
+TPlugin	dom.html#TPlugin	dom : TPlugin	
+TMimeType	dom.html#TMimeType	dom : TMimeType	
+TLocationBar	dom.html#TLocationBar	dom : TLocationBar	
+TMenuBar	dom.html#TMenuBar	dom : TMenuBar	
+TPersonalBar	dom.html#TPersonalBar	dom : TPersonalBar	
+TScrollBars	dom.html#TScrollBars	dom : TScrollBars	
+TToolBar	dom.html#TToolBar	dom : TToolBar	
+TStatusBar	dom.html#TStatusBar	dom : TStatusBar	
+TTimeOut	dom.html#TTimeOut	dom : TTimeOut	
+TInterval	dom.html#TInterval	dom : TInterval	
+addEventListener	dom.html#addEventListener,EventTarget,cstring,proc(Event),bool	dom : addEventListener*(et: EventTarget; ev: cstring; cb: proc (ev: Event);\n                  useCapture: bool = false)	
+alert	dom.html#alert,Window,cstring	dom : alert*(w: Window; msg: cstring)	
+back	dom.html#back,Window	dom : back*(w: Window)	
+blur	dom.html#blur,Window	dom : blur*(w: Window)	
+captureEvents	dom.html#captureEvents,Window,int	dom : captureEvents*(w: Window; eventMask: int)	
+clearInterval	dom.html#clearInterval,Window,ref.TInterval	dom : clearInterval*(w: Window; interval: ref TInterval)	
+clearTimeout	dom.html#clearTimeout,Window,ref.TTimeOut	dom : clearTimeout*(w: Window; timeout: ref TTimeOut)	
+close	dom.html#close,Window	dom : close*(w: Window)	
+confirm	dom.html#confirm,Window,cstring	dom : confirm*(w: Window; msg: cstring): bool	
+disableExternalCapture	dom.html#disableExternalCapture,Window	dom : disableExternalCapture*(w: Window)	
+enableExternalCapture	dom.html#enableExternalCapture,Window	dom : enableExternalCapture*(w: Window)	
+find	dom.html#find,Window,cstring	dom : find*(w: Window; text: cstring; caseSensitive = false; backwards = false)	
+focus	dom.html#focus,Window	dom : focus*(w: Window)	
+forward	dom.html#forward,Window	dom : forward*(w: Window)	
+handleEvent	dom.html#handleEvent,Window,Event	dom : handleEvent*(w: Window; e: Event)	
+home	dom.html#home,Window	dom : home*(w: Window)	
+moveBy	dom.html#moveBy,Window,int,int	dom : moveBy*(w: Window; x, y: int)	
+moveTo	dom.html#moveTo,Window,int,int	dom : moveTo*(w: Window; x, y: int)	
+open	dom.html#open,Window,cstring,cstring,cstring	dom : open*(w: Window; uri, windowname: cstring; properties: cstring = nil): Window	
+print	dom.html#print,Window	dom : print*(w: Window)	
+prompt	dom.html#prompt,Window,cstring,cstring	dom : prompt*(w: Window; text, default: cstring): cstring	
+releaseEvents	dom.html#releaseEvents,Window,int	dom : releaseEvents*(w: Window; eventMask: int)	
+resizeBy	dom.html#resizeBy,Window,int,int	dom : resizeBy*(w: Window; x, y: int)	
+resizeTo	dom.html#resizeTo,Window,int,int	dom : resizeTo*(w: Window; x, y: int)	
+routeEvent	dom.html#routeEvent,Window,Event	dom : routeEvent*(w: Window; event: Event)	
+scrollBy	dom.html#scrollBy,Window,int,int	dom : scrollBy*(w: Window; x, y: int)	
+scrollTo	dom.html#scrollTo,Window,int,int	dom : scrollTo*(w: Window; x, y: int)	
+setInterval	dom.html#setInterval,Window,cstring,int	dom : setInterval*(w: Window; code: cstring; pause: int): ref TInterval	
+setInterval	dom.html#setInterval,Window,proc),int	dom : setInterval*(w: Window; function: proc (); pause: int): ref TInterval	
+setTimeout	dom.html#setTimeout,Window,cstring,int	dom : setTimeout*(w: Window; code: cstring; pause: int): ref TTimeOut	
+setTimeout	dom.html#setTimeout,Window,proc),int	dom : setTimeout*(w: Window; function: proc (); pause: int): ref TInterval	
+stop	dom.html#stop,Window	dom : stop*(w: Window)	
+appendChild	dom.html#appendChild,Node,Node	dom : appendChild*(n, child: Node)	
+appendData	dom.html#appendData,Node,cstring	dom : appendData*(n: Node; data: cstring)	
+cloneNode	dom.html#cloneNode,Node,bool	dom : cloneNode*(n: Node; copyContent: bool): Node	
+deleteData	dom.html#deleteData,Node,int,int	dom : deleteData*(n: Node; start, len: int)	
+getAttribute	dom.html#getAttribute,Node,cstring	dom : getAttribute*(n: Node; attr: cstring): cstring	
+getAttributeNode	dom.html#getAttributeNode,Node,cstring	dom : getAttributeNode*(n: Node; attr: cstring): Node	
+hasChildNodes	dom.html#hasChildNodes,Node	dom : hasChildNodes*(n: Node): bool	
+insertBefore	dom.html#insertBefore,Node,Node,Node	dom : insertBefore*(n, newNode, before: Node)	
+insertData	dom.html#insertData,Node,int,cstring	dom : insertData*(n: Node; position: int; data: cstring)	
+removeAttribute	dom.html#removeAttribute,Node,cstring	dom : removeAttribute*(n: Node; attr: cstring)	
+removeAttributeNode	dom.html#removeAttributeNode,Node,Node	dom : removeAttributeNode*(n, attr: Node)	
+removeChild	dom.html#removeChild,Node,Node	dom : removeChild*(n, child: Node)	
+replaceChild	dom.html#replaceChild,Node,Node,Node	dom : replaceChild*(n, newNode, oldNode: Node)	
+replaceData	dom.html#replaceData,Node,int,int,cstring	dom : replaceData*(n: Node; start, len: int; text: cstring)	
+scrollIntoView	dom.html#scrollIntoView,Node	dom : scrollIntoView*(n: Node)	
+setAttribute	dom.html#setAttribute,Node,cstring,cstring	dom : setAttribute*(n: Node; name, value: cstring)	
+setAttributeNode	dom.html#setAttributeNode,Node,Node	dom : setAttributeNode*(n: Node; attr: Node)	
+captureEvents	dom.html#captureEvents,Document,int	dom : captureEvents*(d: Document; eventMask: int)	
+createAttribute	dom.html#createAttribute,Document,cstring	dom : createAttribute*(d: Document; identifier: cstring): Node	
+createElement	dom.html#createElement,Document,cstring	dom : createElement*(d: Document; identifier: cstring): Element	
+createTextNode	dom.html#createTextNode,Document,cstring	dom : createTextNode*(d: Document; identifier: cstring): Node	
+getElementById	dom.html#getElementById,Document,cstring	dom : getElementById*(d: Document; id: cstring): Element	
+getElementsByName	dom.html#getElementsByName,Document,cstring	dom : getElementsByName*(d: Document; name: cstring): seq[Element]	
+getElementsByTagName	dom.html#getElementsByTagName,Document,cstring	dom : getElementsByTagName*(d: Document; name: cstring): seq[Element]	
+getElementsByClassName	dom.html#getElementsByClassName,Document,cstring	dom : getElementsByClassName*(d: Document; name: cstring): seq[Element]	
+getSelection	dom.html#getSelection,Document	dom : getSelection*(d: Document): cstring	
+handleEvent	dom.html#handleEvent,Document,Event	dom : handleEvent*(d: Document; event: Event)	
+open	dom.html#open,Document	dom : open*(d: Document)	
+releaseEvents	dom.html#releaseEvents,Document,int	dom : releaseEvents*(d: Document; eventMask: int)	
+routeEvent	dom.html#routeEvent,Document,Event	dom : routeEvent*(d: Document; event: Event)	
+write	dom.html#write,Document,cstring	dom : write*(d: Document; text: cstring)	
+writeln	dom.html#writeln,Document,cstring	dom : writeln*(d: Document; text: cstring)	
+blur	dom.html#blur,Element	dom : blur*(e: Element)	
+click	dom.html#click,Element	dom : click*(e: Element)	
+focus	dom.html#focus,Element	dom : focus*(e: Element)	
+handleEvent	dom.html#handleEvent,Element,Event	dom : handleEvent*(e: Element; event: Event)	
+select	dom.html#select,Element	dom : select*(e: Element)	
+getElementsByTagName	dom.html#getElementsByTagName,Element,cstring	dom : getElementsByTagName*(e: Element; name: cstring): seq[Element]	
+getElementsByClassName	dom.html#getElementsByClassName,Element,cstring	dom : getElementsByClassName*(e: Element; name: cstring): seq[Element]	
+reset	dom.html#reset,FormElement	dom : reset*(f: FormElement)	
+submit	dom.html#submit,FormElement	dom : submit*(f: FormElement)	
+play	dom.html#play,EmbedElement	dom : play*(e: EmbedElement)	
+stop	dom.html#stop,EmbedElement	dom : stop*(e: EmbedElement)	
+reload	dom.html#reload,Location	dom : reload*(loc: Location)	
+replace	dom.html#replace,Location,cstring	dom : replace*(loc: Location; s: cstring)	
+back	dom.html#back,History	dom : back*(h: History)	
+forward	dom.html#forward,History	dom : forward*(h: History)	
+go	dom.html#go,History,int	dom : go*(h: History; pagesToJump: int)	
+javaEnabled	dom.html#javaEnabled,Navigator	dom : javaEnabled*(h: Navigator): bool	
+add	dom.html#add,ClassList,cstring	dom : add*(c: ClassList; class: cstring)	
+remove	dom.html#remove,ClassList,cstring	dom : remove*(c: ClassList; class: cstring)	
+contains	dom.html#contains,ClassList,cstring	dom : contains*(c: ClassList; class: cstring): bool	
+toggle	dom.html#toggle,ClassList,cstring	dom : toggle*(c: ClassList; class: cstring)	
+getAttribute	dom.html#getAttribute,Style,cstring	dom : getAttribute*(s: Style; attr: cstring; caseSensitive = false): cstring	
+removeAttribute	dom.html#removeAttribute,Style,cstring	dom : removeAttribute*(s: Style; attr: cstring; caseSensitive = false)	
+setAttribute	dom.html#setAttribute,Style,cstring,cstring	dom : setAttribute*(s: Style; attr, value: cstring; caseSensitive = false)	
+preventDefault	dom.html#preventDefault,Event	dom : preventDefault*(ev: Event)	
+window	dom.html#window_2	dom : window	
+document	dom.html#document_2	dom : document	
+navigator	dom.html#navigator_2	dom : navigator	
+screen	dom.html#screen	dom : screen	
+decodeURI	dom.html#decodeURI,cstring	dom : decodeURI*(uri: cstring): cstring	
+encodeURI	dom.html#encodeURI,cstring	dom : encodeURI*(uri: cstring): cstring	
+escape	dom.html#escape,cstring	dom : escape*(uri: cstring): cstring	
+unescape	dom.html#unescape,cstring	dom : unescape*(uri: cstring): cstring	
+decodeURIComponent	dom.html#decodeURIComponent,cstring	dom : decodeURIComponent*(uri: cstring): cstring	
+encodeURIComponent	dom.html#encodeURIComponent,cstring	dom : encodeURIComponent*(uri: cstring): cstring	
+isFinite	dom.html#isFinite,BiggestFloat	dom : isFinite*(x: BiggestFloat): bool	
+isNaN	dom.html#isNaN,BiggestFloat	dom : isNaN*(x: BiggestFloat): bool	
+parseFloat	dom.html#parseFloat,cstring	dom : parseFloat*(s: cstring): BiggestFloat	
+parseInt	dom.html#parseInt,cstring	dom : parseInt*(s: cstring): int	
+parseInt	dom.html#parseInt,cstring,int	dom : parseInt*(s: cstring; radix: int): int	
+TEventHandlers	dom.html#TEventHandlers	dom : TEventHandlers	
+TWindow	dom.html#TWindow	dom : TWindow	
+TFrame	dom.html#TFrame	dom : TFrame	
+TNode	dom.html#TNode	dom : TNode	
+TDocument	dom.html#TDocument	dom : TDocument	
+TElement	dom.html#TElement	dom : TElement	
+TLink	dom.html#TLink	dom : TLink	
+TEmbed	dom.html#TEmbed	dom : TEmbed	
+TAnchor	dom.html#TAnchor	dom : TAnchor	
+TOption	dom.html#TOption	dom : TOption	
+TForm	dom.html#TForm	dom : TForm	
+TImage	dom.html#TImage	dom : TImage	
+TNodeType	dom.html#TNodeType	dom : TNodeType	
+TEvent	dom.html#TEvent	dom : TEvent	
+TLocation	dom.html#TLocation	dom : TLocation	
+THistory	dom.html#THistory	dom : THistory	
+TNavigator	dom.html#TNavigator	dom : TNavigator	
+TStyle	dom.html#TStyle	dom : TStyle	
+TScreen	dom.html#TScreen	dom : TScreen	
+TApplet	dom.html#TApplet	dom : TApplet	

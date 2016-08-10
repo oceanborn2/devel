@@ -1,0 +1,54 @@
+DoublyLinkedNodeObj	lists.html#DoublyLinkedNodeObj	lists : DoublyLinkedNodeObj	
+DoublyLinkedNode	lists.html#DoublyLinkedNode	lists : DoublyLinkedNode	
+SinglyLinkedNodeObj	lists.html#SinglyLinkedNodeObj	lists : SinglyLinkedNodeObj	
+SinglyLinkedNode	lists.html#SinglyLinkedNode	lists : SinglyLinkedNode	
+SinglyLinkedList	lists.html#SinglyLinkedList	lists : SinglyLinkedList	
+DoublyLinkedList	lists.html#DoublyLinkedList	lists : DoublyLinkedList	
+SinglyLinkedRing	lists.html#SinglyLinkedRing	lists : SinglyLinkedRing	
+DoublyLinkedRing	lists.html#DoublyLinkedRing	lists : DoublyLinkedRing	
+initSinglyLinkedList	lists.html#initSinglyLinkedList,	lists : initSinglyLinkedList[T](): SinglyLinkedList[T]	
+initDoublyLinkedList	lists.html#initDoublyLinkedList,	lists : initDoublyLinkedList[T](): DoublyLinkedList[T]	
+initSinglyLinkedRing	lists.html#initSinglyLinkedRing,	lists : initSinglyLinkedRing[T](): SinglyLinkedRing[T]	
+initDoublyLinkedRing	lists.html#initDoublyLinkedRing,	lists : initDoublyLinkedRing[T](): DoublyLinkedRing[T]	
+newDoublyLinkedNode	lists.html#newDoublyLinkedNode,T	lists : newDoublyLinkedNode[T](value: T): DoublyLinkedNode[T]	
+newSinglyLinkedNode	lists.html#newSinglyLinkedNode,T	lists : newSinglyLinkedNode[T](value: T): SinglyLinkedNode[T]	
+items	lists.html#items.i,DoublyLinkedList[T]	lists : items[T](L: DoublyLinkedList[T]): T	
+items	lists.html#items.i,SinglyLinkedList[T]	lists : items[T](L: SinglyLinkedList[T]): T	
+items	lists.html#items.i,SinglyLinkedRing[T]	lists : items[T](L: SinglyLinkedRing[T]): T	
+items	lists.html#items.i,DoublyLinkedRing[T]	lists : items[T](L: DoublyLinkedRing[T]): T	
+mitems	lists.html#mitems.i,DoublyLinkedList[T]	lists : mitems[T](L: var DoublyLinkedList[T]): var T	
+mitems	lists.html#mitems.i,SinglyLinkedList[T]	lists : mitems[T](L: var SinglyLinkedList[T]): var T	
+mitems	lists.html#mitems.i,SinglyLinkedRing[T]	lists : mitems[T](L: var SinglyLinkedRing[T]): var T	
+mitems	lists.html#mitems.i,DoublyLinkedRing[T]	lists : mitems[T](L: var DoublyLinkedRing[T]): var T	
+nodes	lists.html#nodes.i,SinglyLinkedList[T]	lists : nodes[T](L: SinglyLinkedList[T]): SinglyLinkedNode[T]	
+nodes	lists.html#nodes.i,DoublyLinkedList[T]	lists : nodes[T](L: DoublyLinkedList[T]): DoublyLinkedNode[T]	
+nodes	lists.html#nodes.i,SinglyLinkedRing[T]	lists : nodes[T](L: SinglyLinkedRing[T]): SinglyLinkedNode[T]	
+nodes	lists.html#nodes.i,DoublyLinkedRing[T]	lists : nodes[T](L: DoublyLinkedRing[T]): DoublyLinkedNode[T]	
+`$`	lists.html#$,SinglyLinkedList[T]	lists : `$`[T](L: SinglyLinkedList[T]): string	
+`$`	lists.html#$,DoublyLinkedList[T]	lists : `$`[T](L: DoublyLinkedList[T]): string	
+`$`	lists.html#$,SinglyLinkedRing[T]	lists : `$`[T](L: SinglyLinkedRing[T]): string	
+`$`	lists.html#$,DoublyLinkedRing[T]	lists : `$`[T](L: DoublyLinkedRing[T]): string	
+find	lists.html#find,SinglyLinkedList[T],T	lists : find[T](L: SinglyLinkedList[T]; value: T): SinglyLinkedNode[T]	
+find	lists.html#find,DoublyLinkedList[T],T	lists : find[T](L: DoublyLinkedList[T]; value: T): DoublyLinkedNode[T]	
+find	lists.html#find,SinglyLinkedRing[T],T	lists : find[T](L: SinglyLinkedRing[T]; value: T): SinglyLinkedNode[T]	
+find	lists.html#find,DoublyLinkedRing[T],T	lists : find[T](L: DoublyLinkedRing[T]; value: T): DoublyLinkedNode[T]	
+contains	lists.html#contains,SinglyLinkedList[T],T	lists : contains[T](L: SinglyLinkedList[T]; value: T): bool	
+contains	lists.html#contains,DoublyLinkedList[T],T	lists : contains[T](L: DoublyLinkedList[T]; value: T): bool	
+contains	lists.html#contains,SinglyLinkedRing[T],T	lists : contains[T](L: SinglyLinkedRing[T]; value: T): bool	
+contains	lists.html#contains,DoublyLinkedRing[T],T	lists : contains[T](L: DoublyLinkedRing[T]; value: T): bool	
+prepend	lists.html#prepend,SinglyLinkedList[T],SinglyLinkedNode[T]	lists : prepend[T](L: var SinglyLinkedList[T]; n: SinglyLinkedNode[T])	
+prepend	lists.html#prepend,SinglyLinkedList[T],T	lists : prepend[T](L: var SinglyLinkedList[T]; value: T)	
+append	lists.html#append,DoublyLinkedList[T],DoublyLinkedNode[T]	lists : append[T](L: var DoublyLinkedList[T]; n: DoublyLinkedNode[T])	
+append	lists.html#append,DoublyLinkedList[T],T	lists : append[T](L: var DoublyLinkedList[T]; value: T)	
+prepend	lists.html#prepend,DoublyLinkedList[T],DoublyLinkedNode[T]	lists : prepend[T](L: var DoublyLinkedList[T]; n: DoublyLinkedNode[T])	
+prepend	lists.html#prepend,DoublyLinkedList[T],T	lists : prepend[T](L: var DoublyLinkedList[T]; value: T)	
+remove	lists.html#remove,DoublyLinkedList[T],DoublyLinkedNode[T]	lists : remove[T](L: var DoublyLinkedList[T]; n: DoublyLinkedNode[T])	
+append	lists.html#append,SinglyLinkedRing[T],SinglyLinkedNode[T]	lists : append[T](L: var SinglyLinkedRing[T]; n: SinglyLinkedNode[T])	
+append	lists.html#append,SinglyLinkedRing[T],T	lists : append[T](L: var SinglyLinkedRing[T]; value: T)	
+prepend	lists.html#prepend,SinglyLinkedRing[T],SinglyLinkedNode[T]	lists : prepend[T](L: var SinglyLinkedRing[T]; n: SinglyLinkedNode[T])	
+prepend	lists.html#prepend,SinglyLinkedRing[T],T	lists : prepend[T](L: var SinglyLinkedRing[T]; value: T)	
+append	lists.html#append,DoublyLinkedRing[T],DoublyLinkedNode[T]	lists : append[T](L: var DoublyLinkedRing[T]; n: DoublyLinkedNode[T])	
+append	lists.html#append,DoublyLinkedRing[T],T	lists : append[T](L: var DoublyLinkedRing[T]; value: T)	
+prepend	lists.html#prepend,DoublyLinkedRing[T],DoublyLinkedNode[T]	lists : prepend[T](L: var DoublyLinkedRing[T]; n: DoublyLinkedNode[T])	
+prepend	lists.html#prepend,DoublyLinkedRing[T],T	lists : prepend[T](L: var DoublyLinkedRing[T]; value: T)	
+remove	lists.html#remove,DoublyLinkedRing[T],DoublyLinkedNode[T]	lists : remove[T](L: var DoublyLinkedRing[T]; n: DoublyLinkedNode[T])	

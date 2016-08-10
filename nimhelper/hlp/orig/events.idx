@@ -1,0 +1,13 @@
+EventArgs	events.html#EventArgs	events : EventArgs	
+EventHandler	events.html#EventHandler	events : EventHandler	
+EventEmitter	events.html#EventEmitter	events : EventEmitter	
+EventError	events.html#EventError	events : EventError	
+initEventHandler	events.html#initEventHandler,string	events : initEventHandler(name: string): EventHandler	
+addHandler	events.html#addHandler,EventHandler,proc(EventArgs)	events : addHandler(handler: var EventHandler; fn: proc (e: EventArgs))	
+removeHandler	events.html#removeHandler,EventHandler,proc(EventArgs)	events : removeHandler(handler: var EventHandler; fn: proc (e: EventArgs))	
+containsHandler	events.html#containsHandler,EventHandler,proc(EventArgs)	events : containsHandler(handler: var EventHandler; fn: proc (e: EventArgs)): bool	
+clearHandlers	events.html#clearHandlers,EventHandler	events : clearHandlers(handler: var EventHandler)	
+on	events.html#on,EventEmitter,string,proc(EventArgs)	events : on(emitter: var EventEmitter; event: string; fn: proc (e: EventArgs))	
+emit	events.html#emit,EventEmitter,EventHandler,EventArgs	events : emit(emitter: var EventEmitter; eventhandler: var EventHandler; args: EventArgs)	
+emit	events.html#emit,EventEmitter,string,EventArgs	events : emit(emitter: var EventEmitter; event: string; args: EventArgs)	
+initEventEmitter	events.html#initEventEmitter,	events : initEventEmitter(): EventEmitter	

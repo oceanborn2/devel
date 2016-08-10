@@ -1,0 +1,7 @@
+ui	random.html#ui	random : ui	
+random	random.html#random,int	random : random(max: int): int	
+random	random.html#random,float	random : random(max: float): float	
+random	random.html#random,Slice[T]	random : random[T](x: Slice[T]): T	
+random	random.html#random,openArray[T]	random : random[T](a: openArray[T]): T	
+randomize	random.html#randomize,int	random : randomize(seed: int)	
+randomize	random.html#randomize,	random : randomize()	

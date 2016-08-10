@@ -1,0 +1,13 @@
+CSV	parsecsv.html#csv_1	Module parsecsv	
+comma separated value	parsecsv.html#comma-separated-value_1	Module parsecsv	
+Example: How to use the parser	parsecsv.html#example-how-to-use-the-parser	 Example: How to use the parser	
+CsvRow	parsecsv.html#CsvRow	parsecsv : CsvRow	
+CsvParser	parsecsv.html#CsvParser	parsecsv : CsvParser	
+CsvError	parsecsv.html#CsvError	parsecsv : CsvError	
+open	parsecsv.html#open,CsvParser,Stream,string,Char,Char,Char	parsecsv : open(my: var CsvParser; input: Stream; filename: string; separator = &#x27;,&#x27;; quote = &#x27;\\&quot;&#x27;;\n     escape = &#x27;\\0&#x27;; skipInitialSpace = false)	
+open	parsecsv.html#open,CsvParser,string,Char,Char,Char	parsecsv : open(my: var CsvParser; filename: string; separator = &#x27;,&#x27;; quote = &#x27;\\&quot;&#x27;; escape = &#x27;\\0&#x27;;\n     skipInitialSpace = false)	
+processedRows	parsecsv.html#processedRows,CsvParser	parsecsv : processedRows(my: var CsvParser): int	
+readRow	parsecsv.html#readRow,CsvParser,int	parsecsv : readRow(my: var CsvParser; columns = 0): bool	
+close	parsecsv.html#close,CsvParser	parsecsv : close(my: var CsvParser)	
+readHeaderRow	parsecsv.html#readHeaderRow,CsvParser	parsecsv : readHeaderRow(my: var CsvParser)	
+rowEntry	parsecsv.html#rowEntry,CsvParser,string	parsecsv : rowEntry(my: var CsvParser; entry: string): string	

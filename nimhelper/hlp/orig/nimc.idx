@@ -1,0 +1,41 @@
+Nim Compiler User Guide	nimc.html
+Introduction	nimc.html#introduction	 Introduction	
+Compiler Usage	nimc.html#compiler-usage	 Compiler Usage	
+Command line switches	nimc.html#compiler-usage-command-line-switches	  Command line switches	
+List of warnings	nimc.html#compiler-usage-list-of-warnings	  List of warnings	
+Verbosity levels	nimc.html#compiler-usage-verbosity-levels	  Verbosity levels	
+Compile time symbols	nimc.html#compiler-usage-compile-time-symbols	  Compile time symbols	
+Configuration files	nimc.html#compiler-usage-configuration-files	  Configuration files	
+debug build	nimc.html#debug-build_1	Configuration files	
+release build	nimc.html#release-build_1	Configuration files	
+Search path handling	nimc.html#compiler-usage-search-path-handling	  Search path handling	
+Generated C code directory	nimc.html#compiler-usage-generated-c-code-directory	  Generated C code directory	
+Compilation cache	nimc.html#compilation-cache	 Compilation cache	
+rod	nimc.html#rod_1	Compilation cache	
+symbol files	nimc.html#symbol-files_1	Compilation cache	
+incremental compilation	nimc.html#incremental-compilation_1	Compilation cache	
+Cross compilation	nimc.html#cross-compilation	 Cross compilation	
+DLL generation	nimc.html#dll-generation	 DLL generation	
+Additional compilation switches	nimc.html#additional-compilation-switches	 Additional compilation switches	
+malloc	nimc.html#malloc_1	Additional compilation switches	
+Additional Features	nimc.html#additional-features	 Additional Features	
+LineDir option	nimc.html#additional-features-linedir-option	  LineDir option	
+StackTrace option	nimc.html#additional-features-stacktrace-option	  StackTrace option	
+LineTrace option	nimc.html#additional-features-linetrace-option	  LineTrace option	
+Debugger option	nimc.html#additional-features-debugger-option	  Debugger option	
+Breakpoint pragma	nimc.html#additional-features-breakpoint-pragma	  Breakpoint pragma	
+DynlibOverride	nimc.html#dynliboverride	 DynlibOverride	
+Backend language options	nimc.html#backend-language-options	 Backend language options	
+Nim documentation tools	nimc.html#nim-documentation-tools	 Nim documentation tools	
+doc	nimc.html#doc_1	Nim documentation tools	
+doc2	nimc.html#doc2_1	Nim documentation tools	
+Nim idetools integration	nimc.html#nim-idetools-integration	 Nim idetools integration	
+Nim for embedded systems	nimc.html#nim-for-embedded-systems	 Nim for embedded systems	
+standalone	nimc.html#standalone_1	Nim for embedded systems	
+AVR	nimc.html#avr_1	Nim for embedded systems	
+Nim for realtime systems	nimc.html#nim-for-realtime-systems	 Nim for realtime systems	
+Debugging with Nim	nimc.html#debugging-with-nim	 Debugging with Nim	
+Optimizing for Nim	nimc.html#optimizing-for-nim	 Optimizing for Nim	
+Optimizing string handling	nimc.html#optimizing-for-nim-optimizing-string-handling	  Optimizing string handling	
+shallow	nimc.html#shallow_1	Optimizing string handling	
+freeze	nimc.html#freeze_1	Optimizing string handling	

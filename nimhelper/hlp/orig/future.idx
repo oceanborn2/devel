@@ -1,0 +1,4 @@
+`=&gt;`	future.html#=>.m,expr,expr	future : `=&gt;`(p, b: expr): expr	
+`-&gt;`	future.html#->.m,expr,expr	future : `-&gt;`(p, b: expr): expr	
+lc	future.html#lc	future : lc	
+`[]`	future.html#[].m,ListComprehension,expr,expr	future : `[]`(lc: ListComprehension; comp, typ: expr): expr	

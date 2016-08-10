@@ -1,0 +1,21 @@
+HttpHeaders	httpcore.html#HttpHeaders	httpcore : HttpHeaders	
+HttpHeaderValues	httpcore.html#HttpHeaderValues	httpcore : HttpHeaderValues	
+HttpCode	httpcore.html#HttpCode	httpcore : HttpCode	
+HttpVersion	httpcore.html#HttpVersion	httpcore : HttpVersion	
+headerLimit	httpcore.html#headerLimit	httpcore : headerLimit	
+newHttpHeaders	httpcore.html#newHttpHeaders,	httpcore : newHttpHeaders(): HttpHeaders	
+newHttpHeaders	httpcore.html#newHttpHeaders,openArray[tuple[string,string]]	httpcore : newHttpHeaders(keyValuePairs: openArray[tuple[key: string, val: string]]): HttpHeaders	
+clear	httpcore.html#clear,HttpHeaders	httpcore : clear(headers: HttpHeaders)	
+`[]`	httpcore.html#[],HttpHeaders,string	httpcore : `[]`(headers: HttpHeaders; key: string): HttpHeaderValues	
+toString	httpcore.html#toString.c,HttpHeaderValues	httpcore : toString(values: HttpHeaderValues): string	
+`[]`	httpcore.html#[],HttpHeaders,string,int	httpcore : `[]`(headers: HttpHeaders; key: string; i: int): string	
+`[]=`	httpcore.html#[]=,HttpHeaders,string,string	httpcore : `[]=`(headers: HttpHeaders; key, value: string)	
+`[]=`	httpcore.html#[]=,HttpHeaders,string,seq[string]	httpcore : `[]=`(headers: HttpHeaders; key: string; value: seq[string])	
+add	httpcore.html#add,HttpHeaders,string,string	httpcore : add(headers: HttpHeaders; key, value: string)	
+pairs	httpcore.html#pairs.i,HttpHeaders	httpcore : pairs(headers: HttpHeaders): tuple[key, value: string]	
+contains	httpcore.html#contains,HttpHeaderValues,string	httpcore : contains(values: HttpHeaderValues; value: string): bool	
+hasKey	httpcore.html#hasKey,HttpHeaders,string	httpcore : hasKey(headers: HttpHeaders; key: string): bool	
+getOrDefault	httpcore.html#getOrDefault,HttpHeaders,string	httpcore : getOrDefault(headers: HttpHeaders; key: string; default = @ [&quot;&quot;].HttpHeaderValues): HttpHeaderValues	
+len	httpcore.html#len,HttpHeaders	httpcore : len(headers: HttpHeaders): int	
+parseHeader	httpcore.html#parseHeader,string	httpcore : parseHeader(line: string): tuple[key: string, value: seq[string]]	
+`==`	httpcore.html#==,tuple[string,int,int],HttpVersion	httpcore : `==`(protocol: tuple[orig: string, major, minor: int]; ver: HttpVersion): bool	

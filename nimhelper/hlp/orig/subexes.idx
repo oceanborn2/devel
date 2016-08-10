@@ -1,0 +1,17 @@
+substitution expressions	subexes.html#substitution-expressions_1	Module subexes	
+subex	subexes.html#subex_1	Module subexes	
+Substitution Expressions (subex)	subexes.html#substitution-expressions-subex	 Substitution Expressions (subex)	
+regex	subexes.html#regex_1	Substitution Expressions (subex)	
+internationalization	subexes.html#internationalization_1	Substitution Expressions (subex)	
+Examples	subexes.html#examples	 Examples	
+SubexError	subexes.html#SubexError	subexes : SubexError	
+Subex	subexes.html#Subex	subexes : Subex	
+subex	subexes.html#subex,string	subexes : subex(s: string): Subex	
+addf	subexes.html#addf,string,Subex,varargs[string,]	subexes : addf(s: var string; formatstr: Subex; a: varargs[string, `$`])	
+substitution	subexes.html#substitution_1	Examples	
+string interpolation	subexes.html#string-interpolation_1	Examples	
+`%`	subexes.html#%,Subex,openArray[string]	subexes : `%`(formatstr: Subex; a: openArray[string]): string	
+`%`	subexes.html#%,Subex,string	subexes : `%`(formatstr: Subex; a: string): string	
+substitution	subexes.html#substitution_2	Examples	
+string interpolation	subexes.html#string-interpolation_2	Examples	
+format	subexes.html#format,Subex,varargs[string,]	subexes : format(formatstr: Subex; a: varargs[string, `$`]): string	

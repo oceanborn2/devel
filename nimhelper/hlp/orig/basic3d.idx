@@ -1,0 +1,101 @@
+Matrix3d	basic3d.html#Matrix3d	basic3d : Matrix3d	
+Point3d	basic3d.html#Point3d	basic3d : Point3d	
+Vector3d	basic3d.html#Vector3d	basic3d : Vector3d	
+IDMATRIX	basic3d.html#IDMATRIX	basic3d : IDMATRIX	
+ORIGO	basic3d.html#ORIGO	basic3d : ORIGO	
+XAXIS	basic3d.html#XAXIS	basic3d : XAXIS	
+YAXIS	basic3d.html#YAXIS	basic3d : YAXIS	
+ZAXIS	basic3d.html#ZAXIS	basic3d : ZAXIS	
+setElements	basic3d.html#setElements,Matrix3d,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float	basic3d : setElements(t: var Matrix3d; ax, ay, az, aw, bx, by, bz, bw, cx, cy, cz, cw, tx, ty, tz, tw: float)	
+matrix3d	basic3d.html#matrix3d,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float,float	basic3d : matrix3d(ax, ay, az, aw, bx, by, bz, bw, cx, cy, cz, cw, tx, ty, tz, tw: float): Matrix3d	
+`&amp;`	basic3d.html#&,Matrix3d,Matrix3d	basic3d : `&amp;`(a, b: Matrix3d): Matrix3d	
+scale	basic3d.html#scale,float	basic3d : scale(s: float): Matrix3d	
+scale	basic3d.html#scale,float,Point3d	basic3d : scale(s: float; org: Point3d): Matrix3d	
+stretch	basic3d.html#stretch,float,float,float	basic3d : stretch(sx, sy, sz: float): Matrix3d	
+stretch	basic3d.html#stretch,float,float,float,Point3d	basic3d : stretch(sx, sy, sz: float; org: Point3d): Matrix3d	
+move	basic3d.html#move,float,float,float	basic3d : move(dx, dy, dz: float): Matrix3d	
+move	basic3d.html#move,Vector3d	basic3d : move(v: Vector3d): Matrix3d	
+rotate	basic3d.html#rotate,float,Vector3d	basic3d : rotate(angle: float; axis: Vector3d): Matrix3d	
+rotate	basic3d.html#rotate,float,Point3d,Vector3d	basic3d : rotate(angle: float; org: Point3d; axis: Vector3d): Matrix3d	
+rotateX	basic3d.html#rotateX,float	basic3d : rotateX(angle: float): Matrix3d	
+rotateY	basic3d.html#rotateY,float	basic3d : rotateY(angle: float): Matrix3d	
+rotateZ	basic3d.html#rotateZ,float	basic3d : rotateZ(angle: float): Matrix3d	
+isUniform	basic3d.html#isUniform,Matrix3d,float	basic3d : isUniform(m: Matrix3d; tol = 1e-06&#x27;f64): bool	
+mirror	basic3d.html#mirror,Vector3d	basic3d : mirror(planeperp: Vector3d): Matrix3d	
+mirror	basic3d.html#mirror,Point3d,Vector3d	basic3d : mirror(org: Point3d; planeperp: Vector3d): Matrix3d	
+determinant	basic3d.html#determinant,Matrix3d	basic3d : determinant(m: Matrix3d): float	
+inverse	basic3d.html#inverse,Matrix3d	basic3d : inverse(m: Matrix3d): Matrix3d	
+equals	basic3d.html#equals,Matrix3d,Matrix3d,float	basic3d : equals(m1: Matrix3d; m2: Matrix3d; tol = 1e-06&#x27;f64): bool	
+`=~`	basic3d.html#=~,Matrix3d,Matrix3d	basic3d : `=~`(m1, m2: Matrix3d): bool	
+transpose	basic3d.html#transpose,Matrix3d	basic3d : transpose(m: Matrix3d): Matrix3d	
+getXAxis	basic3d.html#getXAxis,Matrix3d	basic3d : getXAxis(m: Matrix3d): Vector3d	
+getYAxis	basic3d.html#getYAxis,Matrix3d	basic3d : getYAxis(m: Matrix3d): Vector3d	
+getZAxis	basic3d.html#getZAxis,Matrix3d	basic3d : getZAxis(m: Matrix3d): Vector3d	
+`$`	basic3d.html#$,Matrix3d	basic3d : `$`(m: Matrix3d): string	
+apply	basic3d.html#apply,Matrix3d,float,float,float	basic3d : apply(m: Matrix3d; x, y, z: var float; translate = false)	
+vector3d	basic3d.html#vector3d,float,float,float	basic3d : vector3d(x, y, z: float): Vector3d	
+len	basic3d.html#len,Vector3d	basic3d : len(v: Vector3d): float	
+len=	basic3d.html#len=,Vector3d,float	basic3d : len=(v: var Vector3d; newlen: float)	
+sqrLen	basic3d.html#sqrLen,Vector3d	basic3d : sqrLen(v: Vector3d): float	
+`$`	basic3d.html#$,Vector3d	basic3d : `$`(v: Vector3d): string	
+`&amp;`	basic3d.html#&,Vector3d,Matrix3d	basic3d : `&amp;`(v: Vector3d; m: Matrix3d): Vector3d	
+`&amp;=`	basic3d.html#&=,Vector3d,Matrix3d	basic3d : `&amp;=`(v: var Vector3d; m: Matrix3d)	
+transformNorm	basic3d.html#transformNorm,Vector3d,Matrix3d	basic3d : transformNorm(v: var Vector3d; m: Matrix3d)	
+transformInv	basic3d.html#transformInv,Vector3d,Matrix3d	basic3d : transformInv(v: var Vector3d; m: Matrix3d)	
+transformNormInv	basic3d.html#transformNormInv,Vector3d,Matrix3d	basic3d : transformNormInv(vec: var Vector3d; m: Matrix3d)	
+tryNormalize	basic3d.html#tryNormalize,Vector3d	basic3d : tryNormalize(v: var Vector3d): bool	
+normalize	basic3d.html#normalize,Vector3d	basic3d : normalize(v: var Vector3d)	
+rotate	basic3d.html#rotate,Vector3d,float,Vector3d	basic3d : rotate(vec: var Vector3d; angle: float; axis: Vector3d)	
+scale	basic3d.html#scale,Vector3d,float	basic3d : scale(v: var Vector3d; s: float)	
+stretch	basic3d.html#stretch,Vector3d,float,float,float	basic3d : stretch(v: var Vector3d; sx, sy, sz: float)	
+mirror	basic3d.html#mirror,Vector3d,Vector3d	basic3d : mirror(v: var Vector3d; planeperp: Vector3d)	
+`-`	basic3d.html#-,Vector3d	basic3d : `-`(v: Vector3d): Vector3d	
+`+`	basic3d.html#+,Vector3d,Vector3d	basic3d : `+`(a, b: Vector3d): Vector3d	
+`+`	basic3d.html#+,Vector3d,float	basic3d : `+`(a: Vector3d; b: float): Vector3d	
+`+`	basic3d.html#+,float,Vector3d	basic3d : `+`(a: float; b: Vector3d): Vector3d	
+`-`	basic3d.html#-,Vector3d,Vector3d	basic3d : `-`(a, b: Vector3d): Vector3d	
+`-`	basic3d.html#-,Vector3d,float	basic3d : `-`(a: Vector3d; b: float): Vector3d	
+`-`	basic3d.html#-,float,Vector3d	basic3d : `-`(a: float; b: Vector3d): Vector3d	
+`*`	basic3d.html#*,Vector3d,Vector3d	basic3d : `*`(a, b: Vector3d): Vector3d	
+`*`	basic3d.html#*,Vector3d,float	basic3d : `*`(a: Vector3d; b: float): Vector3d	
+`*`	basic3d.html#*,float,Vector3d	basic3d : `*`(a: float; b: Vector3d): Vector3d	
+`/`	basic3d.html#/,Vector3d,Vector3d	basic3d : `&#x2F;`(a, b: Vector3d): Vector3d	
+`/`	basic3d.html#/,Vector3d,float	basic3d : `&#x2F;`(a: Vector3d; b: float): Vector3d	
+`/`	basic3d.html#/,float,Vector3d	basic3d : `&#x2F;`(a: float; b: Vector3d): Vector3d	
+`+=`	basic3d.html#+=,Vector3d,Vector3d	basic3d : `+=`(a: var Vector3d; b: Vector3d)	
+`+=`	basic3d.html#+=,Vector3d,float	basic3d : `+=`(a: var Vector3d; b: float)	
+`-=`	basic3d.html#-=,Vector3d,Vector3d	basic3d : `-=`(a: var Vector3d; b: Vector3d)	
+`-=`	basic3d.html#-=,Vector3d,float	basic3d : `-=`(a: var Vector3d; b: float)	
+`*=`	basic3d.html#*=,Vector3d,Vector3d	basic3d : `*=`(a: var Vector3d; b: Vector3d)	
+`*=`	basic3d.html#*=,Vector3d,float	basic3d : `*=`(a: var Vector3d; b: float)	
+`/=`	basic3d.html#/=,Vector3d,Vector3d	basic3d : `&#x2F;=`(a: var Vector3d; b: Vector3d)	
+`/=`	basic3d.html#/=,Vector3d,float	basic3d : `&#x2F;=`(a: var Vector3d; b: float)	
+dot	basic3d.html#dot,Vector3d,Vector3d	basic3d : dot(v1, v2: Vector3d): float	
+cross	basic3d.html#cross,Vector3d,Vector3d	basic3d : cross(v1, v2: Vector3d): Vector3d	
+equals	basic3d.html#equals,Vector3d,Vector3d,float	basic3d : equals(v1, v2: Vector3d; tol = 1e-06&#x27;f64): bool	
+`=~`	basic3d.html#=~,Vector3d,Vector3d	basic3d : `=~`(v1, v2: Vector3d): bool	
+angleTo	basic3d.html#angleTo,Vector3d,Vector3d	basic3d : angleTo(v1, v2: Vector3d): float	
+arbitraryAxis	basic3d.html#arbitraryAxis,Vector3d	basic3d : arbitraryAxis(norm: Vector3d): Matrix3d	
+bisect	basic3d.html#bisect,Vector3d,Vector3d	basic3d : bisect(v1, v2: Vector3d): Vector3d	
+point3d	basic3d.html#point3d,float,float,float	basic3d : point3d(x, y, z: float): Point3d	
+sqrDist	basic3d.html#sqrDist,Point3d,Point3d	basic3d : sqrDist(a, b: Point3d): float	
+dist	basic3d.html#dist,Point3d,Point3d	basic3d : dist(a, b: Point3d): float	
+`$`	basic3d.html#$,Point3d	basic3d : `$`(p: Point3d): string	
+`&amp;`	basic3d.html#&,Point3d,Matrix3d	basic3d : `&amp;`(p: Point3d; m: Matrix3d): Point3d	
+`&amp;=`	basic3d.html#&=,Point3d,Matrix3d	basic3d : `&amp;=`(p: var Point3d; m: Matrix3d)	
+transformInv	basic3d.html#transformInv,Point3d,Matrix3d	basic3d : transformInv(p: var Point3d; m: Matrix3d)	
+`+`	basic3d.html#+,Point3d,Vector3d	basic3d : `+`(p: Point3d; v: Vector3d): Point3d	
+`+=`	basic3d.html#+=,Point3d,Vector3d	basic3d : `+=`(p: var Point3d; v: Vector3d)	
+`-`	basic3d.html#-,Point3d,Vector3d	basic3d : `-`(p: Point3d; v: Vector3d): Point3d	
+`-`	basic3d.html#-,Point3d,Point3d	basic3d : `-`(p1, p2: Point3d): Vector3d	
+`-=`	basic3d.html#-=,Point3d,Vector3d	basic3d : `-=`(p: var Point3d; v: Vector3d)	
+`=~`	basic3d.html#=~,Point3d,Point3d	basic3d : `=~`(p1, p2: Point3d): bool	
+rotate	basic3d.html#rotate,Point3d,float,Vector3d	basic3d : rotate(p: var Point3d; rad: float; axis: Vector3d)	
+rotate	basic3d.html#rotate,Point3d,float,Point3d,Vector3d	basic3d : rotate(p: var Point3d; angle: float; org: Point3d; axis: Vector3d)	
+scale	basic3d.html#scale,Point3d,float	basic3d : scale(p: var Point3d; fac: float)	
+scale	basic3d.html#scale,Point3d,float,Point3d	basic3d : scale(p: var Point3d; fac: float; org: Point3d)	
+stretch	basic3d.html#stretch,Point3d,float,float,float	basic3d : stretch(p: var Point3d; facx, facy, facz: float)	
+stretch	basic3d.html#stretch,Point3d,float,float,float,Point3d	basic3d : stretch(p: var Point3d; facx, facy, facz: float; org: Point3d)	
+move	basic3d.html#move,Point3d,float,float,float	basic3d : move(p: var Point3d; dx, dy, dz: float)	
+move	basic3d.html#move,Point3d,Vector3d	basic3d : move(p: var Point3d; v: Vector3d)	
+area	basic3d.html#area,Point3d,Point3d,Point3d	basic3d : area(a, b, c: Point3d): float	

@@ -1,0 +1,5 @@
+EMismatchedTag	xmldomparser.html#EMismatchedTag	xmldomparser : EMismatchedTag	
+EParserError	xmldomparser.html#EParserError	xmldomparser : EParserError	
+loadXMLStream	xmldomparser.html#loadXMLStream,Stream	xmldomparser : loadXMLStream(stream: Stream): PDocument	
+loadXML	xmldomparser.html#loadXML,string	xmldomparser : loadXML(xml: string): PDocument	
+loadXMLFile	xmldomparser.html#loadXMLFile,string	xmldomparser : loadXMLFile(path: string): PDocument	

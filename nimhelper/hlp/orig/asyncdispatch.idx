@@ -1,0 +1,58 @@
+AsyncDispatch	asyncdispatch.html#asyncdispatch	 AsyncDispatch	
+Asynchronous procedures	asyncdispatch.html#asyncdispatch-asynchronous-procedures	  Asynchronous procedures	
+Discarding futures	asyncdispatch.html#asyncdispatch-discarding-futures	  Discarding futures	
+Examples	asyncdispatch.html#asyncdispatch-examples	  Examples	
+Limitations/Bugs	asyncdispatch.html#asyncdispatch-limitations-bugs	  Limitations/Bugs	
+FutureBase	asyncdispatch.html#FutureBase	asyncdispatch : FutureBase	
+Future	asyncdispatch.html#Future	asyncdispatch : Future	
+FutureVar	asyncdispatch.html#FutureVar	asyncdispatch : FutureVar	
+FutureError	asyncdispatch.html#FutureError	asyncdispatch : FutureError	
+newFuture	asyncdispatch.html#newFuture,string	asyncdispatch : newFuture[T](fromProc: string = &quot;unspecified&quot;): Future[T]	
+newFutureVar	asyncdispatch.html#newFutureVar,string	asyncdispatch : newFutureVar[T](fromProc = &quot;unspecified&quot;): FutureVar[T]	
+clean	asyncdispatch.html#clean,FutureVar[T]	asyncdispatch : clean[T](future: FutureVar[T])	
+complete	asyncdispatch.html#complete,Future[T],T	asyncdispatch : complete[T](future: Future[T]; val: T)	
+complete	asyncdispatch.html#complete,Future[void]	asyncdispatch : complete(future: Future[void])	
+complete	asyncdispatch.html#complete,FutureVar[T]	asyncdispatch : complete[T](future: FutureVar[T])	
+fail	asyncdispatch.html#fail,Future[T],ref.Exception	asyncdispatch : fail[T](future: Future[T]; error: ref Exception)	
+callback=	asyncdispatch.html#callback=,FutureBase,proc)	asyncdispatch : callback=(future: FutureBase; cb: proc ())	
+callback=	asyncdispatch.html#callback=,Future[T],proc(Future[T])	asyncdispatch : callback=[T](future: Future[T]; cb: proc (future: Future[T]))	
+read	asyncdispatch.html#read,Future[T]	asyncdispatch : read[T](future: Future[T]): T	
+readError	asyncdispatch.html#readError,Future[T]	asyncdispatch : readError[T](future: Future[T]): ref Exception	
+mget	asyncdispatch.html#mget,FutureVar[T]	asyncdispatch : mget[T](future: FutureVar[T]): var T	
+finished	asyncdispatch.html#finished,Future[T]	asyncdispatch : finished[T](future: Future[T]): bool	
+failed	asyncdispatch.html#failed,FutureBase	asyncdispatch : failed(future: FutureBase): bool	
+asyncCheck	asyncdispatch.html#asyncCheck,Future[T]	asyncdispatch : asyncCheck[T](future: Future[T])	
+`and`	asyncdispatch.html#and,Future[T],Future[Y]	asyncdispatch : `and`[T, Y](fut1: Future[T]; fut2: Future[Y]): Future[void]	
+`or`	asyncdispatch.html#or,Future[T],Future[Y]	asyncdispatch : `or`[T, Y](fut1: Future[T]; fut2: Future[Y]): Future[void]	
+all	asyncdispatch.html#all,varargs[Future[T]]	asyncdispatch : all[T](futs: varargs[Future[T]]): auto	
+CompletionKey	asyncdispatch.html#CompletionKey	asyncdispatch : CompletionKey	
+CompletionData	asyncdispatch.html#CompletionData	asyncdispatch : CompletionData	
+PDispatcher	asyncdispatch.html#PDispatcher	asyncdispatch : PDispatcher	
+PCustomOverlapped	asyncdispatch.html#PCustomOverlapped	asyncdispatch : PCustomOverlapped	
+AsyncFD	asyncdispatch.html#AsyncFD	asyncdispatch : AsyncFD	
+`==`	asyncdispatch.html#==,AsyncFD,AsyncFD	asyncdispatch : `==`(x: AsyncFD; y: AsyncFD): bool	
+newDispatcher	asyncdispatch.html#newDispatcher,	asyncdispatch : newDispatcher(): PDispatcher	
+getGlobalDispatcher	asyncdispatch.html#getGlobalDispatcher,	asyncdispatch : getGlobalDispatcher(): PDispatcher	
+register	asyncdispatch.html#register,AsyncFD	asyncdispatch : register(fd: AsyncFD)	
+poll	asyncdispatch.html#poll,int	asyncdispatch : poll(timeout = 500)	
+connect	asyncdispatch.html#connect,AsyncFD,string,Port	asyncdispatch : connect(socket: AsyncFD; address: string; port: Port; domain = nativesockets.AF_INET): Future[\n    void]	
+recv	asyncdispatch.html#recv,AsyncFD,int	asyncdispatch : recv(socket: AsyncFD; size: int; flags = {SafeDisconn}): Future[string]	
+recvInto	asyncdispatch.html#recvInto,AsyncFD,cstring,int	asyncdispatch : recvInto(socket: AsyncFD; buf: cstring; size: int; flags = {SafeDisconn}): Future[int]	
+send	asyncdispatch.html#send,AsyncFD,string	asyncdispatch : send(socket: AsyncFD; data: string; flags = {SafeDisconn}): Future[void]	
+sendTo	asyncdispatch.html#sendTo,AsyncFD,pointer,int,ptr.SockAddr,SockLen	asyncdispatch : sendTo(socket: AsyncFD; data: pointer; size: int; saddr: ptr SockAddr; saddrLen: SockLen;\n       flags = {SafeDisconn}): Future[void]	
+recvFromInto	asyncdispatch.html#recvFromInto,AsyncFD,pointer,int,ptr.SockAddr,ptr.SockLen	asyncdispatch : recvFromInto(socket: AsyncFD; data: pointer; size: int; saddr: ptr SockAddr;\n             saddrLen: ptr SockLen; flags = {SafeDisconn}): Future[int]	
+acceptAddr	asyncdispatch.html#acceptAddr,AsyncFD	asyncdispatch : acceptAddr(socket: AsyncFD; flags = {SafeDisconn}): Future[\n    tuple[address: string, client: AsyncFD]]	
+newAsyncNativeSocket	asyncdispatch.html#newAsyncNativeSocket,cint,cint,cint	asyncdispatch : newAsyncNativeSocket(domain, sockType, protocol: cint): AsyncFD	
+newAsyncNativeSocket	asyncdispatch.html#newAsyncNativeSocket,Domain,SockType,Protocol	asyncdispatch : newAsyncNativeSocket(domain: Domain = nativesockets.AF_INET;\n                     sockType: SockType = SOCK_STREAM;\n                     protocol: Protocol = IPPROTO_TCP): AsyncFD	
+closeSocket	asyncdispatch.html#closeSocket,AsyncFD	asyncdispatch : closeSocket(socket: AsyncFD)	
+unregister	asyncdispatch.html#unregister,AsyncFD	asyncdispatch : unregister(fd: AsyncFD)	
+addRead	asyncdispatch.html#addRead,AsyncFD,Callback	asyncdispatch : addRead(fd: AsyncFD; cb: Callback)	
+addWrite	asyncdispatch.html#addWrite,AsyncFD,Callback	asyncdispatch : addWrite(fd: AsyncFD; cb: Callback)	
+sleepAsync	asyncdispatch.html#sleepAsync,int	asyncdispatch : sleepAsync(ms: int): Future[void]	
+withTimeout	asyncdispatch.html#withTimeout,Future[T],int	asyncdispatch : withTimeout[T](fut: Future[T]; timeout: int): Future[bool]	
+accept	asyncdispatch.html#accept,AsyncFD	asyncdispatch : accept(socket: AsyncFD; flags = {SafeDisconn}): Future[AsyncFD]	
+async	asyncdispatch.html#async.m,stmt	asyncdispatch : async(prc: stmt): stmt	
+recvLine	asyncdispatch.html#recvLine,AsyncFD	asyncdispatch : recvLine(socket: AsyncFD): Future[string]	
+callSoon	asyncdispatch.html#callSoon,proc)	asyncdispatch : callSoon(cbproc: proc ())	
+runForever	asyncdispatch.html#runForever,	asyncdispatch : runForever()	
+waitFor	asyncdispatch.html#waitFor,Future[T]	asyncdispatch : waitFor[T](fut: Future[T]): T	

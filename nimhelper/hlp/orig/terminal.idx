@@ -1,0 +1,33 @@
+setCursorPos	terminal.html#setCursorPos,File,int,int	terminal : setCursorPos(f: File; x, y: int)	
+setCursorXPos	terminal.html#setCursorXPos,File,int	terminal : setCursorXPos(f: File; x: int)	
+cursorUp	terminal.html#cursorUp,File,int	terminal : cursorUp(f: File; count = 1)	
+cursorDown	terminal.html#cursorDown,File,int	terminal : cursorDown(f: File; count = 1)	
+cursorForward	terminal.html#cursorForward,File,int	terminal : cursorForward(f: File; count = 1)	
+cursorBackward	terminal.html#cursorBackward,File,int	terminal : cursorBackward(f: File; count = 1)	
+eraseLine	terminal.html#eraseLine,File	terminal : eraseLine(f: File)	
+eraseScreen	terminal.html#eraseScreen,File	terminal : eraseScreen(f: File)	
+resetAttributes	terminal.html#resetAttributes,File	terminal : resetAttributes(f: File)	
+Style	terminal.html#Style	terminal : Style	
+setStyle	terminal.html#setStyle,File,set[Style]	terminal : setStyle(f: File; style: set[Style])	
+writeStyled	terminal.html#writeStyled,string,set[Style]	terminal : writeStyled(txt: string; style: set[Style] = {styleBright})	
+ForegroundColor	terminal.html#ForegroundColor	terminal : ForegroundColor	
+BackgroundColor	terminal.html#BackgroundColor	terminal : BackgroundColor	
+setForegroundColor	terminal.html#setForegroundColor,File,ForegroundColor	terminal : setForegroundColor(f: File; fg: ForegroundColor; bright = false)	
+setBackgroundColor	terminal.html#setBackgroundColor,File,BackgroundColor	terminal : setBackgroundColor(f: File; bg: BackgroundColor; bright = false)	
+isatty	terminal.html#isatty,File	terminal : isatty(f: File): bool	
+TerminalCmd	terminal.html#TerminalCmd	terminal : TerminalCmd	
+styledWriteLine	terminal.html#styledWriteLine.m,File,varargs[expr]	terminal : styledWriteLine(f: File; m: varargs[expr]): stmt	
+styledEcho	terminal.html#styledEcho.t,varargs[expr]	terminal : styledEcho(args: varargs[expr]): expr	
+getch	terminal.html#getch,	terminal : getch(): char	
+setCursorPos	terminal.html#setCursorPos.t,int,int	terminal : setCursorPos(x, y: int)	
+setCursorXPos	terminal.html#setCursorXPos.t,int	terminal : setCursorXPos(x: int)	
+cursorUp	terminal.html#cursorUp.t,int	terminal : cursorUp(count = 1)	
+cursorDown	terminal.html#cursorDown.t,int	terminal : cursorDown(count = 1)	
+cursorForward	terminal.html#cursorForward.t,int	terminal : cursorForward(count = 1)	
+cursorBackward	terminal.html#cursorBackward.t,int	terminal : cursorBackward(count = 1)	
+eraseLine	terminal.html#eraseLine.t,	terminal : eraseLine()	
+eraseScreen	terminal.html#eraseScreen.t,	terminal : eraseScreen()	
+setStyle	terminal.html#setStyle.t,set[Style]	terminal : setStyle(style: set[Style])	
+setForegroundColor	terminal.html#setForegroundColor.t,ForegroundColor	terminal : setForegroundColor(fg: ForegroundColor; bright = false)	
+setBackgroundColor	terminal.html#setBackgroundColor.t,BackgroundColor	terminal : setBackgroundColor(bg: BackgroundColor; bright = false)	
+resetAttributes	terminal.html#resetAttributes,	terminal : resetAttributes()	

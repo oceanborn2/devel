@@ -1,0 +1,2 @@
+validEmailAddress	matchers.html#validEmailAddress,string	matchers : validEmailAddress(s: string): bool	
+parseInt	matchers.html#parseInt,string,int,Slice[int]	matchers : parseInt(s: string; value: var int; validRange: Slice[int])	

@@ -1,0 +1,5 @@
+SecureSocket	ssl.html#SecureSocket	ssl : SecureSocket	
+connect	ssl.html#connect,SecureSocket,string,int	ssl : connect(sock: var SecureSocket; address: string; port: int): int	
+recvLine	ssl.html#recvLine,SecureSocket,TaintedString	ssl : recvLine(sock: SecureSocket; line: var TaintedString): bool	
+send	ssl.html#send,SecureSocket,string	ssl : send(sock: SecureSocket; data: string)	
+close	ssl.html#close,SecureSocket	ssl : close(sock: SecureSocket)	

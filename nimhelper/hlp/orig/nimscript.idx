@@ -1,0 +1,52 @@
+listDirs	nimscript.html#listDirs,string	nimscript : listDirs(dir: string): seq[string]	
+listFiles	nimscript.html#listFiles,string	nimscript : listFiles(dir: string): seq[string]	
+paramStr	nimscript.html#paramStr,int	nimscript : paramStr(i: int): string	
+paramCount	nimscript.html#paramCount,	nimscript : paramCount(): int	
+switch	nimscript.html#switch,string,string	nimscript : switch(key: string; val = &quot;&quot;)	
+getCommand	nimscript.html#getCommand,	nimscript : getCommand(): string	
+setCommand	nimscript.html#setCommand,string,string	nimscript : setCommand(cmd: string; project = &quot;&quot;)	
+cmpic	nimscript.html#cmpic,string,string	nimscript : cmpic(a, b: string): int	
+getEnv	nimscript.html#getEnv,string	nimscript : getEnv(key: string): string	
+existsEnv	nimscript.html#existsEnv,string	nimscript : existsEnv(key: string): bool	
+fileExists	nimscript.html#fileExists,string	nimscript : fileExists(filename: string): bool	
+dirExists	nimscript.html#dirExists,string	nimscript : dirExists(dir: string): bool	
+existsFile	nimscript.html#existsFile,string	nimscript : existsFile(filename: string): bool	
+existsDir	nimscript.html#existsDir,string	nimscript : existsDir(dir: string): bool	
+toExe	nimscript.html#toExe,string	nimscript : toExe(filename: string): string	
+toDll	nimscript.html#toDll,string	nimscript : toDll(filename: string): string	
+`--`	nimscript.html#--.t,untyped,untyped	nimscript : `--`(key, val: untyped)	
+`--`	nimscript.html#--.t,untyped	nimscript : `--`(key: untyped)	
+ScriptMode	nimscript.html#ScriptMode	nimscript : ScriptMode	
+mode	nimscript.html#mode	nimscript : mode	
+rmDir	nimscript.html#rmDir,string	nimscript : rmDir(dir: string)	
+rmFile	nimscript.html#rmFile,string	nimscript : rmFile(file: string)	
+mkDir	nimscript.html#mkDir,string	nimscript : mkDir(dir: string)	
+mvFile	nimscript.html#mvFile,string,string	nimscript : mvFile(`from`, to: string)	
+cpFile	nimscript.html#cpFile,string,string	nimscript : cpFile(`from`, to: string)	
+exec	nimscript.html#exec,string	nimscript : exec(command: string)	
+exec	nimscript.html#exec,string,string,string	nimscript : exec(command: string; input: string; cache = &quot;&quot;)	
+put	nimscript.html#put,string,string	nimscript : put(key, value: string)	
+get	nimscript.html#get,string	nimscript : get(key: string): string	
+exists	nimscript.html#exists,string	nimscript : exists(key: string): bool	
+nimcacheDir	nimscript.html#nimcacheDir,	nimscript : nimcacheDir(): string	
+thisDir	nimscript.html#thisDir,	nimscript : thisDir(): string	
+cd	nimscript.html#cd,string	nimscript : cd(dir: string)	
+withDir	nimscript.html#withDir.t,string,untyped	nimscript : withDir(dir: string; body: untyped): untyped	
+task	nimscript.html#task.t,untyped,string,untyped	nimscript : task(name: untyped; description: string; body: untyped): untyped	
+packageName	nimscript.html#packageName	nimscript : packageName	
+version	nimscript.html#version	nimscript : version	
+author	nimscript.html#author	nimscript : author	
+description	nimscript.html#description	nimscript : description	
+license	nimscript.html#license	nimscript : license	
+srcdir	nimscript.html#srcdir	nimscript : srcdir	
+binDir	nimscript.html#binDir	nimscript : binDir	
+backend	nimscript.html#backend	nimscript : backend	
+skipDirs	nimscript.html#skipDirs	nimscript : skipDirs	
+skipFiles	nimscript.html#skipFiles	nimscript : skipFiles	
+skipExt	nimscript.html#skipExt	nimscript : skipExt	
+installDirs	nimscript.html#installDirs	nimscript : installDirs	
+installFiles	nimscript.html#installFiles	nimscript : installFiles	
+installExt	nimscript.html#installExt	nimscript : installExt	
+bin	nimscript.html#bin	nimscript : bin	
+requiresData	nimscript.html#requiresData	nimscript : requiresData	
+requires	nimscript.html#requires,varargs[string]	nimscript : requires(deps: varargs[string])	

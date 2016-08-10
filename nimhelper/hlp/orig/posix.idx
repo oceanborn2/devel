@@ -1,0 +1,1262 @@
+MM_NULLLBL	posix.html#MM_NULLLBL	posix : MM_NULLLBL	
+MM_NULLSEV	posix.html#MM_NULLSEV	posix : MM_NULLSEV	
+MM_NULLMC	posix.html#MM_NULLMC	posix : MM_NULLMC	
+MM_NULLTXT	posix.html#MM_NULLTXT	posix : MM_NULLTXT	
+MM_NULLACT	posix.html#MM_NULLACT	posix : MM_NULLACT	
+MM_NULLTAG	posix.html#MM_NULLTAG	posix : MM_NULLTAG	
+STDERR_FILENO	posix.html#STDERR_FILENO	posix : STDERR_FILENO	
+STDIN_FILENO	posix.html#STDIN_FILENO	posix : STDIN_FILENO	
+STDOUT_FILENO	posix.html#STDOUT_FILENO	posix : STDOUT_FILENO	
+DT_UNKNOWN	posix.html#DT_UNKNOWN	posix : DT_UNKNOWN	
+DT_FIFO	posix.html#DT_FIFO	posix : DT_FIFO	
+DT_CHR	posix.html#DT_CHR	posix : DT_CHR	
+DT_DIR	posix.html#DT_DIR	posix : DT_DIR	
+DT_BLK	posix.html#DT_BLK	posix : DT_BLK	
+DT_REG	posix.html#DT_REG	posix : DT_REG	
+DT_LNK	posix.html#DT_LNK	posix : DT_LNK	
+DT_SOCK	posix.html#DT_SOCK	posix : DT_SOCK	
+DT_WHT	posix.html#DT_WHT	posix : DT_WHT	
+DIR	posix.html#DIR	posix : DIR	
+SocketHandle	posix.html#SocketHandle	posix : SocketHandle	
+Dirent	posix.html#Dirent	posix : Dirent	
+Tflock	posix.html#Tflock	posix : Tflock	
+FTW	posix.html#FTW	posix : FTW	
+Glob	posix.html#Glob	posix : Glob	
+Group	posix.html#Group	posix : Group	
+Iconv	posix.html#Iconv	posix : Iconv	
+Lconv	posix.html#Lconv	posix : Lconv	
+Mqd	posix.html#Mqd	posix : Mqd	
+MqAttr	posix.html#MqAttr	posix : MqAttr	
+Passwd	posix.html#Passwd	posix : Passwd	
+Blkcnt	posix.html#Blkcnt	posix : Blkcnt	
+Blksize	posix.html#Blksize	posix : Blksize	
+Clock	posix.html#Clock	posix : Clock	
+ClockId	posix.html#ClockId	posix : ClockId	
+Dev	posix.html#Dev	posix : Dev	
+Fsblkcnt	posix.html#Fsblkcnt	posix : Fsblkcnt	
+Fsfilcnt	posix.html#Fsfilcnt	posix : Fsfilcnt	
+Gid	posix.html#Gid	posix : Gid	
+Id	posix.html#Id	posix : Id	
+Ino	posix.html#Ino	posix : Ino	
+Key	posix.html#Key	posix : Key	
+Mode	posix.html#Mode	posix : Mode	
+Nlink	posix.html#Nlink	posix : Nlink	
+Off	posix.html#Off	posix : Off	
+Pid	posix.html#Pid	posix : Pid	
+Pthread_attr	posix.html#Pthread_attr	posix : Pthread_attr	
+Pthread_barrier	posix.html#Pthread_barrier	posix : Pthread_barrier	
+Pthread_barrierattr	posix.html#Pthread_barrierattr	posix : Pthread_barrierattr	
+Pthread_cond	posix.html#Pthread_cond	posix : Pthread_cond	
+Pthread_condattr	posix.html#Pthread_condattr	posix : Pthread_condattr	
+Pthread_key	posix.html#Pthread_key	posix : Pthread_key	
+Pthread_mutex	posix.html#Pthread_mutex	posix : Pthread_mutex	
+Pthread_mutexattr	posix.html#Pthread_mutexattr	posix : Pthread_mutexattr	
+Pthread_once	posix.html#Pthread_once	posix : Pthread_once	
+Pthread_rwlock	posix.html#Pthread_rwlock	posix : Pthread_rwlock	
+Pthread_rwlockattr	posix.html#Pthread_rwlockattr	posix : Pthread_rwlockattr	
+Pthread_spinlock	posix.html#Pthread_spinlock	posix : Pthread_spinlock	
+Pthread	posix.html#Pthread	posix : Pthread	
+Suseconds	posix.html#Suseconds	posix : Suseconds	
+Timer	posix.html#Timer	posix : Timer	
+Trace_attr	posix.html#Trace_attr	posix : Trace_attr	
+Trace_event_id	posix.html#Trace_event_id	posix : Trace_event_id	
+Trace_event_set	posix.html#Trace_event_set	posix : Trace_event_set	
+Trace_id	posix.html#Trace_id	posix : Trace_id	
+Uid	posix.html#Uid	posix : Uid	
+Useconds	posix.html#Useconds	posix : Useconds	
+Utsname	posix.html#Utsname	posix : Utsname	
+Sem	posix.html#Sem	posix : Sem	
+Ipc_perm	posix.html#Ipc_perm	posix : Ipc_perm	
+Stat	posix.html#Stat	posix : Stat	
+Statvfs	posix.html#Statvfs	posix : Statvfs	
+Posix_typed_mem_info	posix.html#Posix_typed_mem_info	posix : Posix_typed_mem_info	
+Tm	posix.html#Tm	posix : Tm	
+Timespec	posix.html#Timespec	posix : Timespec	
+Itimerspec	posix.html#Itimerspec	posix : Itimerspec	
+Sig_atomic	posix.html#Sig_atomic	posix : Sig_atomic	
+Sigset	posix.html#Sigset	posix : Sigset	
+SigEvent	posix.html#SigEvent	posix : SigEvent	
+SigVal	posix.html#SigVal	posix : SigVal	
+Sigaction	posix.html#Sigaction	posix : Sigaction	
+Stack	posix.html#Stack	posix : Stack	
+SigStack	posix.html#SigStack	posix : SigStack	
+SigInfo	posix.html#SigInfo	posix : SigInfo	
+Nl_item	posix.html#Nl_item	posix : Nl_item	
+Nl_catd	posix.html#Nl_catd	posix : Nl_catd	
+Sched_param	posix.html#Sched_param	posix : Sched_param	
+Timeval	posix.html#Timeval	posix : Timeval	
+TFdSet	posix.html#TFdSet	posix : TFdSet	
+Mcontext	posix.html#Mcontext	posix : Mcontext	
+Ucontext	posix.html#Ucontext	posix : Ucontext	
+Taiocb	posix.html#Taiocb	posix : Taiocb	
+Tposix_spawnattr	posix.html#Tposix_spawnattr	posix : Tposix_spawnattr	
+Tposix_spawn_file_actions	posix.html#Tposix_spawn_file_actions	posix : Tposix_spawn_file_actions	
+Sockaddr_un_path_length	posix.html#Sockaddr_un_path_length	posix : Sockaddr_un_path_length	
+Socklen	posix.html#Socklen	posix : Socklen	
+TSa_Family	posix.html#TSa_Family	posix : TSa_Family	
+SockAddr	posix.html#SockAddr	posix : SockAddr	
+Sockaddr_un	posix.html#Sockaddr_un	posix : Sockaddr_un	
+Sockaddr_storage	posix.html#Sockaddr_storage	posix : Sockaddr_storage	
+Tif_nameindex	posix.html#Tif_nameindex	posix : Tif_nameindex	
+IOVec	posix.html#IOVec	posix : IOVec	
+Tmsghdr	posix.html#Tmsghdr	posix : Tmsghdr	
+Tcmsghdr	posix.html#Tcmsghdr	posix : Tcmsghdr	
+TLinger	posix.html#TLinger	posix : TLinger	
+InPort	posix.html#InPort	posix : InPort	
+InAddrScalar	posix.html#InAddrScalar	posix : InAddrScalar	
+InAddrT	posix.html#InAddrT	posix : InAddrT	
+InAddr	posix.html#InAddr	posix : InAddr	
+Sockaddr_in	posix.html#Sockaddr_in	posix : Sockaddr_in	
+In6Addr	posix.html#In6Addr	posix : In6Addr	
+Sockaddr_in6	posix.html#Sockaddr_in6	posix : Sockaddr_in6	
+Tipv6_mreq	posix.html#Tipv6_mreq	posix : Tipv6_mreq	
+Hostent	posix.html#Hostent	posix : Hostent	
+Tnetent	posix.html#Tnetent	posix : Tnetent	
+Protoent	posix.html#Protoent	posix : Protoent	
+Servent	posix.html#Servent	posix : Servent	
+AddrInfo	posix.html#AddrInfo	posix : AddrInfo	
+TPollfd	posix.html#TPollfd	posix : TPollfd	
+Tnfds	posix.html#Tnfds	posix : Tnfds	
+errno	posix.html#errno	posix : errno	
+h_errno	posix.html#h_errno	posix : h_errno	
+daylight	posix.html#daylight	posix : daylight	
+timezone	posix.html#timezone	posix : timezone	
+AIO_ALLDONE	posix.html#AIO_ALLDONE	posix : AIO_ALLDONE	
+AIO_CANCELED	posix.html#AIO_CANCELED	posix : AIO_CANCELED	
+AIO_NOTCANCELED	posix.html#AIO_NOTCANCELED	posix : AIO_NOTCANCELED	
+LIO_NOP	posix.html#LIO_NOP	posix : LIO_NOP	
+LIO_NOWAIT	posix.html#LIO_NOWAIT	posix : LIO_NOWAIT	
+LIO_READ	posix.html#LIO_READ	posix : LIO_READ	
+LIO_WAIT	posix.html#LIO_WAIT	posix : LIO_WAIT	
+LIO_WRITE	posix.html#LIO_WRITE	posix : LIO_WRITE	
+RTLD_LAZY	posix.html#RTLD_LAZY	posix : RTLD_LAZY	
+RTLD_NOW	posix.html#RTLD_NOW	posix : RTLD_NOW	
+RTLD_GLOBAL	posix.html#RTLD_GLOBAL	posix : RTLD_GLOBAL	
+RTLD_LOCAL	posix.html#RTLD_LOCAL	posix : RTLD_LOCAL	
+E2BIG	posix.html#E2BIG	posix : E2BIG	
+EACCES	posix.html#EACCES	posix : EACCES	
+EADDRINUSE	posix.html#EADDRINUSE	posix : EADDRINUSE	
+EADDRNOTAVAIL	posix.html#EADDRNOTAVAIL	posix : EADDRNOTAVAIL	
+EAFNOSUPPORT	posix.html#EAFNOSUPPORT	posix : EAFNOSUPPORT	
+EAGAIN	posix.html#EAGAIN	posix : EAGAIN	
+EALREADY	posix.html#EALREADY	posix : EALREADY	
+EBADF	posix.html#EBADF	posix : EBADF	
+EBADMSG	posix.html#EBADMSG	posix : EBADMSG	
+EBUSY	posix.html#EBUSY	posix : EBUSY	
+ECANCELED	posix.html#ECANCELED	posix : ECANCELED	
+ECHILD	posix.html#ECHILD	posix : ECHILD	
+ECONNABORTED	posix.html#ECONNABORTED	posix : ECONNABORTED	
+ECONNREFUSED	posix.html#ECONNREFUSED	posix : ECONNREFUSED	
+ECONNRESET	posix.html#ECONNRESET	posix : ECONNRESET	
+EDEADLK	posix.html#EDEADLK	posix : EDEADLK	
+EDESTADDRREQ	posix.html#EDESTADDRREQ	posix : EDESTADDRREQ	
+EDOM	posix.html#EDOM	posix : EDOM	
+EDQUOT	posix.html#EDQUOT	posix : EDQUOT	
+EEXIST	posix.html#EEXIST	posix : EEXIST	
+EFAULT	posix.html#EFAULT	posix : EFAULT	
+EFBIG	posix.html#EFBIG	posix : EFBIG	
+EHOSTUNREACH	posix.html#EHOSTUNREACH	posix : EHOSTUNREACH	
+EIDRM	posix.html#EIDRM	posix : EIDRM	
+EILSEQ	posix.html#EILSEQ	posix : EILSEQ	
+EINPROGRESS	posix.html#EINPROGRESS	posix : EINPROGRESS	
+EINTR	posix.html#EINTR	posix : EINTR	
+EINVAL	posix.html#EINVAL	posix : EINVAL	
+EIO	posix.html#EIO	posix : EIO	
+EISCONN	posix.html#EISCONN	posix : EISCONN	
+EISDIR	posix.html#EISDIR	posix : EISDIR	
+ELOOP	posix.html#ELOOP	posix : ELOOP	
+EMFILE	posix.html#EMFILE	posix : EMFILE	
+EMLINK	posix.html#EMLINK	posix : EMLINK	
+EMSGSIZE	posix.html#EMSGSIZE	posix : EMSGSIZE	
+EMULTIHOP	posix.html#EMULTIHOP	posix : EMULTIHOP	
+ENAMETOOLONG	posix.html#ENAMETOOLONG	posix : ENAMETOOLONG	
+ENETDOWN	posix.html#ENETDOWN	posix : ENETDOWN	
+ENETRESET	posix.html#ENETRESET	posix : ENETRESET	
+ENETUNREACH	posix.html#ENETUNREACH	posix : ENETUNREACH	
+ENFILE	posix.html#ENFILE	posix : ENFILE	
+ENOBUFS	posix.html#ENOBUFS	posix : ENOBUFS	
+ENODATA	posix.html#ENODATA	posix : ENODATA	
+ENODEV	posix.html#ENODEV	posix : ENODEV	
+ENOENT	posix.html#ENOENT	posix : ENOENT	
+ENOEXEC	posix.html#ENOEXEC	posix : ENOEXEC	
+ENOLCK	posix.html#ENOLCK	posix : ENOLCK	
+ENOLINK	posix.html#ENOLINK	posix : ENOLINK	
+ENOMEM	posix.html#ENOMEM	posix : ENOMEM	
+ENOMSG	posix.html#ENOMSG	posix : ENOMSG	
+ENOPROTOOPT	posix.html#ENOPROTOOPT	posix : ENOPROTOOPT	
+ENOSPC	posix.html#ENOSPC	posix : ENOSPC	
+ENOSR	posix.html#ENOSR	posix : ENOSR	
+ENOSTR	posix.html#ENOSTR	posix : ENOSTR	
+ENOSYS	posix.html#ENOSYS	posix : ENOSYS	
+ENOTCONN	posix.html#ENOTCONN	posix : ENOTCONN	
+ENOTDIR	posix.html#ENOTDIR	posix : ENOTDIR	
+ENOTEMPTY	posix.html#ENOTEMPTY	posix : ENOTEMPTY	
+ENOTSOCK	posix.html#ENOTSOCK	posix : ENOTSOCK	
+ENOTSUP	posix.html#ENOTSUP	posix : ENOTSUP	
+ENOTTY	posix.html#ENOTTY	posix : ENOTTY	
+ENXIO	posix.html#ENXIO	posix : ENXIO	
+EOPNOTSUPP	posix.html#EOPNOTSUPP	posix : EOPNOTSUPP	
+EOVERFLOW	posix.html#EOVERFLOW	posix : EOVERFLOW	
+EPERM	posix.html#EPERM	posix : EPERM	
+EPIPE	posix.html#EPIPE	posix : EPIPE	
+EPROTO	posix.html#EPROTO	posix : EPROTO	
+EPROTONOSUPPORT	posix.html#EPROTONOSUPPORT	posix : EPROTONOSUPPORT	
+EPROTOTYPE	posix.html#EPROTOTYPE	posix : EPROTOTYPE	
+ERANGE	posix.html#ERANGE	posix : ERANGE	
+EROFS	posix.html#EROFS	posix : EROFS	
+ESPIPE	posix.html#ESPIPE	posix : ESPIPE	
+ESRCH	posix.html#ESRCH	posix : ESRCH	
+ESTALE	posix.html#ESTALE	posix : ESTALE	
+ETIME	posix.html#ETIME	posix : ETIME	
+ETIMEDOUT	posix.html#ETIMEDOUT	posix : ETIMEDOUT	
+ETXTBSY	posix.html#ETXTBSY	posix : ETXTBSY	
+EWOULDBLOCK	posix.html#EWOULDBLOCK	posix : EWOULDBLOCK	
+EXDEV	posix.html#EXDEV	posix : EXDEV	
+F_DUPFD	posix.html#F_DUPFD	posix : F_DUPFD	
+F_GETFD	posix.html#F_GETFD	posix : F_GETFD	
+F_SETFD	posix.html#F_SETFD	posix : F_SETFD	
+F_GETFL	posix.html#F_GETFL	posix : F_GETFL	
+F_SETFL	posix.html#F_SETFL	posix : F_SETFL	
+F_GETLK	posix.html#F_GETLK	posix : F_GETLK	
+F_SETLK	posix.html#F_SETLK	posix : F_SETLK	
+F_SETLKW	posix.html#F_SETLKW	posix : F_SETLKW	
+F_GETOWN	posix.html#F_GETOWN	posix : F_GETOWN	
+F_SETOWN	posix.html#F_SETOWN	posix : F_SETOWN	
+FD_CLOEXEC	posix.html#FD_CLOEXEC	posix : FD_CLOEXEC	
+F_RDLCK	posix.html#F_RDLCK	posix : F_RDLCK	
+F_UNLCK	posix.html#F_UNLCK	posix : F_UNLCK	
+F_WRLCK	posix.html#F_WRLCK	posix : F_WRLCK	
+O_CREAT	posix.html#O_CREAT	posix : O_CREAT	
+O_EXCL	posix.html#O_EXCL	posix : O_EXCL	
+O_NOCTTY	posix.html#O_NOCTTY	posix : O_NOCTTY	
+O_TRUNC	posix.html#O_TRUNC	posix : O_TRUNC	
+O_APPEND	posix.html#O_APPEND	posix : O_APPEND	
+O_DSYNC	posix.html#O_DSYNC	posix : O_DSYNC	
+O_NONBLOCK	posix.html#O_NONBLOCK	posix : O_NONBLOCK	
+O_RSYNC	posix.html#O_RSYNC	posix : O_RSYNC	
+O_SYNC	posix.html#O_SYNC	posix : O_SYNC	
+O_ACCMODE	posix.html#O_ACCMODE	posix : O_ACCMODE	
+O_RDONLY	posix.html#O_RDONLY	posix : O_RDONLY	
+O_RDWR	posix.html#O_RDWR	posix : O_RDWR	
+O_WRONLY	posix.html#O_WRONLY	posix : O_WRONLY	
+POSIX_FADV_NORMAL	posix.html#POSIX_FADV_NORMAL	posix : POSIX_FADV_NORMAL	
+POSIX_FADV_SEQUENTIAL	posix.html#POSIX_FADV_SEQUENTIAL	posix : POSIX_FADV_SEQUENTIAL	
+POSIX_FADV_RANDOM	posix.html#POSIX_FADV_RANDOM	posix : POSIX_FADV_RANDOM	
+POSIX_FADV_WILLNEED	posix.html#POSIX_FADV_WILLNEED	posix : POSIX_FADV_WILLNEED	
+POSIX_FADV_DONTNEED	posix.html#POSIX_FADV_DONTNEED	posix : POSIX_FADV_DONTNEED	
+POSIX_FADV_NOREUSE	posix.html#POSIX_FADV_NOREUSE	posix : POSIX_FADV_NOREUSE	
+MM_HARD	posix.html#MM_HARD	posix : MM_HARD	
+MM_SOFT	posix.html#MM_SOFT	posix : MM_SOFT	
+MM_FIRM	posix.html#MM_FIRM	posix : MM_FIRM	
+MM_APPL	posix.html#MM_APPL	posix : MM_APPL	
+MM_UTIL	posix.html#MM_UTIL	posix : MM_UTIL	
+MM_OPSYS	posix.html#MM_OPSYS	posix : MM_OPSYS	
+MM_RECOVER	posix.html#MM_RECOVER	posix : MM_RECOVER	
+MM_NRECOV	posix.html#MM_NRECOV	posix : MM_NRECOV	
+MM_HALT	posix.html#MM_HALT	posix : MM_HALT	
+MM_ERROR	posix.html#MM_ERROR	posix : MM_ERROR	
+MM_WARNING	posix.html#MM_WARNING	posix : MM_WARNING	
+MM_INFO	posix.html#MM_INFO	posix : MM_INFO	
+MM_NOSEV	posix.html#MM_NOSEV	posix : MM_NOSEV	
+MM_PRINT	posix.html#MM_PRINT	posix : MM_PRINT	
+MM_CONSOLE	posix.html#MM_CONSOLE	posix : MM_CONSOLE	
+MM_OK	posix.html#MM_OK	posix : MM_OK	
+MM_NOTOK	posix.html#MM_NOTOK	posix : MM_NOTOK	
+MM_NOMSG	posix.html#MM_NOMSG	posix : MM_NOMSG	
+MM_NOCON	posix.html#MM_NOCON	posix : MM_NOCON	
+FNM_NOMATCH	posix.html#FNM_NOMATCH	posix : FNM_NOMATCH	
+FNM_PATHNAME	posix.html#FNM_PATHNAME	posix : FNM_PATHNAME	
+FNM_PERIOD	posix.html#FNM_PERIOD	posix : FNM_PERIOD	
+FNM_NOESCAPE	posix.html#FNM_NOESCAPE	posix : FNM_NOESCAPE	
+FNM_NOSYS	posix.html#FNM_NOSYS	posix : FNM_NOSYS	
+FTW_F	posix.html#FTW_F	posix : FTW_F	
+FTW_D	posix.html#FTW_D	posix : FTW_D	
+FTW_DNR	posix.html#FTW_DNR	posix : FTW_DNR	
+FTW_DP	posix.html#FTW_DP	posix : FTW_DP	
+FTW_NS	posix.html#FTW_NS	posix : FTW_NS	
+FTW_SL	posix.html#FTW_SL	posix : FTW_SL	
+FTW_SLN	posix.html#FTW_SLN	posix : FTW_SLN	
+FTW_PHYS	posix.html#FTW_PHYS	posix : FTW_PHYS	
+FTW_MOUNT	posix.html#FTW_MOUNT	posix : FTW_MOUNT	
+FTW_DEPTH	posix.html#FTW_DEPTH	posix : FTW_DEPTH	
+FTW_CHDIR	posix.html#FTW_CHDIR	posix : FTW_CHDIR	
+GLOB_APPEND	posix.html#GLOB_APPEND	posix : GLOB_APPEND	
+GLOB_DOOFFS	posix.html#GLOB_DOOFFS	posix : GLOB_DOOFFS	
+GLOB_ERR	posix.html#GLOB_ERR	posix : GLOB_ERR	
+GLOB_MARK	posix.html#GLOB_MARK	posix : GLOB_MARK	
+GLOB_NOCHECK	posix.html#GLOB_NOCHECK	posix : GLOB_NOCHECK	
+GLOB_NOESCAPE	posix.html#GLOB_NOESCAPE	posix : GLOB_NOESCAPE	
+GLOB_NOSORT	posix.html#GLOB_NOSORT	posix : GLOB_NOSORT	
+GLOB_ABORTED	posix.html#GLOB_ABORTED	posix : GLOB_ABORTED	
+GLOB_NOMATCH	posix.html#GLOB_NOMATCH	posix : GLOB_NOMATCH	
+GLOB_NOSPACE	posix.html#GLOB_NOSPACE	posix : GLOB_NOSPACE	
+GLOB_NOSYS	posix.html#GLOB_NOSYS	posix : GLOB_NOSYS	
+CODESET	posix.html#CODESET	posix : CODESET	
+D_T_FMT	posix.html#D_T_FMT	posix : D_T_FMT	
+D_FMT	posix.html#D_FMT	posix : D_FMT	
+T_FMT	posix.html#T_FMT	posix : T_FMT	
+T_FMT_AMPM	posix.html#T_FMT_AMPM	posix : T_FMT_AMPM	
+AM_STR	posix.html#AM_STR	posix : AM_STR	
+PM_STR	posix.html#PM_STR	posix : PM_STR	
+DAY_1	posix.html#DAY_1	posix : DAY_1	
+DAY_2	posix.html#DAY_2	posix : DAY_2	
+DAY_3	posix.html#DAY_3	posix : DAY_3	
+DAY_4	posix.html#DAY_4	posix : DAY_4	
+DAY_5	posix.html#DAY_5	posix : DAY_5	
+DAY_6	posix.html#DAY_6	posix : DAY_6	
+DAY_7	posix.html#DAY_7	posix : DAY_7	
+ABDAY_1	posix.html#ABDAY_1	posix : ABDAY_1	
+ABDAY_2	posix.html#ABDAY_2	posix : ABDAY_2	
+ABDAY_3	posix.html#ABDAY_3	posix : ABDAY_3	
+ABDAY_4	posix.html#ABDAY_4	posix : ABDAY_4	
+ABDAY_5	posix.html#ABDAY_5	posix : ABDAY_5	
+ABDAY_6	posix.html#ABDAY_6	posix : ABDAY_6	
+ABDAY_7	posix.html#ABDAY_7	posix : ABDAY_7	
+MON_1	posix.html#MON_1	posix : MON_1	
+MON_2	posix.html#MON_2	posix : MON_2	
+MON_3	posix.html#MON_3	posix : MON_3	
+MON_4	posix.html#MON_4	posix : MON_4	
+MON_5	posix.html#MON_5	posix : MON_5	
+MON_6	posix.html#MON_6	posix : MON_6	
+MON_7	posix.html#MON_7	posix : MON_7	
+MON_8	posix.html#MON_8	posix : MON_8	
+MON_9	posix.html#MON_9	posix : MON_9	
+MON_10	posix.html#MON_10	posix : MON_10	
+MON_11	posix.html#MON_11	posix : MON_11	
+MON_12	posix.html#MON_12	posix : MON_12	
+ABMON_1	posix.html#ABMON_1	posix : ABMON_1	
+ABMON_2	posix.html#ABMON_2	posix : ABMON_2	
+ABMON_3	posix.html#ABMON_3	posix : ABMON_3	
+ABMON_4	posix.html#ABMON_4	posix : ABMON_4	
+ABMON_5	posix.html#ABMON_5	posix : ABMON_5	
+ABMON_6	posix.html#ABMON_6	posix : ABMON_6	
+ABMON_7	posix.html#ABMON_7	posix : ABMON_7	
+ABMON_8	posix.html#ABMON_8	posix : ABMON_8	
+ABMON_9	posix.html#ABMON_9	posix : ABMON_9	
+ABMON_10	posix.html#ABMON_10	posix : ABMON_10	
+ABMON_11	posix.html#ABMON_11	posix : ABMON_11	
+ABMON_12	posix.html#ABMON_12	posix : ABMON_12	
+ERA	posix.html#ERA	posix : ERA	
+ERA_D_FMT	posix.html#ERA_D_FMT	posix : ERA_D_FMT	
+ERA_D_T_FMT	posix.html#ERA_D_T_FMT	posix : ERA_D_T_FMT	
+ERA_T_FMT	posix.html#ERA_T_FMT	posix : ERA_T_FMT	
+ALT_DIGITS	posix.html#ALT_DIGITS	posix : ALT_DIGITS	
+RADIXCHAR	posix.html#RADIXCHAR	posix : RADIXCHAR	
+THOUSEP	posix.html#THOUSEP	posix : THOUSEP	
+YESEXPR	posix.html#YESEXPR	posix : YESEXPR	
+NOEXPR	posix.html#NOEXPR	posix : NOEXPR	
+CRNCYSTR	posix.html#CRNCYSTR	posix : CRNCYSTR	
+LC_ALL	posix.html#LC_ALL	posix : LC_ALL	
+LC_COLLATE	posix.html#LC_COLLATE	posix : LC_COLLATE	
+LC_CTYPE	posix.html#LC_CTYPE	posix : LC_CTYPE	
+LC_MESSAGES	posix.html#LC_MESSAGES	posix : LC_MESSAGES	
+LC_MONETARY	posix.html#LC_MONETARY	posix : LC_MONETARY	
+LC_NUMERIC	posix.html#LC_NUMERIC	posix : LC_NUMERIC	
+LC_TIME	posix.html#LC_TIME	posix : LC_TIME	
+PTHREAD_BARRIER_SERIAL_THREAD	posix.html#PTHREAD_BARRIER_SERIAL_THREAD	posix : PTHREAD_BARRIER_SERIAL_THREAD	
+PTHREAD_CANCEL_ASYNCHRONOUS	posix.html#PTHREAD_CANCEL_ASYNCHRONOUS	posix : PTHREAD_CANCEL_ASYNCHRONOUS	
+PTHREAD_CANCEL_ENABLE	posix.html#PTHREAD_CANCEL_ENABLE	posix : PTHREAD_CANCEL_ENABLE	
+PTHREAD_CANCEL_DEFERRED	posix.html#PTHREAD_CANCEL_DEFERRED	posix : PTHREAD_CANCEL_DEFERRED	
+PTHREAD_CANCEL_DISABLE	posix.html#PTHREAD_CANCEL_DISABLE	posix : PTHREAD_CANCEL_DISABLE	
+PTHREAD_CANCELED	posix.html#PTHREAD_CANCELED	posix : PTHREAD_CANCELED	
+PTHREAD_COND_INITIALIZER	posix.html#PTHREAD_COND_INITIALIZER	posix : PTHREAD_COND_INITIALIZER	
+PTHREAD_CREATE_DETACHED	posix.html#PTHREAD_CREATE_DETACHED	posix : PTHREAD_CREATE_DETACHED	
+PTHREAD_CREATE_JOINABLE	posix.html#PTHREAD_CREATE_JOINABLE	posix : PTHREAD_CREATE_JOINABLE	
+PTHREAD_EXPLICIT_SCHED	posix.html#PTHREAD_EXPLICIT_SCHED	posix : PTHREAD_EXPLICIT_SCHED	
+PTHREAD_INHERIT_SCHED	posix.html#PTHREAD_INHERIT_SCHED	posix : PTHREAD_INHERIT_SCHED	
+PTHREAD_MUTEX_DEFAULT	posix.html#PTHREAD_MUTEX_DEFAULT	posix : PTHREAD_MUTEX_DEFAULT	
+PTHREAD_MUTEX_ERRORCHECK	posix.html#PTHREAD_MUTEX_ERRORCHECK	posix : PTHREAD_MUTEX_ERRORCHECK	
+PTHREAD_MUTEX_INITIALIZER	posix.html#PTHREAD_MUTEX_INITIALIZER	posix : PTHREAD_MUTEX_INITIALIZER	
+PTHREAD_MUTEX_NORMAL	posix.html#PTHREAD_MUTEX_NORMAL	posix : PTHREAD_MUTEX_NORMAL	
+PTHREAD_MUTEX_RECURSIVE	posix.html#PTHREAD_MUTEX_RECURSIVE	posix : PTHREAD_MUTEX_RECURSIVE	
+PTHREAD_ONCE_INIT	posix.html#PTHREAD_ONCE_INIT	posix : PTHREAD_ONCE_INIT	
+PTHREAD_PRIO_INHERIT	posix.html#PTHREAD_PRIO_INHERIT	posix : PTHREAD_PRIO_INHERIT	
+PTHREAD_PRIO_NONE	posix.html#PTHREAD_PRIO_NONE	posix : PTHREAD_PRIO_NONE	
+PTHREAD_PRIO_PROTECT	posix.html#PTHREAD_PRIO_PROTECT	posix : PTHREAD_PRIO_PROTECT	
+PTHREAD_PROCESS_SHARED	posix.html#PTHREAD_PROCESS_SHARED	posix : PTHREAD_PROCESS_SHARED	
+PTHREAD_PROCESS_PRIVATE	posix.html#PTHREAD_PROCESS_PRIVATE	posix : PTHREAD_PROCESS_PRIVATE	
+PTHREAD_SCOPE_PROCESS	posix.html#PTHREAD_SCOPE_PROCESS	posix : PTHREAD_SCOPE_PROCESS	
+PTHREAD_SCOPE_SYSTEM	posix.html#PTHREAD_SCOPE_SYSTEM	posix : PTHREAD_SCOPE_SYSTEM	
+POSIX_ASYNC_IO	posix.html#POSIX_ASYNC_IO	posix : POSIX_ASYNC_IO	
+POSIX_PRIO_IO	posix.html#POSIX_PRIO_IO	posix : POSIX_PRIO_IO	
+POSIX_SYNC_IO	posix.html#POSIX_SYNC_IO	posix : POSIX_SYNC_IO	
+F_OK	posix.html#F_OK	posix : F_OK	
+R_OK	posix.html#R_OK	posix : R_OK	
+W_OK	posix.html#W_OK	posix : W_OK	
+X_OK	posix.html#X_OK	posix : X_OK	
+CS_PATH	posix.html#CS_PATH	posix : CS_PATH	
+CS_POSIX_V6_ILP32_OFF32_CFLAGS	posix.html#CS_POSIX_V6_ILP32_OFF32_CFLAGS	posix : CS_POSIX_V6_ILP32_OFF32_CFLAGS	
+CS_POSIX_V6_ILP32_OFF32_LDFLAGS	posix.html#CS_POSIX_V6_ILP32_OFF32_LDFLAGS	posix : CS_POSIX_V6_ILP32_OFF32_LDFLAGS	
+CS_POSIX_V6_ILP32_OFF32_LIBS	posix.html#CS_POSIX_V6_ILP32_OFF32_LIBS	posix : CS_POSIX_V6_ILP32_OFF32_LIBS	
+CS_POSIX_V6_ILP32_OFFBIG_CFLAGS	posix.html#CS_POSIX_V6_ILP32_OFFBIG_CFLAGS	posix : CS_POSIX_V6_ILP32_OFFBIG_CFLAGS	
+CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS	posix.html#CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS	posix : CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS	
+CS_POSIX_V6_ILP32_OFFBIG_LIBS	posix.html#CS_POSIX_V6_ILP32_OFFBIG_LIBS	posix : CS_POSIX_V6_ILP32_OFFBIG_LIBS	
+CS_POSIX_V6_LP64_OFF64_CFLAGS	posix.html#CS_POSIX_V6_LP64_OFF64_CFLAGS	posix : CS_POSIX_V6_LP64_OFF64_CFLAGS	
+CS_POSIX_V6_LP64_OFF64_LDFLAGS	posix.html#CS_POSIX_V6_LP64_OFF64_LDFLAGS	posix : CS_POSIX_V6_LP64_OFF64_LDFLAGS	
+CS_POSIX_V6_LP64_OFF64_LIBS	posix.html#CS_POSIX_V6_LP64_OFF64_LIBS	posix : CS_POSIX_V6_LP64_OFF64_LIBS	
+CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS	posix.html#CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS	posix : CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS	
+CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS	posix.html#CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS	posix : CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS	
+CS_POSIX_V6_LPBIG_OFFBIG_LIBS	posix.html#CS_POSIX_V6_LPBIG_OFFBIG_LIBS	posix : CS_POSIX_V6_LPBIG_OFFBIG_LIBS	
+CS_POSIX_V6_WIDTH_RESTRICTED_ENVS	posix.html#CS_POSIX_V6_WIDTH_RESTRICTED_ENVS	posix : CS_POSIX_V6_WIDTH_RESTRICTED_ENVS	
+F_LOCK	posix.html#F_LOCK	posix : F_LOCK	
+F_TEST	posix.html#F_TEST	posix : F_TEST	
+F_TLOCK	posix.html#F_TLOCK	posix : F_TLOCK	
+F_ULOCK	posix.html#F_ULOCK	posix : F_ULOCK	
+PC_2_SYMLINKS	posix.html#PC_2_SYMLINKS	posix : PC_2_SYMLINKS	
+PC_ALLOC_SIZE_MIN	posix.html#PC_ALLOC_SIZE_MIN	posix : PC_ALLOC_SIZE_MIN	
+PC_ASYNC_IO	posix.html#PC_ASYNC_IO	posix : PC_ASYNC_IO	
+PC_CHOWN_RESTRICTED	posix.html#PC_CHOWN_RESTRICTED	posix : PC_CHOWN_RESTRICTED	
+PC_FILESIZEBITS	posix.html#PC_FILESIZEBITS	posix : PC_FILESIZEBITS	
+PC_LINK_MAX	posix.html#PC_LINK_MAX	posix : PC_LINK_MAX	
+PC_MAX_CANON	posix.html#PC_MAX_CANON	posix : PC_MAX_CANON	
+PC_MAX_INPUT	posix.html#PC_MAX_INPUT	posix : PC_MAX_INPUT	
+PC_NAME_MAX	posix.html#PC_NAME_MAX	posix : PC_NAME_MAX	
+PC_NO_TRUNC	posix.html#PC_NO_TRUNC	posix : PC_NO_TRUNC	
+PC_PATH_MAX	posix.html#PC_PATH_MAX	posix : PC_PATH_MAX	
+PC_PIPE_BUF	posix.html#PC_PIPE_BUF	posix : PC_PIPE_BUF	
+PC_PRIO_IO	posix.html#PC_PRIO_IO	posix : PC_PRIO_IO	
+PC_REC_INCR_XFER_SIZE	posix.html#PC_REC_INCR_XFER_SIZE	posix : PC_REC_INCR_XFER_SIZE	
+PC_REC_MIN_XFER_SIZE	posix.html#PC_REC_MIN_XFER_SIZE	posix : PC_REC_MIN_XFER_SIZE	
+PC_REC_XFER_ALIGN	posix.html#PC_REC_XFER_ALIGN	posix : PC_REC_XFER_ALIGN	
+PC_SYMLINK_MAX	posix.html#PC_SYMLINK_MAX	posix : PC_SYMLINK_MAX	
+PC_SYNC_IO	posix.html#PC_SYNC_IO	posix : PC_SYNC_IO	
+PC_VDISABLE	posix.html#PC_VDISABLE	posix : PC_VDISABLE	
+SC_2_C_BIND	posix.html#SC_2_C_BIND	posix : SC_2_C_BIND	
+SC_2_C_DEV	posix.html#SC_2_C_DEV	posix : SC_2_C_DEV	
+SC_2_CHAR_TERM	posix.html#SC_2_CHAR_TERM	posix : SC_2_CHAR_TERM	
+SC_2_FORT_DEV	posix.html#SC_2_FORT_DEV	posix : SC_2_FORT_DEV	
+SC_2_FORT_RUN	posix.html#SC_2_FORT_RUN	posix : SC_2_FORT_RUN	
+SC_2_LOCALEDEF	posix.html#SC_2_LOCALEDEF	posix : SC_2_LOCALEDEF	
+SC_2_PBS	posix.html#SC_2_PBS	posix : SC_2_PBS	
+SC_2_PBS_ACCOUNTING	posix.html#SC_2_PBS_ACCOUNTING	posix : SC_2_PBS_ACCOUNTING	
+SC_2_PBS_CHECKPOINT	posix.html#SC_2_PBS_CHECKPOINT	posix : SC_2_PBS_CHECKPOINT	
+SC_2_PBS_LOCATE	posix.html#SC_2_PBS_LOCATE	posix : SC_2_PBS_LOCATE	
+SC_2_PBS_MESSAGE	posix.html#SC_2_PBS_MESSAGE	posix : SC_2_PBS_MESSAGE	
+SC_2_PBS_TRACK	posix.html#SC_2_PBS_TRACK	posix : SC_2_PBS_TRACK	
+SC_2_SW_DEV	posix.html#SC_2_SW_DEV	posix : SC_2_SW_DEV	
+SC_2_UPE	posix.html#SC_2_UPE	posix : SC_2_UPE	
+SC_2_VERSION	posix.html#SC_2_VERSION	posix : SC_2_VERSION	
+SC_ADVISORY_INFO	posix.html#SC_ADVISORY_INFO	posix : SC_ADVISORY_INFO	
+SC_AIO_LISTIO_MAX	posix.html#SC_AIO_LISTIO_MAX	posix : SC_AIO_LISTIO_MAX	
+SC_AIO_MAX	posix.html#SC_AIO_MAX	posix : SC_AIO_MAX	
+SC_AIO_PRIO_DELTA_MAX	posix.html#SC_AIO_PRIO_DELTA_MAX	posix : SC_AIO_PRIO_DELTA_MAX	
+SC_ARG_MAX	posix.html#SC_ARG_MAX	posix : SC_ARG_MAX	
+SC_ASYNCHRONOUS_IO	posix.html#SC_ASYNCHRONOUS_IO	posix : SC_ASYNCHRONOUS_IO	
+SC_ATEXIT_MAX	posix.html#SC_ATEXIT_MAX	posix : SC_ATEXIT_MAX	
+SC_BARRIERS	posix.html#SC_BARRIERS	posix : SC_BARRIERS	
+SC_BC_BASE_MAX	posix.html#SC_BC_BASE_MAX	posix : SC_BC_BASE_MAX	
+SC_BC_DIM_MAX	posix.html#SC_BC_DIM_MAX	posix : SC_BC_DIM_MAX	
+SC_BC_SCALE_MAX	posix.html#SC_BC_SCALE_MAX	posix : SC_BC_SCALE_MAX	
+SC_BC_STRING_MAX	posix.html#SC_BC_STRING_MAX	posix : SC_BC_STRING_MAX	
+SC_CHILD_MAX	posix.html#SC_CHILD_MAX	posix : SC_CHILD_MAX	
+SC_CLK_TCK	posix.html#SC_CLK_TCK	posix : SC_CLK_TCK	
+SC_CLOCK_SELECTION	posix.html#SC_CLOCK_SELECTION	posix : SC_CLOCK_SELECTION	
+SC_COLL_WEIGHTS_MAX	posix.html#SC_COLL_WEIGHTS_MAX	posix : SC_COLL_WEIGHTS_MAX	
+SC_CPUTIME	posix.html#SC_CPUTIME	posix : SC_CPUTIME	
+SC_DELAYTIMER_MAX	posix.html#SC_DELAYTIMER_MAX	posix : SC_DELAYTIMER_MAX	
+SC_EXPR_NEST_MAX	posix.html#SC_EXPR_NEST_MAX	posix : SC_EXPR_NEST_MAX	
+SC_FSYNC	posix.html#SC_FSYNC	posix : SC_FSYNC	
+SC_GETGR_R_SIZE_MAX	posix.html#SC_GETGR_R_SIZE_MAX	posix : SC_GETGR_R_SIZE_MAX	
+SC_GETPW_R_SIZE_MAX	posix.html#SC_GETPW_R_SIZE_MAX	posix : SC_GETPW_R_SIZE_MAX	
+SC_HOST_NAME_MAX	posix.html#SC_HOST_NAME_MAX	posix : SC_HOST_NAME_MAX	
+SC_IOV_MAX	posix.html#SC_IOV_MAX	posix : SC_IOV_MAX	
+SC_IPV6	posix.html#SC_IPV6	posix : SC_IPV6	
+SC_JOB_CONTROL	posix.html#SC_JOB_CONTROL	posix : SC_JOB_CONTROL	
+SC_LINE_MAX	posix.html#SC_LINE_MAX	posix : SC_LINE_MAX	
+SC_LOGIN_NAME_MAX	posix.html#SC_LOGIN_NAME_MAX	posix : SC_LOGIN_NAME_MAX	
+SC_MAPPED_FILES	posix.html#SC_MAPPED_FILES	posix : SC_MAPPED_FILES	
+SC_MEMLOCK	posix.html#SC_MEMLOCK	posix : SC_MEMLOCK	
+SC_MEMLOCK_RANGE	posix.html#SC_MEMLOCK_RANGE	posix : SC_MEMLOCK_RANGE	
+SC_MEMORY_PROTECTION	posix.html#SC_MEMORY_PROTECTION	posix : SC_MEMORY_PROTECTION	
+SC_MESSAGE_PASSING	posix.html#SC_MESSAGE_PASSING	posix : SC_MESSAGE_PASSING	
+SC_MONOTONIC_CLOCK	posix.html#SC_MONOTONIC_CLOCK	posix : SC_MONOTONIC_CLOCK	
+SC_MQ_OPEN_MAX	posix.html#SC_MQ_OPEN_MAX	posix : SC_MQ_OPEN_MAX	
+SC_MQ_PRIO_MAX	posix.html#SC_MQ_PRIO_MAX	posix : SC_MQ_PRIO_MAX	
+SC_NGROUPS_MAX	posix.html#SC_NGROUPS_MAX	posix : SC_NGROUPS_MAX	
+SC_OPEN_MAX	posix.html#SC_OPEN_MAX	posix : SC_OPEN_MAX	
+SC_PAGE_SIZE	posix.html#SC_PAGE_SIZE	posix : SC_PAGE_SIZE	
+SC_PRIORITIZED_IO	posix.html#SC_PRIORITIZED_IO	posix : SC_PRIORITIZED_IO	
+SC_PRIORITY_SCHEDULING	posix.html#SC_PRIORITY_SCHEDULING	posix : SC_PRIORITY_SCHEDULING	
+SC_RAW_SOCKETS	posix.html#SC_RAW_SOCKETS	posix : SC_RAW_SOCKETS	
+SC_RE_DUP_MAX	posix.html#SC_RE_DUP_MAX	posix : SC_RE_DUP_MAX	
+SC_READER_WRITER_LOCKS	posix.html#SC_READER_WRITER_LOCKS	posix : SC_READER_WRITER_LOCKS	
+SC_REALTIME_SIGNALS	posix.html#SC_REALTIME_SIGNALS	posix : SC_REALTIME_SIGNALS	
+SC_REGEXP	posix.html#SC_REGEXP	posix : SC_REGEXP	
+SC_RTSIG_MAX	posix.html#SC_RTSIG_MAX	posix : SC_RTSIG_MAX	
+SC_SAVED_IDS	posix.html#SC_SAVED_IDS	posix : SC_SAVED_IDS	
+SC_SEM_NSEMS_MAX	posix.html#SC_SEM_NSEMS_MAX	posix : SC_SEM_NSEMS_MAX	
+SC_SEM_VALUE_MAX	posix.html#SC_SEM_VALUE_MAX	posix : SC_SEM_VALUE_MAX	
+SC_SEMAPHORES	posix.html#SC_SEMAPHORES	posix : SC_SEMAPHORES	
+SC_SHARED_MEMORY_OBJECTS	posix.html#SC_SHARED_MEMORY_OBJECTS	posix : SC_SHARED_MEMORY_OBJECTS	
+SC_SHELL	posix.html#SC_SHELL	posix : SC_SHELL	
+SC_SIGQUEUE_MAX	posix.html#SC_SIGQUEUE_MAX	posix : SC_SIGQUEUE_MAX	
+SC_SPAWN	posix.html#SC_SPAWN	posix : SC_SPAWN	
+SC_SPIN_LOCKS	posix.html#SC_SPIN_LOCKS	posix : SC_SPIN_LOCKS	
+SC_SPORADIC_SERVER	posix.html#SC_SPORADIC_SERVER	posix : SC_SPORADIC_SERVER	
+SC_SS_REPL_MAX	posix.html#SC_SS_REPL_MAX	posix : SC_SS_REPL_MAX	
+SC_STREAM_MAX	posix.html#SC_STREAM_MAX	posix : SC_STREAM_MAX	
+SC_SYMLOOP_MAX	posix.html#SC_SYMLOOP_MAX	posix : SC_SYMLOOP_MAX	
+SC_SYNCHRONIZED_IO	posix.html#SC_SYNCHRONIZED_IO	posix : SC_SYNCHRONIZED_IO	
+SC_THREAD_ATTR_STACKADDR	posix.html#SC_THREAD_ATTR_STACKADDR	posix : SC_THREAD_ATTR_STACKADDR	
+SC_THREAD_ATTR_STACKSIZE	posix.html#SC_THREAD_ATTR_STACKSIZE	posix : SC_THREAD_ATTR_STACKSIZE	
+SC_THREAD_CPUTIME	posix.html#SC_THREAD_CPUTIME	posix : SC_THREAD_CPUTIME	
+SC_THREAD_DESTRUCTOR_ITERATIONS	posix.html#SC_THREAD_DESTRUCTOR_ITERATIONS	posix : SC_THREAD_DESTRUCTOR_ITERATIONS	
+SC_THREAD_KEYS_MAX	posix.html#SC_THREAD_KEYS_MAX	posix : SC_THREAD_KEYS_MAX	
+SC_THREAD_PRIO_INHERIT	posix.html#SC_THREAD_PRIO_INHERIT	posix : SC_THREAD_PRIO_INHERIT	
+SC_THREAD_PRIO_PROTECT	posix.html#SC_THREAD_PRIO_PROTECT	posix : SC_THREAD_PRIO_PROTECT	
+SC_THREAD_PRIORITY_SCHEDULING	posix.html#SC_THREAD_PRIORITY_SCHEDULING	posix : SC_THREAD_PRIORITY_SCHEDULING	
+SC_THREAD_PROCESS_SHARED	posix.html#SC_THREAD_PROCESS_SHARED	posix : SC_THREAD_PROCESS_SHARED	
+SC_THREAD_SAFE_FUNCTIONS	posix.html#SC_THREAD_SAFE_FUNCTIONS	posix : SC_THREAD_SAFE_FUNCTIONS	
+SC_THREAD_SPORADIC_SERVER	posix.html#SC_THREAD_SPORADIC_SERVER	posix : SC_THREAD_SPORADIC_SERVER	
+SC_THREAD_STACK_MIN	posix.html#SC_THREAD_STACK_MIN	posix : SC_THREAD_STACK_MIN	
+SC_THREAD_THREADS_MAX	posix.html#SC_THREAD_THREADS_MAX	posix : SC_THREAD_THREADS_MAX	
+SC_THREADS	posix.html#SC_THREADS	posix : SC_THREADS	
+SC_TIMEOUTS	posix.html#SC_TIMEOUTS	posix : SC_TIMEOUTS	
+SC_TIMER_MAX	posix.html#SC_TIMER_MAX	posix : SC_TIMER_MAX	
+SC_TIMERS	posix.html#SC_TIMERS	posix : SC_TIMERS	
+SC_TRACE	posix.html#SC_TRACE	posix : SC_TRACE	
+SC_TRACE_EVENT_FILTER	posix.html#SC_TRACE_EVENT_FILTER	posix : SC_TRACE_EVENT_FILTER	
+SC_TRACE_EVENT_NAME_MAX	posix.html#SC_TRACE_EVENT_NAME_MAX	posix : SC_TRACE_EVENT_NAME_MAX	
+SC_TRACE_INHERIT	posix.html#SC_TRACE_INHERIT	posix : SC_TRACE_INHERIT	
+SC_TRACE_LOG	posix.html#SC_TRACE_LOG	posix : SC_TRACE_LOG	
+SC_TRACE_NAME_MAX	posix.html#SC_TRACE_NAME_MAX	posix : SC_TRACE_NAME_MAX	
+SC_TRACE_SYS_MAX	posix.html#SC_TRACE_SYS_MAX	posix : SC_TRACE_SYS_MAX	
+SC_TRACE_USER_EVENT_MAX	posix.html#SC_TRACE_USER_EVENT_MAX	posix : SC_TRACE_USER_EVENT_MAX	
+SC_TTY_NAME_MAX	posix.html#SC_TTY_NAME_MAX	posix : SC_TTY_NAME_MAX	
+SC_TYPED_MEMORY_OBJECTS	posix.html#SC_TYPED_MEMORY_OBJECTS	posix : SC_TYPED_MEMORY_OBJECTS	
+SC_TZNAME_MAX	posix.html#SC_TZNAME_MAX	posix : SC_TZNAME_MAX	
+SC_V6_ILP32_OFF32	posix.html#SC_V6_ILP32_OFF32	posix : SC_V6_ILP32_OFF32	
+SC_V6_ILP32_OFFBIG	posix.html#SC_V6_ILP32_OFFBIG	posix : SC_V6_ILP32_OFFBIG	
+SC_V6_LP64_OFF64	posix.html#SC_V6_LP64_OFF64	posix : SC_V6_LP64_OFF64	
+SC_V6_LPBIG_OFFBIG	posix.html#SC_V6_LPBIG_OFFBIG	posix : SC_V6_LPBIG_OFFBIG	
+SC_VERSION	posix.html#SC_VERSION	posix : SC_VERSION	
+SC_XBS5_ILP32_OFF32	posix.html#SC_XBS5_ILP32_OFF32	posix : SC_XBS5_ILP32_OFF32	
+SC_XBS5_ILP32_OFFBIG	posix.html#SC_XBS5_ILP32_OFFBIG	posix : SC_XBS5_ILP32_OFFBIG	
+SC_XBS5_LP64_OFF64	posix.html#SC_XBS5_LP64_OFF64	posix : SC_XBS5_LP64_OFF64	
+SC_XBS5_LPBIG_OFFBIG	posix.html#SC_XBS5_LPBIG_OFFBIG	posix : SC_XBS5_LPBIG_OFFBIG	
+SC_XOPEN_CRYPT	posix.html#SC_XOPEN_CRYPT	posix : SC_XOPEN_CRYPT	
+SC_XOPEN_ENH_I18N	posix.html#SC_XOPEN_ENH_I18N	posix : SC_XOPEN_ENH_I18N	
+SC_XOPEN_LEGACY	posix.html#SC_XOPEN_LEGACY	posix : SC_XOPEN_LEGACY	
+SC_XOPEN_REALTIME	posix.html#SC_XOPEN_REALTIME	posix : SC_XOPEN_REALTIME	
+SC_XOPEN_REALTIME_THREADS	posix.html#SC_XOPEN_REALTIME_THREADS	posix : SC_XOPEN_REALTIME_THREADS	
+SC_XOPEN_SHM	posix.html#SC_XOPEN_SHM	posix : SC_XOPEN_SHM	
+SC_XOPEN_STREAMS	posix.html#SC_XOPEN_STREAMS	posix : SC_XOPEN_STREAMS	
+SC_XOPEN_UNIX	posix.html#SC_XOPEN_UNIX	posix : SC_XOPEN_UNIX	
+SC_XOPEN_VERSION	posix.html#SC_XOPEN_VERSION	posix : SC_XOPEN_VERSION	
+SC_NPROCESSORS_ONLN	posix.html#SC_NPROCESSORS_ONLN	posix : SC_NPROCESSORS_ONLN	
+SEM_FAILED	posix.html#SEM_FAILED	posix : SEM_FAILED	
+IPC_CREAT	posix.html#IPC_CREAT	posix : IPC_CREAT	
+IPC_EXCL	posix.html#IPC_EXCL	posix : IPC_EXCL	
+IPC_NOWAIT	posix.html#IPC_NOWAIT	posix : IPC_NOWAIT	
+IPC_PRIVATE	posix.html#IPC_PRIVATE	posix : IPC_PRIVATE	
+IPC_RMID	posix.html#IPC_RMID	posix : IPC_RMID	
+IPC_SET	posix.html#IPC_SET	posix : IPC_SET	
+IPC_STAT	posix.html#IPC_STAT	posix : IPC_STAT	
+S_IFMT	posix.html#S_IFMT	posix : S_IFMT	
+S_IFBLK	posix.html#S_IFBLK	posix : S_IFBLK	
+S_IFCHR	posix.html#S_IFCHR	posix : S_IFCHR	
+S_IFIFO	posix.html#S_IFIFO	posix : S_IFIFO	
+S_IFREG	posix.html#S_IFREG	posix : S_IFREG	
+S_IFDIR	posix.html#S_IFDIR	posix : S_IFDIR	
+S_IFLNK	posix.html#S_IFLNK	posix : S_IFLNK	
+S_IFSOCK	posix.html#S_IFSOCK	posix : S_IFSOCK	
+S_IRWXU	posix.html#S_IRWXU	posix : S_IRWXU	
+S_IRUSR	posix.html#S_IRUSR	posix : S_IRUSR	
+S_IWUSR	posix.html#S_IWUSR	posix : S_IWUSR	
+S_IXUSR	posix.html#S_IXUSR	posix : S_IXUSR	
+S_IRWXG	posix.html#S_IRWXG	posix : S_IRWXG	
+S_IRGRP	posix.html#S_IRGRP	posix : S_IRGRP	
+S_IWGRP	posix.html#S_IWGRP	posix : S_IWGRP	
+S_IXGRP	posix.html#S_IXGRP	posix : S_IXGRP	
+S_IRWXO	posix.html#S_IRWXO	posix : S_IRWXO	
+S_IROTH	posix.html#S_IROTH	posix : S_IROTH	
+S_IWOTH	posix.html#S_IWOTH	posix : S_IWOTH	
+S_IXOTH	posix.html#S_IXOTH	posix : S_IXOTH	
+S_ISUID	posix.html#S_ISUID	posix : S_ISUID	
+S_ISGID	posix.html#S_ISGID	posix : S_ISGID	
+S_ISVTX	posix.html#S_ISVTX	posix : S_ISVTX	
+ST_RDONLY	posix.html#ST_RDONLY	posix : ST_RDONLY	
+ST_NOSUID	posix.html#ST_NOSUID	posix : ST_NOSUID	
+PROT_READ	posix.html#PROT_READ	posix : PROT_READ	
+PROT_WRITE	posix.html#PROT_WRITE	posix : PROT_WRITE	
+PROT_EXEC	posix.html#PROT_EXEC	posix : PROT_EXEC	
+PROT_NONE	posix.html#PROT_NONE	posix : PROT_NONE	
+MAP_SHARED	posix.html#MAP_SHARED	posix : MAP_SHARED	
+MAP_PRIVATE	posix.html#MAP_PRIVATE	posix : MAP_PRIVATE	
+MAP_FIXED	posix.html#MAP_FIXED	posix : MAP_FIXED	
+MS_ASYNC	posix.html#MS_ASYNC	posix : MS_ASYNC	
+MS_SYNC	posix.html#MS_SYNC	posix : MS_SYNC	
+MS_INVALIDATE	posix.html#MS_INVALIDATE	posix : MS_INVALIDATE	
+MCL_CURRENT	posix.html#MCL_CURRENT	posix : MCL_CURRENT	
+MCL_FUTURE	posix.html#MCL_FUTURE	posix : MCL_FUTURE	
+MAP_FAILED	posix.html#MAP_FAILED	posix : MAP_FAILED	
+POSIX_MADV_NORMAL	posix.html#POSIX_MADV_NORMAL	posix : POSIX_MADV_NORMAL	
+POSIX_MADV_SEQUENTIAL	posix.html#POSIX_MADV_SEQUENTIAL	posix : POSIX_MADV_SEQUENTIAL	
+POSIX_MADV_RANDOM	posix.html#POSIX_MADV_RANDOM	posix : POSIX_MADV_RANDOM	
+POSIX_MADV_WILLNEED	posix.html#POSIX_MADV_WILLNEED	posix : POSIX_MADV_WILLNEED	
+POSIX_MADV_DONTNEED	posix.html#POSIX_MADV_DONTNEED	posix : POSIX_MADV_DONTNEED	
+POSIX_TYPED_MEM_ALLOCATE	posix.html#POSIX_TYPED_MEM_ALLOCATE	posix : POSIX_TYPED_MEM_ALLOCATE	
+POSIX_TYPED_MEM_ALLOCATE_CONTIG	posix.html#POSIX_TYPED_MEM_ALLOCATE_CONTIG	posix : POSIX_TYPED_MEM_ALLOCATE_CONTIG	
+POSIX_TYPED_MEM_MAP_ALLOCATABLE	posix.html#POSIX_TYPED_MEM_MAP_ALLOCATABLE	posix : POSIX_TYPED_MEM_MAP_ALLOCATABLE	
+CLOCKS_PER_SEC	posix.html#CLOCKS_PER_SEC	posix : CLOCKS_PER_SEC	
+CLOCK_PROCESS_CPUTIME_ID	posix.html#CLOCK_PROCESS_CPUTIME_ID	posix : CLOCK_PROCESS_CPUTIME_ID	
+CLOCK_THREAD_CPUTIME_ID	posix.html#CLOCK_THREAD_CPUTIME_ID	posix : CLOCK_THREAD_CPUTIME_ID	
+CLOCK_REALTIME	posix.html#CLOCK_REALTIME	posix : CLOCK_REALTIME	
+TIMER_ABSTIME	posix.html#TIMER_ABSTIME	posix : TIMER_ABSTIME	
+CLOCK_MONOTONIC	posix.html#CLOCK_MONOTONIC	posix : CLOCK_MONOTONIC	
+WNOHANG	posix.html#WNOHANG	posix : WNOHANG	
+WUNTRACED	posix.html#WUNTRACED	posix : WUNTRACED	
+WEXITSTATUS	posix.html#WEXITSTATUS	posix : WEXITSTATUS	
+WSTOPSIG	posix.html#WSTOPSIG	posix : WSTOPSIG	
+WTERMSIG	posix.html#WTERMSIG	posix : WTERMSIG	
+WEXITED	posix.html#WEXITED	posix : WEXITED	
+WSTOPPED	posix.html#WSTOPPED	posix : WSTOPPED	
+WCONTINUED	posix.html#WCONTINUED	posix : WCONTINUED	
+WNOWAIT	posix.html#WNOWAIT	posix : WNOWAIT	
+P_ALL	posix.html#P_ALL	posix : P_ALL	
+P_PID	posix.html#P_PID	posix : P_PID	
+P_PGID	posix.html#P_PGID	posix : P_PGID	
+SIG_DFL	posix.html#SIG_DFL	posix : SIG_DFL	
+SIG_ERR	posix.html#SIG_ERR	posix : SIG_ERR	
+cSIG_HOLD	posix.html#cSIG_HOLD	posix : cSIG_HOLD	
+SIG_IGN	posix.html#SIG_IGN	posix : SIG_IGN	
+SIGEV_NONE	posix.html#SIGEV_NONE	posix : SIGEV_NONE	
+SIGEV_SIGNAL	posix.html#SIGEV_SIGNAL	posix : SIGEV_SIGNAL	
+SIGEV_THREAD	posix.html#SIGEV_THREAD	posix : SIGEV_THREAD	
+SIGABRT	posix.html#SIGABRT	posix : SIGABRT	
+SIGALRM	posix.html#SIGALRM	posix : SIGALRM	
+SIGBUS	posix.html#SIGBUS	posix : SIGBUS	
+SIGCHLD	posix.html#SIGCHLD	posix : SIGCHLD	
+SIGCONT	posix.html#SIGCONT	posix : SIGCONT	
+SIGFPE	posix.html#SIGFPE	posix : SIGFPE	
+SIGHUP	posix.html#SIGHUP	posix : SIGHUP	
+SIGILL	posix.html#SIGILL	posix : SIGILL	
+SIGINT	posix.html#SIGINT	posix : SIGINT	
+SIGKILL	posix.html#SIGKILL	posix : SIGKILL	
+SIGPIPE	posix.html#SIGPIPE	posix : SIGPIPE	
+SIGQUIT	posix.html#SIGQUIT	posix : SIGQUIT	
+SIGSEGV	posix.html#SIGSEGV	posix : SIGSEGV	
+SIGSTOP	posix.html#SIGSTOP	posix : SIGSTOP	
+SIGTERM	posix.html#SIGTERM	posix : SIGTERM	
+SIGTSTP	posix.html#SIGTSTP	posix : SIGTSTP	
+SIGTTIN	posix.html#SIGTTIN	posix : SIGTTIN	
+SIGTTOU	posix.html#SIGTTOU	posix : SIGTTOU	
+SIGUSR1	posix.html#SIGUSR1	posix : SIGUSR1	
+SIGUSR2	posix.html#SIGUSR2	posix : SIGUSR2	
+SIGPOLL	posix.html#SIGPOLL	posix : SIGPOLL	
+SIGPROF	posix.html#SIGPROF	posix : SIGPROF	
+SIGSYS	posix.html#SIGSYS	posix : SIGSYS	
+SIGTRAP	posix.html#SIGTRAP	posix : SIGTRAP	
+SIGURG	posix.html#SIGURG	posix : SIGURG	
+SIGVTALRM	posix.html#SIGVTALRM	posix : SIGVTALRM	
+SIGXCPU	posix.html#SIGXCPU	posix : SIGXCPU	
+SIGXFSZ	posix.html#SIGXFSZ	posix : SIGXFSZ	
+SA_NOCLDSTOP	posix.html#SA_NOCLDSTOP	posix : SA_NOCLDSTOP	
+SIG_BLOCK	posix.html#SIG_BLOCK	posix : SIG_BLOCK	
+SIG_UNBLOCK	posix.html#SIG_UNBLOCK	posix : SIG_UNBLOCK	
+SIG_SETMASK	posix.html#SIG_SETMASK	posix : SIG_SETMASK	
+SA_ONSTACK	posix.html#SA_ONSTACK	posix : SA_ONSTACK	
+SA_RESETHAND	posix.html#SA_RESETHAND	posix : SA_RESETHAND	
+SA_RESTART	posix.html#SA_RESTART	posix : SA_RESTART	
+SA_SIGINFO	posix.html#SA_SIGINFO	posix : SA_SIGINFO	
+SA_NOCLDWAIT	posix.html#SA_NOCLDWAIT	posix : SA_NOCLDWAIT	
+SA_NODEFER	posix.html#SA_NODEFER	posix : SA_NODEFER	
+SS_ONSTACK	posix.html#SS_ONSTACK	posix : SS_ONSTACK	
+SS_DISABLE	posix.html#SS_DISABLE	posix : SS_DISABLE	
+MINSIGSTKSZ	posix.html#MINSIGSTKSZ	posix : MINSIGSTKSZ	
+SIGSTKSZ	posix.html#SIGSTKSZ	posix : SIGSTKSZ	
+NL_SETD	posix.html#NL_SETD	posix : NL_SETD	
+NL_CAT_LOCALE	posix.html#NL_CAT_LOCALE	posix : NL_CAT_LOCALE	
+SCHED_FIFO	posix.html#SCHED_FIFO	posix : SCHED_FIFO	
+SCHED_RR	posix.html#SCHED_RR	posix : SCHED_RR	
+SCHED_SPORADIC	posix.html#SCHED_SPORADIC	posix : SCHED_SPORADIC	
+SCHED_OTHER	posix.html#SCHED_OTHER	posix : SCHED_OTHER	
+FD_SETSIZE	posix.html#FD_SETSIZE	posix : FD_SETSIZE	
+SEEK_SET	posix.html#SEEK_SET	posix : SEEK_SET	
+SEEK_CUR	posix.html#SEEK_CUR	posix : SEEK_CUR	
+SEEK_END	posix.html#SEEK_END	posix : SEEK_END	
+SCM_RIGHTS	posix.html#SCM_RIGHTS	posix : SCM_RIGHTS	
+SOCK_DGRAM	posix.html#SOCK_DGRAM	posix : SOCK_DGRAM	
+SOCK_RAW	posix.html#SOCK_RAW	posix : SOCK_RAW	
+SOCK_SEQPACKET	posix.html#SOCK_SEQPACKET	posix : SOCK_SEQPACKET	
+SOCK_STREAM	posix.html#SOCK_STREAM	posix : SOCK_STREAM	
+SOL_SOCKET	posix.html#SOL_SOCKET	posix : SOL_SOCKET	
+SO_ACCEPTCONN	posix.html#SO_ACCEPTCONN	posix : SO_ACCEPTCONN	
+SO_BROADCAST	posix.html#SO_BROADCAST	posix : SO_BROADCAST	
+SO_DEBUG	posix.html#SO_DEBUG	posix : SO_DEBUG	
+SO_DONTROUTE	posix.html#SO_DONTROUTE	posix : SO_DONTROUTE	
+SO_ERROR	posix.html#SO_ERROR	posix : SO_ERROR	
+SO_KEEPALIVE	posix.html#SO_KEEPALIVE	posix : SO_KEEPALIVE	
+SO_LINGER	posix.html#SO_LINGER	posix : SO_LINGER	
+SO_OOBINLINE	posix.html#SO_OOBINLINE	posix : SO_OOBINLINE	
+SO_RCVBUF	posix.html#SO_RCVBUF	posix : SO_RCVBUF	
+SO_RCVLOWAT	posix.html#SO_RCVLOWAT	posix : SO_RCVLOWAT	
+SO_RCVTIMEO	posix.html#SO_RCVTIMEO	posix : SO_RCVTIMEO	
+SO_REUSEADDR	posix.html#SO_REUSEADDR	posix : SO_REUSEADDR	
+SO_SNDBUF	posix.html#SO_SNDBUF	posix : SO_SNDBUF	
+SO_SNDLOWAT	posix.html#SO_SNDLOWAT	posix : SO_SNDLOWAT	
+SO_SNDTIMEO	posix.html#SO_SNDTIMEO	posix : SO_SNDTIMEO	
+SO_TYPE	posix.html#SO_TYPE	posix : SO_TYPE	
+SOMAXCONN	posix.html#SOMAXCONN	posix : SOMAXCONN	
+MSG_CTRUNC	posix.html#MSG_CTRUNC	posix : MSG_CTRUNC	
+MSG_DONTROUTE	posix.html#MSG_DONTROUTE	posix : MSG_DONTROUTE	
+MSG_EOR	posix.html#MSG_EOR	posix : MSG_EOR	
+MSG_OOB	posix.html#MSG_OOB	posix : MSG_OOB	
+WIFCONTINUED	posix.html#WIFCONTINUED,cint	posix : WIFCONTINUED(s: cint): bool	
+WIFEXITED	posix.html#WIFEXITED,cint	posix : WIFEXITED(s: cint): bool	
+WIFSIGNALED	posix.html#WIFSIGNALED,cint	posix : WIFSIGNALED(s: cint): bool	
+WIFSTOPPED	posix.html#WIFSTOPPED,cint	posix : WIFSTOPPED(s: cint): bool	
+MAP_POPULATE	posix.html#MAP_POPULATE	posix : MAP_POPULATE	
+SO_REUSEPORT	posix.html#SO_REUSEPORT	posix : SO_REUSEPORT	
+MSG_NOSIGNAL	posix.html#MSG_NOSIGNAL	posix : MSG_NOSIGNAL	
+MSG_PEEK	posix.html#MSG_PEEK	posix : MSG_PEEK	
+MSG_TRUNC	posix.html#MSG_TRUNC	posix : MSG_TRUNC	
+MSG_WAITALL	posix.html#MSG_WAITALL	posix : MSG_WAITALL	
+AF_INET	posix.html#AF_INET	posix : AF_INET	
+AF_INET6	posix.html#AF_INET6	posix : AF_INET6	
+AF_UNIX	posix.html#AF_UNIX	posix : AF_UNIX	
+AF_UNSPEC	posix.html#AF_UNSPEC	posix : AF_UNSPEC	
+SHUT_RD	posix.html#SHUT_RD	posix : SHUT_RD	
+SHUT_RDWR	posix.html#SHUT_RDWR	posix : SHUT_RDWR	
+SHUT_WR	posix.html#SHUT_WR	posix : SHUT_WR	
+IF_NAMESIZE	posix.html#IF_NAMESIZE	posix : IF_NAMESIZE	
+IPPROTO_IP	posix.html#IPPROTO_IP	posix : IPPROTO_IP	
+IPPROTO_IPV6	posix.html#IPPROTO_IPV6	posix : IPPROTO_IPV6	
+IPPROTO_ICMP	posix.html#IPPROTO_ICMP	posix : IPPROTO_ICMP	
+IPPROTO_RAW	posix.html#IPPROTO_RAW	posix : IPPROTO_RAW	
+IPPROTO_TCP	posix.html#IPPROTO_TCP	posix : IPPROTO_TCP	
+IPPROTO_UDP	posix.html#IPPROTO_UDP	posix : IPPROTO_UDP	
+INADDR_ANY	posix.html#INADDR_ANY	posix : INADDR_ANY	
+INADDR_BROADCAST	posix.html#INADDR_BROADCAST	posix : INADDR_BROADCAST	
+INET_ADDRSTRLEN	posix.html#INET_ADDRSTRLEN	posix : INET_ADDRSTRLEN	
+INET6_ADDRSTRLEN	posix.html#INET6_ADDRSTRLEN	posix : INET6_ADDRSTRLEN	
+IPV6_JOIN_GROUP	posix.html#IPV6_JOIN_GROUP	posix : IPV6_JOIN_GROUP	
+IPV6_LEAVE_GROUP	posix.html#IPV6_LEAVE_GROUP	posix : IPV6_LEAVE_GROUP	
+IPV6_MULTICAST_HOPS	posix.html#IPV6_MULTICAST_HOPS	posix : IPV6_MULTICAST_HOPS	
+IPV6_MULTICAST_IF	posix.html#IPV6_MULTICAST_IF	posix : IPV6_MULTICAST_IF	
+IPV6_MULTICAST_LOOP	posix.html#IPV6_MULTICAST_LOOP	posix : IPV6_MULTICAST_LOOP	
+IPV6_UNICAST_HOPS	posix.html#IPV6_UNICAST_HOPS	posix : IPV6_UNICAST_HOPS	
+IPV6_V6ONLY	posix.html#IPV6_V6ONLY	posix : IPV6_V6ONLY	
+TCP_NODELAY	posix.html#TCP_NODELAY	posix : TCP_NODELAY	
+IPPORT_RESERVED	posix.html#IPPORT_RESERVED	posix : IPPORT_RESERVED	
+HOST_NOT_FOUND	posix.html#HOST_NOT_FOUND	posix : HOST_NOT_FOUND	
+NO_DATA	posix.html#NO_DATA	posix : NO_DATA	
+NO_RECOVERY	posix.html#NO_RECOVERY	posix : NO_RECOVERY	
+TRY_AGAIN	posix.html#TRY_AGAIN	posix : TRY_AGAIN	
+AI_PASSIVE	posix.html#AI_PASSIVE	posix : AI_PASSIVE	
+AI_CANONNAME	posix.html#AI_CANONNAME	posix : AI_CANONNAME	
+AI_NUMERICHOST	posix.html#AI_NUMERICHOST	posix : AI_NUMERICHOST	
+AI_NUMERICSERV	posix.html#AI_NUMERICSERV	posix : AI_NUMERICSERV	
+AI_V4MAPPED	posix.html#AI_V4MAPPED	posix : AI_V4MAPPED	
+AI_ALL	posix.html#AI_ALL	posix : AI_ALL	
+AI_ADDRCONFIG	posix.html#AI_ADDRCONFIG	posix : AI_ADDRCONFIG	
+NI_NOFQDN	posix.html#NI_NOFQDN	posix : NI_NOFQDN	
+NI_NUMERICHOST	posix.html#NI_NUMERICHOST	posix : NI_NUMERICHOST	
+NI_NAMEREQD	posix.html#NI_NAMEREQD	posix : NI_NAMEREQD	
+NI_NUMERICSERV	posix.html#NI_NUMERICSERV	posix : NI_NUMERICSERV	
+NI_NUMERICSCOPE	posix.html#NI_NUMERICSCOPE	posix : NI_NUMERICSCOPE	
+NI_DGRAM	posix.html#NI_DGRAM	posix : NI_DGRAM	
+EAI_AGAIN	posix.html#EAI_AGAIN	posix : EAI_AGAIN	
+EAI_BADFLAGS	posix.html#EAI_BADFLAGS	posix : EAI_BADFLAGS	
+EAI_FAIL	posix.html#EAI_FAIL	posix : EAI_FAIL	
+EAI_FAMILY	posix.html#EAI_FAMILY	posix : EAI_FAMILY	
+EAI_MEMORY	posix.html#EAI_MEMORY	posix : EAI_MEMORY	
+EAI_NONAME	posix.html#EAI_NONAME	posix : EAI_NONAME	
+EAI_SERVICE	posix.html#EAI_SERVICE	posix : EAI_SERVICE	
+EAI_SOCKTYPE	posix.html#EAI_SOCKTYPE	posix : EAI_SOCKTYPE	
+EAI_SYSTEM	posix.html#EAI_SYSTEM	posix : EAI_SYSTEM	
+EAI_OVERFLOW	posix.html#EAI_OVERFLOW	posix : EAI_OVERFLOW	
+POLLIN	posix.html#POLLIN	posix : POLLIN	
+POLLRDNORM	posix.html#POLLRDNORM	posix : POLLRDNORM	
+POLLRDBAND	posix.html#POLLRDBAND	posix : POLLRDBAND	
+POLLPRI	posix.html#POLLPRI	posix : POLLPRI	
+POLLOUT	posix.html#POLLOUT	posix : POLLOUT	
+POLLWRNORM	posix.html#POLLWRNORM	posix : POLLWRNORM	
+POLLWRBAND	posix.html#POLLWRBAND	posix : POLLWRBAND	
+POLLERR	posix.html#POLLERR	posix : POLLERR	
+POLLHUP	posix.html#POLLHUP	posix : POLLHUP	
+POLLNVAL	posix.html#POLLNVAL	posix : POLLNVAL	
+POSIX_SPAWN_RESETIDS	posix.html#POSIX_SPAWN_RESETIDS	posix : POSIX_SPAWN_RESETIDS	
+POSIX_SPAWN_SETPGROUP	posix.html#POSIX_SPAWN_SETPGROUP	posix : POSIX_SPAWN_SETPGROUP	
+POSIX_SPAWN_SETSCHEDPARAM	posix.html#POSIX_SPAWN_SETSCHEDPARAM	posix : POSIX_SPAWN_SETSCHEDPARAM	
+POSIX_SPAWN_SETSCHEDULER	posix.html#POSIX_SPAWN_SETSCHEDULER	posix : POSIX_SPAWN_SETSCHEDULER	
+POSIX_SPAWN_SETSIGDEF	posix.html#POSIX_SPAWN_SETSIGDEF	posix : POSIX_SPAWN_SETSIGDEF	
+POSIX_SPAWN_SETSIGMASK	posix.html#POSIX_SPAWN_SETSIGMASK	posix : POSIX_SPAWN_SETSIGMASK	
+POSIX_SPAWN_USEVFORK	posix.html#POSIX_SPAWN_USEVFORK	posix : POSIX_SPAWN_USEVFORK	
+aio_cancel	posix.html#aio_cancel,cint,ptr.Taiocb	posix : aio_cancel(a1: cint; a2: ptr Taiocb): cint	
+aio_error	posix.html#aio_error,ptr.Taiocb	posix : aio_error(a1: ptr Taiocb): cint	
+aio_fsync	posix.html#aio_fsync,cint,ptr.Taiocb	posix : aio_fsync(a1: cint; a2: ptr Taiocb): cint	
+aio_read	posix.html#aio_read,ptr.Taiocb	posix : aio_read(a1: ptr Taiocb): cint	
+aio_return	posix.html#aio_return,ptr.Taiocb	posix : aio_return(a1: ptr Taiocb): int	
+aio_suspend	posix.html#aio_suspend,ptr.ptr.Taiocb,cint,ptr.Timespec	posix : aio_suspend(a1: ptr ptr Taiocb; a2: cint; a3: ptr Timespec): cint	
+aio_write	posix.html#aio_write,ptr.Taiocb	posix : aio_write(a1: ptr Taiocb): cint	
+lio_listio	posix.html#lio_listio,cint,ptr.ptr.Taiocb,cint,ptr.SigEvent	posix : lio_listio(a1: cint; a2: ptr ptr Taiocb; a3: cint; a4: ptr SigEvent): cint	
+htonl	posix.html#htonl,int32	posix : htonl(a1: int32): int32	
+htons	posix.html#htons,int16	posix : htons(a1: int16): int16	
+ntohl	posix.html#ntohl,int32	posix : ntohl(a1: int32): int32	
+ntohs	posix.html#ntohs,int16	posix : ntohs(a1: int16): int16	
+inet_addr	posix.html#inet_addr,cstring	posix : inet_addr(a1: cstring): InAddrT	
+inet_ntoa	posix.html#inet_ntoa,InAddr	posix : inet_ntoa(a1: InAddr): cstring	
+inet_ntop	posix.html#inet_ntop,cint,pointer,cstring,int32	posix : inet_ntop(a1: cint; a2: pointer; a3: cstring; a4: int32): cstring	
+inet_pton	posix.html#inet_pton,cint,cstring,pointer	posix : inet_pton(a1: cint; a2: cstring; a3: pointer): cint	
+in6addr_any	posix.html#in6addr_any	posix : in6addr_any	
+in6addr_loopback	posix.html#in6addr_loopback	posix : in6addr_loopback	
+IN6ADDR_ANY_INIT	posix.html#IN6ADDR_ANY_INIT,	posix : IN6ADDR_ANY_INIT(): In6Addr	
+IN6ADDR_LOOPBACK_INIT	posix.html#IN6ADDR_LOOPBACK_INIT,	posix : IN6ADDR_LOOPBACK_INIT(): In6Addr	
+closedir	posix.html#closedir,ptr.DIR	posix : closedir(a1: ptr DIR): cint	
+opendir	posix.html#opendir,cstring	posix : opendir(a1: cstring): ptr DIR	
+readdir	posix.html#readdir,ptr.DIR	posix : readdir(a1: ptr DIR): ptr Dirent	
+readdir_r	posix.html#readdir_r,ptr.DIR,ptr.Dirent,ptr.ptr.Dirent	posix : readdir_r(a1: ptr DIR; a2: ptr Dirent; a3: ptr ptr Dirent): cint	
+rewinddir	posix.html#rewinddir,ptr.DIR	posix : rewinddir(a1: ptr DIR)	
+seekdir	posix.html#seekdir,ptr.DIR,int	posix : seekdir(a1: ptr DIR; a2: int)	
+telldir	posix.html#telldir,ptr.DIR	posix : telldir(a1: ptr DIR): int	
+dlclose	posix.html#dlclose,pointer	posix : dlclose(a1: pointer): cint	
+dlerror	posix.html#dlerror,	posix : dlerror(): cstring	
+dlopen	posix.html#dlopen,cstring,cint	posix : dlopen(a1: cstring; a2: cint): pointer	
+dlsym	posix.html#dlsym,pointer,cstring	posix : dlsym(a1: pointer; a2: cstring): pointer	
+creat	posix.html#creat,cstring,Mode	posix : creat(a1: cstring; a2: Mode): cint	
+fcntl	posix.html#fcntl,,cint	posix : fcntl[](a1: cint | SocketHandle; a2: cint): cint	
+open	posix.html#open,cstring,cint	posix : open(a1: cstring; a2: cint): cint	
+posix_fadvise	posix.html#posix_fadvise,cint,Off,Off,cint	posix : posix_fadvise(a1: cint; a2, a3: Off; a4: cint): cint	
+posix_fallocate	posix.html#posix_fallocate,cint,Off,Off	posix : posix_fallocate(a1: cint; a2, a3: Off): cint	
+fmtmsg	posix.html#fmtmsg,int,cstring,cint,cstring,cstring,cstring	posix : fmtmsg(a1: int; a2: cstring; a3: cint; a4, a5, a6: cstring): cint	
+fnmatch	posix.html#fnmatch,cstring,cstring,cint	posix : fnmatch(a1, a2: cstring; a3: cint): cint	
+ftw	posix.html#ftw,cstring,proc(cstring,ptr.Stat,cint),cint	posix : ftw(a1: cstring; a2: proc (x1: cstring; x2: ptr Stat; x3: cint): cint; a3: cint): cint	
+nftw	posix.html#nftw,cstring,proc(cstring,ptr.Stat,cint,ptr.FTW),cint,cint	posix : nftw(a1: cstring; a2: proc (x1: cstring; x2: ptr Stat; x3: cint; x4: ptr FTW): cint; a3: cint;\n     a4: cint): cint	
+glob	posix.html#glob,cstring,cint,proc(cstring,cint),ptr.Glob	posix : glob(a1: cstring; a2: cint; a3: proc (x1: cstring; x2: cint): cint; a4: ptr Glob): cint	
+globfree	posix.html#globfree,ptr.Glob	posix : globfree(a1: ptr Glob)	
+getgrgid	posix.html#getgrgid,Gid	posix : getgrgid(a1: Gid): ptr Group	
+getgrnam	posix.html#getgrnam,cstring	posix : getgrnam(a1: cstring): ptr Group	
+getgrgid_r	posix.html#getgrgid_r,Gid,ptr.Group,cstring,int,ptr.ptr.Group	posix : getgrgid_r(a1: Gid; a2: ptr Group; a3: cstring; a4: int; a5: ptr ptr Group): cint	
+getgrnam_r	posix.html#getgrnam_r,cstring,ptr.Group,cstring,int,ptr.ptr.Group	posix : getgrnam_r(a1: cstring; a2: ptr Group; a3: cstring; a4: int; a5: ptr ptr Group): cint	
+getgrent	posix.html#getgrent,	posix : getgrent(): ptr Group	
+endgrent	posix.html#endgrent,	posix : endgrent()	
+setgrent	posix.html#setgrent,	posix : setgrent()	
+iconv_open	posix.html#iconv_open,cstring,cstring	posix : iconv_open(a1, a2: cstring): Iconv	
+iconv	posix.html#iconv,Iconv,cstring,int,cstring,int	posix : iconv(a1: Iconv; a2: var cstring; a3: var int; a4: var cstring; a5: var int): int	
+iconv_close	posix.html#iconv_close,Iconv	posix : iconv_close(a1: Iconv): cint	
+nl_langinfo	posix.html#nl_langinfo,Nl_item	posix : nl_langinfo(a1: Nl_item): cstring	
+basename	posix.html#basename,cstring	posix : basename(a1: cstring): cstring	
+dirname	posix.html#dirname,cstring	posix : dirname(a1: cstring): cstring	
+localeconv	posix.html#localeconv,	posix : localeconv(): ptr Lconv	
+setlocale	posix.html#setlocale,cint,cstring	posix : setlocale(a1: cint; a2: cstring): cstring	
+strfmon	posix.html#strfmon,cstring,int,cstring	posix : strfmon(a1: cstring; a2: int; a3: cstring): int	
+mq_close	posix.html#mq_close,Mqd	posix : mq_close(a1: Mqd): cint	
+mq_getattr	posix.html#mq_getattr,Mqd,ptr.MqAttr	posix : mq_getattr(a1: Mqd; a2: ptr MqAttr): cint	
+mq_notify	posix.html#mq_notify,Mqd,ptr.SigEvent	posix : mq_notify(a1: Mqd; a2: ptr SigEvent): cint	
+mq_open	posix.html#mq_open,cstring,cint	posix : mq_open(a1: cstring; a2: cint): Mqd	
+mq_receive	posix.html#mq_receive,Mqd,cstring,int,int	posix : mq_receive(a1: Mqd; a2: cstring; a3: int; a4: var int): int	
+mq_send	posix.html#mq_send,Mqd,cstring,int,int	posix : mq_send(a1: Mqd; a2: cstring; a3: int; a4: int): cint	
+mq_setattr	posix.html#mq_setattr,Mqd,ptr.MqAttr,ptr.MqAttr	posix : mq_setattr(a1: Mqd; a2, a3: ptr MqAttr): cint	
+mq_timedreceive	posix.html#mq_timedreceive,Mqd,cstring,int,int,ptr.Timespec	posix : mq_timedreceive(a1: Mqd; a2: cstring; a3: int; a4: int; a5: ptr Timespec): int	
+mq_timedsend	posix.html#mq_timedsend,Mqd,cstring,int,int,ptr.Timespec	posix : mq_timedsend(a1: Mqd; a2: cstring; a3: int; a4: int; a5: ptr Timespec): cint	
+mq_unlink	posix.html#mq_unlink,cstring	posix : mq_unlink(a1: cstring): cint	
+getpwnam	posix.html#getpwnam,cstring	posix : getpwnam(a1: cstring): ptr Passwd	
+getpwuid	posix.html#getpwuid,Uid	posix : getpwuid(a1: Uid): ptr Passwd	
+getpwnam_r	posix.html#getpwnam_r,cstring,ptr.Passwd,cstring,int,ptr.ptr.Passwd	posix : getpwnam_r(a1: cstring; a2: ptr Passwd; a3: cstring; a4: int; a5: ptr ptr Passwd): cint	
+getpwuid_r	posix.html#getpwuid_r,Uid,ptr.Passwd,cstring,int,ptr.ptr.Passwd	posix : getpwuid_r(a1: Uid; a2: ptr Passwd; a3: cstring; a4: int; a5: ptr ptr Passwd): cint	
+endpwent	posix.html#endpwent,	posix : endpwent()	
+getpwent	posix.html#getpwent,	posix : getpwent(): ptr Passwd	
+setpwent	posix.html#setpwent,	posix : setpwent()	
+uname	posix.html#uname,Utsname	posix : uname(a1: var Utsname): cint	
+pthread_atfork	posix.html#pthread_atfork,proc),proc),proc)	posix : pthread_atfork(a1, a2, a3: proc ()): cint	
+pthread_attr_destroy	posix.html#pthread_attr_destroy,ptr.Pthread_attr	posix : pthread_attr_destroy(a1: ptr Pthread_attr): cint	
+pthread_attr_getdetachstate	posix.html#pthread_attr_getdetachstate,ptr.Pthread_attr,cint	posix : pthread_attr_getdetachstate(a1: ptr Pthread_attr; a2: cint): cint	
+pthread_attr_getguardsize	posix.html#pthread_attr_getguardsize,ptr.Pthread_attr,cint	posix : pthread_attr_getguardsize(a1: ptr Pthread_attr; a2: var cint): cint	
+pthread_attr_getinheritsched	posix.html#pthread_attr_getinheritsched,ptr.Pthread_attr,cint	posix : pthread_attr_getinheritsched(a1: ptr Pthread_attr; a2: var cint): cint	
+pthread_attr_getschedparam	posix.html#pthread_attr_getschedparam,ptr.Pthread_attr,ptr.Sched_param	posix : pthread_attr_getschedparam(a1: ptr Pthread_attr; a2: ptr Sched_param): cint	
+pthread_attr_getschedpolicy	posix.html#pthread_attr_getschedpolicy,ptr.Pthread_attr,cint	posix : pthread_attr_getschedpolicy(a1: ptr Pthread_attr; a2: var cint): cint	
+pthread_attr_getscope	posix.html#pthread_attr_getscope,ptr.Pthread_attr,cint	posix : pthread_attr_getscope(a1: ptr Pthread_attr; a2: var cint): cint	
+pthread_attr_getstack	posix.html#pthread_attr_getstack,ptr.Pthread_attr,pointer,int	posix : pthread_attr_getstack(a1: ptr Pthread_attr; a2: var pointer; a3: var int): cint	
+pthread_attr_getstackaddr	posix.html#pthread_attr_getstackaddr,ptr.Pthread_attr,pointer	posix : pthread_attr_getstackaddr(a1: ptr Pthread_attr; a2: var pointer): cint	
+pthread_attr_getstacksize	posix.html#pthread_attr_getstacksize,ptr.Pthread_attr,int	posix : pthread_attr_getstacksize(a1: ptr Pthread_attr; a2: var int): cint	
+pthread_attr_init	posix.html#pthread_attr_init,ptr.Pthread_attr	posix : pthread_attr_init(a1: ptr Pthread_attr): cint	
+pthread_attr_setdetachstate	posix.html#pthread_attr_setdetachstate,ptr.Pthread_attr,cint	posix : pthread_attr_setdetachstate(a1: ptr Pthread_attr; a2: cint): cint	
+pthread_attr_setguardsize	posix.html#pthread_attr_setguardsize,ptr.Pthread_attr,int	posix : pthread_attr_setguardsize(a1: ptr Pthread_attr; a2: int): cint	
+pthread_attr_setinheritsched	posix.html#pthread_attr_setinheritsched,ptr.Pthread_attr,cint	posix : pthread_attr_setinheritsched(a1: ptr Pthread_attr; a2: cint): cint	
+pthread_attr_setschedparam	posix.html#pthread_attr_setschedparam,ptr.Pthread_attr,ptr.Sched_param	posix : pthread_attr_setschedparam(a1: ptr Pthread_attr; a2: ptr Sched_param): cint	
+pthread_attr_setschedpolicy	posix.html#pthread_attr_setschedpolicy,ptr.Pthread_attr,cint	posix : pthread_attr_setschedpolicy(a1: ptr Pthread_attr; a2: cint): cint	
+pthread_attr_setscope	posix.html#pthread_attr_setscope,ptr.Pthread_attr,cint	posix : pthread_attr_setscope(a1: ptr Pthread_attr; a2: cint): cint	
+pthread_attr_setstack	posix.html#pthread_attr_setstack,ptr.Pthread_attr,pointer,int	posix : pthread_attr_setstack(a1: ptr Pthread_attr; a2: pointer; a3: int): cint	
+pthread_attr_setstackaddr	posix.html#pthread_attr_setstackaddr,ptr.Pthread_attr,pointer	posix : pthread_attr_setstackaddr(a1: ptr Pthread_attr; a2: pointer): cint	
+pthread_attr_setstacksize	posix.html#pthread_attr_setstacksize,ptr.Pthread_attr,int	posix : pthread_attr_setstacksize(a1: ptr Pthread_attr; a2: int): cint	
+pthread_barrier_destroy	posix.html#pthread_barrier_destroy,ptr.Pthread_barrier	posix : pthread_barrier_destroy(a1: ptr Pthread_barrier): cint	
+pthread_barrier_init	posix.html#pthread_barrier_init,ptr.Pthread_barrier,ptr.Pthread_barrierattr,cint	posix : pthread_barrier_init(a1: ptr Pthread_barrier; a2: ptr Pthread_barrierattr; a3: cint): cint	
+pthread_barrier_wait	posix.html#pthread_barrier_wait,ptr.Pthread_barrier	posix : pthread_barrier_wait(a1: ptr Pthread_barrier): cint	
+pthread_barrierattr_destroy	posix.html#pthread_barrierattr_destroy,ptr.Pthread_barrierattr	posix : pthread_barrierattr_destroy(a1: ptr Pthread_barrierattr): cint	
+pthread_barrierattr_getpshared	posix.html#pthread_barrierattr_getpshared,ptr.Pthread_barrierattr,cint	posix : pthread_barrierattr_getpshared(a1: ptr Pthread_barrierattr; a2: var cint): cint	
+pthread_barrierattr_init	posix.html#pthread_barrierattr_init,ptr.Pthread_barrierattr	posix : pthread_barrierattr_init(a1: ptr Pthread_barrierattr): cint	
+pthread_barrierattr_setpshared	posix.html#pthread_barrierattr_setpshared,ptr.Pthread_barrierattr,cint	posix : pthread_barrierattr_setpshared(a1: ptr Pthread_barrierattr; a2: cint): cint	
+pthread_cancel	posix.html#pthread_cancel,Pthread	posix : pthread_cancel(a1: Pthread): cint	
+pthread_cleanup_push	posix.html#pthread_cleanup_push,proc(pointer),pointer	posix : pthread_cleanup_push(a1: proc (x: pointer); a2: pointer)	
+pthread_cleanup_pop	posix.html#pthread_cleanup_pop,cint	posix : pthread_cleanup_pop(a1: cint)	
+pthread_cond_broadcast	posix.html#pthread_cond_broadcast,ptr.Pthread_cond	posix : pthread_cond_broadcast(a1: ptr Pthread_cond): cint	
+pthread_cond_destroy	posix.html#pthread_cond_destroy,ptr.Pthread_cond	posix : pthread_cond_destroy(a1: ptr Pthread_cond): cint	
+pthread_cond_init	posix.html#pthread_cond_init,ptr.Pthread_cond,ptr.Pthread_condattr	posix : pthread_cond_init(a1: ptr Pthread_cond; a2: ptr Pthread_condattr): cint	
+pthread_cond_signal	posix.html#pthread_cond_signal,ptr.Pthread_cond	posix : pthread_cond_signal(a1: ptr Pthread_cond): cint	
+pthread_cond_timedwait	posix.html#pthread_cond_timedwait,ptr.Pthread_cond,ptr.Pthread_mutex,ptr.Timespec	posix : pthread_cond_timedwait(a1: ptr Pthread_cond; a2: ptr Pthread_mutex; a3: ptr Timespec): cint	
+pthread_cond_wait	posix.html#pthread_cond_wait,ptr.Pthread_cond,ptr.Pthread_mutex	posix : pthread_cond_wait(a1: ptr Pthread_cond; a2: ptr Pthread_mutex): cint	
+pthread_condattr_destroy	posix.html#pthread_condattr_destroy,ptr.Pthread_condattr	posix : pthread_condattr_destroy(a1: ptr Pthread_condattr): cint	
+pthread_condattr_getclock	posix.html#pthread_condattr_getclock,ptr.Pthread_condattr,ClockId	posix : pthread_condattr_getclock(a1: ptr Pthread_condattr; a2: var ClockId): cint	
+pthread_condattr_getpshared	posix.html#pthread_condattr_getpshared,ptr.Pthread_condattr,cint	posix : pthread_condattr_getpshared(a1: ptr Pthread_condattr; a2: var cint): cint	
+pthread_condattr_init	posix.html#pthread_condattr_init,ptr.Pthread_condattr	posix : pthread_condattr_init(a1: ptr Pthread_condattr): cint	
+pthread_condattr_setclock	posix.html#pthread_condattr_setclock,ptr.Pthread_condattr,ClockId	posix : pthread_condattr_setclock(a1: ptr Pthread_condattr; a2: ClockId): cint	
+pthread_condattr_setpshared	posix.html#pthread_condattr_setpshared,ptr.Pthread_condattr,cint	posix : pthread_condattr_setpshared(a1: ptr Pthread_condattr; a2: cint): cint	
+pthread_create	posix.html#pthread_create,ptr.Pthread,ptr.Pthread_attr,proc(pointer),pointer	posix : pthread_create(a1: ptr Pthread; a2: ptr Pthread_attr;\n               a3: proc (x: pointer): pointer; a4: pointer): cint	
+pthread_detach	posix.html#pthread_detach,Pthread	posix : pthread_detach(a1: Pthread): cint	
+pthread_equal	posix.html#pthread_equal,Pthread,Pthread	posix : pthread_equal(a1, a2: Pthread): cint	
+pthread_exit	posix.html#pthread_exit,pointer	posix : pthread_exit(a1: pointer)	
+pthread_getconcurrency	posix.html#pthread_getconcurrency,	posix : pthread_getconcurrency(): cint	
+pthread_getcpuclockid	posix.html#pthread_getcpuclockid,Pthread,ClockId	posix : pthread_getcpuclockid(a1: Pthread; a2: var ClockId): cint	
+pthread_getschedparam	posix.html#pthread_getschedparam,Pthread,cint,ptr.Sched_param	posix : pthread_getschedparam(a1: Pthread; a2: var cint; a3: ptr Sched_param): cint	
+pthread_getspecific	posix.html#pthread_getspecific,Pthread_key	posix : pthread_getspecific(a1: Pthread_key): pointer	
+pthread_join	posix.html#pthread_join,Pthread,ptr.pointer	posix : pthread_join(a1: Pthread; a2: ptr pointer): cint	
+pthread_key_create	posix.html#pthread_key_create,ptr.Pthread_key,proc(pointer)	posix : pthread_key_create(a1: ptr Pthread_key; a2: proc (x: pointer)): cint	
+pthread_key_delete	posix.html#pthread_key_delete,Pthread_key	posix : pthread_key_delete(a1: Pthread_key): cint	
+pthread_mutex_destroy	posix.html#pthread_mutex_destroy,ptr.Pthread_mutex	posix : pthread_mutex_destroy(a1: ptr Pthread_mutex): cint	
+pthread_mutex_getprioceiling	posix.html#pthread_mutex_getprioceiling,ptr.Pthread_mutex,cint	posix : pthread_mutex_getprioceiling(a1: ptr Pthread_mutex; a2: var cint): cint	
+pthread_mutex_init	posix.html#pthread_mutex_init,ptr.Pthread_mutex,ptr.Pthread_mutexattr	posix : pthread_mutex_init(a1: ptr Pthread_mutex; a2: ptr Pthread_mutexattr): cint	
+pthread_mutex_lock	posix.html#pthread_mutex_lock,ptr.Pthread_mutex	posix : pthread_mutex_lock(a1: ptr Pthread_mutex): cint	
+pthread_mutex_setprioceiling	posix.html#pthread_mutex_setprioceiling,ptr.Pthread_mutex,cint,cint	posix : pthread_mutex_setprioceiling(a1: ptr Pthread_mutex; a2: cint; a3: var cint): cint	
+pthread_mutex_timedlock	posix.html#pthread_mutex_timedlock,ptr.Pthread_mutex,ptr.Timespec	posix : pthread_mutex_timedlock(a1: ptr Pthread_mutex; a2: ptr Timespec): cint	
+pthread_mutex_trylock	posix.html#pthread_mutex_trylock,ptr.Pthread_mutex	posix : pthread_mutex_trylock(a1: ptr Pthread_mutex): cint	
+pthread_mutex_unlock	posix.html#pthread_mutex_unlock,ptr.Pthread_mutex	posix : pthread_mutex_unlock(a1: ptr Pthread_mutex): cint	
+pthread_mutexattr_destroy	posix.html#pthread_mutexattr_destroy,ptr.Pthread_mutexattr	posix : pthread_mutexattr_destroy(a1: ptr Pthread_mutexattr): cint	
+pthread_mutexattr_getprioceiling	posix.html#pthread_mutexattr_getprioceiling,ptr.Pthread_mutexattr,cint	posix : pthread_mutexattr_getprioceiling(a1: ptr Pthread_mutexattr; a2: var cint): cint	
+pthread_mutexattr_getprotocol	posix.html#pthread_mutexattr_getprotocol,ptr.Pthread_mutexattr,cint	posix : pthread_mutexattr_getprotocol(a1: ptr Pthread_mutexattr; a2: var cint): cint	
+pthread_mutexattr_getpshared	posix.html#pthread_mutexattr_getpshared,ptr.Pthread_mutexattr,cint	posix : pthread_mutexattr_getpshared(a1: ptr Pthread_mutexattr; a2: var cint): cint	
+pthread_mutexattr_gettype	posix.html#pthread_mutexattr_gettype,ptr.Pthread_mutexattr,cint	posix : pthread_mutexattr_gettype(a1: ptr Pthread_mutexattr; a2: var cint): cint	
+pthread_mutexattr_init	posix.html#pthread_mutexattr_init,ptr.Pthread_mutexattr	posix : pthread_mutexattr_init(a1: ptr Pthread_mutexattr): cint	
+pthread_mutexattr_setprioceiling	posix.html#pthread_mutexattr_setprioceiling,ptr.Pthread_mutexattr,cint	posix : pthread_mutexattr_setprioceiling(a1: ptr Pthread_mutexattr; a2: cint): cint	
+pthread_mutexattr_setprotocol	posix.html#pthread_mutexattr_setprotocol,ptr.Pthread_mutexattr,cint	posix : pthread_mutexattr_setprotocol(a1: ptr Pthread_mutexattr; a2: cint): cint	
+pthread_mutexattr_setpshared	posix.html#pthread_mutexattr_setpshared,ptr.Pthread_mutexattr,cint	posix : pthread_mutexattr_setpshared(a1: ptr Pthread_mutexattr; a2: cint): cint	
+pthread_mutexattr_settype	posix.html#pthread_mutexattr_settype,ptr.Pthread_mutexattr,cint	posix : pthread_mutexattr_settype(a1: ptr Pthread_mutexattr; a2: cint): cint	
+pthread_once	posix.html#pthread_once,ptr.Pthread_once,proc)	posix : pthread_once(a1: ptr Pthread_once; a2: proc ()): cint	
+pthread_rwlock_destroy	posix.html#pthread_rwlock_destroy,ptr.Pthread_rwlock	posix : pthread_rwlock_destroy(a1: ptr Pthread_rwlock): cint	
+pthread_rwlock_init	posix.html#pthread_rwlock_init,ptr.Pthread_rwlock,ptr.Pthread_rwlockattr	posix : pthread_rwlock_init(a1: ptr Pthread_rwlock; a2: ptr Pthread_rwlockattr): cint	
+pthread_rwlock_rdlock	posix.html#pthread_rwlock_rdlock,ptr.Pthread_rwlock	posix : pthread_rwlock_rdlock(a1: ptr Pthread_rwlock): cint	
+pthread_rwlock_timedrdlock	posix.html#pthread_rwlock_timedrdlock,ptr.Pthread_rwlock,ptr.Timespec	posix : pthread_rwlock_timedrdlock(a1: ptr Pthread_rwlock; a2: ptr Timespec): cint	
+pthread_rwlock_timedwrlock	posix.html#pthread_rwlock_timedwrlock,ptr.Pthread_rwlock,ptr.Timespec	posix : pthread_rwlock_timedwrlock(a1: ptr Pthread_rwlock; a2: ptr Timespec): cint	
+pthread_rwlock_tryrdlock	posix.html#pthread_rwlock_tryrdlock,ptr.Pthread_rwlock	posix : pthread_rwlock_tryrdlock(a1: ptr Pthread_rwlock): cint	
+pthread_rwlock_trywrlock	posix.html#pthread_rwlock_trywrlock,ptr.Pthread_rwlock	posix : pthread_rwlock_trywrlock(a1: ptr Pthread_rwlock): cint	
+pthread_rwlock_unlock	posix.html#pthread_rwlock_unlock,ptr.Pthread_rwlock	posix : pthread_rwlock_unlock(a1: ptr Pthread_rwlock): cint	
+pthread_rwlock_wrlock	posix.html#pthread_rwlock_wrlock,ptr.Pthread_rwlock	posix : pthread_rwlock_wrlock(a1: ptr Pthread_rwlock): cint	
+pthread_rwlockattr_destroy	posix.html#pthread_rwlockattr_destroy,ptr.Pthread_rwlockattr	posix : pthread_rwlockattr_destroy(a1: ptr Pthread_rwlockattr): cint	
+pthread_rwlockattr_getpshared	posix.html#pthread_rwlockattr_getpshared,ptr.Pthread_rwlockattr,cint	posix : pthread_rwlockattr_getpshared(a1: ptr Pthread_rwlockattr; a2: var cint): cint	
+pthread_rwlockattr_init	posix.html#pthread_rwlockattr_init,ptr.Pthread_rwlockattr	posix : pthread_rwlockattr_init(a1: ptr Pthread_rwlockattr): cint	
+pthread_rwlockattr_setpshared	posix.html#pthread_rwlockattr_setpshared,ptr.Pthread_rwlockattr,cint	posix : pthread_rwlockattr_setpshared(a1: ptr Pthread_rwlockattr; a2: cint): cint	
+pthread_self	posix.html#pthread_self,	posix : pthread_self(): Pthread	
+pthread_setcancelstate	posix.html#pthread_setcancelstate,cint,cint	posix : pthread_setcancelstate(a1: cint; a2: var cint): cint	
+pthread_setcanceltype	posix.html#pthread_setcanceltype,cint,cint	posix : pthread_setcanceltype(a1: cint; a2: var cint): cint	
+pthread_setconcurrency	posix.html#pthread_setconcurrency,cint	posix : pthread_setconcurrency(a1: cint): cint	
+pthread_setschedparam	posix.html#pthread_setschedparam,Pthread,cint,ptr.Sched_param	posix : pthread_setschedparam(a1: Pthread; a2: cint; a3: ptr Sched_param): cint	
+pthread_setschedprio	posix.html#pthread_setschedprio,Pthread,cint	posix : pthread_setschedprio(a1: Pthread; a2: cint): cint	
+pthread_setspecific	posix.html#pthread_setspecific,Pthread_key,pointer	posix : pthread_setspecific(a1: Pthread_key; a2: pointer): cint	
+pthread_spin_destroy	posix.html#pthread_spin_destroy,ptr.Pthread_spinlock	posix : pthread_spin_destroy(a1: ptr Pthread_spinlock): cint	
+pthread_spin_init	posix.html#pthread_spin_init,ptr.Pthread_spinlock,cint	posix : pthread_spin_init(a1: ptr Pthread_spinlock; a2: cint): cint	
+pthread_spin_lock	posix.html#pthread_spin_lock,ptr.Pthread_spinlock	posix : pthread_spin_lock(a1: ptr Pthread_spinlock): cint	
+pthread_spin_trylock	posix.html#pthread_spin_trylock,ptr.Pthread_spinlock	posix : pthread_spin_trylock(a1: ptr Pthread_spinlock): cint	
+pthread_spin_unlock	posix.html#pthread_spin_unlock,ptr.Pthread_spinlock	posix : pthread_spin_unlock(a1: ptr Pthread_spinlock): cint	
+pthread_testcancel	posix.html#pthread_testcancel,	posix : pthread_testcancel()	
+exitnow	posix.html#exitnow,int	posix : exitnow(code: int): void	
+access	posix.html#access,cstring,cint	posix : access(a1: cstring; a2: cint): cint	
+alarm	posix.html#alarm,cint	posix : alarm(a1: cint): cint	
+chdir	posix.html#chdir,cstring	posix : chdir(a1: cstring): cint	
+chown	posix.html#chown,cstring,Uid,Gid	posix : chown(a1: cstring; a2: Uid; a3: Gid): cint	
+close	posix.html#close,	posix : close[](a1: cint | SocketHandle): cint	
+confstr	posix.html#confstr,cint,cstring,int	posix : confstr(a1: cint; a2: cstring; a3: int): int	
+crypt	posix.html#crypt,cstring,cstring	posix : crypt(a1, a2: cstring): cstring	
+ctermid	posix.html#ctermid,cstring	posix : ctermid(a1: cstring): cstring	
+dup	posix.html#dup,cint	posix : dup(a1: cint): cint	
+dup2	posix.html#dup2,cint,cint	posix : dup2(a1, a2: cint): cint	
+encrypt	posix.html#encrypt,array[,char],cint	posix : encrypt(a1: array[0 .. 63, char]; a2: cint)	
+execl	posix.html#execl,cstring,cstring	posix : execl(a1, a2: cstring): cint	
+execle	posix.html#execle,cstring,cstring	posix : execle(a1, a2: cstring): cint	
+execlp	posix.html#execlp,cstring,cstring	posix : execlp(a1, a2: cstring): cint	
+execv	posix.html#execv,cstring,cstringArray	posix : execv(a1: cstring; a2: cstringArray): cint	
+execve	posix.html#execve,cstring,cstringArray,cstringArray	posix : execve(a1: cstring; a2, a3: cstringArray): cint	
+execvp	posix.html#execvp,cstring,cstringArray	posix : execvp(a1: cstring; a2: cstringArray): cint	
+execvpe	posix.html#execvpe,cstring,cstringArray,cstringArray	posix : execvpe(a1: cstring; a2: cstringArray; a3: cstringArray): cint	
+fchown	posix.html#fchown,cint,Uid,Gid	posix : fchown(a1: cint; a2: Uid; a3: Gid): cint	
+fchdir	posix.html#fchdir,cint	posix : fchdir(a1: cint): cint	
+fdatasync	posix.html#fdatasync,cint	posix : fdatasync(a1: cint): cint	
+fork	posix.html#fork,	posix : fork(): Pid	
+fpathconf	posix.html#fpathconf,cint,cint	posix : fpathconf(a1, a2: cint): int	
+fsync	posix.html#fsync,cint	posix : fsync(a1: cint): cint	
+ftruncate	posix.html#ftruncate,cint,Off	posix : ftruncate(a1: cint; a2: Off): cint	
+getcwd	posix.html#getcwd,cstring,int	posix : getcwd(a1: cstring; a2: int): cstring	
+getegid	posix.html#getegid,	posix : getegid(): Gid	
+geteuid	posix.html#geteuid,	posix : geteuid(): Uid	
+getgid	posix.html#getgid,	posix : getgid(): Gid	
+getgroups	posix.html#getgroups,cint,ptr.array[,Gid]	posix : getgroups(a1: cint; a2: ptr array[0 .. 255, Gid]): cint	
+gethostid	posix.html#gethostid,	posix : gethostid(): int	
+gethostname	posix.html#gethostname,cstring,int	posix : gethostname(a1: cstring; a2: int): cint	
+getlogin	posix.html#getlogin,	posix : getlogin(): cstring	
+getlogin_r	posix.html#getlogin_r,cstring,int	posix : getlogin_r(a1: cstring; a2: int): cint	
+getopt	posix.html#getopt,cint,cstringArray,cstring	posix : getopt(a1: cint; a2: cstringArray; a3: cstring): cint	
+getpgid	posix.html#getpgid,Pid	posix : getpgid(a1: Pid): Pid	
+getpgrp	posix.html#getpgrp,	posix : getpgrp(): Pid	
+getpid	posix.html#getpid,	posix : getpid(): Pid	
+getppid	posix.html#getppid,	posix : getppid(): Pid	
+getsid	posix.html#getsid,Pid	posix : getsid(a1: Pid): Pid	
+getuid	posix.html#getuid,	posix : getuid(): Uid	
+getwd	posix.html#getwd,cstring	posix : getwd(a1: cstring): cstring	
+isatty	posix.html#isatty,cint	posix : isatty(a1: cint): cint	
+lchown	posix.html#lchown,cstring,Uid,Gid	posix : lchown(a1: cstring; a2: Uid; a3: Gid): cint	
+link	posix.html#link,cstring,cstring	posix : link(a1, a2: cstring): cint	
+lockf	posix.html#lockf,cint,cint,Off	posix : lockf(a1, a2: cint; a3: Off): cint	
+lseek	posix.html#lseek,cint,Off,cint	posix : lseek(a1: cint; a2: Off; a3: cint): Off	
+nice	posix.html#nice,cint	posix : nice(a1: cint): cint	
+pathconf	posix.html#pathconf,cstring,cint	posix : pathconf(a1: cstring; a2: cint): int	
+pause	posix.html#pause,	posix : pause(): cint	
+pclose	posix.html#pclose,File	posix : pclose(a: File): cint	
+pipe	posix.html#pipe,array[,cint]	posix : pipe(a: array[0 .. 1, cint]): cint	
+popen	posix.html#popen,cstring,cstring	posix : popen(a1, a2: cstring): File	
+pread	posix.html#pread,cint,pointer,int,Off	posix : pread(a1: cint; a2: pointer; a3: int; a4: Off): int	
+pwrite	posix.html#pwrite,cint,pointer,int,Off	posix : pwrite(a1: cint; a2: pointer; a3: int; a4: Off): int	
+read	posix.html#read,cint,pointer,int	posix : read(a1: cint; a2: pointer; a3: int): int	
+readlink	posix.html#readlink,cstring,cstring,int	posix : readlink(a1, a2: cstring; a3: int): int	
+ioctl	posix.html#ioctl,FileHandle,uint	posix : ioctl(f: FileHandle; device: uint): int	
+rmdir	posix.html#rmdir,cstring	posix : rmdir(a1: cstring): cint	
+setegid	posix.html#setegid,Gid	posix : setegid(a1: Gid): cint	
+seteuid	posix.html#seteuid,Uid	posix : seteuid(a1: Uid): cint	
+setgid	posix.html#setgid,Gid	posix : setgid(a1: Gid): cint	
+setpgid	posix.html#setpgid,Pid,Pid	posix : setpgid(a1, a2: Pid): cint	
+setpgrp	posix.html#setpgrp,	posix : setpgrp(): Pid	
+setregid	posix.html#setregid,Gid,Gid	posix : setregid(a1, a2: Gid): cint	
+setreuid	posix.html#setreuid,Uid,Uid	posix : setreuid(a1, a2: Uid): cint	
+setsid	posix.html#setsid,	posix : setsid(): Pid	
+setuid	posix.html#setuid,Uid	posix : setuid(a1: Uid): cint	
+sleep	posix.html#sleep,cint	posix : sleep(a1: cint): cint	
+swab	posix.html#swab,pointer,pointer,int	posix : swab(a1, a2: pointer; a3: int)	
+symlink	posix.html#symlink,cstring,cstring	posix : symlink(a1, a2: cstring): cint	
+sync	posix.html#sync,	posix : sync()	
+sysconf	posix.html#sysconf,cint	posix : sysconf(a1: cint): int	
+tcgetpgrp	posix.html#tcgetpgrp,cint	posix : tcgetpgrp(a1: cint): Pid	
+tcsetpgrp	posix.html#tcsetpgrp,cint,Pid	posix : tcsetpgrp(a1: cint; a2: Pid): cint	
+truncate	posix.html#truncate,cstring,Off	posix : truncate(a1: cstring; a2: Off): cint	
+ttyname	posix.html#ttyname,cint	posix : ttyname(a1: cint): cstring	
+ttyname_r	posix.html#ttyname_r,cint,cstring,int	posix : ttyname_r(a1: cint; a2: cstring; a3: int): cint	
+ualarm	posix.html#ualarm,Useconds,Useconds	posix : ualarm(a1, a2: Useconds): Useconds	
+unlink	posix.html#unlink,cstring	posix : unlink(a1: cstring): cint	
+usleep	posix.html#usleep,Useconds	posix : usleep(a1: Useconds): cint	
+vfork	posix.html#vfork,	posix : vfork(): Pid	
+write	posix.html#write,cint,pointer,int	posix : write(a1: cint; a2: pointer; a3: int): int	
+sem_close	posix.html#sem_close,ptr.Sem	posix : sem_close(a1: ptr Sem): cint	
+sem_destroy	posix.html#sem_destroy,ptr.Sem	posix : sem_destroy(a1: ptr Sem): cint	
+sem_getvalue	posix.html#sem_getvalue,ptr.Sem,cint	posix : sem_getvalue(a1: ptr Sem; a2: var cint): cint	
+sem_init	posix.html#sem_init,ptr.Sem,cint,cint	posix : sem_init(a1: ptr Sem; a2: cint; a3: cint): cint	
+sem_open	posix.html#sem_open,cstring,cint	posix : sem_open(a1: cstring; a2: cint): ptr Sem	
+sem_post	posix.html#sem_post,ptr.Sem	posix : sem_post(a1: ptr Sem): cint	
+sem_timedwait	posix.html#sem_timedwait,ptr.Sem,ptr.Timespec	posix : sem_timedwait(a1: ptr Sem; a2: ptr Timespec): cint	
+sem_trywait	posix.html#sem_trywait,ptr.Sem	posix : sem_trywait(a1: ptr Sem): cint	
+sem_unlink	posix.html#sem_unlink,cstring	posix : sem_unlink(a1: cstring): cint	
+sem_wait	posix.html#sem_wait,ptr.Sem	posix : sem_wait(a1: ptr Sem): cint	
+ftok	posix.html#ftok,cstring,cint	posix : ftok(a1: cstring; a2: cint): Key	
+statvfs	posix.html#statvfs,cstring,Statvfs	posix : statvfs(a1: cstring; a2: var Statvfs): cint	
+fstatvfs	posix.html#fstatvfs,cint,Statvfs	posix : fstatvfs(a1: cint; a2: var Statvfs): cint	
+chmod	posix.html#chmod,cstring,Mode	posix : chmod(a1: cstring; a2: Mode): cint	
+fchmod	posix.html#fchmod,cint,Mode	posix : fchmod(a1: cint; a2: Mode): cint	
+fstat	posix.html#fstat,cint,Stat	posix : fstat(a1: cint; a2: var Stat): cint	
+lstat	posix.html#lstat,cstring,Stat	posix : lstat(a1: cstring; a2: var Stat): cint	
+mkdir	posix.html#mkdir,cstring,Mode	posix : mkdir(a1: cstring; a2: Mode): cint	
+mkfifo	posix.html#mkfifo,cstring,Mode	posix : mkfifo(a1: cstring; a2: Mode): cint	
+mknod	posix.html#mknod,cstring,Mode,Dev	posix : mknod(a1: cstring; a2: Mode; a3: Dev): cint	
+stat	posix.html#stat,cstring,Stat	posix : stat(a1: cstring; a2: var Stat): cint	
+umask	posix.html#umask,Mode	posix : umask(a1: Mode): Mode	
+S_ISBLK	posix.html#S_ISBLK,Mode	posix : S_ISBLK(m: Mode): bool	
+S_ISCHR	posix.html#S_ISCHR,Mode	posix : S_ISCHR(m: Mode): bool	
+S_ISDIR	posix.html#S_ISDIR,Mode	posix : S_ISDIR(m: Mode): bool	
+S_ISFIFO	posix.html#S_ISFIFO,Mode	posix : S_ISFIFO(m: Mode): bool	
+S_ISREG	posix.html#S_ISREG,Mode	posix : S_ISREG(m: Mode): bool	
+S_ISLNK	posix.html#S_ISLNK,Mode	posix : S_ISLNK(m: Mode): bool	
+S_ISSOCK	posix.html#S_ISSOCK,Mode	posix : S_ISSOCK(m: Mode): bool	
+S_TYPEISMQ	posix.html#S_TYPEISMQ,Stat	posix : S_TYPEISMQ(buf: var Stat): bool	
+S_TYPEISSEM	posix.html#S_TYPEISSEM,Stat	posix : S_TYPEISSEM(buf: var Stat): bool	
+S_TYPEISSHM	posix.html#S_TYPEISSHM,Stat	posix : S_TYPEISSHM(buf: var Stat): bool	
+S_TYPEISTMO	posix.html#S_TYPEISTMO,Stat	posix : S_TYPEISTMO(buf: var Stat): bool	
+mlock	posix.html#mlock,pointer,int	posix : mlock(a1: pointer; a2: int): cint	
+mlockall	posix.html#mlockall,cint	posix : mlockall(a1: cint): cint	
+mmap	posix.html#mmap,pointer,int,cint,cint,cint,Off	posix : mmap(a1: pointer; a2: int; a3, a4, a5: cint; a6: Off): pointer	
+mprotect	posix.html#mprotect,pointer,int,cint	posix : mprotect(a1: pointer; a2: int; a3: cint): cint	
+msync	posix.html#msync,pointer,int,cint	posix : msync(a1: pointer; a2: int; a3: cint): cint	
+munlock	posix.html#munlock,pointer,int	posix : munlock(a1: pointer; a2: int): cint	
+munlockall	posix.html#munlockall,	posix : munlockall(): cint	
+munmap	posix.html#munmap,pointer,int	posix : munmap(a1: pointer; a2: int): cint	
+posix_madvise	posix.html#posix_madvise,pointer,int,cint	posix : posix_madvise(a1: pointer; a2: int; a3: cint): cint	
+posix_mem_offset	posix.html#posix_mem_offset,pointer,int,Off,int,cint	posix : posix_mem_offset(a1: pointer; a2: int; a3: var Off; a4: var int; a5: var cint): cint	
+posix_typed_mem_get_info	posix.html#posix_typed_mem_get_info,cint,Posix_typed_mem_info	posix : posix_typed_mem_get_info(a1: cint; a2: var Posix_typed_mem_info): cint	
+posix_typed_mem_open	posix.html#posix_typed_mem_open,cstring,cint,cint	posix : posix_typed_mem_open(a1: cstring; a2, a3: cint): cint	
+shm_open	posix.html#shm_open,cstring,cint,Mode	posix : shm_open(a1: cstring; a2: cint; a3: Mode): cint	
+shm_unlink	posix.html#shm_unlink,cstring	posix : shm_unlink(a1: cstring): cint	
+asctime	posix.html#asctime,Tm	posix : asctime(a1: var Tm): cstring	
+asctime_r	posix.html#asctime_r,Tm,cstring	posix : asctime_r(a1: var Tm; a2: cstring): cstring	
+clock	posix.html#clock,	posix : clock(): Clock	
+clock_getcpuclockid	posix.html#clock_getcpuclockid,Pid,ClockId	posix : clock_getcpuclockid(a1: Pid; a2: var ClockId): cint	
+clock_getres	posix.html#clock_getres,ClockId,Timespec	posix : clock_getres(a1: ClockId; a2: var Timespec): cint	
+clock_gettime	posix.html#clock_gettime,ClockId,Timespec	posix : clock_gettime(a1: ClockId; a2: var Timespec): cint	
+clock_nanosleep	posix.html#clock_nanosleep,ClockId,cint,Timespec,Timespec	posix : clock_nanosleep(a1: ClockId; a2: cint; a3: var Timespec; a4: var Timespec): cint	
+clock_settime	posix.html#clock_settime,ClockId,Timespec	posix : clock_settime(a1: ClockId; a2: var Timespec): cint	
+ctime	posix.html#ctime,Time	posix : ctime(a1: var Time): cstring	
+ctime_r	posix.html#ctime_r,Time,cstring	posix : ctime_r(a1: var Time; a2: cstring): cstring	
+difftime	posix.html#difftime,Time,Time	posix : difftime(a1, a2: Time): cdouble	
+getdate	posix.html#getdate,cstring	posix : getdate(a1: cstring): ptr Tm	
+gmtime	posix.html#gmtime,Time	posix : gmtime(a1: var Time): ptr Tm	
+gmtime_r	posix.html#gmtime_r,Time,Tm	posix : gmtime_r(a1: var Time; a2: var Tm): ptr Tm	
+localtime	posix.html#localtime,Time	posix : localtime(a1: var Time): ptr Tm	
+localtime_r	posix.html#localtime_r,Time,Tm	posix : localtime_r(a1: var Time; a2: var Tm): ptr Tm	
+mktime	posix.html#mktime,Tm	posix : mktime(a1: var Tm): Time	
+timegm	posix.html#timegm,Tm	posix : timegm(a1: var Tm): Time	
+nanosleep	posix.html#nanosleep,Timespec,Timespec	posix : nanosleep(a1, a2: var Timespec): cint	
+strftime	posix.html#strftime,cstring,int,cstring,Tm	posix : strftime(a1: cstring; a2: int; a3: cstring; a4: var Tm): int	
+strptime	posix.html#strptime,cstring,cstring,Tm	posix : strptime(a1, a2: cstring; a3: var Tm): cstring	
+time	posix.html#time,Time	posix : time(a1: var Time): Time	
+timer_create	posix.html#timer_create,ClockId,SigEvent,Timer	posix : timer_create(a1: ClockId; a2: var SigEvent; a3: var Timer): cint	
+timer_delete	posix.html#timer_delete,Timer	posix : timer_delete(a1: Timer): cint	
+timer_gettime	posix.html#timer_gettime,Timer,Itimerspec	posix : timer_gettime(a1: Timer; a2: var Itimerspec): cint	
+timer_getoverrun	posix.html#timer_getoverrun,Timer	posix : timer_getoverrun(a1: Timer): cint	
+timer_settime	posix.html#timer_settime,Timer,cint,Itimerspec,Itimerspec	posix : timer_settime(a1: Timer; a2: cint; a3: var Itimerspec; a4: var Itimerspec): cint	
+tzset	posix.html#tzset,	posix : tzset()	
+wait	posix.html#wait,ptr.cint	posix : wait(a1: ptr cint): Pid	
+waitid	posix.html#waitid,cint,Id,SigInfo,cint	posix : waitid(a1: cint; a2: Id; a3: var SigInfo; a4: cint): cint	
+waitpid	posix.html#waitpid,Pid,cint,cint	posix : waitpid(a1: Pid; a2: var cint; a3: cint): Pid	
+bsd_signal	posix.html#bsd_signal,cint,proc(pointer)	posix : bsd_signal(a1: cint; a2: proc (x: pointer))	
+kill	posix.html#kill,Pid,cint	posix : kill(a1: Pid; a2: cint): cint	
+killpg	posix.html#killpg,Pid,cint	posix : killpg(a1: Pid; a2: cint): cint	
+pthread_kill	posix.html#pthread_kill,Pthread,cint	posix : pthread_kill(a1: Pthread; a2: cint): cint	
+pthread_sigmask	posix.html#pthread_sigmask,cint,Sigset,Sigset	posix : pthread_sigmask(a1: cint; a2, a3: var Sigset): cint	
+`raise`	posix.html#raise,cint	posix : `raise`(a1: cint): cint	
+sigaction	posix.html#sigaction,cint,Sigaction,Sigaction	posix : sigaction(a1: cint; a2, a3: var Sigaction): cint	
+sigaddset	posix.html#sigaddset,Sigset,cint	posix : sigaddset(a1: var Sigset; a2: cint): cint	
+sigaltstack	posix.html#sigaltstack,Stack,Stack	posix : sigaltstack(a1, a2: var Stack): cint	
+sigdelset	posix.html#sigdelset,Sigset,cint	posix : sigdelset(a1: var Sigset; a2: cint): cint	
+sigemptyset	posix.html#sigemptyset,Sigset	posix : sigemptyset(a1: var Sigset): cint	
+sigfillset	posix.html#sigfillset,Sigset	posix : sigfillset(a1: var Sigset): cint	
+sighold	posix.html#sighold,cint	posix : sighold(a1: cint): cint	
+sigignore	posix.html#sigignore,cint	posix : sigignore(a1: cint): cint	
+siginterrupt	posix.html#siginterrupt,cint,cint	posix : siginterrupt(a1, a2: cint): cint	
+sigismember	posix.html#sigismember,Sigset,cint	posix : sigismember(a1: var Sigset; a2: cint): cint	
+signal	posix.html#signal,cint,proc(cint)	posix : signal(a1: cint; a2: proc (x: cint))	
+sigpause	posix.html#sigpause,cint	posix : sigpause(a1: cint): cint	
+sigpending	posix.html#sigpending,Sigset	posix : sigpending(a1: var Sigset): cint	
+sigprocmask	posix.html#sigprocmask,cint,Sigset,Sigset	posix : sigprocmask(a1: cint; a2, a3: var Sigset): cint	
+sigqueue	posix.html#sigqueue,Pid,cint,SigVal	posix : sigqueue(a1: Pid; a2: cint; a3: SigVal): cint	
+sigrelse	posix.html#sigrelse,cint	posix : sigrelse(a1: cint): cint	
+sigset	posix.html#sigset,int,proc(cint)	posix : sigset(a1: int; a2: proc (x: cint))	
+sigsuspend	posix.html#sigsuspend,Sigset	posix : sigsuspend(a1: var Sigset): cint	
+sigtimedwait	posix.html#sigtimedwait,Sigset,SigInfo,Timespec	posix : sigtimedwait(a1: var Sigset; a2: var SigInfo; a3: var Timespec): cint	
+sigwait	posix.html#sigwait,Sigset,cint	posix : sigwait(a1: var Sigset; a2: var cint): cint	
+sigwaitinfo	posix.html#sigwaitinfo,Sigset,SigInfo	posix : sigwaitinfo(a1: var Sigset; a2: var SigInfo): cint	
+catclose	posix.html#catclose,Nl_catd	posix : catclose(a1: Nl_catd): cint	
+catgets	posix.html#catgets,Nl_catd,cint,cint,cstring	posix : catgets(a1: Nl_catd; a2, a3: cint; a4: cstring): cstring	
+catopen	posix.html#catopen,cstring,cint	posix : catopen(a1: cstring; a2: cint): Nl_catd	
+sched_get_priority_max	posix.html#sched_get_priority_max,cint	posix : sched_get_priority_max(a1: cint): cint	
+sched_get_priority_min	posix.html#sched_get_priority_min,cint	posix : sched_get_priority_min(a1: cint): cint	
+sched_getparam	posix.html#sched_getparam,Pid,Sched_param	posix : sched_getparam(a1: Pid; a2: var Sched_param): cint	
+sched_getscheduler	posix.html#sched_getscheduler,Pid	posix : sched_getscheduler(a1: Pid): cint	
+sched_rr_get_interval	posix.html#sched_rr_get_interval,Pid,Timespec	posix : sched_rr_get_interval(a1: Pid; a2: var Timespec): cint	
+sched_setparam	posix.html#sched_setparam,Pid,Sched_param	posix : sched_setparam(a1: Pid; a2: var Sched_param): cint	
+sched_setscheduler	posix.html#sched_setscheduler,Pid,cint,Sched_param	posix : sched_setscheduler(a1: Pid; a2: cint; a3: var Sched_param): cint	
+sched_yield	posix.html#sched_yield,	posix : sched_yield(): cint	
+strerror	posix.html#strerror,cint	posix : strerror(errnum: cint): cstring	
+hstrerror	posix.html#hstrerror,cint	posix : hstrerror(herrnum: cint): cstring	
+FD_CLR	posix.html#FD_CLR,cint,TFdSet	posix : FD_CLR(a1: cint; a2: var TFdSet)	
+FD_ISSET	posix.html#FD_ISSET,,TFdSet	posix : FD_ISSET[](a1: cint | SocketHandle; a2: var TFdSet): cint	
+FD_SET	posix.html#FD_SET,,TFdSet	posix : FD_SET[](a1: cint | SocketHandle; a2: var TFdSet)	
+FD_ZERO	posix.html#FD_ZERO,TFdSet	posix : FD_ZERO(a1: var TFdSet)	
+pselect	posix.html#pselect,cint,ptr.TFdSet,ptr.TFdSet,ptr.TFdSet,ptr.Timespec,Sigset	posix : pselect(a1: cint; a2, a3, a4: ptr TFdSet; a5: ptr Timespec; a6: var Sigset): cint	
+select	posix.html#select,,ptr.TFdSet,ptr.TFdSet,ptr.TFdSet,ptr.Timeval	posix : select[](a1: cint | SocketHandle; a2, a3, a4: ptr TFdSet; a5: ptr Timeval): cint	
+posix_spawn	posix.html#posix_spawn,Pid,cstring,Tposix_spawn_file_actions,Tposix_spawnattr,cstringArray,cstringArray	posix : posix_spawn(a1: var Pid; a2: cstring; a3: var Tposix_spawn_file_actions;\n            a4: var Tposix_spawnattr; a5, a6: cstringArray): cint	
+posix_spawn_file_actions_addclose	posix.html#posix_spawn_file_actions_addclose,Tposix_spawn_file_actions,cint	posix : posix_spawn_file_actions_addclose(a1: var Tposix_spawn_file_actions; a2: cint): cint	
+posix_spawn_file_actions_adddup2	posix.html#posix_spawn_file_actions_adddup2,Tposix_spawn_file_actions,cint,cint	posix : posix_spawn_file_actions_adddup2(a1: var Tposix_spawn_file_actions; a2, a3: cint): cint	
+posix_spawn_file_actions_addopen	posix.html#posix_spawn_file_actions_addopen,Tposix_spawn_file_actions,cint,cstring,cint,Mode	posix : posix_spawn_file_actions_addopen(a1: var Tposix_spawn_file_actions; a2: cint;\n                                 a3: cstring; a4: cint; a5: Mode): cint	
+posix_spawn_file_actions_destroy	posix.html#posix_spawn_file_actions_destroy,Tposix_spawn_file_actions	posix : posix_spawn_file_actions_destroy(a1: var Tposix_spawn_file_actions): cint	
+posix_spawn_file_actions_init	posix.html#posix_spawn_file_actions_init,Tposix_spawn_file_actions	posix : posix_spawn_file_actions_init(a1: var Tposix_spawn_file_actions): cint	
+posix_spawnattr_destroy	posix.html#posix_spawnattr_destroy,Tposix_spawnattr	posix : posix_spawnattr_destroy(a1: var Tposix_spawnattr): cint	
+posix_spawnattr_getsigdefault	posix.html#posix_spawnattr_getsigdefault,Tposix_spawnattr,Sigset	posix : posix_spawnattr_getsigdefault(a1: var Tposix_spawnattr; a2: var Sigset): cint	
+posix_spawnattr_getflags	posix.html#posix_spawnattr_getflags,Tposix_spawnattr,cshort	posix : posix_spawnattr_getflags(a1: var Tposix_spawnattr; a2: var cshort): cint	
+posix_spawnattr_getpgroup	posix.html#posix_spawnattr_getpgroup,Tposix_spawnattr,Pid	posix : posix_spawnattr_getpgroup(a1: var Tposix_spawnattr; a2: var Pid): cint	
+posix_spawnattr_getschedparam	posix.html#posix_spawnattr_getschedparam,Tposix_spawnattr,Sched_param	posix : posix_spawnattr_getschedparam(a1: var Tposix_spawnattr; a2: var Sched_param): cint	
+posix_spawnattr_getschedpolicy	posix.html#posix_spawnattr_getschedpolicy,Tposix_spawnattr,cint	posix : posix_spawnattr_getschedpolicy(a1: var Tposix_spawnattr; a2: var cint): cint	
+posix_spawnattr_getsigmask	posix.html#posix_spawnattr_getsigmask,Tposix_spawnattr,Sigset	posix : posix_spawnattr_getsigmask(a1: var Tposix_spawnattr; a2: var Sigset): cint	
+posix_spawnattr_init	posix.html#posix_spawnattr_init,Tposix_spawnattr	posix : posix_spawnattr_init(a1: var Tposix_spawnattr): cint	
+posix_spawnattr_setsigdefault	posix.html#posix_spawnattr_setsigdefault,Tposix_spawnattr,Sigset	posix : posix_spawnattr_setsigdefault(a1: var Tposix_spawnattr; a2: var Sigset): cint	
+posix_spawnattr_setflags	posix.html#posix_spawnattr_setflags,Tposix_spawnattr,cint	posix : posix_spawnattr_setflags(a1: var Tposix_spawnattr; a2: cint): cint	
+posix_spawnattr_setpgroup	posix.html#posix_spawnattr_setpgroup,Tposix_spawnattr,Pid	posix : posix_spawnattr_setpgroup(a1: var Tposix_spawnattr; a2: Pid): cint	
+posix_spawnattr_setschedparam	posix.html#posix_spawnattr_setschedparam,Tposix_spawnattr,Sched_param	posix : posix_spawnattr_setschedparam(a1: var Tposix_spawnattr; a2: var Sched_param): cint	
+posix_spawnattr_setschedpolicy	posix.html#posix_spawnattr_setschedpolicy,Tposix_spawnattr,cint	posix : posix_spawnattr_setschedpolicy(a1: var Tposix_spawnattr; a2: cint): cint	
+posix_spawnattr_setsigmask	posix.html#posix_spawnattr_setsigmask,Tposix_spawnattr,Sigset	posix : posix_spawnattr_setsigmask(a1: var Tposix_spawnattr; a2: var Sigset): cint	
+posix_spawnp	posix.html#posix_spawnp,Pid,cstring,Tposix_spawn_file_actions,Tposix_spawnattr,cstringArray,cstringArray	posix : posix_spawnp(a1: var Pid; a2: cstring; a3: var Tposix_spawn_file_actions;\n             a4: var Tposix_spawnattr; a5, a6: cstringArray): cint	
+getcontext	posix.html#getcontext,Ucontext	posix : getcontext(a1: var Ucontext): cint	
+makecontext	posix.html#makecontext,Ucontext,proc),cint	posix : makecontext(a1: var Ucontext; a4: proc (); a3: cint)	
+setcontext	posix.html#setcontext,Ucontext	posix : setcontext(a1: var Ucontext): cint	
+swapcontext	posix.html#swapcontext,Ucontext,Ucontext	posix : swapcontext(a1, a2: var Ucontext): cint	
+readv	posix.html#readv,cint,ptr.IOVec,cint	posix : readv(a1: cint; a2: ptr IOVec; a3: cint): int	
+writev	posix.html#writev,cint,ptr.IOVec,cint	posix : writev(a1: cint; a2: ptr IOVec; a3: cint): int	
+CMSG_DATA	posix.html#CMSG_DATA,ptr.Tcmsghdr	posix : CMSG_DATA(cmsg: ptr Tcmsghdr): cstring	
+CMSG_NXTHDR	posix.html#CMSG_NXTHDR,ptr.Tmsghdr,ptr.Tcmsghdr	posix : CMSG_NXTHDR(mhdr: ptr Tmsghdr; cmsg: ptr Tcmsghdr): ptr Tcmsghdr	
+CMSG_FIRSTHDR	posix.html#CMSG_FIRSTHDR,ptr.Tmsghdr	posix : CMSG_FIRSTHDR(mhdr: ptr Tmsghdr): ptr Tcmsghdr	
+INVALID_SOCKET	posix.html#INVALID_SOCKET	posix : INVALID_SOCKET	
+`==`	posix.html#==,SocketHandle,SocketHandle	posix : `==`(x, y: SocketHandle): bool	
+accept	posix.html#accept,SocketHandle,ptr.SockAddr,ptr.Socklen	posix : accept(a1: SocketHandle; a2: ptr SockAddr; a3: ptr Socklen): SocketHandle	
+bindSocket	posix.html#bindSocket,SocketHandle,ptr.SockAddr,Socklen	posix : bindSocket(a1: SocketHandle; a2: ptr SockAddr; a3: Socklen): cint	
+connect	posix.html#connect,SocketHandle,ptr.SockAddr,Socklen	posix : connect(a1: SocketHandle; a2: ptr SockAddr; a3: Socklen): cint	
+getpeername	posix.html#getpeername,SocketHandle,ptr.SockAddr,ptr.Socklen	posix : getpeername(a1: SocketHandle; a2: ptr SockAddr; a3: ptr Socklen): cint	
+getsockname	posix.html#getsockname,SocketHandle,ptr.SockAddr,ptr.Socklen	posix : getsockname(a1: SocketHandle; a2: ptr SockAddr; a3: ptr Socklen): cint	
+getsockopt	posix.html#getsockopt,SocketHandle,cint,cint,pointer,ptr.Socklen	posix : getsockopt(a1: SocketHandle; a2, a3: cint; a4: pointer; a5: ptr Socklen): cint	
+listen	posix.html#listen,SocketHandle,cint	posix : listen(a1: SocketHandle; a2: cint): cint	
+recv	posix.html#recv,SocketHandle,pointer,int,cint	posix : recv(a1: SocketHandle; a2: pointer; a3: int; a4: cint): int	
+recvfrom	posix.html#recvfrom,SocketHandle,pointer,int,cint,ptr.SockAddr,ptr.Socklen	posix : recvfrom(a1: SocketHandle; a2: pointer; a3: int; a4: cint; a5: ptr SockAddr;\n         a6: ptr Socklen): int	
+recvmsg	posix.html#recvmsg,SocketHandle,ptr.Tmsghdr,cint	posix : recvmsg(a1: SocketHandle; a2: ptr Tmsghdr; a3: cint): int	
+send	posix.html#send,SocketHandle,pointer,int,cint	posix : send(a1: SocketHandle; a2: pointer; a3: int; a4: cint): int	
+sendmsg	posix.html#sendmsg,SocketHandle,ptr.Tmsghdr,cint	posix : sendmsg(a1: SocketHandle; a2: ptr Tmsghdr; a3: cint): int	
+sendto	posix.html#sendto,SocketHandle,pointer,int,cint,ptr.SockAddr,Socklen	posix : sendto(a1: SocketHandle; a2: pointer; a3: int; a4: cint; a5: ptr SockAddr; a6: Socklen): int	
+setsockopt	posix.html#setsockopt,SocketHandle,cint,cint,pointer,Socklen	posix : setsockopt(a1: SocketHandle; a2, a3: cint; a4: pointer; a5: Socklen): cint	
+shutdown	posix.html#shutdown,SocketHandle,cint	posix : shutdown(a1: SocketHandle; a2: cint): cint	
+socket	posix.html#socket,cint,cint,cint	posix : socket(a1, a2, a3: cint): SocketHandle	
+sockatmark	posix.html#sockatmark,cint	posix : sockatmark(a1: cint): cint	
+socketpair	posix.html#socketpair,cint,cint,cint,array[,cint]	posix : socketpair(a1, a2, a3: cint; a4: var array[0 .. 1, cint]): cint	
+if_nametoindex	posix.html#if_nametoindex,cstring	posix : if_nametoindex(a1: cstring): cint	
+if_indextoname	posix.html#if_indextoname,cint,cstring	posix : if_indextoname(a1: cint; a2: cstring): cstring	
+if_nameindex	posix.html#if_nameindex,	posix : if_nameindex(): ptr Tif_nameindex	
+if_freenameindex	posix.html#if_freenameindex,ptr.Tif_nameindex	posix : if_freenameindex(a1: ptr Tif_nameindex)	
+IN6_IS_ADDR_UNSPECIFIED	posix.html#IN6_IS_ADDR_UNSPECIFIED,ptr.In6Addr	posix : IN6_IS_ADDR_UNSPECIFIED(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_LOOPBACK	posix.html#IN6_IS_ADDR_LOOPBACK,ptr.In6Addr	posix : IN6_IS_ADDR_LOOPBACK(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_MULTICAST	posix.html#IN6_IS_ADDR_MULTICAST,ptr.In6Addr	posix : IN6_IS_ADDR_MULTICAST(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_LINKLOCAL	posix.html#IN6_IS_ADDR_LINKLOCAL,ptr.In6Addr	posix : IN6_IS_ADDR_LINKLOCAL(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_SITELOCAL	posix.html#IN6_IS_ADDR_SITELOCAL,ptr.In6Addr	posix : IN6_IS_ADDR_SITELOCAL(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_V4MAPPED	posix.html#IN6_IS_ADDR_V4MAPPED,ptr.In6Addr	posix : IN6_IS_ADDR_V4MAPPED(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_V4COMPAT	posix.html#IN6_IS_ADDR_V4COMPAT,ptr.In6Addr	posix : IN6_IS_ADDR_V4COMPAT(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_MC_NODELOCAL	posix.html#IN6_IS_ADDR_MC_NODELOCAL,ptr.In6Addr	posix : IN6_IS_ADDR_MC_NODELOCAL(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_MC_LINKLOCAL	posix.html#IN6_IS_ADDR_MC_LINKLOCAL,ptr.In6Addr	posix : IN6_IS_ADDR_MC_LINKLOCAL(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_MC_SITELOCAL	posix.html#IN6_IS_ADDR_MC_SITELOCAL,ptr.In6Addr	posix : IN6_IS_ADDR_MC_SITELOCAL(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_MC_ORGLOCAL	posix.html#IN6_IS_ADDR_MC_ORGLOCAL,ptr.In6Addr	posix : IN6_IS_ADDR_MC_ORGLOCAL(a1: ptr In6Addr): cint	
+IN6_IS_ADDR_MC_GLOBAL	posix.html#IN6_IS_ADDR_MC_GLOBAL,ptr.In6Addr	posix : IN6_IS_ADDR_MC_GLOBAL(a1: ptr In6Addr): cint	
+endhostent	posix.html#endhostent,	posix : endhostent()	
+endnetent	posix.html#endnetent,	posix : endnetent()	
+endprotoent	posix.html#endprotoent,	posix : endprotoent()	
+endservent	posix.html#endservent,	posix : endservent()	
+freeaddrinfo	posix.html#freeaddrinfo,ptr.AddrInfo	posix : freeaddrinfo(a1: ptr AddrInfo)	
+gai_strerror	posix.html#gai_strerror,cint	posix : gai_strerror(a1: cint): cstring	
+getaddrinfo	posix.html#getaddrinfo,cstring,cstring,ptr.AddrInfo,ptr.AddrInfo	posix : getaddrinfo(a1, a2: cstring; a3: ptr AddrInfo; a4: var ptr AddrInfo): cint	
+gethostbyaddr	posix.html#gethostbyaddr,pointer,Socklen,cint	posix : gethostbyaddr(a1: pointer; a2: Socklen; a3: cint): ptr Hostent	
+gethostbyname	posix.html#gethostbyname,cstring	posix : gethostbyname(a1: cstring): ptr Hostent	
+gethostent	posix.html#gethostent,	posix : gethostent(): ptr Hostent	
+getnameinfo	posix.html#getnameinfo,ptr.SockAddr,Socklen,cstring,Socklen,cstring,Socklen,cint	posix : getnameinfo(a1: ptr SockAddr; a2: Socklen; a3: cstring; a4: Socklen; a5: cstring;\n            a6: Socklen; a7: cint): cint	
+getnetbyaddr	posix.html#getnetbyaddr,int32,cint	posix : getnetbyaddr(a1: int32; a2: cint): ptr Tnetent	
+getnetbyname	posix.html#getnetbyname,cstring	posix : getnetbyname(a1: cstring): ptr Tnetent	
+getnetent	posix.html#getnetent,	posix : getnetent(): ptr Tnetent	
+getprotobyname	posix.html#getprotobyname,cstring	posix : getprotobyname(a1: cstring): ptr Protoent	
+getprotobynumber	posix.html#getprotobynumber,cint	posix : getprotobynumber(a1: cint): ptr Protoent	
+getprotoent	posix.html#getprotoent,	posix : getprotoent(): ptr Protoent	
+getservbyname	posix.html#getservbyname,cstring,cstring	posix : getservbyname(a1, a2: cstring): ptr Servent	
+getservbyport	posix.html#getservbyport,cint,cstring	posix : getservbyport(a1: cint; a2: cstring): ptr Servent	
+getservent	posix.html#getservent,	posix : getservent(): ptr Servent	
+sethostent	posix.html#sethostent,cint	posix : sethostent(a1: cint)	
+setnetent	posix.html#setnetent,cint	posix : setnetent(a1: cint)	
+setprotoent	posix.html#setprotoent,cint	posix : setprotoent(a1: cint)	
+setservent	posix.html#setservent,cint	posix : setservent(a1: cint)	
+poll	posix.html#poll,ptr.TPollfd,Tnfds,int	posix : poll(a1: ptr TPollfd; a2: Tnfds; a3: int): cint	
+realpath	posix.html#realpath,cstring,cstring	posix : realpath(name, resolved: cstring): cstring	
+utimes	posix.html#utimes,cstring,ptr.array[,Timeval]	posix : utimes(path: cstring; times: ptr array[2, Timeval]): int	
+onSignal	posix.html#onSignal.t,varargs[cint],untyped	posix : onSignal(signals: varargs[cint]; body: untyped): stmt	

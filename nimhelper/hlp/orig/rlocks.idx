@@ -1,0 +1,7 @@
+RLock	rlocks.html#RLock	rlocks : RLock	
+initRLock	rlocks.html#initRLock,RLock	rlocks : initRLock(lock: var RLock)	
+deinitRLock	rlocks.html#deinitRLock,RLock	rlocks : deinitRLock(lock: var RLock)	
+tryAcquire	rlocks.html#tryAcquire,RLock	rlocks : tryAcquire(lock: var RLock): bool	
+acquire	rlocks.html#acquire,RLock	rlocks : acquire(lock: var RLock)	
+release	rlocks.html#release,RLock	rlocks : release(lock: var RLock)	
+withRLock	rlocks.html#withRLock.t,RLock,untyped	rlocks : withRLock(lock: var RLock; code: untyped): untyped	

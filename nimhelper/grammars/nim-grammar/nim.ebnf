@@ -1,3 +1,6 @@
+// original PEG grammar : http://www.build.nim-lang.org/docs/manual.html
+// railroad diagram generation site ; http://bottlecaps.de/rr/ui
+
 module     ::= stmt*  IND
 comma      ::= ',' comment?
 semicolon  ::= ';' comment?
@@ -161,7 +164,7 @@ objectCase ::= 'case' identWithPragma ':' typeDesc ':'? COMMENT?
             | IND '{=}' objectBranches)
 objectPart ::= IND '{>}' objectPart '^+' IND '{=}' DED
            / objectWhen / objectCase / 'nil' / 'discard' / declColonEquals
-object = 'object' pragma? ('of' typeDesc)? COMMENT? objectPart
+object ::= 'object' pragma? ('of' typeDesc)? COMMENT? objectPart
 typeClassParam ::= ('var' | 'out')? symbol
 typeClass ::= typeClassParam ^* ',' (pragma)? ('of' typeDesc ^* ',')?
               '&__' IND '{>}' stmt

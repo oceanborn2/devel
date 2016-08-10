@@ -1,0 +1,39 @@
+RuneImpl	unicode.html#RuneImpl	unicode : RuneImpl	
+Rune	unicode.html#Rune	unicode : Rune	
+Rune16	unicode.html#Rune16	unicode : Rune16	
+`&lt;=%`	unicode.html#<=%,Rune,Rune	unicode : `&lt;=%`(a, b: Rune): bool	
+`&lt;%`	unicode.html#<%,Rune,Rune	unicode : `&lt;%`(a, b: Rune): bool	
+`==`	unicode.html#==,Rune,Rune	unicode : `==`(a, b: Rune): bool	
+runeLen	unicode.html#runeLen,string	unicode : runeLen(s: string): int	
+runeLenAt	unicode.html#runeLenAt,string,Natural	unicode : runeLenAt(s: string; i: Natural): int	
+fastRuneAt	unicode.html#fastRuneAt.t,string,int,expr	unicode : fastRuneAt(s: string; i: int; result: expr; doInc = true)	
+validateUtf8	unicode.html#validateUtf8,string	unicode : validateUtf8(s: string): int	
+runeAt	unicode.html#runeAt,string,Natural	unicode : runeAt(s: string; i: Natural): Rune	
+fastToUTF8Copy	unicode.html#fastToUTF8Copy.t,Rune,string,int	unicode : fastToUTF8Copy(c: Rune; s: var string; pos: int; doInc = true)	
+toUTF8	unicode.html#toUTF8,Rune	unicode : toUTF8(c: Rune): string	
+`$`	unicode.html#$,Rune	unicode : `$`(rune: Rune): string	
+`$`	unicode.html#$,seq[Rune]	unicode : `$`(runes: seq[Rune]): string	
+runeOffset	unicode.html#runeOffset,string,Natural,Natural	unicode : runeOffset(s: string; pos: Natural; start: Natural = 0): int	
+runeAtPos	unicode.html#runeAtPos,string,int	unicode : runeAtPos(s: string; pos: int): Rune	
+runeStrAtPos	unicode.html#runeStrAtPos,string,Natural	unicode : runeStrAtPos(s: string; pos: Natural): string	
+runeReverseOffset	unicode.html#runeReverseOffset,string,Positive	unicode : runeReverseOffset(s: string; rev: Positive): (int, int)	
+runeSubStr	unicode.html#runeSubStr,string,int,int	unicode : runeSubStr(s: string; pos: int; len: int = int.high): string	
+toLower	unicode.html#toLower,Rune	unicode : toLower(c: Rune): Rune	
+toUpper	unicode.html#toUpper,Rune	unicode : toUpper(c: Rune): Rune	
+toTitle	unicode.html#toTitle,Rune	unicode : toTitle(c: Rune): Rune	
+isLower	unicode.html#isLower,Rune	unicode : isLower(c: Rune): bool	
+isUpper	unicode.html#isUpper,Rune	unicode : isUpper(c: Rune): bool	
+isAlpha	unicode.html#isAlpha,Rune	unicode : isAlpha(c: Rune): bool	
+isTitle	unicode.html#isTitle,Rune	unicode : isTitle(c: Rune): bool	
+isWhiteSpace	unicode.html#isWhiteSpace,Rune	unicode : isWhiteSpace(c: Rune): bool	
+isCombining	unicode.html#isCombining,Rune	unicode : isCombining(c: Rune): bool	
+swapCase	unicode.html#swapCase,string	unicode : swapCase(s: string): string	
+translate	unicode.html#translate,string,proc(string)	unicode : translate(s: string; replacements: proc (key: string): string): string	
+title	unicode.html#title,string	unicode : title(s: string): string	
+isTitle	unicode.html#isTitle,string	unicode : isTitle(s: string): bool	
+runes	unicode.html#runes.i,string	unicode : runes(s: string): Rune	
+toRunes	unicode.html#toRunes,string	unicode : toRunes(s: string): seq[Rune]	
+cmpRunesIgnoreCase	unicode.html#cmpRunesIgnoreCase,string,string	unicode : cmpRunesIgnoreCase(a, b: string): int	
+reversed	unicode.html#reversed,string	unicode : reversed(s: string): string	
+graphemeLen	unicode.html#graphemeLen,string,Natural	unicode : graphemeLen(s: string; i: Natural): Natural	
+lastRune	unicode.html#lastRune,string,int	unicode : lastRune(s: string; last: int): (Rune, int)	

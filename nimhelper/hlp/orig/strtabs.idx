@@ -1,0 +1,19 @@
+StringTableMode	strtabs.html#StringTableMode	strtabs : StringTableMode	
+StringTableObj	strtabs.html#StringTableObj	strtabs : StringTableObj	
+StringTableRef	strtabs.html#StringTableRef	strtabs : StringTableRef	
+len	strtabs.html#len,StringTableRef	strtabs : len(t: StringTableRef): int	
+pairs	strtabs.html#pairs.i,StringTableRef	strtabs : pairs(t: StringTableRef): tuple[key, value: string]	
+keys	strtabs.html#keys.i,StringTableRef	strtabs : keys(t: StringTableRef): string	
+values	strtabs.html#values.i,StringTableRef	strtabs : values(t: StringTableRef): string	
+FormatFlag	strtabs.html#FormatFlag	strtabs : FormatFlag	
+`[]`	strtabs.html#[],StringTableRef,string	strtabs : `[]`(t: StringTableRef; key: string): var string	
+mget	strtabs.html#mget,StringTableRef,string	strtabs : mget(t: StringTableRef; key: string): var string	
+getOrDefault	strtabs.html#getOrDefault,StringTableRef,string	strtabs : getOrDefault(t: StringTableRef; key: string): string	
+hasKey	strtabs.html#hasKey,StringTableRef,string	strtabs : hasKey(t: StringTableRef; key: string): bool	
+`[]=`	strtabs.html#[]=,StringTableRef,string,string	strtabs : `[]=`(t: StringTableRef; key, val: string)	
+newStringTable	strtabs.html#newStringTable,StringTableMode	strtabs : newStringTable(mode: StringTableMode): StringTableRef	
+clear	strtabs.html#clear,StringTableRef,StringTableMode	strtabs : clear(s: StringTableRef; mode: StringTableMode)	
+newStringTable	strtabs.html#newStringTable,varargs[string],StringTableMode	strtabs : newStringTable(keyValuePairs: varargs[string]; mode: StringTableMode): StringTableRef	
+newStringTable	strtabs.html#newStringTable,varargs[tuple[string,string]],StringTableMode	strtabs : newStringTable(keyValuePairs: varargs[tuple[key, val: string]];\n               mode: StringTableMode = modeCaseSensitive): StringTableRef	
+`%`	strtabs.html#%,string,StringTableRef,set[FormatFlag]	strtabs : `%`(f: string; t: StringTableRef; flags: set[FormatFlag] = {}): string	
+`$`	strtabs.html#$,StringTableRef	strtabs : `$`(t: StringTableRef): string	

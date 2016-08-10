@@ -1,0 +1,21 @@
+Actor	actors.html#actor_1	Module actors	
+Task	actors.html#Task	actors : Task	
+PActor	actors.html#PActor	actors : PActor	
+spawn	actors.html#spawn,proc(PActor[In,Out])	actors : spawn[In, Out](action: proc (self: PActor[In, Out])): PActor[In, Out]	
+inbox	actors.html#inbox,PActor[In,Out]	actors : inbox[In, Out](self: PActor[In, Out]): ptr Channel[In]	
+running	actors.html#running,PActor[In,Out]	actors : running[In, Out](a: PActor[In, Out]): bool	
+ready	actors.html#ready,PActor[In,Out]	actors : ready[In, Out](a: PActor[In, Out]): bool	
+join	actors.html#join,PActor[In,Out]	actors : join[In, Out](a: PActor[In, Out])	
+recv	actors.html#recv,PActor[In,Out]	actors : recv[In, Out](a: PActor[In, Out]): Task[In, Out]	
+send	actors.html#send,PActor[In,Out],In,PActor[X,Y]	actors : send[In, Out, X, Y](receiver: PActor[In, Out]; msg: In; sender: PActor[X, Y])	
+send	actors.html#send,PActor[In,Out],In,ptr.Channel[Out]	actors : send[In, Out](receiver: PActor[In, Out]; msg: In; sender: ptr Channel[Out] = nil)	
+sendShutdown	actors.html#sendShutdown,PActor[In,Out]	actors : sendShutdown[In, Out](receiver: PActor[In, Out])	
+reply	actors.html#reply,Task[In,Out],Out	actors : reply[In, Out](t: Task[In, Out]; m: Out)	
+ActorPool	actors.html#ActorPool	actors : ActorPool	
+`^`	actors.html#^,ptr.Channel[T]	actors : `^`[T](f: ptr Channel[T]): T	
+createActorPool	actors.html#createActorPool,ActorPool[In,Out],int	actors : createActorPool[In, Out](a: var ActorPool[In, Out]; poolSize = 4)	
+sync	actors.html#sync,ActorPool[In,Out],int	actors : sync[In, Out](a: var ActorPool[In, Out]; polling = 50)	
+terminate	actors.html#terminate,ActorPool[In,Out]	actors : terminate[In, Out](a: var ActorPool[In, Out])	
+join	actors.html#join,ActorPool[In,Out]	actors : join[In, Out](a: var ActorPool[In, Out])	
+spawn	actors.html#spawn,ActorPool[In,Out],In,proc(In)	actors : spawn[In, Out](p: var ActorPool[In, Out]; input: In;\n              action: proc (input: In): Out): ptr Channel[Out]	
+spawn	actors.html#spawn,ActorPool[In,void],In,proc(In)	actors : spawn[In](p: var ActorPool[In, void]; input: In; action: proc (input: In))	

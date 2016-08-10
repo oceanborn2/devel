@@ -1,0 +1,30 @@
+Nim Standard Library	lib.html
+Pure libraries	lib.html#pure-libraries	 Pure libraries	
+Core	lib.html#pure-libraries-core	  Core	
+Collections and algorithms	lib.html#pure-libraries-collections-and-algorithms	  Collections and algorithms	
+String handling	lib.html#pure-libraries-string-handling	  String handling	
+Generic Operating System Services	lib.html#pure-libraries-generic-operating-system-services	  Generic Operating System Services	
+Math libraries	lib.html#pure-libraries-math-libraries	  Math libraries	
+Internet Protocols and Support	lib.html#pure-libraries-internet-protocols-and-support	  Internet Protocols and Support	
+Parsers	lib.html#pure-libraries-parsers	  Parsers	
+XML Processing	lib.html#pure-libraries-xml-processing	  XML Processing	
+Cryptography and Hashing	lib.html#pure-libraries-cryptography-and-hashing	  Cryptography and Hashing	
+Multimedia support	lib.html#pure-libraries-multimedia-support	  Multimedia support	
+Miscellaneous	lib.html#pure-libraries-miscellaneous	  Miscellaneous	
+Modules for JS backend	lib.html#pure-libraries-modules-for-js-backend	  Modules for JS backend	
+Deprecated modules	lib.html#pure-libraries-deprecated-modules	  Deprecated modules	
+Impure libraries	lib.html#impure-libraries	 Impure libraries	
+Regular expressions	lib.html#impure-libraries-regular-expressions	  Regular expressions	
+Database support	lib.html#impure-libraries-database-support	  Database support	
+Other	lib.html#impure-libraries-other	  Other	
+Wrappers	lib.html#wrappers	 Wrappers	
+Windows specific	lib.html#wrappers-windows-specific	  Windows specific	
+UNIX specific	lib.html#wrappers-unix-specific	  UNIX specific	
+Regular expressions	lib.html#wrappers-regular-expressions	  Regular expressions	
+GUI libraries	lib.html#wrappers-gui-libraries	  GUI libraries	
+Database support	lib.html#wrappers-database-support	  Database support	
+Network Programming and Internet Protocols	lib.html#wrappers-network-programming-and-internet-protocols	  Network Programming and Internet Protocols	
+Scientific computing	lib.html#wrappers-scientific-computing	  Scientific computing	
+Nimble	lib.html#nimble	 Nimble	
+Official packages	lib.html#nimble-official-packages	  Official packages	
+Unofficial packages	lib.html#nimble-unofficial-packages	  Unofficial packages	

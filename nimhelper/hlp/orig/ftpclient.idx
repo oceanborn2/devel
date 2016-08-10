@@ -1,0 +1,29 @@
+FtpBase	ftpclient.html#FtpBase	ftpclient : FtpBase	
+FtpBaseObj	ftpclient.html#FtpBaseObj	ftpclient : FtpBaseObj	
+FTPJobType	ftpclient.html#FTPJobType	ftpclient : FTPJobType	
+FtpClientObj	ftpclient.html#FtpClientObj	ftpclient : FtpClientObj	
+FtpClient	ftpclient.html#FtpClient	ftpclient : FtpClient	
+AsyncFtpClient	ftpclient.html#AsyncFtpClient	ftpclient : AsyncFtpClient	
+AsyncFtpClientObj	ftpclient.html#AsyncFtpClientObj	ftpclient : AsyncFtpClientObj	
+FTPEventType	ftpclient.html#FTPEventType	ftpclient : FTPEventType	
+FTPEvent	ftpclient.html#FTPEvent	ftpclient : FTPEvent	
+ReplyError	ftpclient.html#ReplyError	ftpclient : ReplyError	
+FTPError	ftpclient.html#FTPError	ftpclient : FTPError	
+ftpClient	ftpclient.html#ftpClient,string,string,string	ftpclient : ftpClient(address: string; port = Port(21); user, pass = &quot;&quot;): FtpClient	
+send	ftpclient.html#send,FtpBase[T],string	ftpclient : send[T](ftp: FtpBase[T]; m: string): TaintedString	
+connect	ftpclient.html#connect,FtpBase[T]	ftpclient : connect[T](ftp: FtpBase[T])	
+pwd	ftpclient.html#pwd,FtpBase[T]	ftpclient : pwd[T](ftp: FtpBase[T]): string	
+cd	ftpclient.html#cd,FtpBase[T],string	ftpclient : cd[T](ftp: FtpBase[T]; dir: string)	
+cdup	ftpclient.html#cdup,FtpBase[T]	ftpclient : cdup[T](ftp: FtpBase[T])	
+listDirs	ftpclient.html#listDirs,FtpBase[T],string	ftpclient : listDirs[T](ftp: FtpBase[T]; dir: string = &quot;&quot;; async = false): seq[string]	
+fileExists	ftpclient.html#fileExists,FtpClient,string	ftpclient : fileExists(ftp: FtpClient; file: string): bool	
+existsFile	ftpclient.html#existsFile,FtpClient,string	ftpclient : existsFile(ftp: FtpClient; file: string): bool	
+createDir	ftpclient.html#createDir,FtpBase[T],string,bool	ftpclient : createDir[T](ftp: FtpBase[T]; dir: string; recursive: bool = false)	
+chmod	ftpclient.html#chmod,FtpBase[T],string,set[FilePermission]	ftpclient : chmod[T](ftp: FtpBase[T]; path: string; permissions: set[FilePermission])	
+list	ftpclient.html#list,FtpBase[T],string	ftpclient : list[T](ftp: FtpBase[T]; dir: string = &quot;&quot;; async = false): string	
+retrText	ftpclient.html#retrText,FtpBase[T],string	ftpclient : retrText[T](ftp: FtpBase[T]; file: string; async = false): string	
+retrFile	ftpclient.html#retrFile,FtpBase[T],string,string	ftpclient : retrFile[T](ftp: FtpBase[T]; file, dest: string; async = false)	
+store	ftpclient.html#store,FtpBase[T],string,string	ftpclient : store[T](ftp: FtpBase[T]; file, dest: string; async = false)	
+close	ftpclient.html#close,FtpBase[T]	ftpclient : close[T](ftp: FtpBase[T])	
+asyncFTPClient	ftpclient.html#asyncFTPClient,string,string,string,proc(AsyncFtpClient,FTPEvent)	ftpclient : asyncFTPClient(address: string; port = Port(21); user, pass = &quot;&quot;; handleEvent: proc (\n    ftp: AsyncFtpClient; ev: FTPEvent) = (proc (ftp: AsyncFtpClient; ev: FTPEvent) = discard )): AsyncFtpClient	
+register	ftpclient.html#register,Dispatcher,AsyncFtpClient	ftpclient : register(d: Dispatcher; ftp: AsyncFtpClient): Delegate	

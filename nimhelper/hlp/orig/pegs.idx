@@ -1,0 +1,79 @@
+PEG syntax and semantics	pegs.html#peg-syntax-and-semantics	 PEG syntax and semantics	
+Built-in macros	pegs.html#peg-syntax-and-semantics-built-in-macros	  Built-in macros	
+Supported PEG grammar	pegs.html#peg-syntax-and-semantics-supported-peg-grammar	  Supported PEG grammar	
+Examples	pegs.html#peg-syntax-and-semantics-examples	  Examples	
+PEG vs regular expression	pegs.html#peg-syntax-and-semantics-peg-vs-regular-expression	  PEG vs regular expression	
+PEG construction	pegs.html#peg-syntax-and-semantics-peg-construction	  PEG construction	
+MaxSubpatterns	pegs.html#MaxSubpatterns	pegs : MaxSubpatterns	
+NonTerminal	pegs.html#NonTerminal	pegs : NonTerminal	
+Peg	pegs.html#Peg	pegs : Peg	
+term	pegs.html#term,string	pegs : term(t: string): Peg	
+termIgnoreCase	pegs.html#termIgnoreCase,string	pegs : termIgnoreCase(t: string): Peg	
+termIgnoreStyle	pegs.html#termIgnoreStyle,string	pegs : termIgnoreStyle(t: string): Peg	
+term	pegs.html#term,char	pegs : term(t: char): Peg	
+charSet	pegs.html#charSet,set[char]	pegs : charSet(s: set[char]): Peg	
+`/`	pegs.html#/,varargs[Peg]	pegs : `&#x2F;`(a: varargs[Peg]): Peg	
+sequence	pegs.html#sequence,varargs[Peg]	pegs : sequence(a: varargs[Peg]): Peg	
+`?`	pegs.html#?,Peg	pegs : `?`(a: Peg): Peg	
+`*`	pegs.html#*,Peg	pegs : `*`(a: Peg): Peg	
+`!*`	pegs.html#!*,Peg	pegs : `!*`(a: Peg): Peg	
+`!*\`	pegs.html#!*\,Peg	pegs : `!*\\`(a: Peg): Peg	
+`+`	pegs.html#+,Peg	pegs : `+`(a: Peg): Peg	
+`&amp;`	pegs.html#&,Peg	pegs : `&amp;`(a: Peg): Peg	
+`!`	pegs.html#!,Peg	pegs : `!`(a: Peg): Peg	
+any character	pegs.html#any-character_1	PEG construction	
+any	pegs.html#any,	pegs : any(): Peg	
+any rune	pegs.html#any-rune_1	PEG construction	
+anyRune	pegs.html#anyRune,	pegs : anyRune(): Peg	
+newline	pegs.html#newline_1	PEG construction	
+newLine	pegs.html#newLine,	pegs : newLine(): Peg	
+unicodeLetter	pegs.html#unicodeLetter,	pegs : unicodeLetter(): Peg	
+unicodeLower	pegs.html#unicodeLower,	pegs : unicodeLower(): Peg	
+unicodeUpper	pegs.html#unicodeUpper,	pegs : unicodeUpper(): Peg	
+unicodeTitle	pegs.html#unicodeTitle,	pegs : unicodeTitle(): Peg	
+unicodeWhitespace	pegs.html#unicodeWhitespace,	pegs : unicodeWhitespace(): Peg	
+startAnchor	pegs.html#startAnchor,	pegs : startAnchor(): Peg	
+endAnchor	pegs.html#endAnchor,	pegs : endAnchor(): Peg	
+capture	pegs.html#capture,Peg	pegs : capture(a: Peg): Peg	
+backref	pegs.html#backref,range[]	pegs : backref(index: range[1 .. MaxSubpatterns]): Peg	
+backrefIgnoreCase	pegs.html#backrefIgnoreCase,range[]	pegs : backrefIgnoreCase(index: range[1 .. MaxSubpatterns]): Peg	
+backrefIgnoreStyle	pegs.html#backrefIgnoreStyle,range[]	pegs : backrefIgnoreStyle(index: range[1 .. MaxSubpatterns]): Peg	
+nonterminal	pegs.html#nonterminal,NonTerminal	pegs : nonterminal(n: NonTerminal): Peg	
+newNonTerminal	pegs.html#newNonTerminal,string,int,int	pegs : newNonTerminal(name: string; line, column: int): NonTerminal	
+letters	pegs.html#letters.t,	pegs : letters(): expr	
+digits	pegs.html#digits.t,	pegs : digits(): expr	
+whitespace	pegs.html#whitespace.t,	pegs : whitespace(): expr	
+identChars	pegs.html#identChars.t,	pegs : identChars(): expr	
+identStartChars	pegs.html#identStartChars.t,	pegs : identStartChars(): expr	
+ident	pegs.html#ident.t,	pegs : ident(): expr	
+natural	pegs.html#natural.t,	pegs : natural(): expr	
+`$`	pegs.html#$,Peg	pegs : `$`(r: Peg): string	
+Captures	pegs.html#Captures	pegs : Captures	
+bounds	pegs.html#bounds,Captures,range[]	pegs : bounds(c: Captures; i: range[0 .. 20 - 1]): tuple[first, last: int]	
+rawMatch	pegs.html#rawMatch,string,Peg,int,Captures	pegs : rawMatch(s: string; p: Peg; start: int; c: var Captures): int	
+matchLen	pegs.html#matchLen,string,Peg,openArray[string],int	pegs : matchLen(s: string; pattern: Peg; matches: var openArray[string]; start = 0): int	
+matchLen	pegs.html#matchLen,string,Peg,int	pegs : matchLen(s: string; pattern: Peg; start = 0): int	
+match	pegs.html#match,string,Peg,openArray[string],int	pegs : match(s: string; pattern: Peg; matches: var openArray[string]; start = 0): bool	
+match	pegs.html#match,string,Peg,int	pegs : match(s: string; pattern: Peg; start = 0): bool	
+find	pegs.html#find,string,Peg,openArray[string],int	pegs : find(s: string; pattern: Peg; matches: var openArray[string]; start = 0): int	
+findBounds	pegs.html#findBounds,string,Peg,openArray[string],int	pegs : findBounds(s: string; pattern: Peg; matches: var openArray[string]; start = 0): tuple[\n    first, last: int]	
+find	pegs.html#find,string,Peg,int	pegs : find(s: string; pattern: Peg; start = 0): int	
+findAll	pegs.html#findAll.i,string,Peg,int	pegs : findAll(s: string; pattern: Peg; start = 0): string	
+findAll	pegs.html#findAll,string,Peg,int	pegs : findAll(s: string; pattern: Peg; start = 0): seq[string]	
+`=~`	pegs.html#=~.t,string,Peg	pegs : `=~`(s: string; pattern: Peg): bool	
+contains	pegs.html#contains,string,Peg,int	pegs : contains(s: string; pattern: Peg; start = 0): bool	
+contains	pegs.html#contains,string,Peg,openArray[string],int	pegs : contains(s: string; pattern: Peg; matches: var openArray[string]; start = 0): bool	
+startsWith	pegs.html#startsWith,string,Peg,int	pegs : startsWith(s: string; prefix: Peg; start = 0): bool	
+endsWith	pegs.html#endsWith,string,Peg,int	pegs : endsWith(s: string; suffix: Peg; start = 0): bool	
+replacef	pegs.html#replacef,string,Peg,string	pegs : replacef(s: string; sub: Peg; by: string): string	
+replace	pegs.html#replace,string,Peg,string	pegs : replace(s: string; sub: Peg; by = &quot;&quot;): string	
+parallelReplace	pegs.html#parallelReplace,string,varargs[tuple[Peg,string]]	pegs : parallelReplace(s: string; subs: varargs[tuple[pattern: Peg, repl: string]]): string	
+replace	pegs.html#replace,string,Peg,proc(int,int,openArray[string])	pegs : replace(s: string; sub: Peg;\n        cb: proc (match: int; cnt: int; caps: openArray[string]): string): string	
+transformFile	pegs.html#transformFile,string,string,varargs[tuple[Peg,string]]	pegs : transformFile(infile, outfile: string;\n              subs: varargs[tuple[pattern: Peg, repl: string]])	
+split	pegs.html#split.i,string,Peg	pegs : split(s: string; sep: Peg): string	
+split	pegs.html#split,string,Peg	pegs : split(s: string; sep: Peg): seq[string]	
+EInvalidPeg	pegs.html#EInvalidPeg	pegs : EInvalidPeg	
+parsePeg	pegs.html#parsePeg,string,string,int,int	pegs : parsePeg(pattern: string; filename = &quot;pattern&quot;; line = 1; col = 0): Peg	
+peg	pegs.html#peg,string	pegs : peg(pattern: string): Peg	
+escapePeg	pegs.html#escapePeg,string	pegs : escapePeg(s: string): string	
+handleMatches	pegs.html#handleMatches,int,int,openArray[string]	pegs : handleMatches(m: int; n: int; c: openArray[string]): string	

@@ -1,0 +1,107 @@
+EDOMException	xmldom.html#EDOMException	xmldom : EDOMException	
+EDOMStringSizeErr	xmldom.html#EDOMStringSizeErr	xmldom : EDOMStringSizeErr	
+EHierarchyRequestErr	xmldom.html#EHierarchyRequestErr	xmldom : EHierarchyRequestErr	
+EIndexSizeErr	xmldom.html#EIndexSizeErr	xmldom : EIndexSizeErr	
+EInuseAttributeErr	xmldom.html#EInuseAttributeErr	xmldom : EInuseAttributeErr	
+EInvalidAccessErr	xmldom.html#EInvalidAccessErr	xmldom : EInvalidAccessErr	
+EInvalidCharacterErr	xmldom.html#EInvalidCharacterErr	xmldom : EInvalidCharacterErr	
+EInvalidModificationErr	xmldom.html#EInvalidModificationErr	xmldom : EInvalidModificationErr	
+EInvalidStateErr	xmldom.html#EInvalidStateErr	xmldom : EInvalidStateErr	
+ENamespaceErr	xmldom.html#ENamespaceErr	xmldom : ENamespaceErr	
+ENotFoundErr	xmldom.html#ENotFoundErr	xmldom : ENotFoundErr	
+ENotSupportedErr	xmldom.html#ENotSupportedErr	xmldom : ENotSupportedErr	
+ENoDataAllowedErr	xmldom.html#ENoDataAllowedErr	xmldom : ENoDataAllowedErr	
+ENoModificationAllowedErr	xmldom.html#ENoModificationAllowedErr	xmldom : ENoModificationAllowedErr	
+ESyntaxErr	xmldom.html#ESyntaxErr	xmldom : ESyntaxErr	
+EWrongDocumentErr	xmldom.html#EWrongDocumentErr	xmldom : EWrongDocumentErr	
+ElementNode	xmldom.html#ElementNode	xmldom : ElementNode	
+AttributeNode	xmldom.html#AttributeNode	xmldom : AttributeNode	
+TextNode	xmldom.html#TextNode	xmldom : TextNode	
+CDataSectionNode	xmldom.html#CDataSectionNode	xmldom : CDataSectionNode	
+ProcessingInstructionNode	xmldom.html#ProcessingInstructionNode	xmldom : ProcessingInstructionNode	
+CommentNode	xmldom.html#CommentNode	xmldom : CommentNode	
+DocumentNode	xmldom.html#DocumentNode	xmldom : DocumentNode	
+DocumentFragmentNode	xmldom.html#DocumentFragmentNode	xmldom : DocumentFragmentNode	
+PDOMImplementation	xmldom.html#PDOMImplementation	xmldom : PDOMImplementation	
+PNode	xmldom.html#PNode	xmldom : PNode	
+PElement	xmldom.html#PElement	xmldom : PElement	
+PCharacterData	xmldom.html#PCharacterData	xmldom : PCharacterData	
+PDocument	xmldom.html#PDocument	xmldom : PDocument	
+PAttr	xmldom.html#PAttr	xmldom : PAttr	
+PDocumentFragment	xmldom.html#PDocumentFragment	xmldom : PDocumentFragment	
+PText	xmldom.html#PText	xmldom : PText	
+PComment	xmldom.html#PComment	xmldom : PComment	
+PCDataSection	xmldom.html#PCDataSection	xmldom : PCDataSection	
+PProcessingInstruction	xmldom.html#PProcessingInstruction	xmldom : PProcessingInstruction	
+getDOM	xmldom.html#getDOM,	xmldom : getDOM(): PDOMImplementation	
+createDocument	xmldom.html#createDocument,PDOMImplementation,string,string	xmldom : createDocument(dom: PDOMImplementation; namespaceURI: string; qualifiedName: string): PDocument	
+createDocument	xmldom.html#createDocument,PDOMImplementation,PElement	xmldom : createDocument(dom: PDOMImplementation; n: PElement): PDocument	
+hasFeature	xmldom.html#hasFeature,PDOMImplementation,string,string	xmldom : hasFeature(dom: PDOMImplementation; feature: string; version: string = &quot;&quot;): bool	
+implementation	xmldom.html#implementation,PDocument	xmldom : implementation(doc: PDocument): PDOMImplementation	
+documentElement	xmldom.html#documentElement,PDocument	xmldom : documentElement(doc: PDocument): PElement	
+createAttribute	xmldom.html#createAttribute,PDocument,string	xmldom : createAttribute(doc: PDocument; name: string): PAttr	
+createAttributeNS	xmldom.html#createAttributeNS,PDocument,string,string	xmldom : createAttributeNS(doc: PDocument; namespaceURI: string; qualifiedName: string): PAttr	
+createCDATASection	xmldom.html#createCDATASection,PDocument,string	xmldom : createCDATASection(doc: PDocument; data: string): PCDataSection	
+createComment	xmldom.html#createComment,PDocument,string	xmldom : createComment(doc: PDocument; data: string): PComment	
+createDocumentFragment	xmldom.html#createDocumentFragment,PDocument	xmldom : createDocumentFragment(doc: PDocument): PDocumentFragment	
+createElement	xmldom.html#createElement,PDocument,string	xmldom : createElement(doc: PDocument; tagName: string): PElement	
+createElementNS	xmldom.html#createElementNS,PDocument,string,string	xmldom : createElementNS(doc: PDocument; namespaceURI: string; qualifiedName: string): PElement	
+createProcessingInstruction	xmldom.html#createProcessingInstruction,PDocument,string,string	xmldom : createProcessingInstruction(doc: PDocument; target: string; data: string): PProcessingInstruction	
+createTextNode	xmldom.html#createTextNode,PDocument,string	xmldom : createTextNode(doc: PDocument; data: string): PText	
+getElementsByTagName	xmldom.html#getElementsByTagName,PDocument,string	xmldom : getElementsByTagName(doc: PDocument; tagName: string): seq[PNode]	
+getElementsByTagNameNS	xmldom.html#getElementsByTagNameNS,PDocument,string,string	xmldom : getElementsByTagNameNS(doc: PDocument; namespaceURI: string; localName: string): seq[\n    PNode]	
+importNode	xmldom.html#importNode,PDocument,PNode,bool	xmldom : importNode(doc: PDocument; importedNode: PNode; deep: bool): PNode	
+firstChild	xmldom.html#firstChild,PNode	xmldom : firstChild(n: PNode): PNode	
+lastChild	xmldom.html#lastChild,PNode	xmldom : lastChild(n: PNode): PNode	
+localName	xmldom.html#localName,PNode	xmldom : localName(n: PNode): string	
+namespaceURI	xmldom.html#namespaceURI,PNode	xmldom : namespaceURI(n: PNode): string	
+namespaceURI=	xmldom.html#namespaceURI=,PNode,string	xmldom : namespaceURI=(n: PNode; value: string)	
+nextSibling	xmldom.html#nextSibling,PNode	xmldom : nextSibling(n: PNode): PNode	
+nodeName	xmldom.html#nodeName,PNode	xmldom : nodeName(n: PNode): string	
+nodeType	xmldom.html#nodeType,PNode	xmldom : nodeType(n: PNode): int	
+ownerDocument	xmldom.html#ownerDocument,PNode	xmldom : ownerDocument(n: PNode): PDocument	
+parentNode	xmldom.html#parentNode,PNode	xmldom : parentNode(n: PNode): PNode	
+previousSibling	xmldom.html#previousSibling,PNode	xmldom : previousSibling(n: PNode): PNode	
+prefix=	xmldom.html#prefix=,PNode,string	xmldom : prefix=(n: PNode; value: string)	
+appendChild	xmldom.html#appendChild,PNode,PNode	xmldom : appendChild(n: PNode; newChild: PNode)	
+cloneNode	xmldom.html#cloneNode,PNode,bool	xmldom : cloneNode(n: PNode; deep: bool): PNode	
+hasAttributes	xmldom.html#hasAttributes,PNode	xmldom : hasAttributes(n: PNode): bool	
+hasChildNodes	xmldom.html#hasChildNodes,PNode	xmldom : hasChildNodes(n: PNode): bool	
+insertBefore	xmldom.html#insertBefore,PNode,PNode,PNode	xmldom : insertBefore(n: PNode; newChild: PNode; refChild: PNode): PNode	
+isSupported	xmldom.html#isSupported,PNode,string,string	xmldom : isSupported(n: PNode; feature: string; version: string): bool	
+normalize	xmldom.html#normalize,PNode	xmldom : normalize(n: PNode)	
+removeChild	xmldom.html#removeChild,PNode,PNode	xmldom : removeChild(n: PNode; oldChild: PNode): PNode	
+replaceChild	xmldom.html#replaceChild,PNode,PNode,PNode	xmldom : replaceChild(n: PNode; newChild: PNode; oldChild: PNode): PNode	
+getNamedItem	xmldom.html#getNamedItem,seq[PNode],string	xmldom : getNamedItem(nList: seq[PNode]; name: string): PNode	
+getNamedItem	xmldom.html#getNamedItem,seq[PAttr],string	xmldom : getNamedItem(nList: seq[PAttr]; name: string): PAttr	
+getNamedItemNS	xmldom.html#getNamedItemNS,seq[PNode],string,string	xmldom : getNamedItemNS(nList: seq[PNode]; namespaceURI: string; localName: string): PNode	
+getNamedItemNS	xmldom.html#getNamedItemNS,seq[PAttr],string,string	xmldom : getNamedItemNS(nList: seq[PAttr]; namespaceURI: string; localName: string): PAttr	
+item	xmldom.html#item,seq[PNode],int	xmldom : item(nList: seq[PNode]; index: int): PNode	
+removeNamedItem	xmldom.html#removeNamedItem,seq[PNode],string	xmldom : removeNamedItem(nList: var seq[PNode]; name: string): PNode	
+removeNamedItemNS	xmldom.html#removeNamedItemNS,seq[PNode],string,string	xmldom : removeNamedItemNS(nList: var seq[PNode]; namespaceURI: string; localName: string): PNode	
+setNamedItem	xmldom.html#setNamedItem,seq[PNode],PNode	xmldom : setNamedItem(nList: var seq[PNode]; arg: PNode): PNode	
+setNamedItem	xmldom.html#setNamedItem,seq[PAttr],PAttr	xmldom : setNamedItem(nList: var seq[PAttr]; arg: PAttr): PAttr	
+setNamedItemNS	xmldom.html#setNamedItemNS,seq[PNode],PNode	xmldom : setNamedItemNS(nList: var seq[PNode]; arg: PNode): PNode	
+setNamedItemNS	xmldom.html#setNamedItemNS,seq[PAttr],PAttr	xmldom : setNamedItemNS(nList: var seq[PAttr]; arg: PAttr): PAttr	
+name	xmldom.html#name,PAttr	xmldom : name(a: PAttr): string	
+specified	xmldom.html#specified,PAttr	xmldom : specified(a: PAttr): bool	
+ownerElement	xmldom.html#ownerElement,PAttr	xmldom : ownerElement(a: PAttr): PElement	
+tagName	xmldom.html#tagName,PElement	xmldom : tagName(el: PElement): string	
+getAttribute	xmldom.html#getAttribute,PElement,string	xmldom : getAttribute(el: PElement; name: string): string	
+getAttributeNS	xmldom.html#getAttributeNS,PElement,string,string	xmldom : getAttributeNS(el: PElement; namespaceURI: string; localName: string): string	
+getAttributeNode	xmldom.html#getAttributeNode,PElement,string	xmldom : getAttributeNode(el: PElement; name: string): PAttr	
+getAttributeNodeNS	xmldom.html#getAttributeNodeNS,PElement,string,string	xmldom : getAttributeNodeNS(el: PElement; namespaceURI: string; localName: string): PAttr	
+getElementsByTagName	xmldom.html#getElementsByTagName,PElement,string	xmldom : getElementsByTagName(el: PElement; name: string): seq[PNode]	
+getElementsByTagNameNS	xmldom.html#getElementsByTagNameNS,PElement,string,string	xmldom : getElementsByTagNameNS(el: PElement; namespaceURI: string; localName: string): seq[\n    PNode]	
+hasAttribute	xmldom.html#hasAttribute,PElement,string	xmldom : hasAttribute(el: PElement; name: string): bool	
+hasAttributeNS	xmldom.html#hasAttributeNS,PElement,string,string	xmldom : hasAttributeNS(el: PElement; namespaceURI: string; localName: string): bool	
+removeAttribute	xmldom.html#removeAttribute,PElement,string	xmldom : removeAttribute(el: PElement; name: string)	
+removeAttributeNS	xmldom.html#removeAttributeNS,PElement,string,string	xmldom : removeAttributeNS(el: PElement; namespaceURI: string; localName: string)	
+removeAttributeNode	xmldom.html#removeAttributeNode,PElement,PAttr	xmldom : removeAttributeNode(el: PElement; oldAttr: PAttr): PAttr	
+setAttributeNode	xmldom.html#setAttributeNode,PElement,PAttr	xmldom : setAttributeNode(el: PElement; newAttr: PAttr): PAttr	
+setAttributeNodeNS	xmldom.html#setAttributeNodeNS,PElement,PAttr	xmldom : setAttributeNodeNS(el: PElement; newAttr: PAttr): PAttr	
+setAttribute	xmldom.html#setAttribute,PElement,string,string	xmldom : setAttribute(el: PElement; name: string; value: string)	
+setAttributeNS	xmldom.html#setAttributeNS,PElement,string,string,string	xmldom : setAttributeNS(el: PElement; namespaceURI, localName, value: string)	
+splitData	xmldom.html#splitData,PText,int	xmldom : splitData(textNode: PText; offset: int): PText	
+target	xmldom.html#target,PProcessingInstruction	xmldom : target(pi: PProcessingInstruction): string	
+`$`	xmldom.html#$,PDocument	xmldom : `$`(doc: PDocument): string	

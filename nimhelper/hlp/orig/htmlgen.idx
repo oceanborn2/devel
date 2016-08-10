@@ -1,0 +1,81 @@
+XML	htmlgen.html#xml_1	Module htmlgen	
+HTML	htmlgen.html#html_1	Module htmlgen	
+coreAttr	htmlgen.html#coreAttr	htmlgen : coreAttr	
+eventAttr	htmlgen.html#eventAttr	htmlgen : eventAttr	
+commonAttr	htmlgen.html#commonAttr	htmlgen : commonAttr	
+xmlCheckedTag	htmlgen.html#xmlCheckedTag,NimNode,string,string,string	htmlgen : xmlCheckedTag(e: NimNode; tag: string; optAttr = &quot;&quot;; reqAttr = &quot;&quot;; isLeaf = false): NimNode	
+a	htmlgen.html#a.m,expr	htmlgen : a(e: expr): expr	
+acronym	htmlgen.html#acronym.m,expr	htmlgen : acronym(e: expr): expr	
+address	htmlgen.html#address.m,expr	htmlgen : address(e: expr): expr	
+area	htmlgen.html#area.m,expr	htmlgen : area(e: expr): expr	
+b	htmlgen.html#b.m,expr	htmlgen : b(e: expr): expr	
+base	htmlgen.html#base.m,expr	htmlgen : base(e: expr): expr	
+big	htmlgen.html#big.m,expr	htmlgen : big(e: expr): expr	
+blockquote	htmlgen.html#blockquote.m,expr	htmlgen : blockquote(e: expr): expr	
+body	htmlgen.html#body.m,expr	htmlgen : body(e: expr): expr	
+br	htmlgen.html#br.m,expr	htmlgen : br(e: expr): expr	
+button	htmlgen.html#button.m,expr	htmlgen : button(e: expr): expr	
+caption	htmlgen.html#caption.m,expr	htmlgen : caption(e: expr): expr	
+cite	htmlgen.html#cite.m,expr	htmlgen : cite(e: expr): expr	
+code	htmlgen.html#code.m,expr	htmlgen : code(e: expr): expr	
+col	htmlgen.html#col.m,expr	htmlgen : col(e: expr): expr	
+colgroup	htmlgen.html#colgroup.m,expr	htmlgen : colgroup(e: expr): expr	
+dd	htmlgen.html#dd.m,expr	htmlgen : dd(e: expr): expr	
+del	htmlgen.html#del.m,expr	htmlgen : del(e: expr): expr	
+dfn	htmlgen.html#dfn.m,expr	htmlgen : dfn(e: expr): expr	
+`div`	htmlgen.html#div.m,expr	htmlgen : `div`(e: expr): expr	
+dl	htmlgen.html#dl.m,expr	htmlgen : dl(e: expr): expr	
+dt	htmlgen.html#dt.m,expr	htmlgen : dt(e: expr): expr	
+em	htmlgen.html#em.m,expr	htmlgen : em(e: expr): expr	
+fieldset	htmlgen.html#fieldset.m,expr	htmlgen : fieldset(e: expr): expr	
+form	htmlgen.html#form.m,expr	htmlgen : form(e: expr): expr	
+h1	htmlgen.html#h1.m,expr	htmlgen : h1(e: expr): expr	
+h2	htmlgen.html#h2.m,expr	htmlgen : h2(e: expr): expr	
+h3	htmlgen.html#h3.m,expr	htmlgen : h3(e: expr): expr	
+h4	htmlgen.html#h4.m,expr	htmlgen : h4(e: expr): expr	
+h5	htmlgen.html#h5.m,expr	htmlgen : h5(e: expr): expr	
+h6	htmlgen.html#h6.m,expr	htmlgen : h6(e: expr): expr	
+head	htmlgen.html#head.m,expr	htmlgen : head(e: expr): expr	
+html	htmlgen.html#html.m,expr	htmlgen : html(e: expr): expr	
+hr	htmlgen.html#hr.m,	htmlgen : hr(): expr	
+i	htmlgen.html#i.m,expr	htmlgen : i(e: expr): expr	
+img	htmlgen.html#img.m,expr	htmlgen : img(e: expr): expr	
+input	htmlgen.html#input.m,expr	htmlgen : input(e: expr): expr	
+ins	htmlgen.html#ins.m,expr	htmlgen : ins(e: expr): expr	
+kbd	htmlgen.html#kbd.m,expr	htmlgen : kbd(e: expr): expr	
+label	htmlgen.html#label.m,expr	htmlgen : label(e: expr): expr	
+legend	htmlgen.html#legend.m,expr	htmlgen : legend(e: expr): expr	
+li	htmlgen.html#li.m,expr	htmlgen : li(e: expr): expr	
+link	htmlgen.html#link.m,expr	htmlgen : link(e: expr): expr	
+map	htmlgen.html#map.m,expr	htmlgen : map(e: expr): expr	
+meta	htmlgen.html#meta.m,expr	htmlgen : meta(e: expr): expr	
+noscript	htmlgen.html#noscript.m,expr	htmlgen : noscript(e: expr): expr	
+`object`	htmlgen.html#object.m,expr	htmlgen : `object`(e: expr): expr	
+ol	htmlgen.html#ol.m,expr	htmlgen : ol(e: expr): expr	
+optgroup	htmlgen.html#optgroup.m,expr	htmlgen : optgroup(e: expr): expr	
+option	htmlgen.html#option.m,expr	htmlgen : option(e: expr): expr	
+p	htmlgen.html#p.m,expr	htmlgen : p(e: expr): expr	
+param	htmlgen.html#param.m,expr	htmlgen : param(e: expr): expr	
+pre	htmlgen.html#pre.m,expr	htmlgen : pre(e: expr): expr	
+q	htmlgen.html#q.m,expr	htmlgen : q(e: expr): expr	
+samp	htmlgen.html#samp.m,expr	htmlgen : samp(e: expr): expr	
+script	htmlgen.html#script.m,expr	htmlgen : script(e: expr): expr	
+select	htmlgen.html#select.m,expr	htmlgen : select(e: expr): expr	
+small	htmlgen.html#small.m,expr	htmlgen : small(e: expr): expr	
+span	htmlgen.html#span.m,expr	htmlgen : span(e: expr): expr	
+strong	htmlgen.html#strong.m,expr	htmlgen : strong(e: expr): expr	
+style	htmlgen.html#style.m,expr	htmlgen : style(e: expr): expr	
+sub	htmlgen.html#sub.m,expr	htmlgen : sub(e: expr): expr	
+sup	htmlgen.html#sup.m,expr	htmlgen : sup(e: expr): expr	
+table	htmlgen.html#table.m,expr	htmlgen : table(e: expr): expr	
+tbody	htmlgen.html#tbody.m,expr	htmlgen : tbody(e: expr): expr	
+td	htmlgen.html#td.m,expr	htmlgen : td(e: expr): expr	
+textarea	htmlgen.html#textarea.m,expr	htmlgen : textarea(e: expr): expr	
+tfoot	htmlgen.html#tfoot.m,expr	htmlgen : tfoot(e: expr): expr	
+th	htmlgen.html#th.m,expr	htmlgen : th(e: expr): expr	
+thead	htmlgen.html#thead.m,expr	htmlgen : thead(e: expr): expr	
+title	htmlgen.html#title.m,expr	htmlgen : title(e: expr): expr	
+tr	htmlgen.html#tr.m,expr	htmlgen : tr(e: expr): expr	
+tt	htmlgen.html#tt.m,expr	htmlgen : tt(e: expr): expr	
+ul	htmlgen.html#ul.m,expr	htmlgen : ul(e: expr): expr	
+`var`	htmlgen.html#var.m,expr	htmlgen : `var`(e: expr): expr	

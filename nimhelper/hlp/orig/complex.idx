@@ -1,0 +1,61 @@
+Complex	complex.html#Complex	complex : Complex	
+toComplex	complex.html#toComplex,SomeInteger	complex : toComplex[SomeInteger](x: SomeInteger): Complex	
+`==`	complex.html#==,Complex,Complex	complex : `==`(x, y: Complex): bool	
+`=~`	complex.html#=~,Complex,Complex	complex : `=~`(x, y: Complex): bool	
+`+`	complex.html#+,Complex,Complex	complex : `+`(x, y: Complex): Complex	
+`+`	complex.html#+,Complex,float	complex : `+`(x: Complex; y: float): Complex	
+`+`	complex.html#+,float,Complex	complex : `+`(x: float; y: Complex): Complex	
+`-`	complex.html#-,Complex	complex : `-`(z: Complex): Complex	
+`-`	complex.html#-,Complex,Complex	complex : `-`(x, y: Complex): Complex	
+`-`	complex.html#-,Complex,float	complex : `-`(x: Complex; y: float): Complex	
+`-`	complex.html#-,float,Complex	complex : `-`(x: float; y: Complex): Complex	
+`/`	complex.html#/,Complex,Complex	complex : `&#x2F;`(x, y: Complex): Complex	
+`/`	complex.html#/,Complex,float	complex : `&#x2F;`(x: Complex; y: float): Complex	
+`/`	complex.html#/,float,Complex	complex : `&#x2F;`(x: float; y: Complex): Complex	
+`*`	complex.html#*,Complex,Complex	complex : `*`(x, y: Complex): Complex	
+`*`	complex.html#*,float,Complex	complex : `*`(x: float; y: Complex): Complex	
+`*`	complex.html#*,Complex,float	complex : `*`(x: Complex; y: float): Complex	
+`+=`	complex.html#+=,Complex,Complex	complex : `+=`(x: var Complex; y: Complex)	
+`+=`	complex.html#+=,Complex,float	complex : `+=`(x: var Complex; y: float)	
+`-=`	complex.html#-=,Complex,Complex	complex : `-=`(x: var Complex; y: Complex)	
+`-=`	complex.html#-=,Complex,float	complex : `-=`(x: var Complex; y: float)	
+`*=`	complex.html#*=,Complex,Complex	complex : `*=`(x: var Complex; y: Complex)	
+`*=`	complex.html#*=,Complex,float	complex : `*=`(x: var Complex; y: float)	
+`/=`	complex.html#/=,Complex,Complex	complex : `&#x2F;=`(x: var Complex; y: Complex)	
+`/=`	complex.html#/=,Complex,float	complex : `&#x2F;=`(x: var Complex; y: float)	
+abs	complex.html#abs,Complex	complex : abs(z: Complex): float	
+conjugate	complex.html#conjugate,Complex	complex : conjugate(z: Complex): Complex	
+sqrt	complex.html#sqrt,Complex	complex : sqrt(z: Complex): Complex	
+exp	complex.html#exp,Complex	complex : exp(z: Complex): Complex	
+ln	complex.html#ln,Complex	complex : ln(z: Complex): Complex	
+log10	complex.html#log10,Complex	complex : log10(z: Complex): Complex	
+log2	complex.html#log2,Complex	complex : log2(z: Complex): Complex	
+pow	complex.html#pow,Complex,Complex	complex : pow(x, y: Complex): Complex	
+sin	complex.html#sin,Complex	complex : sin(z: Complex): Complex	
+arcsin	complex.html#arcsin,Complex	complex : arcsin(z: Complex): Complex	
+cos	complex.html#cos,Complex	complex : cos(z: Complex): Complex	
+arccos	complex.html#arccos,Complex	complex : arccos(z: Complex): Complex	
+tan	complex.html#tan,Complex	complex : tan(z: Complex): Complex	
+arctan	complex.html#arctan,Complex	complex : arctan(z: Complex): Complex	
+cot	complex.html#cot,Complex	complex : cot(z: Complex): Complex	
+arccot	complex.html#arccot,Complex	complex : arccot(z: Complex): Complex	
+sec	complex.html#sec,Complex	complex : sec(z: Complex): Complex	
+arcsec	complex.html#arcsec,Complex	complex : arcsec(z: Complex): Complex	
+csc	complex.html#csc,Complex	complex : csc(z: Complex): Complex	
+arccsc	complex.html#arccsc,Complex	complex : arccsc(z: Complex): Complex	
+sinh	complex.html#sinh,Complex	complex : sinh(z: Complex): Complex	
+arcsinh	complex.html#arcsinh,Complex	complex : arcsinh(z: Complex): Complex	
+cosh	complex.html#cosh,Complex	complex : cosh(z: Complex): Complex	
+arccosh	complex.html#arccosh,Complex	complex : arccosh(z: Complex): Complex	
+tanh	complex.html#tanh,Complex	complex : tanh(z: Complex): Complex	
+arctanh	complex.html#arctanh,Complex	complex : arctanh(z: Complex): Complex	
+sech	complex.html#sech,Complex	complex : sech(z: Complex): Complex	
+arcsech	complex.html#arcsech,Complex	complex : arcsech(z: Complex): Complex	
+csch	complex.html#csch,Complex	complex : csch(z: Complex): Complex	
+arccsch	complex.html#arccsch,Complex	complex : arccsch(z: Complex): Complex	
+coth	complex.html#coth,Complex	complex : coth(z: Complex): Complex	
+arccoth	complex.html#arccoth,Complex	complex : arccoth(z: Complex): Complex	
+phase	complex.html#phase,Complex	complex : phase(z: Complex): float	
+polar	complex.html#polar,Complex	complex : polar(z: Complex): tuple[r, phi: float]	
+rect	complex.html#rect,float,float	complex : rect(r: float; phi: float): Complex	
+`$`	complex.html#$,Complex	complex : `$`(z: Complex): string	

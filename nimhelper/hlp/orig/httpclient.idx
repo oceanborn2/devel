@@ -1,0 +1,36 @@
+Retrieving a website	httpclient.html#retrieving-a-website	 Retrieving a website	
+Using HTTP POST	httpclient.html#using-http-post	 Using HTTP POST	
+Asynchronous HTTP requests	httpclient.html#asynchronous-http-requests	 Asynchronous HTTP requests	
+SSL/TLS support	httpclient.html#ssl-tls-support	 SSL/TLS support	
+Timeouts	httpclient.html#timeouts	 Timeouts	
+Proxy	httpclient.html#proxy	 Proxy	
+Response	httpclient.html#Response	httpclient : Response	
+Proxy	httpclient.html#Proxy	httpclient : Proxy	
+MultipartEntries	httpclient.html#MultipartEntries	httpclient : MultipartEntries	
+MultipartData	httpclient.html#MultipartData	httpclient : MultipartData	
+ProtocolError	httpclient.html#ProtocolError	httpclient : ProtocolError	
+HttpRequestError	httpclient.html#HttpRequestError	httpclient : HttpRequestError	
+defUserAgent	httpclient.html#defUserAgent	httpclient : defUserAgent	
+HttpMethod	httpclient.html#HttpMethod	httpclient : HttpMethod	
+newProxy	httpclient.html#newProxy,string,string	httpclient : newProxy(url: string; auth = &quot;&quot;): Proxy	
+newMultipartData	httpclient.html#newMultipartData,	httpclient : newMultipartData(): MultipartData	
+add	httpclient.html#add,MultipartData,string,string,string,string	httpclient : add(p: var MultipartData; name, content: string; filename: string = nil;\n    contentType: string = nil)	
+add	httpclient.html#add,MultipartData,MultipartEntries	httpclient : add(p: var MultipartData; xs: MultipartEntries): MultipartData	
+newMultipartData	httpclient.html#newMultipartData,MultipartEntries	httpclient : newMultipartData(xs: MultipartEntries): MultipartData	
+addFiles	httpclient.html#addFiles,MultipartData,openArray[tuple[string,string]]	httpclient : addFiles(p: var MultipartData; xs: openArray[tuple[name, file: string]]): MultipartData	
+`[]=`	httpclient.html#[]=,MultipartData,string,string	httpclient : `[]=`(p: var MultipartData; name, content: string)	
+`[]=`	httpclient.html#[]=,MultipartData,string,tuple[string,string,string]	httpclient : `[]=`(p: var MultipartData; name: string;\n      file: tuple[name, contentType, content: string])	
+request	httpclient.html#request,string,string,string,string,Proxy	httpclient : request(url: string; httpMethod: string; extraHeaders = &quot;&quot;; body = &quot;&quot;;\n        sslContext = defaultSSLContext; timeout = - 1; userAgent = defUserAgent;\n        proxy: Proxy = nil): Response	
+request	httpclient.html#request,string,string,string,Proxy	httpclient : request(url: string; httpMethod = httpGET; extraHeaders = &quot;&quot;; body = &quot;&quot;;\n        sslContext = defaultSSLContext; timeout = - 1; userAgent = defUserAgent;\n        proxy: Proxy = nil): Response	
+get	httpclient.html#get,string,string,int,SSLContext,Proxy	httpclient : get(url: string; extraHeaders = &quot;&quot;; maxRedirects = 5;\n    sslContext: SSLContext = defaultSSLContext; timeout = - 1; userAgent = defUserAgent;\n    proxy: Proxy = nil): Response	
+getContent	httpclient.html#getContent,string,string,int,SSLContext,Proxy	httpclient : getContent(url: string; extraHeaders = &quot;&quot;; maxRedirects = 5;\n           sslContext: SSLContext = defaultSSLContext; timeout = - 1;\n           userAgent = defUserAgent; proxy: Proxy = nil): string	
+post	httpclient.html#post,string,string,string,int,SSLContext,Proxy,MultipartData	httpclient : post(url: string; extraHeaders = &quot;&quot;; body = &quot;&quot;; maxRedirects = 5;\n     sslContext: SSLContext = defaultSSLContext; timeout = - 1;\n     userAgent = defUserAgent; proxy: Proxy = nil; multipart: MultipartData = nil): Response	
+postContent	httpclient.html#postContent,string,string,string,int,SSLContext,Proxy,MultipartData	httpclient : postContent(url: string; extraHeaders = &quot;&quot;; body = &quot;&quot;; maxRedirects = 5;\n            sslContext: SSLContext = defaultSSLContext; timeout = - 1;\n            userAgent = defUserAgent; proxy: Proxy = nil;\n            multipart: MultipartData = nil): string	
+downloadFile	httpclient.html#downloadFile,string,string,SSLContext,Proxy	httpclient : downloadFile(url: string; outputFilename: string;\n             sslContext: SSLContext = defaultSSLContext; timeout = - 1;\n             userAgent = defUserAgent; proxy: Proxy = nil)	
+AsyncHttpClient	httpclient.html#AsyncHttpClient	httpclient : AsyncHttpClient	
+newAsyncHttpClient	httpclient.html#newAsyncHttpClient,int	httpclient : newAsyncHttpClient(userAgent = defUserAgent; maxRedirects = 5;\n                   sslContext = defaultSslContext): AsyncHttpClient	
+close	httpclient.html#close,AsyncHttpClient	httpclient : close(client: AsyncHttpClient)	
+request	httpclient.html#request,AsyncHttpClient,string,string,string	httpclient : request(client: AsyncHttpClient; url: string; httpMethod: string; body = &quot;&quot;): Future[\n    Response]	
+request	httpclient.html#request,AsyncHttpClient,string,string	httpclient : request(client: AsyncHttpClient; url: string; httpMethod = httpGET; body = &quot;&quot;): Future[\n    Response]	
+get	httpclient.html#get,AsyncHttpClient,string	httpclient : get(client: AsyncHttpClient; url: string): Future[Response]	
+post	httpclient.html#post,AsyncHttpClient,string,string,MultipartData	httpclient : post(client: AsyncHttpClient; url: string; body = &quot;&quot;; multipart: MultipartData = nil): Future[\n    Response]	

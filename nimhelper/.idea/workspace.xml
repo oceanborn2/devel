@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8962e308-1e0b-4361-8238-f45dfd807edc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/TheProjectArchitect.jpx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/TheProjectArchitect.jpx.local" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/admin/as.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/admin/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/admin/rmcore.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/admin/setperms.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/admin/tounix.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/Pa.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/batches.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/bmp2png.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/containers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/containers_links.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/document.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/documentation_container.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/folders.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/functional_domains.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/labels.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/memos.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/modele.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/param_container_types.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/param_document_primary_type.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/param_document_secondary_type.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/param_method_type.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/param_project_type.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/persons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/plugins.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/projects.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/releases.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/requirements.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/rights.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/roles" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/skills.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/data/teams.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/architecture" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/codegen.lyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/design/TheProjectArchitect.zargo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/design/codegen.zargo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/actions.lyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/actions.sgml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/actions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/analysis_documents.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/analysis_documents.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/architecture_overview.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/architecture_overview.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/biblio.bib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study.lyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/WARNINGS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/images.aux" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/images.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/images.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/images.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/initial_study.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/initial_study.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/labels.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node10.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node11.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node12.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node13.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node14.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node15.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node16.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node17.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node18.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node19.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node20.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node21.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node22.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node23.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node24.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node25.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node26.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node27.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node28.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node29.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node30.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node31.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node32.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node33.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node34.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/initial_study/node9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/layers.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/layers.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/preliminary_study.lyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/scm.lyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tohtml.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools.lyx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools.ps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/WARNINGS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/labels.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/node1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/node2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/node3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/node4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/tools.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/foundations/tools/tools.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/news/.xvpics/yahoo_search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/news/.xvpics/yahoo_search_source.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/news/yahoo_search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/news/yahoo_search_source.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/proj_mgt/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/xmldoc/Changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/xmldoc/Todolist.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/xmldoc/faqs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/xmldoc/stylesheets/Changelog.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/xmldoc/stylesheets/Todolist.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/doc/xmldoc/stylesheets/faq.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/imports/pgjdbc2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/requirements/fop.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/requirements/j2ee.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/requirements/junit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/requirements/perl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/requirements/postgres.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/requirements/requirements.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/requirements/root.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/requirements/tt.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/backup-policy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/broken-mail-servers.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/cvs-unix-howto.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/cvs_ssh_faq_sourceforge.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/display_doc.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/frs.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/mailing-lists-munging.php.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/netprojectadmingroup_id31997.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/scp_session" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/sfdoc/ssh_login" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/.xvpics/coolmetal_logo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/.xvpics/download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/.xvpics/glossy_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/.xvpics/glossy_blueback.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/.xvpics/glossy_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/.xvpics/maintitle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/.xvpics/maintitle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/bundle_site.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/cgi-bin/faq.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/.xvpics/glossy_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/.xvpics/glossy_smaller.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/archit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/blank.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/coolmetal_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/docs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/download.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/faq.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/glossy_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/glossy_blueback.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/glossy_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/glossy_smaller.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/goals.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/history.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/html_snippets.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/initial_study.7z" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/maintitle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/pmlinks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/projarch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/htdocs/tools.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/samples/css.sample" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/samples/ex1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/site/sources/faqs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/GenHandler.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/codegen.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/codegen.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/generate.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/generate2.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/handlers.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/lang/generic.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/lang/java.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/lang/sql.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/lang/typespecs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/codegen/utils/uniquenames.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/headers/headers.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/headers/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/images/closeFile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/images/help.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/images/openFile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/images/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/docmgr/DocumentManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/TheProjectArchitect.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/TheProjectArchitectApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/TheProjectArchitectMainframe.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/TheProjectArchitectMainframe_AboutBox.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/closeFile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/help.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/openFile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/run.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/security/.nbattrs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/present/security/LoginWindow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/app/pa/projmgr/ProjectManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/dbms/BaseKey.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/dbms/Connection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/dbms/ForeignKey.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/dbms/PrimaryKey.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/idgen/AbstractIdentGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/idgen/RandomIdentGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/idgen/SequentialIdentGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/metadata/FieldDesc.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/metadata/FieldInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/metadata/FieldsList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/metadata/IntegerDesc.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/tc/AbstractIdentGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/tc/IdentGeneratorTC.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/tc/RandomIdentGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/tc/SequentialIdentGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/tc/TestCase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/valuedomains/DataValueFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/notgenerated/ops/frm/valuedomains/ValueDomain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/auth/users.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/docsystem/document.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/docsystem/document_format.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/docsystem/folder.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/projmgt/batches.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/projmgt/persons.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/projmgt/project.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/projmgt/skills.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/busobj/projmgt/teams.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/services/projmgt.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/value_domains/document_status.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/value_domains/project_status.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/specs/value_domains/project_types.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/bobject.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/bobjectexc.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/cliserv.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/copyright.java.include" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/copyright.sql.include" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/dbobject.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/homeserv.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/remoteserv.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/sql_create_table.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/sql_insert.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/templates/valuedomain.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/web/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/web/footer.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/web/header.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TheProjectArchitect/src/web/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ebnf.ebnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ebnf.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grammar/nim.ebnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grammar/nim.peg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nim.peg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peg.peg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/xml.ebnf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/README.md" afterPath="$PROJECT_DIR$/../security/root/admin/ca/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/CAServerCerts.cert" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/CAServerCerts.cert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/CAUserCerts.cert" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/CAUserCerts.cert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/Server1CA.cert" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/Server1CA.cert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/Server2CA.cert" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/Server2CA.cert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/certmake.sh" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/certmake.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/certview.sh" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/certview.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.cert" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.cert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.psw" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.psw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.pub" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.pub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.srl" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_net.srl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.cert" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.cert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.psw" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.psw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.pub" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.pub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.srl" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server.srl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server_un.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_server_un.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_user.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_user.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_user.pub" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_user.pub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_user_un.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/domain_user_un.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/rootca.cnf" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/rootca.cnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.cert" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.cert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.cnf" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.cnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.psw" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.psw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.pub" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1.pub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1_un.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server1_un.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.cert" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.cert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.cnf" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.cnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.psw" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.psw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.pub" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2.pub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2_un.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/server2_un.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/serverca.cnf" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/serverca.cnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/top12.sh" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/top12.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user1.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user1.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user1.psw" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user1.psw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user1.pub" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user1.pub" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user1_un.key" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user1_un.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user2.psw" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/user2.psw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/userca.cnf" afterPath="$PROJECT_DIR$/../security/root/admin/ca/domain.net/userca.cnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/root/root.iml" afterPath="$PROJECT_DIR$/../security/root/root.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../security/security.iml" afterPath="$PROJECT_DIR$/../security/security.iml" />
+    </list>
+    <ignored path="nimhelper.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="nimhelper" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="nimblepkglist.nim" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/nimblepkglist.nim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sponsors.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/sponsors.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/nim.peg" />
+        <option value="$PROJECT_DIR$/xpath.ebnf" />
+        <option value="$PROJECT_DIR$/xml.ebnf" />
+        <option value="$PROJECT_DIR$/nim.ebnf" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="89" />
+    <option name="width" value="1715" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nimhelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nimhelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nimhelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/grammar" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/sbin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="nimhelper" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="nimhelper" />
+      <method />
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nimhelper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../Lexicography" value="1459703947143" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8962e308-1e0b-4361-8238-f45dfd807edc" name="Default" comment="" />
+      <created>1467125119041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1467125119041</updated>
+      <workItem from="1467125123997" duration="3855000" />
+      <workItem from="1467210370295" duration="293000" />
+      <workItem from="1467210734749" duration="2040000" />
+      <workItem from="1467212802238" duration="200000" />
+      <workItem from="1467213218486" duration="55000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6443000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="89" y="0" width="1715" height="1053" extended-state="4" />
+    <editor active="false" />
+    <layout>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25614876" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2498544" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/talk/dsl.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/talk/formatoptimizer.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/talk/hoisting.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/talk/tags.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/talk/quasiquote.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/unix_socket/client.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/unix_socket/server.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/allany.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/cgiex.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/maximum.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/keyval.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/keyval2.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/parsecfgex.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/statcsv.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/transff.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/tunit.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/examples/talk/lazyeval.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/manual/locking.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/mytest.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/manual.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="11" selection-start-line="15" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/actors.html" />
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/tut2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/tut1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/nimdoc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="231" column="21" selection-start-line="231" selection-start-column="21" selection-end-line="231" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/manual/stmts.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/nimfix.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/nimgrep.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/lib.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/spawn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/sets_fragment.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/manual/special_ops.txt" />
+    <entry file="file://$PROJECT_DIR$/hlp/manual/stmts.txt" />
+    <entry file="file://$PROJECT_DIR$/hlp/manual/compiler_msgs.txt" />
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/nep1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/koch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/subexes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/pegdocs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2115">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/manual/types.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/manual/procs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="680" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/links.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/documentation.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/community.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/learn.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/manual/special_ops.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/manual/threads.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/manual/templates.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/filelist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/nimblepkglist.nim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hlp/nimdoc/web/sponsors.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 2.7.11 (/usr/bin/python2.7) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Python 2.7.11 (/usr/bin/python2.7)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>nimhelper</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
