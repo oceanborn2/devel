@@ -3,18 +3,18 @@
 
 type
 
-  GraphStore = object of RootObj
+  GraphStore*[KT:SomeInteger] = object of RootObj
 
-  SparseGraphStore = object of GraphStore
+  SparseGraphStore*[KT:SomeInteger] = object of GraphStore[KT]
 
 
-  StringRec = object
+  StringRec* = object
 
   # 1 page = 4096 bytes
-  Chunk = array [1..64, byte]
-  Page  = array [1..64, Chunk]
+  Chunk* = array [1..64, byte]
+  Page*  = array [1..64, Chunk]
 
-  IncidenceMatrixStore = object of GraphStore
+  IncidenceMatrixStore* = object of GraphStore
     #directed*: bool
     bidirected*:bool
     nbVertices*:int

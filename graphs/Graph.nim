@@ -1,38 +1,29 @@
-import intsets, ropes, sequtils, algorithm, tables
-import graphimpl, serializer
+import intsets, ropes, sequtils, algorithm, tables, macros
+include GraphImpl, Serializer
 
 
-#[type
-    Node* = concept n
-        `==`(n, n) is bool
-
-    Graph* = concept g
-        var x: Node
-        distance(g, x, x) is float
 
 type
-  GraphNode[T] = object
-    data: T
-    outTransitions: seq[ref GraphNode]
-    incTransitions: seq[ref GraphNode]
 
-  Graph[T] = object
-    nodes: seq[ref GraphNode[T]]
+  TGraphKey* = distinct SomeInteger
 
-  [http://forum.nim-lang.org/t/2411](http://forum.nim-lang.org/t/2411)
+  TGraphObj*    = object of RootObj
+    id*: uint64 # 2^6=1.8*10^19 possible values
 
-
-]#
-
-type
-  GraphObj*    = object of RootObj
-    id*: uint64 # 2^64=1.8*10^19 possible values
-
-
-  PropertySet* = object of GraphObj
+  TPropertySet* = object of TGraphObj
     properties*: Table[string, string]
 
-  Graph*       = object of GraphObj
+  TBitmap* = distinct IntSet
+
+  TGraphFeatures*[KT: TBitmap | uint8 | uint16 | uint32 | uint64] = object
+    directed* : bool
+    hypegraph*: bool
+    keySize*  : int
+    depth*    : uint8
+
+  TGraph*[GS:GraphStore]       = object of TGraphObj
+
+    store: GS
 
     directed*:bool
       ## Is the graph directed?
@@ -44,47 +35,46 @@ type
     depth*: uint8
       ## For viewing in 3 dimensions as layers
 
-  Vertex*      = ref object of GraphObj
+  TVertex*      = ref object of TGraphObj
     ## A node (also known as Vertex)
 
-  Node* = Vertex
+  TNode* = TVertex
     ## Another name for the type Vertex
 
-  EdgeDirection* = enum dirSource, dirTarget
+  TEdgeDirection* = enum dirSource, dirTarget
     ## Direction for an edge
 
-  AbstractEdge*        = ref object of GraphObj
+  TAbstractEdge*        = ref object of TGraphObj
 
-  Edge* = ref object of AbstractEdge
+  TEdge* = ref object of TAbstractEdge
     #direction: EdgeDirection
-    source*: Vertex
-    target*: Vertex
+    source*: TVertex
+    target*: TVertex
 
-  HyperEdge* = ref object of AbstractEdge
-    vertices*: seq[Vertex]
-
-
+  THyperEdge* = ref object of TAbstractEdge
+    vertices*: seq[TVertex]
 
 
-method `[]`*(g:Graph)=
-  discard
 
-method addEdge*(g: Graph, s, t: Vertex, directed: bool)=
-  discard
-
-method addEdge*(g: Graph, edges: openarray[Vertex])=
-  discard
-
-method direction*(e: Edge)=
-  discard
-
-iterator vertices*(g: Graph) : seq[Vertex]=
-  discard
-
-iterator edges*(g: Graph): seq[Edge] =
+proc newGraph(keyBitSize:uint8, directed: bool=false, hypergraph: bool=false, depth: uint8=1)=
   discard
 
 
+method `[]`*(g:TGraph)=
+  discard
 
+method addEdge*(g: TGraph, s, t: TVertex, directed: bool)=
+  discard
 
+method addEdge*(g: TGraph, edges: openarray[TVertex])=
+  discard
+
+method direction*(e: TEdge)=
+  discard
+
+iterator vertices*(g: TGraph) : seq[TVertex]=
+  discard
+
+iterator edges*(g: TGraph): seq[TEdge] =
+  discard
 
