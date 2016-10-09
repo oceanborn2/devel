@@ -37,44 +37,72 @@ sub process {
 	} else { die "should not be here"; }
 }
 
-sub getline {
-	my $line=<DATA>;
-	if (defined($line)) {
-		chomp($line);
-	}
-	$line;
-}
-
 my $out=undef;
-my $line=getline;
+my $page = -1;
+my $agence = "";
+my $datesline = "";
+my %vars;
+
+my ($d1,$m1,$y1)='';
+my ($d2,$m2,$y2)='';
+
+my $line=<>;
 while (defined($line)) {
-	if ($line =~ m/^\d+(\. )\d+/) {
-		if (defined($out)) {
-			process($out);
-			$out=undef;			
-		}	
-		$out = ${line};					
-	} else {
-		$out = "${out}${line}";
-	}	 
-	$line=getline; 
+    chomp($line);
+    my $l = length($line);
+    if ($line =~ m/RELEVE DE COMPTE/og) {
+        if ($page < 0) {
+            $datesline = <>;
+            $datesline =~ s/^\s+//og;
+            $datesline =~  s/(?:du|au) //og;
+            my @fields = split(/\s+/, $datesline);
+            ($d1,$m1,$y1,$d2,$m2,$y2) = @fields;
+
+            $line=<>;
+            $line =~ m/agence\s+:\s+(\w+)/og;
+            $vars{'AGENCE'} = $1;
+#            print("!!", @fields);
+            #($d1,$m1,$y1,$d2,$m2,$y2) =~ m/du\s+(\d+)\s+(\w+)\s+(\d+)\s+au\s+(\d+)\s+(\w+)\s+(\d+)/og; # du 21 janvier 2016 au 21 février 2016
+            #print ("$d1 $m1 $y1\n");
+            #print ("$d2 $m2 $y2\n");
+        }
+        $page++;
+    }
+    if ($page < 0) {
+#        if ($line=~ m/agence\s+\:\s+(\w+)/ogi) {
+#            print("**");
+#            $vars{'AGENCE'} = $1;
+        }
+        if ($line=~ m/(RIB|IBAN|BIC)\s+:\s+/og) {
+            my $var = $1;
+            $line =~  s/$var\s+:\s+//oge;
+            $line = substr($line, 0, 55);
+            $vars{$var}  = $line;
+        }
+    } else {
+        if ($line =~ m/SOLDE\s+(DEBITEUR|CREDITEUR)/og) {
+
+        }
+
+#        print ("$line\n");
+#        if ($line =~ m/^\d+(\. )\d+/) {
+#            if (defined($out)) {
+#                process($out);
+#                $out=undef;
+#            }
+#            $out = ${line};
+#        } else {
+#            $out = "${out}${line}";
+#        }
+        $line=<>;
+    }
 }
 
-if (defined($out)) {
-		process($out);
-}
+#print($vars{'AGENCE'})
+#print($vars{'IBAN'})
+#print($vars{'BIC'})
+#map { print  } each %vars; #"Agence: ${vars{'AGENCE'}}");
 
-
-__DATA__
-07. 12 VIRT RECU M. MUNEROT PASCAL 07.12 20.000,00
-09. 12 TIRAGE DE CHEQUES EMISSION CHEQUE DE 09.12
-BANQUE 5787115 18.338,50
-04. 01 ECHEANCE PRET 01313 60553567 04.01 421,29
-14. 01 VIRT RECU MME MUNEROT SANDRINE 14.01 24.000,00
-04. 02 ECHEANCE PRET 01313 60553567 04.02 384,64
-04. 02 ECHEANCE PRET 01313 60557641 04.02 422,29
-04. 02 VIREMENT RECU TIERS M OU MME PASCAL 04.02
-MUNEROT 177VIREMENT
-1ECH. 04022011 ND 20110009213-4-S 1.000,00
-07. 02 CHEQUE 1332361 07.02 12.350,00
-
+print ("$d1 $m1 $y1\n");
+print ("$d2 $m2 $y2\n");
+print ("${vars{'AGENCE'}}\n");
