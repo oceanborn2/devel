@@ -5,7 +5,7 @@ use warnings FATAL => 'all';
 
 my $yd = 2015; # année pour date d'opération
 my $ym = $yd;  # année pour date de valeur
-my @posit = qw(valtech emis paie rembourst); # mots clés pour inverser le signe vers positif (négatif par défaut)
+my @posit = qw(valtech recu paie rembourst); # mots clés pour inverser le signe vers positif (négatif par défaut)
 my $pmd = undef; # mois précédent de l'opération
 my $pmv = undef; # mois précédent de la date de valeur
 my $lineno = 1;
@@ -14,7 +14,7 @@ while (defined(my $line = <>)) {
     chomp($line);
     while ($line =~ m/\r/og) { $line =~ s/\r//og; }
     while ($line =~ m/\//og)  { $line =~ s/\// /og; }
-    while ($line =~ m/[-|!&_()\*\\]/og) { $line =~ s/[-|!&_()\*\\]//og; } # use tr//
+    #while ($line =~ m/[;-!&_()\*\\]/og) { $line =~ s/[;-!&_()\*\\]//og; } # use tr//
     while ($line =~ m/\s{2,}/og) { $line =~ s/\s{2,}/ /og; }
 
     # nettoyage
@@ -32,6 +32,7 @@ while (defined(my $line = <>)) {
     my @fields = split (/\s+/, $line);
     my $dtop = $fields[0];
     my $dtval = undef;
+    #print(@fields); print("\r\n");
     shift @fields;
 
     my $idx = 0;
@@ -45,11 +46,13 @@ while (defined(my $line = <>)) {
 
             # calcul du signe: négatif par défaut
             # recherche de mots clés pour inversion vers positif
-            my $sign = - 1;
-            my $llc = lc join(' ', grep { defined($_) } @fields);
+            my $sign = '-';
+            my $llc = lc join(' ', (grep { defined($_) } @fields));
             my @found = grep { $llc =~ $_ } @posit;
-            $sign = 1 unless (scalar (@found) == 0);
-            $amount = $amount * $sign;
+            my $cnt = scalar (@found);
+            #print ("${cnt} llc:${llc}\r\n");
+            $sign = '+' unless ($cnt == 0);
+            $amount = "${sign}${amount}";
         } elsif ($f =~ m/(\d+\.\d+)/og) {
             $dtval = $1;
             $fields[$idx] = undef;
@@ -63,9 +66,9 @@ while (defined(my $line = <>)) {
         if ($pmd == 12 && $dtopm == 1) {
             $yd++;
         }
-        $pmd = $dtopm;
     }
-    $dtop = "${dtopd}-${dtopm}-${yd}";
+    $pmd = $dtopm;
+    $dtop = "${dtopd}/${dtopm}/${yd}";
 
     # traitement passage de l'année en se basant sur le mois précédent (date de valeur)
     if (defined($dtval)) {
@@ -74,15 +77,15 @@ while (defined(my $line = <>)) {
             if ($pmv == 12 && $dtvalm == 1) {
                 $ym++;
             }
-            $pmv = $dtvalm;
         }
-        $dtval = "${dtvald}-${dtvalm}-${ym}";
+        $pmv = $dtvalm;
+        $dtval = "${dtvald}/${dtvalm}/${ym}";
     } else {
-        print("E|dtval|$lineno|$line");
+        print("E;dtval;$lineno;$line");
     }
-    my $l = join(' ', grep { defined($_) } @fields); # reconstitution du libellé
-
-    print ("G|${lineno}|${dtop}|${dtval}|${amount}|${l}\r\n");
+    my $l = join(' ', (grep { defined($_) } @fields)); # reconstitution du libellé
+    
+    print ("G;${lineno};${dtop};${dtval};${amount};${l}\r\n");
 
     $lineno++;
 }
