@@ -1,8 +1,33 @@
-object Form1: TForm1
+object MainForm: TMainForm
   Left = 877
   Height = 240
   Top = 221
   Width = 320
-  Caption = 'Form1'
+  BorderIcons = [biSystemMenu, biHelp]
+  Caption = 'Clock'
+  ClientHeight = 240
+  ClientWidth = 320
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -23
+  Font.Name = 'Arial'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  FormStyle = fsSystemStayOnTop
+  OnCreate = FormCreate
   LCLVersion = '1.6.4.0'
+  object TimeLabel: TLabel
+    Left = 0
+    Height = 1
+    Top = 0
+    Width = 320
+    Align = alTop
+    Alignment = taCenter
+    ParentColor = False
+    OnClick = TimeLabelClick
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    left = 86
+    top = 95
+  end
 end
