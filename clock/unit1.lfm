@@ -1,12 +1,12 @@
 object MainForm: TMainForm
-  Left = 877
-  Height = 240
-  Top = 221
-  Width = 320
+  Left = 868
+  Height = 263
+  Top = 210
+  Width = 214
   BorderIcons = [biSystemMenu, biHelp]
   Caption = 'Clock'
-  ClientHeight = 240
-  ClientWidth = 320
+  ClientHeight = 263
+  ClientWidth = 214
   Font.CharSet = ANSI_CHARSET
   Font.Height = -23
   Font.Name = 'Arial'
@@ -14,20 +14,168 @@ object MainForm: TMainForm
   Font.Quality = fqDraft
   FormStyle = fsSystemStayOnTop
   OnCreate = FormCreate
+  PopupMenu = PopupMenu1
   LCLVersion = '1.6.4.0'
-  object TimeLabel: TLabel
+  object MainPanel: TPanel
     Left = 0
-    Height = 1
+    Height = 120
+    Top = 88
+    Width = 214
+    Align = alTop
+    ClientHeight = 120
+    ClientWidth = 214
+    TabOrder = 0
+    object LogMemo: TMemo
+      Left = 1
+      Height = 118
+      Top = 1
+      Width = 212
+      Align = alClient
+      Lines.Strings = (
+        'LogMemo'
+      )
+      ScrollBars = ssAutoVertical
+      TabOrder = 0
+    end
+  end
+  object CurrentTimeLabel: TLabel
+    Left = 0
+    Height = 26
     Top = 0
-    Width = 320
+    Width = 214
     Align = alTop
     Alignment = taCenter
+    Caption = 'CurrentTimeLabel'
     ParentColor = False
-    OnClick = TimeLabelClick
   end
-  object Timer1: TTimer
-    OnTimer = Timer1Timer
-    left = 86
-    top = 95
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 29
+    Top = 234
+    Width = 214
+    Panels = <>
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 26
+    Width = 214
+    Caption = 'ToolBar1'
+    TabOrder = 2
+    object ResetBtn: TSpeedButton
+      Left = 1
+      Height = 22
+      Top = 2
+      Width = 47
+      Caption = 'Reset'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = ResetBtnClick
+      ParentFont = False
+    end
+    object StartBtn: TSpeedButton
+      Left = 48
+      Height = 22
+      Top = 2
+      Width = 33
+      Caption = 'Start'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object StopBtn: TSpeedButton
+      Left = 81
+      Height = 22
+      Top = 2
+      Width = 43
+      Caption = 'Stop'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object TourBtn: TSpeedButton
+      Left = 124
+      Height = 22
+      Top = 2
+      Width = 37
+      Caption = 'Tour'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object Expand: TSpeedButton
+      Left = 161
+      Height = 22
+      Top = 2
+      Width = 53
+      Caption = 'Expand'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 36
+    Top = 52
+    Width = 214
+    Align = alTop
+    ClientHeight = 36
+    ClientWidth = 214
+    TabOrder = 3
+    object ChronoLabel: TLabel
+      Left = 1
+      Height = 34
+      Top = 1
+      Width = 212
+      Align = alClient
+      Alignment = taCenter
+      Caption = 'ChronoLabel'
+      ParentColor = False
+    end
+  end
+  object CurrentTime: TTimer
+    OnTimer = CurrentTimeTimer
+    OnStartTimer = CurrentTimeStartTimer
+    OnStopTimer = CurrentTimeStopTimer
+    left = 40
+    top = 208
+  end
+  object PopupMenu1: TPopupMenu
+    left = 8
+    top = 208
+    object StayOnTopMnu: TMenuItem
+      Caption = 'Stay on top'
+      Checked = True
+      OnClick = StayOnTopMnuClick
+    end
+    object ClearLogMnu: TMenuItem
+      Caption = 'Clear this log'
+      OnClick = ClearLogMnuClick
+    end
+    object SaveLogMnu: TMenuItem
+      Caption = 'Save this log'
+      OnClick = SaveLogMnuClick
+    end
+  end
+  object ChronoTimer: TTimer
+    OnTimer = ChronoTimerTimer
+    left = 64
+    top = 208
   end
 end
