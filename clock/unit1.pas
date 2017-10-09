@@ -16,7 +16,7 @@ type
     ChronoLabel: TLabel;
     ClearLogMnu: TMenuItem;
     Expand: TSpeedButton;
-    MainPanel: TPanel;
+    LogPanel: TPanel;
     LogMemo: TMemo;
     Panel1: TPanel;
     ResetBtn: TSpeedButton;
@@ -32,17 +32,17 @@ type
     CurrentTime: TTimer;
     TourBtn: TSpeedButton;
 
-    procedure ClearChrono;
+    procedure ClearChrono(EnableChrono: boolean);
     procedure ChronoTimerTimer(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure ClearLogMnuClick(Sender: TObject);
     procedure ResetBtnClick(Sender: TObject);
     procedure SaveLogMnuClick(Sender: TObject);
+    procedure StartBtnClick(Sender: TObject);
     procedure StayOnTopMnuClick(Sender: TObject);
-
-    procedure CurrentTimeStartTimer(Sender: TObject);
-    procedure CurrentTimeStopTimer(Sender: TObject);
     procedure CurrentTimeTimer(Sender: TObject);
+    procedure StopBtnClick(Sender: TObject);
+    procedure TourBtnClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -51,8 +51,8 @@ type
 
 var
   MainForm: TMainForm;
-  chronoStart: integer;
-  chronoStop: integer;
+  chronoStart: double;
+  chronoStop: double;
 
 
 implementation
@@ -61,42 +61,29 @@ implementation
 
 { TMainForm }
 
+procedure TMainForm.ClearChrono(EnableChrono: boolean);
+begin
+  chronoStart := Time;
+  chronoStop := chronoStart;
+  ChronoLabel.Caption := '00:00:00';
+  ChronoTimer.Enabled := EnableChrono;
+end;
+
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
   Width := ResetBtn.Width + StartBtn.Width + StopBtn.Width + TourBtn.Width +
-    Expand.Width;
+    Expand.Width + 2;
   // Height:=48;
-  ClearChrono;
+  ClearChrono(False);
   LogMemo.Clear;
+  CurrentTimeLabel.Caption := ''; //TimeToStr(Time);
+end;
+
+procedure TMainForm.CurrentTimeTimer(Sender: TObject);
+begin
   CurrentTimeLabel.Caption := TimeToStr(Time);
 end;
 
-procedure TMainForm.ClearChrono;
-begin
-  chronoStart := 0;
-  chronoStop := 0;
-  ChronoLabel.Caption := '00:00:00';
-end;
-
-procedure TMainForm.ChronoTimerTimer(Sender: TObject);
-begin
-
-end;
-
-procedure TMainForm.ClearLogMnuClick(Sender: TObject);
-begin
-  LogMemo.Clear;
-end;
-
-procedure TMainForm.ResetBtnClick(Sender: TObject);
-begin
-  ClearChrono;
-end;
-
-procedure TMainForm.SaveLogMnuClick(Sender: TObject);
-begin
-
-end;
 
 procedure TMainForm.StayOnTopMnuClick(Sender: TObject);
 begin
@@ -112,20 +99,57 @@ begin
   end;
 end;
 
-procedure TMainForm.CurrentTimeStartTimer(Sender: TObject);
+// Chrono management
+procedure TMainForm.ChronoTimerTimer(Sender: TObject);
 begin
+  if ChronoTimer.Enabled = True then
+  begin
+    ChronoLabel.Caption := TimeToStr(Time - ChronoStart);
+  end;
+end;
+
+procedure TMainForm.ResetBtnClick(Sender: TObject);
+begin
+  ClearChrono(True);
+end;
+
+
+
+
+procedure TMainForm.StartBtnClick(Sender: TObject);
+begin
+  ClearChrono(True);
   StatusBar1.Caption := 'Started';
 end;
 
-procedure TMainForm.CurrentTimeStopTimer(Sender: TObject);
+procedure TMainForm.StopBtnClick(Sender: TObject);
 begin
+  ClearChrono(False);
   StatusBar1.Caption := 'Stopped';
-  CurrentTimeLabel.Caption := '00:00:00';
 end;
 
-procedure TMainForm.CurrentTimeTimer(Sender: TObject);
+procedure TMainForm.TourBtnClick(Sender: TObject);
+var
+  TourTime: double;
 begin
-  CurrentTimeLabel.Caption := TimeToStr(Time);
+  TourTime := Time;
+  LogMemo.Append(TimeToStr(TourTime) + ' => ' + TimeToStr(tourTime - chronoStop));
 end;
+
+procedure TMainForm.ClearLogMnuClick(Sender: TObject);
+begin
+  LogMemo.Clear;
+end;
+
+procedure TMainForm.SaveLogMnuClick(Sender: TObject);
+begin
+
+end;
+
+
+// StatusBar1.Caption := 'Started';
+// ChronoTimer.Enabled := True;
+// ChronoStart := Time;
+// ChronoStop := 0;
 
 end.

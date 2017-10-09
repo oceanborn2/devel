@@ -16,7 +16,7 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   PopupMenu = PopupMenu1
   LCLVersion = '1.6.4.0'
-  object MainPanel: TPanel
+  object LogPanel: TPanel
     Left = 0
     Height = 120
     Top = 88
@@ -31,9 +31,15 @@ object MainForm: TMainForm
       Top = 1
       Width = 212
       Align = alClient
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
       Lines.Strings = (
         'LogMemo'
       )
+      ParentFont = False
       ScrollBars = ssAutoVertical
       TabOrder = 0
     end
@@ -87,6 +93,7 @@ object MainForm: TMainForm
       Font.Name = 'Arial'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnClick = StartBtnClick
       ParentFont = False
     end
     object StopBtn: TSpeedButton
@@ -100,6 +107,7 @@ object MainForm: TMainForm
       Font.Name = 'Arial'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnClick = StopBtnClick
       ParentFont = False
     end
     object TourBtn: TSpeedButton
@@ -113,6 +121,7 @@ object MainForm: TMainForm
       Font.Name = 'Arial'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
+      OnClick = TourBtnClick
       ParentFont = False
     end
     object Expand: TSpeedButton
@@ -145,14 +154,20 @@ object MainForm: TMainForm
       Width = 212
       Align = alClient
       Alignment = taCenter
+      AutoSize = False
       Caption = 'ChronoLabel'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -20
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
       ParentColor = False
+      ParentFont = False
+      OptimalFill = True
     end
   end
   object CurrentTime: TTimer
     OnTimer = CurrentTimeTimer
-    OnStartTimer = CurrentTimeStartTimer
-    OnStopTimer = CurrentTimeStopTimer
     left = 40
     top = 208
   end
@@ -174,6 +189,7 @@ object MainForm: TMainForm
     end
   end
   object ChronoTimer: TTimer
+    Enabled = False
     OnTimer = ChronoTimerTimer
     left = 64
     top = 208
