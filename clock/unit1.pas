@@ -20,6 +20,7 @@ type
     LogMemo: TMemo;
     Panel1: TPanel;
     ResetBtn: TSpeedButton;
+    SaveDialog1: TSaveDialog;
     SaveLogMnu: TMenuItem;
     StartBtn: TSpeedButton;
     StatusBar1: TStatusBar;
@@ -143,13 +144,10 @@ end;
 
 procedure TMainForm.SaveLogMnuClick(Sender: TObject);
 begin
-
+  if SaveDialog1.Execute then
+  begin
+       //TODO
+  end;
 end;
-
-
-// StatusBar1.Caption := 'Started';
-// ChronoTimer.Enabled := True;
-// ChronoStart := Time;
-// ChronoStop := 0;
 
 end.
