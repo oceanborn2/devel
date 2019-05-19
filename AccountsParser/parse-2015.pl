@@ -52,7 +52,7 @@ sub monthStrToNum {
 
 sub isDate {
     my $ds = shift;
-    return defined($ds =~  m/\d+\.\d+);
+    return defined($ds =~  m/\d+\.\d+)/);
 }
 
 my $out=undef;
