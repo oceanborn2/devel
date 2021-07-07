@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="EDCIR.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="EDCI"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="231"/>
+        <CursorPos Y="90"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="DISK_MON.PAS"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="94"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\software\lazarus\components\ideintf\componenteditors.pas"/>
+        <UnitName Value="ComponentEditors"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="441"/>
+        <CursorPos X="28" Y="451"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\software\lazarus\components\ideintf\dbpropedits.pas"/>
+        <UnitName Value="DBPropEdits"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="76"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\software\lazarus\fpc\3.2.0\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="420"/>
+        <CursorPos X="14" Y="700"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\software\lazarus\components\ideintf\actionseditorstd.pas"/>
+        <UnitName Value="ActionsEditorStd"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="93"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="C:\software\lazarus\fpc\3.2.0\source\rtl\objpas\classes\classesh.inc"/>
+      </Position1>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

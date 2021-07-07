@@ -1,6 +1,3 @@
-
-
-
 Program Queens_Problem;
 Uses Crt;
 Const   MaxDVar = 16;
