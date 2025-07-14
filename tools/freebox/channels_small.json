@@ -1,0 +1,294 @@
+[
+    {
+        "image": {
+            "src": "https://freebox.cdn.scw.iliad.fr/915_1aa7bd4f42.png",
+            "alt": "BFM Lyon logo",
+            "title": "BFM Lyon"
+        },
+        "details": {
+            "id": 5308,
+            "channelNumber": 328,
+            "title": "BFM Lyon",
+            "description": "<p> \n </p>",
+            "price": 1.23,
+            "isPriceStartingAt": false,
+            "screenResolution": [
+                "SD"
+            ],
+            "oqee_id": "330",
+            "freebox_id": "267",
+            "freeboxs": [
+                {
+                    "name": "Freebox Delta (player Devialet)",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_delta_player_8ee46fa2fb.svg",
+                    "order": "1",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Delta (player TV Free 4K)",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_v8_player_bf17d7ac0f.svg",
+                    "order": "2",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Pop",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_v8_player_1_81bb5a2131.svg",
+                    "order": "3",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Delta (avec Apple TV 4K)",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/Apple_TV_4_K_illu_01_58e1c1c403_753c848f88.svg",
+                    "order": "4",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Pop (avec Apple TV 4K)",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/Apple_TV_4_K_illu_01_5ed8f9f74d_ef72d4efcd.svg",
+                    "order": "5",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Révolution",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_revolution_player_3471e55759.svg",
+                    "order": "6",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Mini 4K",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_mini4k_player_340a5f28f4.svg",
+                    "order": "7",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox One",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_one_8e3b43122a.svg",
+                    "order": "8",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Crystal",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_crystal_player_fb571c6934.svg",
+                    "order": "9",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Ultra",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_v8_player_bf17d7ac0f.svg",
+                    "order": "10",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Ultra Essentiel",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_v8_player_bf17d7ac0f.svg",
+                    "order": "11",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Révolution Light",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_revolution_player_3471e55759.svg",
+                    "order": "12",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Forfait Free 5G / Série Free",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/smartphone_88e8c412aa.svg",
+                    "order": "13",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Box 5G",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ico_Box5g_68557183f1.svg",
+                    "order": "14",
+                    "option": false,
+                    "extraText": "",
+                    "isVisible": true
+                }
+            ],
+            "replays": [
+                {
+                    "id": 139,
+                    "name": "BFM Régions",
+                    "src": "https://freebox.cdn.scw.iliad.fr/medium_RMCBFM_Region_N_Oir_34fa4aa1f5.png"
+                },
+                {
+                    "id": 10,
+                    "name": "BFM TV",
+                    "src": "https://freebox.cdn.scw.iliad.fr/medium_RMCBFM_Noir_686ca25d5a.png"
+                }
+            ],
+            "categories": [
+                "Locales et Régionales"
+            ],
+            "packs": []
+        }
+    },
+    {
+        "image": {
+            "src": "https://freebox.cdn.scw.iliad.fr/medium_Euro_D_1_978f7767d0.png",
+            "alt": "Euro D logo",
+            "title": "Euro D"
+        },
+        "details": {
+            "id": 5437,
+            "channelNumber": 598,
+            "title": "Euro D",
+            "description": "<p>La version internationale de la chaîne Kanal D\nEuro D, chaîne turque généraliste ayant l'une des plus grosses audiences du pays, propose des émissions très variées.\nOn y trouvera des programmes d'actualité, des jeux télévisés, du sport, des talk-shows et bien d'autres divertissements.\nL'émission la plus connue de cette chaîne, dont certains des programmes sont exportés, est \"Le Mari étranger\".</p>",
+            "price": 2.4,
+            "isPriceStartingAt": false,
+            "screenResolution": [
+                "SD"
+            ],
+            "oqee_id": "484",
+            "freebox_id": "463",
+            "freeboxs": [
+                {
+                    "name": "Freebox Delta (player Devialet)",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_delta_player_8ee46fa2fb.svg",
+                    "order": "1",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Delta (player TV Free 4K)",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_v8_player_bf17d7ac0f.svg",
+                    "order": "2",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Pop",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_v8_player_1_81bb5a2131.svg",
+                    "order": "3",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Delta (avec Apple TV 4K)",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/Apple_TV_4_K_illu_01_58e1c1c403_753c848f88.svg",
+                    "order": "4",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Pop (avec Apple TV 4K)",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/Apple_TV_4_K_illu_01_5ed8f9f74d_ef72d4efcd.svg",
+                    "order": "5",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Révolution",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_revolution_player_3471e55759.svg",
+                    "order": "6",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Mini 4K",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_mini4k_player_340a5f28f4.svg",
+                    "order": "7",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox One",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_one_8e3b43122a.svg",
+                    "order": "8",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Crystal",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_crystal_player_fb571c6934.svg",
+                    "order": "9",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Ultra",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_v8_player_bf17d7ac0f.svg",
+                    "order": "10",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Ultra Essentiel",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_v8_player_bf17d7ac0f.svg",
+                    "order": "11",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Freebox Révolution Light",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ic_revolution_player_3471e55759.svg",
+                    "order": "12",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                },
+                {
+                    "name": "Box 5G",
+                    "picto": "https://freebox.cdn.scw.iliad.fr/ico_Box5g_68557183f1.svg",
+                    "order": "14",
+                    "option": true,
+                    "extraText": "",
+                    "isVisible": true
+                }
+            ],
+            "replays": [],
+            "categories": [
+                "Internationales et Étrangères"
+            ],
+            "packs": [
+                {
+                    "id": 252,
+                    "name": "Türk",
+                    "src": "https://freebox.cdn.scw.iliad.fr/large_Logo_le_bouquet_Tuerk_4de91ad796_2a0eef9a08.png"
+                },
+                {
+                    "id": 253,
+                    "name": "Türk+",
+                    "src": "https://freebox.cdn.scw.iliad.fr/medium_Unknown_27082efa94_eee4be6b91.png"
+                }
+            ]
+        }
+    }
+  ]

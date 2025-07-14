@@ -1,0 +1,38 @@
+[source, bash]
+----
+jq '.[].details.channelNumber,.[].details.title,.[].details.description' channels.json
+----
+
+[source, bash]
+----
+jq ".[].details | .channelNumber" channels.json
+----
+
+[source, bash]
+----
+jq ".[].details | .channelNumber, .title,.description" channels.json
+----
+
+[source, bash]
+----
+jq ".[].details | .channelNumber, .title,.description | tostring" channels.json
+----
+
+
+#jq ".[2].details | .channelNumber, .title,.description | tostring" channels.json
+
+#jq '.[2].details | .channelNumber), .title,.description | tostring | join(" ")' channels.json
+
+. Iterate over all the list entries and build flat object with simple attributes
+[source, bash]
+----
+jq '.[] |
+{
+    logo: .image.src,
+    name: .details.title,
+    desc: .details.description,
+    price: .details.price,
+    cat: .details.categories
+}' channels.json > channels_out.json
+----
+

@@ -1,0 +1,41 @@
+[{
+  "name": "Généraliste / TNT",
+  "description": "Chaînes Généralistes/TNT",
+  "weight": 0
+}, {
+  "name": "Cinéma, Séries et Divertissement ",
+  "description": "Cinéma, Séries et Divertissement ",
+  "weight": 1
+}, {
+  "name": "Découverte et Style de vie ",
+  "description": "Découverte et Style de vie ",
+  "weight": 1
+}, {
+  "name": "Informations",
+  "description": "informations",
+  "weight": 1
+}, {
+  "name": "Internationales et Étrangères",
+  "description": "Internationales et Étrangères",
+  "weight": 1
+}, {
+  "name": "Jeunesse ",
+  "description": "Jeunesse",
+  "weight": 1
+}, {
+  "name": "Locales et Régionales",
+  "description": "Locales et Régionales",
+  "weight": 1
+}, {
+  "name": "Musique",
+  "description": "musique",
+  "weight": 1
+}, {
+  "name": "Sport",
+  "description": "sport",
+  "weight": 1
+}, {
+  "name": "Adulte",
+  "description": "adulte",
+  "weight": 99
+}]
