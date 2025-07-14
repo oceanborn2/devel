@@ -1,6 +1,0 @@
-CmdLineKind	parseopt.html#CmdLineKind	parseopt : CmdLineKind	
-OptParser	parseopt.html#OptParser	parseopt : OptParser	
-initOptParser	parseopt.html#initOptParser,string	parseopt : initOptParser(cmdline = &quot;&quot;): OptParser	
-next	parseopt.html#next,OptParser	parseopt : next(p: var OptParser)	
-cmdLineRest	parseopt.html#cmdLineRest,OptParser	parseopt : cmdLineRest(p: OptParser): TaintedString	
-getopt	parseopt.html#getopt.i,	parseopt : getopt(): tuple[kind: CmdLineKind, key, val: TaintedString]	

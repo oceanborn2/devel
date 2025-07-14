@@ -1,2 +1,0 @@
-fget	util.html#fget,Table[K,V],K	util : fget[K, V](self: Table[K, V]; key: K): V	
-formatStr	util.html#formatStr.t,expr,expr,expr	util : formatStr(howExpr, namegetter, idgetter: expr): expr	

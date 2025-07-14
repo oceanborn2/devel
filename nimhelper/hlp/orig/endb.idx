@@ -1,7 +1,0 @@
-Embedded Nim Debugger (ENDB) User Guide	endb.html
-General Commands	endb.html#general-commands	 General Commands	
-Executing Commands	endb.html#executing-commands	 Executing Commands	
-Breakpoint Commands	endb.html#breakpoint-commands	 Breakpoint Commands	
-The breakpoint pragma	endb.html#breakpoint-commands-the-breakpoint-pragma	  The <tt class="docutils literal"><span class="pre">breakpoint</span></tt> pragma	
-The watchpoint pragma	endb.html#breakpoint-commands-the-watchpoint-pragma	  The <tt class="docutils literal"><span class="pre">watchpoint</span></tt> pragma	
-Data Display Commands	endb.html#data-display-commands	 Data Display Commands	

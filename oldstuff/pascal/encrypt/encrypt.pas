@@ -15,9 +15,9 @@ Type
 
      Banner = Object
               F       : File;    {variable fichier}
-              Z       : Char;    {caractäre intermÇdiaire}
+              Z       : Char;    {caract√®re interm‚Äödiaire}
               VChem   : String;  {ancien chemin}
-              Chemin  : DirStr;  {chemin d'accäs au fichier}
+              Chemin  : DirStr;  {chemin d'acc√®s au fichier}
               Pass    : String;  {mot de passe}
               Fich    : String;  {nom du fichier}
               NomFich : NameStr; {nom du fichier pour FSplit}
@@ -25,47 +25,47 @@ Type
               Posit   : Longint; {position dans le fichier}
               P       : ^AP;     {pointeur sur le buffer}
               L       : Integer; {longueur du password}
-              Fait    : Longint; {compte le nombre d'octets cryptÇs}
+              Fait    : Longint; {compte le nombre d'octets crypt‚Äös}
               Procedure Banner;  {message d'invite}
               Procedure IfDosError; {affiche une erreur DOS}
               End;
 
-       {mÇthode traditionnelle}
+       {m√©thode traditionnelle}
        Trad = Object(Banner)
               Procedure Terminate;   {crypte le dernier bloc}
               Procedure Crypte_1;    {crypte un bloc}
-              Procedure Crypte;      {initialise la procÇdure de cryptage}
+              Procedure Crypte;      {initialise la proc√©dure de cryptage}
               End;
 
-       {mÇthode Çtendue}
+       {m√©thode √©tendue}
        Eten = Object(Trad)
               Procedure Terminate;   {crypte le dernier bloc}
               Procedure Crypte_1;    {crypte un bloc}
-              Procedure Crypte;      {initialise la procÇdure de cryptage}
+              Procedure Crypte;      {initialise la proc√©dure de cryptage}
               End;
 
-      {mÇthode compläte}
+      {m‚Äöthode compl√®te}
       Compl = Object(Eten)
               Procedure TerminateC; {crypte le dernier bloc}
               Procedure CrypteC_1;  {crypte un bloc}
-              Procedure CrypteC;    {initialise la procÇdure de cryptage}
-              Procedure TerminateD; {dÇcrypte le dernier bloc}
-              Procedure CrypteD_1;  {dÇcrypte un bloc}
-              Procedure CrypteD;    {initialise la procÇdure de dÇcryptage}
+              Procedure CrypteC;    {initialise la proc√©dure de cryptage}
+              Procedure TerminateD; {d√©crypte le dernier bloc}
+              Procedure CrypteD_1;  {d√©crypte un bloc}
+              Procedure CrypteD;    {initialise la proc√©dure de d√©cryptage}
               End;
 
      Crypte = Object(Compl)
               Fil : Array [1..8] of String;  {liste des fichiers}
-              Procedure Option; {sÇlection du mode de cryptage ou du mode menu}
+              Procedure Option; {s√©lection du mode de cryptage ou du mode menu}
               Procedure Init;        {initialise le programme}
-              Procedure Alloue;      {alloue 64 ko de mÇmoire}
-              Procedure Libere;      {libäre la mÇmoire}
+              Procedure Alloue;      {alloue 64 ko de m√©moire}
+              Procedure Libere;      {lib√®re la m‚Äömoire}
               Procedure Menu_1;      {mode menu}
               Procedure Menu;        {activation du mode menu}
               Procedure Quitte;      {termine la session}
-              Procedure Methode;     {sÇlectionne une mÇthode en mode menu}
-              Procedure AideE;       {aide ÇxÇcution}
-              Procedure AideM;       {aide mÇthodes}
+              Procedure Methode;     {s√©lectionne une m‚Äöthode en mode menu}
+              Procedure AideE;       {aide √©x√©cution}
+              Procedure AideM;       {aide m√©thodes}
               Procedure AideC;       {aide code}
               Procedure AideQ;       {aide fin de session}
               Procedure AideF;       {aide fichiers}
@@ -73,15 +73,15 @@ Type
               Procedure Code_1;
               Procedure Code;        {lecture du code}
               Procedure Err(A,B:String); {messages d'erreurs}
-              Procedure Execute;     {ÇxÇcution du cryptage}
-              Procedure Fichiers_1;  {dÇja des fichiers en mÇmoire}
+              Procedure Execute;     {√©x√©cution du cryptage}
+              Procedure Fichiers_1;  {d√©ja des fichiers en m√©moire}
               Procedure Fichiers;    {lecture de la liste des fichiers }
               End;                   {en mode menu}
 
 Const
      BreakFlag : Boolean = FALSE;
       MaxMethods = 4;
-      Meth     : Array [1..MaxMethods] of String[20] =
+      Meth     : Array [1..MaxMethods] of String[40] =
       ('TRADITIONNELLE          ','ETENDUE                 ',
        'COMPLETE CRYPTAGE       ','COMPLETE DECRYPTAGE     ');
       MaxFiles : Integer = 0;
@@ -90,7 +90,7 @@ Const
       FileF    : Boolean = False;
       CodeF    : Boolean = False;
       MethodF  : Boolean = False;
-      MD       : Mode = Invite; {sÇlectionne le message d'invite par dÇfaut}
+      MD       : Mode = Invite; {s‚Äölectionne le message d'invite par d‚Äöfaut}
 
 Var
      Int1BSave : Pointer;
@@ -140,7 +140,7 @@ Begin
           End;
      End;
 
-{passe une chaine de caractäres en majuscules}
+{passe une chaine de caract√®res en majuscules}
 Function UpcaseStr (A:String):String;
 Var X : Integer;
 Begin
@@ -151,45 +151,71 @@ Begin
      UpcaseStr:=A;
      End;
 
-{implÇmentation de la fonction ROL en assembleur}
-Function ROL (B,C : Byte) : Byte; Inline ($59/$58/$D2/$C0/$30/$E4);
-                                  {59    POP CX}
-                                  {58    POP AX}
-                                  {D2/C0 ROL AL,CL}
-                                  {30/E4 XOR AH,AH}
+{impl√©mentation de la fonction ROL en assembleur}
+Function ROL (B,C : Byte) : Byte;
+begin
+  {$ifDef CPUx86_64}
+    { $ ASMMODE intel}
+    {asm
+      POP CX
+      POP AX
+      ROL AL,CL
+      XOR AH,AH
+      {EndDef}
+    end;}
+  {$endIf}
+  {$ifDef CPUaarch64}
+    { $ ASMMODE aarch64}
+    {asm
+    end;}
+  {$endIf}
+end; 
 
-{implÇmentation de la fonction ROR en assembleur}
-Function ROR (B,C : Byte) : Byte; Inline ($59/$58/$D2/$C8/$30/$E4);
-                                  {59    POP CX}
-                                  {58    POP AX}
-                                  {D2/C0 ROR AL,CL}
-                                  {30/E4 XOR AH,AH}
+{impl√©mentation de la fonction ROR en assembleur}
+Function ROR (B,C : Byte) : Byte;
+begin
+  {$ifDef CPUx86_64}
+    { $ ASMMODE intel}
+    {asm
+      POP CX
+      POP AX
+      ROR AL,CL
+      XOR AH,AH
+      {EndDef}
+    end;}
+  {$endIf}
+  {$ifDef CPUaarch64}
+    { $ ASMMODE aarch64}
+    {asm
+    end;}
+  {$endIf}
+end;
 
 
 Procedure Banner.Banner;
 Begin
      Window(1,1,80,25);
      Clrscr;
-     Writeln (' Encrypt - Logiciel de cryptage multi-mÇthodes ');
+     Writeln (' Encrypt - Logiciel de cryptage multi-m√©thodes ');
      Writeln (' Pascal Munerot - 1991 ');
      Writeln;
-     Writeln (' Syntaxe gÇnÇrale : <Encrypt Methode Fichier Code> [Chemin]');
+     Writeln (' Syntaxe g√©n√©rale : <Encrypt Methode Fichier Code> [Chemin]');
      Writeln ('                    <Encrypt ?> lance le mode menu');
      Writeln;
-     Writeln (' OT .. ou exclusif, OE .. codage ou exclusif Çtendu');
-     Writeln (' CD .. mÇthode compläte, dÇcryptage');
-     Writeln (' CC .. mÇthode compläte, cryptage');
+     Writeln (' OT .. ou exclusif, OE .. codage ou exclusif √©tendu');
+     Writeln (' CD .. m√©thode compl√®te, d√©cryptage');
+     Writeln (' CC .. m√©thode compl√®te, cryptage');
      Writeln;
-     Writeln (' Si vous trouvez ce logiciel utile et que vous vous en servez rÇguliärement,');
-     Writeln (' alors veuillez envoyer 50 FF par chäque Ö l''adresse suivante :');
+     Writeln (' Si vous trouvez ce logiciel utile et que vous vous en servez r‚Äöguli√®rement,');
+     Writeln (' alors veuillez envoyer 50 FF par ch√®que ‚Ä¶ l''adresse suivante :');
      Writeln;
      Writeln (' Pascal Munerot');
      Writeln (' 76690 Fontaine-Le-Bourg');
      Writeln;
      Writeln (' Vous recevrez en retour votre accord de licence et la prochaine version de ce');
-     Writeln (' programme vous sera envoyÇe dÇs qu''elle sera disponible. Cependant, si le ');
+     Writeln (' programme vous sera envoy√©e d√®s qu''elle sera disponible. Cependant, si le ');
      Writeln (' package de cette version dont vous disposez n''est pas complet, ou si il');
-     Writeln (' prÇsente un dÇfaut (virus, programme dÇfectueux), je vous enverrai une copie');
+     Writeln (' pr√©sente un d√©faut (virus, programme d√©fectueux), je vous enverrai une copie');
      Writeln (' de ce logiciel contre 15 FF');
      End;
 
@@ -207,7 +233,7 @@ Begin
 {     SetIntVec(1,Ptr(0,0));
      SetIntVec(3,Ptr(0,0));}
      If (P=Nil) Then Begin
-                Writeln ('Erreur d''allocation mÇmoire'); Halt(1); End;
+                Writeln ('Erreur d''allocation m‚Äömoire'); Halt(1); End;
      End;
 
 Procedure Crypte.Quitte;
@@ -227,7 +253,7 @@ Begin
      Ch:=Readkey;
      Case Ch of
           ' ' : Begin
-                     Gotoxy (1,13); TextColor(White); Write ('MÇthode : ');
+                     Gotoxy (1,13); TextColor(White); Write ('M‚Äöthode : ');
                      TextColor(Yellow); Write(Meth[MC],'     ');
                      Inc(MC);
                      If MC=MaxMethods+1 Then MC:=1;
@@ -260,17 +286,17 @@ Begin
      OpenWindow(5,5,75,24,' AIDE EXECUTION ',2,2);
      Clrscr;
      Writeln;
-     Writeln ('  L''ÇxÇcution consiste en l''ÇxÇcution du cryptage des');
-     Writeln ('  fichiers sÇlectionnÇs par la commande (F)ichiers et');
-     Writeln ('  ceci avec les paramätres programmÇs, Ö savoir : ');
+     Writeln ('  L''‚Äöx‚Äöcution consiste en l''‚Äöx‚Äöcution du cryptage des');
+     Writeln ('  fichiers s‚Äölectionn‚Äös par la commande (F)ichiers et');
+     Writeln ('  ceci avec les param√®tres programm‚Äös, ‚Ä¶ savoir : ');
      Writeln;
      Writeln ('   - le mot de passe        - commande C     ');
-     Writeln ('   - la mÇthode de cryptage - commande M     ');
+     Writeln ('   - la m‚Äöthode de cryptage - commande M     ');
      Writeln ('   - la liste des fichiers  - commande F     ');
      Writeln;
-     Writeln ('  si une de ces commandes n''a pas ÇtÇ activÇe au moins');
-     Writeln ('  une fois, le logiciel Çmet un message d''erreur dans');
-     Writeln ('  une fenàtre et demande l''appui sur une touche quelquonque.');
+     Writeln ('  si une de ces commandes n''a pas ‚Äöt‚Äö activ‚Äöe au moins');
+     Writeln ('  une fois, le logiciel ‚Äömet un message d''erreur dans');
+     Writeln ('  une fenÀÜtre et demande l''appui sur une touche quelquonque.');
      Ch:=Readkey;
      CloseWindow;
      End;
@@ -280,14 +306,14 @@ Begin
      OpenWindow(5,5,75,24,' AIDE FICHIERS ',2,2);
      Clrscr;
      Writeln;
-     Writeln ('  Cette commande permet de dÇfinir la liste des fichiers ');
-     Writeln ('  que vous dÇsirez crypter ou dÇcrypter. ');
+     Writeln ('  Cette commande permet de d√©finir la liste des fichiers ');
+     Writeln ('  que vous d√©sirez crypter ou d√©crypter. ');
      Writeln;
-     Writeln ('  Pour cela, vous pouvez prÇciser jusqu''Ö 8 lignes de noms');
+     Writeln ('  Pour cela, vous pouvez pr√©ciser jusqu''√† 8 lignes de noms');
      Writeln ('  de fichiers. ');
      Writeln;
-     Writeln ('  La seule contrainte Çtant de ne prÇciser que des noms de ');
-     Writeln ('  fichiers respectant la syntaxe du systäme d''exploitation.');
+     Writeln ('  La seule contrainte √©tant de ne pr√©ciser que des noms de ');
+     Writeln ('  fichiers respectant la syntaxe du syst√®me d''exploitation.');
      Writeln;
      Writeln ('  Quelques exemples : ');
      Writeln ('  \tools\*.c ');
@@ -304,21 +330,21 @@ Begin
      OpenWindow(5,5,75,24,' AIDE METHODE ',2,2);
      Clrscr;
      Writeln;
-     Writeln ('  Cette commande permet de spÇcifier la mÇthode de ');
-     Writeln ('  cryptage et / ou de dÇcryptage. ');
+     Writeln ('  Cette commande permet de sp√©cifier la m√©thode de ');
+     Writeln ('  cryptage et / ou de d√©cryptage. ');
      Writeln;
-     Writeln ('  il existe 3 mÇthodes : ');
-     Writeln ('   - la mÇthode traditionnelle : codage par ou exclusif    (OT)');
-     Writeln ('   - la mÇthode Çtendue        : codage par ou exclusif    (OE)');
-     Writeln ('                                 + nombres alÇatoires          ');
-     Writeln ('   - la mÇthode compläte       : mÇthode prÇcÇdente amÇliorÇe');
+     Writeln ('  il existe 3 m√©thodes : ');
+     Writeln ('   - la m√©thode traditionnelle : codage par ou exclusif    (OT)');
+     Writeln ('   - la m√©thode √©tendue        : codage par ou exclusif    (OE)');
+     Writeln ('                                 + nombres al‚Äöatoires          ');
+     Writeln ('   - la m√©thode compl√®te       : m√©thode pr√©cdente am√©lior√©e');
      Writeln;
-     Writeln ('  la mÇthode traditionnelle est la plus rapide mais aussi la moins');
-     Writeln ('  efficace, contrairement Ö la mÇthode compläte qui est la plus ');
-     Writeln ('  lente mais qui chiffre les donnÇes de maniäre träs complexe. ');
+     Writeln ('  la m‚Äöthode traditionnelle est la plus rapide mais aussi la moins');
+     Writeln ('  efficace, contrairement ‚Ä¶ la m‚Äöthode compl√®te qui est la plus ');
+     Writeln ('  lente mais qui chiffre les donn‚Äöes de mani√®re tr√®s complexe. ');
      Writeln;
-     Writeln ('  la mÇthode compläte se sÇpare en une mÇthode de cryptage (CC)');
-     Writeln ('  et une mÇthode de dÇcryptage (CD). ');
+     Writeln ('  la m‚Äöthode compl√®te se s‚Äöpare en une m‚Äöthode de cryptage (CC)');
+     Writeln ('  et une m‚Äöthode de d‚Äöcryptage (CD). ');
      Ch:=Readkey;
      CloseWindow;
      End;
@@ -330,15 +356,15 @@ Begin
      Writeln;
      Writeln ('  Avec cette commande, vous pouvez terminer correctement une ');
      Writeln ('  session de cryptage. Je dis bien CORRECTEMENT car interrompre');
-     Writeln ('  ce programme en effectuant un BREAK au clavier empàche le ');
+     Writeln ('  ce programme en effectuant un BREAK au clavier empÀÜche le ');
      Writeln ('  logiciel de terminer correctement. ');
      Writeln;
-     Writeln ('  En effet, le programme doit vider la mÇmoire tampon allouÇe');
+     Writeln ('  En effet, le programme doit vider la m‚Äömoire tampon allou‚Äöe');
      Writeln ('  comme zone de cryptage des fichiers. ');
      Writeln;
-     Writeln ('  Assurez vous avant de terminer une sÇance de bien mÇmoriser');
+     Writeln ('  Assurez vous avant de terminer une s‚Äöance de bien m‚Äömoriser');
      Writeln ('  votre mot de passe si vous venez d''effectuer une session  ');
-     Writeln ('  de cryptage car vous ne pourriez pas Ö dÇcrypter sans      ');
+     Writeln ('  de cryptage car vous ne pourriez pas ‚Ä¶ d‚Äöcrypter sans      ');
      Writeln ('  celui-ci. ');
      Ch:=Readkey;
      CloseWindow;
@@ -350,21 +376,21 @@ Begin
      Clrscr;
      Writeln;
      Writeln ('  cette commande vous permet d''entrer le mot de passe que vous ');
-     Writeln ('  dÇsirez utiliser pour le cryptage ou le dÇcryptage.');
+     Writeln ('  d√©sirez utiliser pour le cryptage ou le d√©cryptage.');
      Writeln;
-     Writeln ('  si vous ne vous rappeller pas du mot de passe que avez rentrÇ');
+     Writeln ('  si vous ne vous rappeller pas du mot de passe que avez rentr‚Äö');
      Writeln ('  ou si vous avez un doute, alors, je vous conseille VIVEMENT  ');
-     Writeln ('  de le retaper pour àtre sur de sa dÇfinition exacte.');
+     Writeln ('  de le retaper pour ÀÜtre sur de sa d‚Äöfinition exacte.');
      Writeln;
      Writeln ('  En effet, en cas d''oubli de votre mot de passe, je ne vous serai');
      Writeln ('  d''aucun secours. Ce logiciel est efficace et son utilisation ');
-     Writeln ('  ne doit pas àtre prise Ö la lÇgäre.');
+     Writeln ('  ne doit pas √™tre prise √† la l√©g√®re.');
      Writeln;
-     Writeln ('  le fichier cryptÇ ne contient bien Çvidemment pas ce mot de passe,');
-     Writeln ('  il sert simplement au calcul des nombres nÇcÇssaires au cryptage.');
+     Writeln ('  le fichier crypt√© ne contient bien √©videmment pas ce mot de passe,');
+     Writeln ('  il sert simplement au calcul des nombres n√©cessaires au cryptage.');
      Writeln;
-     Writeln ('  Attention : le programme fait la diffÇrence entre les minuscules');
-     Writeln ('  et les majuscules. Le cryptage ne donne pas les màmes rÇsultats.');
+     Writeln ('  Attention : le programme fait la diff√©rence entre les minuscules');
+     Writeln ('  et les majuscules. Le cryptage ne donne pas les m√™mes r√©sultats.');
      Ch:=Readkey;
      CloseWindow;
      End;
@@ -374,15 +400,15 @@ Begin
      OpenWindow(1,2,80,14,' AIDE ',2,2);
      TextBackGround(13); TextColor(Yellow);
      Clrscr;
-     Writeln ('Tapez la lettre de l''option dÇsirÇe ');
+     Writeln ('Tapez la lettre de l''option d‚Äösir‚Äöe ');
      Writeln;
-     Writeln (' E --> ExÇcution  ');
+     Writeln (' E --> Ex‚Äöcution  ');
      Writeln (' F --> Fichiers   ');
      Writeln (' C --> Code       ');
-     Writeln (' M --> MÇthode    ');
+     Writeln (' M --> M‚Äöthode    ');
      Writeln (' Q --> Quitter    ');
      Writeln;
-     Writeln (' D --> GÇnÇralitÇs');
+     Writeln (' D --> G‚Äön‚Äöralit‚Äös');
      Ch:=Upcase (Readkey);
      Case Ch of
           'E' : AideE;
@@ -412,22 +438,22 @@ Var Extens : ExtStr;
 Begin
      If (MethodF = False) Then
      Begin
-          Err('vous n''avez pas sÇlectionnÇ de mÇthode',
+          Err('vous n''avez pas s√©lectionn√© de m√©thode',
           'appuyez sur une touche');
           Exit;
           End;
      If (FileF   = False) Then
      Begin
-          Err('vous n''avez pas prÇcisÇ de nom de fichier',
+          Err('vous n''avez pas pr√©cis√© de nom de fichier',
           'appuyez sur une touche');
           Exit;
           End;
      If (CodeF   = False) Then
      Begin
-          Err('vous n''avez pas prÇcisÇ le code','appuyez sur une touche');
+          Err('vous n''avez pas pr√©cis√© le code','appuyez sur une touche');
           Exit;
           End;
-     OpenWindow(1,1,80,25,' ExÇcution ',2,2);
+     OpenWindow(1,1,80,25,' Ex‚Äöcution ',2,2);
      TextColor(Yellow);
      Clrscr;
      For XXX:=1 To MaxFiles Do
@@ -450,14 +476,14 @@ Begin
      CloseWindow;
      End;
 
-{il y a dÇja des fichiers en mÇmoire - confirmation de l'effacement }
+{il y a d‚Äöja des fichiers en m‚Äömoire - confirmation de l'effacement }
 Procedure Crypte.Fichiers_1;
 Begin
      OpenWindow(1,12,80,15, ' Attention !!! ',10,10);
      TextBackGround(Red); TextColor(Yellow);
      Clrscr;
-     Writeln ('il y a dÇja une liste de noms de fichiers ');
-     Write   ('voulez vous la dÇtruire (O/N) ? ');
+     Writeln ('il y a d‚Äöja une liste de noms de fichiers ');
+     Write   ('voulez vous la d‚Äötruire (O/N) ? ');
      Ch:=Readkey;
      If Upcase (Ch)='O' Then NewList:=True Else NewList:=False;
      CloseWindow;
@@ -527,18 +553,18 @@ Begin
      Clrscr;
      Gotoxy(1,1);
      Writeln;
-     Writeln (' €€€€€ €€  € €€€€€ €€€€  €   € €€€€€ €€€€€         La licence du logiciel ne');
-     Writeln (' €     € € € €     €   € €   € €   €   €           cìute que 50 FF et donne ');
-     Writeln (' €€    € € € €     €€€€   €€€  €€€€€   €           droit Ö la prochaine     ');
-     Writeln (' €     €  €€ €     €   €   €   €       €           version pour 15 FF.      ');
-     Writeln (' €€€€€ €   € €€€€€ €   €   €   €       €                                    ');
+     Writeln (' √õ√õ√õ√õ√õ √õ√õ  √õ √õ√õ√õ√õ√õ √õ√õ√õ√õ  √õ   √õ √õ√õ√õ√õ√õ √õ√õ√õ√õ√õ         La licence du logiciel ne');
+     Writeln (' √õ     √õ √õ √õ √õ     √õ   √õ √õ   √õ √õ   √õ   √õ           c√¥ute que 50 FF et donne ');
+     Writeln (' √õ√õ    √õ √õ √õ √õ     √õ√õ√õ√õ   √õ√õ√õ  √õ√õ√õ√õ√õ   √õ           droit √† la prochaine     ');
+     Writeln (' √õ     √õ  √õ√õ √õ     √õ   √õ   √õ   √õ       √õ           version pour 15 FF.      ');
+     Writeln (' √õ√õ√õ√õ√õ √õ   √õ √õ√õ√õ√õ√õ √õ   √õ   √õ   √õ       √õ                                    ');
      Writeln ('                                          1.00     Pour cela, envoyez un    ');
-     Writeln (' Logiciel de cryptage multi-mÇthodes               chäque Ö cette adresse : ');
+     Writeln (' Logiciel de cryptage multi-m√©thodes               ch√®que ‚Ä¶ cette adresse : ');
      Writeln (' Auteur : Pascal Munerot _ Version 1991            38, av. des Dahlias      ');
      Writeln ('                                                   76610 Le Havre           ');
      Window(1,1,80,1);
      TextBackGround(White); TextColor(Black); Clrscr;
-     Write (' (A)ide  (E)xÇcution  (F)ichiers  (C)ode  (M)Çthode  (Q)uitter');
+     Write (' (A)ide  (E)x‚Äöcution  (F)ichiers  (C)ode  (M)‚Äöthode  (Q)uitter');
      TextBackGround(Black); TextColor(White);
      Menu_1;
      End;
@@ -547,8 +573,8 @@ Procedure Crypte.Init;
 Begin
 {     SetIntVec(1,Ptr(0,0));
      SetIntVec(3,Ptr(0,0));}
-     TopWindow:=Nil; {pas de fenàtres pour l'instant}
-     P:=Nil; {P mis Ö NIL pour Çviter un FREEMEM prÇcoce}
+     TopWindow:=Nil; {pas de fen√™tres pour l'instant}
+     P:=Nil; {P mis ‚Ä¶ NIL pour √©viter un FREEMEM pr√©coce}
      TextMode(Co80);
      For I:=1 To 8 Do Fil[i]:='';
      If (ParamCount<1) Then Halt(0);
@@ -580,7 +606,7 @@ Begin
      Halt(1);
      End;
 
-{crypte ou dÇcrypte le dernier bloc - mÇthode traditionnelle}
+{crypte ou d‚Äöcrypte le dernier bloc - m‚Äöthode traditionnelle}
 Procedure Trad.Terminate;
 Var J:Integer;
 Begin
@@ -608,7 +634,7 @@ Begin
      Writeln;
      End;
 
-{crypte ou dÇcrypte un bloc - mÇthode traditionnelle}
+{crypte ou d‚Äöcrypte un bloc - m‚Äöthode traditionnelle}
 Procedure Trad.Crypte_1;
 Begin
      StartChrono;
@@ -650,11 +676,11 @@ Begin
      Begin
           Writeln ('Erreur DOS : ',DosError);
           Case DosError Of
-               2 : Writeln ('Fichier non trouvÇ');
-               3 : Writeln ('Chemin non trouvÇ');
-               5 : Writeln ('Accäs refusÇ');
+               2 : Writeln ('Fichier non trouv‚Äö');
+               3 : Writeln ('Chemin non trouv‚Äö');
+               5 : Writeln ('Acc√®s refus‚Äö');
                6 : Writeln ('Mauvais identificateur de fichier');
-               8 : Writeln ('Pas assez de mÇmoire');
+               8 : Writeln ('Pas assez de m‚Äömoire');
               10 : Writeln ('Environnement incorrect');
               11 : Writeln ('Format invalide');
               18 : Writeln ('Plus de fichiers');
@@ -664,7 +690,7 @@ Begin
           End;
      End;
 
-{initialise le cryptage ou le dÇcryptage - mÇthode traditionnelle}
+{initialise le cryptage ou le d‚Äöcryptage - m‚Äöthode traditionnelle}
 Procedure Trad.Crypte;
 Var J:Integer;
     Bloc:Integer;
@@ -682,7 +708,7 @@ Begin
      ChDir(VChem);
      End;
 
-{crypte ou dÇcrypte le dernier bloc - mÇthode Çtendue}
+{crypte ou d‚Äöcrypte le dernier bloc - m‚Äöthode ‚Äötendue}
 Procedure Eten.Terminate;
 Var J  : Integer;
 Begin
@@ -710,7 +736,7 @@ Begin
      Writeln;
      End;
 
-{crypte ou dÇcrypte un bloc - mÇthode Çtendue}
+{crypte ou d‚Äöcrypte un bloc - m‚Äöthode ‚Äötendue}
 Procedure Eten.Crypte_1;
 Begin
      StartChrono;
@@ -749,7 +775,7 @@ Begin
      DispResult;
      End;
 
-{initialise le cryptage ou le dÇcryptage - mÇthode Çtendue}
+{initialise le cryptage ou le d‚Äöcryptage - m‚Äöthode ‚Äötendue}
 Procedure Eten.Crypte;
 Begin
      FindFirst(Chemin+'\'+Fich,0,DirInfo);
@@ -766,7 +792,7 @@ Begin
      ChDir(VChem);
      End;
 
-{crypte le dernier bloc - mÇthode compläte}
+{crypte le dernier bloc - m‚Äöthode compl√®te}
 Procedure Compl.TerminateC;
 Var J  : Integer;
 Begin
@@ -795,7 +821,7 @@ Begin
      Writeln;
      End;
 
-{crypte un bloc - mÇthode compläte}
+{crypte un bloc - m‚Äöthode compl√®te}
 Procedure Compl.CrypteC_1;
 Begin
      StartChrono;
@@ -835,7 +861,7 @@ Begin
      DispResult;
      End;
 
-{initialise le cryptage - mÇthode compläte}
+{initialise le cryptage - m‚Äöthode compl√®te}
 Procedure Compl.CrypteC;
 Begin
      FindFirst(Chemin+'\'+Fich,0,DirInfo);
@@ -852,7 +878,7 @@ Begin
      ChDir(VChem);
      End;
 
-{dÇcrypte le dernier bloc - mÇthode compläte}
+{d‚Äöcrypte le dernier bloc - m‚Äöthode compl√®te}
 Procedure Compl.TerminateD;
 Var J  : Integer;
 Begin
@@ -881,7 +907,7 @@ Begin
      Writeln;
      End;
 
-{dÇcrypte un bloc - mÇthode compläte}
+{d‚Äöcrypte un bloc - m‚Äöthode compl√®te}
 Procedure Compl.CrypteD_1;
 Begin
      StartChrono;
@@ -921,7 +947,7 @@ Begin
      DispResult;
      End;
 
-{initialise le dÇcryptage - mÇthode compläte}
+{initialise le d‚Äöcryptage - m‚Äöthode compl√®te}
 Procedure Compl.CrypteD;
 Begin
      FindFirst(Fich,0,DirInfo);

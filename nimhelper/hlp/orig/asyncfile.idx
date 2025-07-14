@@ -1,9 +1,0 @@
-AsyncFile	asyncfile.html#AsyncFile	asyncfile : AsyncFile	
-openAsync	asyncfile.html#openAsync,string	asyncfile : openAsync(filename: string; mode = fmRead): AsyncFile	
-read	asyncfile.html#read,AsyncFile,int	asyncfile : read(f: AsyncFile; size: int): Future[string]	
-readLine	asyncfile.html#readLine,AsyncFile	asyncfile : readLine(f: AsyncFile): Future[string]	
-getFilePos	asyncfile.html#getFilePos,AsyncFile	asyncfile : getFilePos(f: AsyncFile): int64	
-setFilePos	asyncfile.html#setFilePos,AsyncFile,int64	asyncfile : setFilePos(f: AsyncFile; pos: int64)	
-readAll	asyncfile.html#readAll,AsyncFile	asyncfile : readAll(f: AsyncFile): Future[string]	
-write	asyncfile.html#write,AsyncFile,string	asyncfile : write(f: AsyncFile; data: string): Future[void]	
-close	asyncfile.html#close,AsyncFile	asyncfile : close(f: AsyncFile)	

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-#pandoc -f rst -t html -o ohtml
-
-nim rst2html {} \;

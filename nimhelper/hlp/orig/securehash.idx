@@ -1,6 +1,0 @@
-SecureHash	securehash.html#SecureHash	securehash : SecureHash	
-secureHash	securehash.html#secureHash,string	securehash : secureHash(str: string): SecureHash	
-secureHashFile	securehash.html#secureHashFile,string	securehash : secureHashFile(filename: string): SecureHash	
-`$`	securehash.html#$,SecureHash	securehash : `$`(self: SecureHash): string	
-parseSecureHash	securehash.html#parseSecureHash,string	securehash : parseSecureHash(hash: string): SecureHash	
-`==`	securehash.html#==,SecureHash,SecureHash	securehash : `==`(a, b: SecureHash): bool	

@@ -1,7 +1,0 @@
-FSMonitor	fsmonitor.html#FSMonitor	fsmonitor : FSMonitor	
-MonitorEventType	fsmonitor.html#MonitorEventType	fsmonitor : MonitorEventType	
-MonitorEvent	fsmonitor.html#MonitorEvent	fsmonitor : MonitorEvent	
-newMonitor	fsmonitor.html#newMonitor,	fsmonitor : newMonitor(): FSMonitor	
-add	fsmonitor.html#add,FSMonitor,string	fsmonitor : add(monitor: FSMonitor; target: string; filters = {MonitorAll}): cint	
-del	fsmonitor.html#del,FSMonitor,cint	fsmonitor : del(monitor: FSMonitor; wd: cint)	
-register	fsmonitor.html#register,Dispatcher,FSMonitor,proc(FSMonitor,MonitorEvent)	fsmonitor : register(d: Dispatcher; monitor: FSMonitor;\n         handleEvent: proc (m: FSMonitor; ev: MonitorEvent))	

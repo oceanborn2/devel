@@ -1,9 +1,0 @@
-CmdLineKind	parseopt2.html#CmdLineKind	parseopt2 : CmdLineKind	
-OptParser	parseopt2.html#OptParser	parseopt2 : OptParser	
-initOptParser	parseopt2.html#initOptParser,seq[string]	parseopt2 : initOptParser(cmdline: seq[string]): OptParser	
-initOptParser	parseopt2.html#initOptParser,string	parseopt2 : initOptParser(cmdline: string): OptParser	
-initOptParser	parseopt2.html#initOptParser,	parseopt2 : initOptParser(): OptParser	
-next	parseopt2.html#next,OptParser	parseopt2 : next(p: var OptParser)	
-cmdLineRest	parseopt2.html#cmdLineRest,OptParser	parseopt2 : cmdLineRest(p: OptParser): TaintedString	
-GetoptResult	parseopt2.html#GetoptResult	parseopt2 : GetoptResult	
-getopt	parseopt2.html#getopt.i,	parseopt2 : getopt(): GetoptResult	
