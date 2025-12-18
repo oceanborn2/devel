@@ -1,0 +1,280 @@
+unit BTree;
+
+interface
+
+uses SysUtils,Classes;
+
+const
+
+     // constantes relatives aux pages
+     MAXPAGESIZE = 16384; // Taille maximum des données dans une page
+     PAGEMOD = 1024; // La taille d'une page doit être multiple de 1024 octets
+     PAGE_BUSY = 1;
+
+     // constantes relatives aux fichiers référentiels
+     MAXDEGREE   = 32;   // 32 clés au maximum par noeud
+     REPOSITORY_OPENED     = 1;
+     REPOSITORY_CREATED    = 2;
+     ERR_CANNOT_OPEN_OR_CREATE = 3;
+     ERR_CANNOT_WRITE = 4;
+     ERR_CANNOT_READ = 5;
+
+type
+    TCharArray = array [1..MaxPageSize] of byte;
+    PTCharArray = ^TCharArray;
+
+    TBTree = class; // déclaration forward
+
+    ByteArray16 = array [1..16] of byte;
+
+    // Enregistrement variable pour le stockage des clés sous une forme
+    // pratique à manipuler
+
+    TKey =
+    record
+     case integer of
+      1 : (AsInteger : integer);
+      2 : (AsString  : string[15]);
+      3 : (AsDouble  : Double);
+      4 : (AsAny     : ByteArray16);
+    end;
+
+
+    TBTreeHandle = longint;
+    TBTreeNode =
+    record
+      key : TKey;
+      ind : TBTreeHandle;
+    end;
+
+    TNodeArray = array [1..MaxDegree] of TBTreeNode;
+    PTNodeArray = ^TNodeArray;
+
+    // Données devant impérativement être stockées dans le fichier référentiel
+    TPage =
+    class
+    private
+      FStatus : integer;
+      FBTree  : TBTree;
+      FSize   : integer; // Taille de la page
+      FKind   : integer; // Type de la page
+    protected
+      function    GetSize   : integer; // Taille de la page (En fonction des données du référentiel)
+      function    GetStatus : integer; virtual;
+      procedure   SetStatus(Status : integer); virtual;
+      procedure   SetAsDeleted; virtual;
+      procedure   SetAsBusy; virtual;
+    public
+      constructor Create(BTree : TBTree); virtual; abstract;
+      destructor  Destroy; override;
+      procedure   Write; virtual; abstract;
+      procedure   Read; virtual; abstract;
+      property    Status : integer read GetStatus write SetStatus;
+    end;
+
+    TDataPage =
+    class(TPage)
+    private
+      FData     : PTCharArray; // Pointeur sur les données
+      FOffset   : integer;  // Offset en cours dans la page
+      FNextPage : integer;  // Adresse de la prochaine page de données pour l'objet
+    protected
+      procedure SetOffset(AnOffset:integer); virtual;
+      function  GetOffset : integer; virtual;
+    public
+      property Offset : integer read GetOffset write SetOffset;
+      constructor Create(BTree : TBTree); override;
+      destructor  Destroy; override;
+    end;
+
+    TIndexPage =
+    class(TPage)
+    private
+       FChildNodes      : PTNodeArray;
+    protected
+       function  GetKey(index:integer) : TKey; virtual;
+       procedure SetKey(index:integer; Key : TKey); virtual;
+    public
+       property    Key[index : integer] : TKey read GetKey write SetKey; default;
+       constructor Create(BTree : TBTree); override;
+       destructor  Destroy; override;
+    end;
+
+    TBTreeExc = class(Exception); // Exception de type TBTree ou TPage
+    TBTreeHeader =
+    record
+     FBtreeSig       : string[3];    // Signature d'un fichier BTree BTF
+     FVersionMajor   : integer;      // Numéro de version majeure
+     FVersionMinor   : integer;      // Numéro de version mineure
+     FFirstPageAvail : longint;      // Première page disponible
+     FDateCreated    : TDateTime;    // Date et heure de création
+     FDateModified   : TDateTime;    // Date et heure de dernière modification
+     FOwner          : string[32];   // Nom du propriétaire de la page
+     FKeyCapacity    : integer;      // Nombre de clés par page index
+     FKeyLength      : integer;      // Longueur d'une clé
+     FPageSize       : integer;      // Taille d'une page en octets
+     FFname          : string;       // Nom du fichier de stockage
+     FStatus         : integer;      // Statut du repository
+    end;
+
+    TBTree =
+    class
+    private
+     FFile           : File of byte; // Fichier de stockage
+     FRoot           : TIndexPage;   // Page racine de toutes les pages
+     FHeader         : TBTreeHeader; // Page d'entête
+    protected
+      function  AllocatePages(MemoryNeeded : integer) : TBTreeHandle; virtual;
+      procedure DeallocatePages(Handle:TBTreeHandle); virtual;
+      procedure LoadHeader; virtual;
+      procedure WriteHeader; virtual;
+      procedure LoadRoot; virtual;
+      procedure WriteRoot; virtual;
+      procedure OpenFile; virtual;
+      procedure CloseFile; virtual;
+      procedure WriteSector(index:integer; var Page : TPage); virtual;
+      procedure ReadSector(index:integer; var Page : TPage); virtual;
+      procedure DeletePage(index:integer); virtual;
+
+   public
+      constructor Create(fname:string); virtual;
+      destructor  Destroy; override;
+    end;
+
+
+implementation
+
+procedure TPage.SetAsDeleted;
+begin
+     FStatus := FStatus and not PAGE_BUSY;
+end;
+
+procedure TPage.SetAsBusy;
+begin
+     FStatus := FStatus or PAGE_BUSY;
+end;
+
+procedure TDataPage.SetOffset(AnOffset:integer);
+begin
+     if (AnOffset>0) and (AnOffset<MAXPAGESIZE+1) then self.Offset := AnOffset;
+end;
+
+
+function  TBTree.AllocatePages(MemoryNeeded : integer) : TBTreeHandle;
+var NbPagesNeeded : integer;
+begin
+    NbPagesNeeded := MemoryNeeded div MAXPAGESIZE;
+    if MemoryNeeded mod MAXPAGESIZE <> 0 then inc(NbPagesNeeded);
+    //Trouver la première page libre et l'affecter
+end;
+
+procedure TBTree.DeallocatePages(Handle:TBTreeHandle);
+begin
+end;
+
+constructor TBTree.Create(fname:string);
+begin
+     self.FHeader.FBtreeSig := 'BTF';
+     self.FHeader.FDateModified := Now;
+     self.FHeader.FOwner:='';
+
+     self.FHeader.FFname := fname;
+
+     FRoot   := TIndexPage.Create(self);
+
+     if FHeader.FPageSize < (FHeader.FKeyLength+sizeof(Integer)) * FHeader.FKeyCapacity
+     then raise TBTreeExc.Create('Incompatibilité entre la taille de la page et les clés');
+
+     if FHeader.FPageSize mod PAGEMOD <> 0
+     then raise TBTreeExc.Create('La taille d''une page doit être multiple de PAGEMOD');
+end;
+
+destructor  TBTree.Destroy;
+begin
+     FRoot.Free;
+     FRoot:=NIL;
+     inherited destroy;
+end;
+
+
+procedure   TBTree.WriteRoot;
+begin
+     FRoot.Write;
+end;
+
+procedure   TBTree.LoadRoot;
+begin
+     FRoot.Read;
+end;
+
+procedure   TBTree.OpenFile;
+begin
+     AssignFile(FFile,FHeader.FFname);
+     try
+      Reset(FFile);
+      LoadHeader;
+      LoadRoot;
+      FHeader.FStatus := REPOSITORY_OPENED;
+     except
+      try
+       Rewrite(FFile);
+       WriteHeader;
+       WriteRoot;
+       FHeader.FStatus := REPOSITORY_CREATED;
+      except
+       FHeader.FStatus := ERR_CANNOT_OPEN_OR_CREATE;
+      end;
+     end;
+end;
+
+procedure   TBTree.CloseFile;
+begin
+     System.CloseFile(FFile);
+end;
+
+procedure   TBTree.ReadSector(index:integer; var Page:TPage);
+begin
+     try
+       Seek(FFile,index);
+       Read(FFile, Page.FData, 1);
+     except
+       FHeader.FStatus := ERR_CANNOT_READ;
+     end;
+end;
+
+procedure   TBtree.WriteSector(index:integer; var Page:TPage);
+begin
+     try
+       Seek(FFile,index);
+       Write(FFile, Page.FData, 1);
+     except
+       FHeader.FStatus := ERR_CANNOT_WRITE;
+     end;
+end;
+
+procedure   TBTree.DeletePage(index:integer);
+var ThePage : TPage;
+begin
+      ThePage := TPage.Create;
+    try
+      ReadPage(index, ThePage);
+      ThePage.SetAsDeleted;
+      WritePage(index, ThePage);
+    finally
+      ThePage.Free;
+    end;
+end;
+
+procedure   TBTree.LoadHeader;
+begin
+     Seek(FFile, 0);
+     BlockRead(FFile, FHeader, siezof(FHeader));
+end;
+
+procedure   TBTree.WriteHeader;
+begin
+     Seek(FFile, 0);
+     BlockWrite(FFile, FHeader, siezof(FHeader));
+end;
+
+end.
