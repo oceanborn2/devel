@@ -1,2 +1,4 @@
-static_lease.json
-dynamic_lease.json
+#static_lease.json
+#dynamic_lease.json
+*.csv
+*.json
