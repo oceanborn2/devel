@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$USER_HOME$/configs" vcs="Git" />
+    <mapping directory="$USER_HOME$/configs/grist/py_grist_api" vcs="Git" />
+    <mapping directory="$USER_HOME$/configs/macos/macos-defaults" vcs="Git" />
+    <mapping directory="$USER_HOME$/configs/smartsheet/smartsheet" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
   </component>
 </project>

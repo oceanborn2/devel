@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/configs/msys2/.azure/.azure.iml" filepath="$USER_HOME$/configs/msys2/.azure/.azure.iml" />
+      <module fileurl="file://$USER_HOME$/configs/msys2/.azure-shell/.azure-shell.iml" filepath="$USER_HOME$/configs/msys2/.azure-shell/.azure-shell.iml" />
+      <module fileurl="file://$USER_HOME$/configs/recoll/AppData/Local/Recoll/Recoll.iml" filepath="$USER_HOME$/configs/recoll/AppData/Local/Recoll/Recoll.iml" />
+      <module fileurl="file://$USER_HOME$/configs/smartsheet/smartsheet/pocs/api/src/api.iml" filepath="$USER_HOME$/configs/smartsheet/smartsheet/pocs/api/src/api.iml" />
+      <module fileurl="file://$USER_HOME$/configs/bitwarden/bitwarden-to-keepass/bitwarden-to-keepass.iml" filepath="$USER_HOME$/configs/bitwarden/bitwarden-to-keepass/bitwarden-to-keepass.iml" />
+      <module fileurl="file://$USER_HOME$/configs/msys2/.gnupg/crls.d/crls.d.iml" filepath="$USER_HOME$/configs/msys2/.gnupg/crls.d/crls.d.iml" />
       <module fileurl="file://$PROJECT_DIR$/freebox.iml" filepath="$PROJECT_DIR$/freebox.iml" />
+      <module fileurl="file://$USER_HOME$/configs/grist/grist.iml" filepath="$USER_HOME$/configs/grist/grist.iml" />
+      <module fileurl="file://$USER_HOME$/configs/smartsheet/smartsheet/guides/guides.iml" filepath="$USER_HOME$/configs/smartsheet/smartsheet/guides/guides.iml" />
+      <module fileurl="file://$USER_HOME$/configs/yjq/jq/jq.iml" filepath="$USER_HOME$/configs/yjq/jq/jq.iml" />
+      <module fileurl="file://$USER_HOME$/configs/macos/macos.iml" filepath="$USER_HOME$/configs/macos/macos.iml" />
+      <module fileurl="file://$USER_HOME$/configs/mblock/mblock.iml" filepath="$USER_HOME$/configs/mblock/mblock.iml" />
+      <module fileurl="file://$USER_HOME$/configs/mtp/mtp.iml" filepath="$USER_HOME$/configs/mtp/mtp.iml" />
+      <module fileurl="file://$USER_HOME$/configs/scoop/persist/persist.iml" filepath="$USER_HOME$/configs/scoop/persist/persist.iml" />
+      <module fileurl="file://$USER_HOME$/configs/smartsheet/smartsheet/pocs/pocs.iml" filepath="$USER_HOME$/configs/smartsheet/smartsheet/pocs/pocs.iml" />
+      <module fileurl="file://$USER_HOME$/configs/recoll/recoll.iml" filepath="$USER_HOME$/configs/recoll/recoll.iml" />
+      <module fileurl="file://$USER_HOME$/configs/serialghost/serialghost.iml" filepath="$USER_HOME$/configs/serialghost/serialghost.iml" />
+      <module fileurl="file://$USER_HOME$/configs/kubernetes/training/complete-devops/mychart/templates/templates.iml" filepath="$USER_HOME$/configs/kubernetes/training/complete-devops/mychart/templates/templates.iml" />
+      <module fileurl="file://$USER_HOME$/configs/conemu-color-themes/.june.2020.2/tools/tools.iml" filepath="$USER_HOME$/configs/conemu-color-themes/.june.2020.2/tools/tools.iml" />
+      <module fileurl="file://$USER_HOME$/configs/git/tortoise/tortoise.iml" filepath="$USER_HOME$/configs/git/tortoise/tortoise.iml" />
+      <module fileurl="file://$USER_HOME$/configs/win/win.iml" filepath="$USER_HOME$/configs/win/win.iml" />
     </modules>
   </component>
 </project>
