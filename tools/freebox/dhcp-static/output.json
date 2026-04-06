@@ -1,0 +1,15 @@
+[
+  {
+    "mac": "05:52:53:06:0F:83",
+    "comment": "",
+    "host": "vellum",
+    "ip": "192.168.1.33",
+    "ipv4": "192.168.1.33",
+    "ipv6": "fe80::75:8fa2:4701:fd84;fe80::a0:4701:8c92:74e2",
+    "active": true,
+    "persist": true,
+    "vendor": "Ebook reader",
+    "host_typ": "tablet",
+    "interface": "pub"
+  }
+]

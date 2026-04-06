@@ -1,0 +1,73 @@
+{
+  "success": true,
+  "result": [
+    {
+      "mac": "05:52:53:06:0F:83",
+      "comment": "",
+      "hostname": "vellum",
+      "id": "05:52:53:06:0F:83",
+      "host": {
+        "l2ident": {
+          "id": "05:52:53:06:0F:83",
+          "type": "mac_address"
+        },
+        "active": true,
+        "persistent": true,
+        "names": [
+          {
+            "name": "vellum",
+            "source": "mdns"
+          },
+          {
+            "name": "vellum",
+            "source": "dhcp"
+          },
+          {
+            "name": "VELLUM",
+            "source": "netbios"
+          }
+        ],
+        "vendor_name": "Ebook reader",
+        "host_type": "tablet",
+        "interface": "pub",
+        "info": {},
+        "id": "ether-05:52:53:06:0f:83",
+        "last_time_reachable": 1775396162,
+        "primary_name_manual": false,
+        "l3connectivities": [
+          {
+            "addr": "192.168.1.33",
+            "active": false,
+            "reachable": false,
+            "last_activity": 1775396162,
+            "af": "ipv4",
+            "last_time_reachable": 1775396162
+          },
+          {
+            "addr": "fe80::75:8fa2:4701:fd84",
+            "active": false,
+            "reachable": false,
+            "last_activity": 1773658356,
+            "af": "ipv6",
+            "last_time_reachable": 1773658356
+          },
+          {
+            "addr": "fe80::a0:4701:8c92:74e2",
+            "active": false,
+            "reachable": false,
+            "last_activity": 1773662113,
+            "af": "ipv6",
+            "last_time_reachable": 1773662065
+          }
+        ],
+        "default_name": "vellum",
+        "first_activity": 1752341493,
+        "reachable": false,
+        "last_activity": 1775396165,
+        "primary_name": "vellum"
+      },
+      "options": {},
+      "ip": "192.168.1.33"
+    }
+  ]
+}
